@@ -1,0 +1,68 @@
+515:40:06.944 [main] INFO  45ogger {36} -chrome browser open success
+515:40:16.548 [main] INFO  13ogger {36} -clicked success
+515:40:23.597 [main] INFO  73ogger {36} -browser close success
+515:56:09.314 [main] INFO  45ogger {36} -chrome browser open success
+515:56:11.881 [main] INFO  15ogger {36} -click create account success
+515:56:12.126 [main] INFO  17ogger {36} -enter name  success
+515:56:12.373 [main] INFO  20ogger {36} -enter lastname success
+515:56:12.563 [main] INFO  23ogger {36} -enter email success
+515:56:12.715 [main] INFO  26ogger {36} -enter password success
+515:56:12.824 [main] INFO  29ogger {36} -reenter password success
+515:56:15.198 [main] INFO  32ogger {36} -click on create account success
+515:56:20.224 [main] INFO  73ogger {36} -browser close success
+519:05:18.238 [main] INFO  45ogger {36} -chrome browser open success
+519:07:24.912 [main] INFO  45ogger {36} -chrome browser open success
+519:07:29.901 [main] INFO  73ogger {36} -browser close success
+519:15:03.676 [main] INFO  45ogger {36} -chrome browser open success
+519:15:06.092 [main] INFO  68ogger {36} -landed on website success
+519:15:06.377 [main] INFO  74ogger {36} -browser close success
+519:17:17.020 [main] INFO  45ogger {36} -chrome browser open success
+519:17:19.168 [main] INFO  68ogger {36} -landed on website success
+519:17:19.851 [main] INFO  18ogger {36} -click on sign in success
+519:17:19.971 [main] INFO  21ogger {36} -email enter success
+519:17:20.022 [main] INFO  24ogger {36} -password enter success
+519:17:21.427 [main] INFO  74ogger {36} -browser close success
+519:25:46.897 [main] INFO  45ogger {36} -chrome browser open success
+519:25:56.705 [main] INFO  68ogger {36} -landed on website success
+519:25:57.759 [main] INFO  19ogger {36} -click on sign in success
+519:25:57.887 [main] INFO  22ogger {36} -email enter success
+519:25:57.953 [main] INFO  25ogger {36} -password enter success
+519:25:59.861 [main] INFO  74ogger {36} -browser close success
+519:27:22.981 [main] INFO  45ogger {36} -chrome browser open success
+519:27:24.252 [main] INFO  68ogger {36} -landed on website success
+519:27:24.937 [main] INFO  19ogger {36} -click on sign in success
+519:27:25.049 [main] INFO  22ogger {36} -email enter success
+519:27:25.099 [main] INFO  25ogger {36} -password enter success
+519:27:26.656 [main] INFO  74ogger {36} -browser close success
+519:27:56.464 [main] INFO  45ogger {36} -chrome browser open success
+519:27:58.096 [main] INFO  68ogger {36} -landed on website success
+519:27:58.756 [main] INFO  19ogger {36} -click on sign in success
+519:27:58.872 [main] INFO  22ogger {36} -email enter success
+519:27:58.920 [main] INFO  25ogger {36} -password enter success
+519:28:00.349 [main] INFO  74ogger {36} -browser close success
+519:37:22.429 [main] INFO  45ogger {36} -chrome browser open success
+519:37:23.957 [main] INFO  68ogger {36} -landed on website success
+519:37:24.696 [main] INFO  19ogger {36} -click on sign in success
+519:37:24.813 [main] INFO  22ogger {36} -email enter success
+519:37:24.866 [main] INFO  25ogger {36} -password enter success
+519:37:26.578 [main] INFO  74ogger {36} -browser close success
+519:38:35.429 [main] INFO  45ogger {36} -chrome browser open success
+519:38:36.810 [main] INFO  68ogger {36} -landed on website success
+519:38:37.577 [main] INFO  19ogger {36} -click on sign in success
+519:38:37.696 [main] INFO  22ogger {36} -email enter success
+519:38:37.749 [main] INFO  25ogger {36} -password enter success
+519:38:39.191 [main] INFO  74ogger {36} -browser close success
+519:39:27.737 [main] INFO  45ogger {36} -chrome browser open success
+519:39:29.061 [main] INFO  68ogger {36} -landed on website success
+519:39:29.754 [main] INFO  19ogger {36} -click on sign in success
+519:39:29.883 [main] INFO  22ogger {36} -email enter success
+519:39:29.933 [main] INFO  25ogger {36} -password enter success
+519:39:31.790 [main] INFO  32ogger {36} -login success
+519:39:32.101 [main] INFO  74ogger {36} -browser close success
+519:40:54.801 [main] INFO  45ogger {36} -chrome browser open success
+519:40:56.120 [main] INFO  68ogger {36} -landed on website success
+519:40:56.890 [main] INFO  19ogger {36} -click on sign in success
+519:40:56.989 [main] INFO  22ogger {36} -email enter success
+519:40:57.038 [main] INFO  25ogger {36} -password enter success
+519:40:59.055 [main] INFO  32ogger {36} -login success
+519:40:59.316 [main] INFO  74ogger {36} -browser close success
