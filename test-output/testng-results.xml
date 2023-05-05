@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-04T21:50:49 EDT" name="Lumademo test" finished-at="2023-05-04T21:51:17 EDT" duration-ms="27940">
+  <suite started-at="2023-05-05T16:38:28 EDT" name="Lumademo test" finished-at="2023-05-05T16:39:15 EDT" duration-ms="46951">
     <groups>
     </groups>
-    <test started-at="2023-05-04T21:50:49 EDT" name="Login test" finished-at="2023-05-04T21:51:07 EDT" duration-ms="17127">
-      <class name="us.piit.luma.LoginTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:us.piit.luma.LoginTest@306851c7]" started-at="2023-05-04T21:50:49 EDT" name="setup" finished-at="2023-05-04T21:50:54 EDT" duration-ms="4443" status="PASS">
+    <test started-at="2023-05-05T16:38:28 EDT" name="signup  test" finished-at="2023-05-05T16:38:36 EDT" duration-ms="8094">
+      <class name="us.piit.luma.CreateAccount">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:us.piit.luma.CreateAccount@16ecee1]" started-at="2023-05-05T16:38:28 EDT" name="setup" finished-at="2023-05-05T16:38:31 EDT" duration-ms="3041" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,15 +48,68 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="invalidEmail()[pri:0, instance:us.piit.luma.LoginTest@306851c7]" started-at="2023-05-04T21:50:54 EDT" name="invalidEmail" finished-at="2023-05-04T21:50:55 EDT" duration-ms="1232" status="PASS">
+        <test-method signature="createWithExistingEmail()[pri:0, instance:us.piit.luma.CreateAccount@16ecee1]" started-at="2023-05-05T16:38:31 EDT" name="createWithExistingEmail" finished-at="2023-05-05T16:38:36 EDT" duration-ms="4698" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createWithExistingEmail -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:us.piit.luma.CreateAccount@16ecee1]" started-at="2023-05-05T16:38:36 EDT" name="teardown" finished-at="2023-05-05T16:38:36 EDT" duration-ms="317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- us.piit.luma.CreateAccount -->
+    </test> <!-- signup  test -->
+    <test started-at="2023-05-05T16:38:36 EDT" name="Login test" finished-at="2023-05-05T16:38:49 EDT" duration-ms="12281">
+      <class name="us.piit.luma.LoginTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:us.piit.luma.LoginTest@a5b0b86]" started-at="2023-05-05T16:38:36 EDT" name="setup" finished-at="2023-05-05T16:38:39 EDT" duration-ms="2212" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[111]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://magento.softwaretestingboard.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidEmail()[pri:0, instance:us.piit.luma.LoginTest@a5b0b86]" started-at="2023-05-05T16:38:39 EDT" name="invalidEmail" finished-at="2023-05-05T16:38:40 EDT" duration-ms="1115" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidEmail -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:us.piit.luma.LoginTest@306851c7]" started-at="2023-05-04T21:50:55 EDT" name="teardown" finished-at="2023-05-04T21:50:56 EDT" duration-ms="497" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:us.piit.luma.LoginTest@a5b0b86]" started-at="2023-05-05T16:38:40 EDT" name="teardown" finished-at="2023-05-05T16:38:40 EDT" duration-ms="312" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:us.piit.luma.LoginTest@306851c7]" started-at="2023-05-04T21:50:56 EDT" name="setup" finished-at="2023-05-04T21:50:58 EDT" duration-ms="2557" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:us.piit.luma.LoginTest@a5b0b86]" started-at="2023-05-05T16:38:40 EDT" name="setup" finished-at="2023-05-05T16:38:42 EDT" duration-ms="1987" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -97,15 +150,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="missingPassword()[pri:0, instance:us.piit.luma.LoginTest@306851c7]" started-at="2023-05-04T21:50:58 EDT" name="missingPassword" finished-at="2023-05-04T21:50:59 EDT" duration-ms="1291" status="PASS">
+        <test-method signature="missingPassword()[pri:0, instance:us.piit.luma.LoginTest@a5b0b86]" started-at="2023-05-05T16:38:42 EDT" name="missingPassword" finished-at="2023-05-05T16:38:43 EDT" duration-ms="1104" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- missingPassword -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:us.piit.luma.LoginTest@306851c7]" started-at="2023-05-04T21:50:59 EDT" name="teardown" finished-at="2023-05-04T21:51:00 EDT" duration-ms="496" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:us.piit.luma.LoginTest@a5b0b86]" started-at="2023-05-05T16:38:43 EDT" name="teardown" finished-at="2023-05-05T16:38:43 EDT" duration-ms="303" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:us.piit.luma.LoginTest@306851c7]" started-at="2023-05-04T21:51:00 EDT" name="setup" finished-at="2023-05-04T21:51:03 EDT" duration-ms="2680" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:us.piit.luma.LoginTest@a5b0b86]" started-at="2023-05-05T16:38:43 EDT" name="setup" finished-at="2023-05-05T16:38:45 EDT" duration-ms="2022" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -146,19 +199,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validCred()[pri:0, instance:us.piit.luma.LoginTest@306851c7]" started-at="2023-05-04T21:51:03 EDT" name="validCred" finished-at="2023-05-04T21:51:06 EDT" duration-ms="3317" status="PASS">
+        <test-method signature="validCred()[pri:0, instance:us.piit.luma.LoginTest@a5b0b86]" started-at="2023-05-05T16:38:45 EDT" name="validCred" finished-at="2023-05-05T16:38:48 EDT" duration-ms="2983" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validCred -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:us.piit.luma.LoginTest@306851c7]" started-at="2023-05-04T21:51:06 EDT" name="teardown" finished-at="2023-05-04T21:51:07 EDT" duration-ms="549" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:us.piit.luma.LoginTest@a5b0b86]" started-at="2023-05-05T16:38:48 EDT" name="teardown" finished-at="2023-05-05T16:38:49 EDT" duration-ms="241" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- us.piit.luma.LoginTest -->
     </test> <!-- Login test -->
-    <test started-at="2023-05-04T21:51:07 EDT" name="AddToCar test" finished-at="2023-05-04T21:51:17 EDT" duration-ms="10786">
-      <class name="us.piit.luma.AddItemToCar">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:us.piit.luma.AddItemToCar@6bb75258]" started-at="2023-05-04T21:51:07 EDT" name="setup" finished-at="2023-05-04T21:51:09 EDT" duration-ms="2535" status="PASS">
+    <test started-at="2023-05-05T16:38:49 EDT" name="AddToCar test" finished-at="2023-05-05T16:38:57 EDT" duration-ms="8701">
+      <class name="us.piit.luma.AddItemToCart">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:us.piit.luma.AddItemToCart@1433046b]" started-at="2023-05-05T16:38:49 EDT" name="setup" finished-at="2023-05-05T16:38:51 EDT" duration-ms="2036" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -199,15 +252,121 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addItem()[pri:0, instance:us.piit.luma.AddItemToCar@6bb75258]" started-at="2023-05-04T21:51:09 EDT" name="addItem" finished-at="2023-05-04T21:51:17 EDT" duration-ms="7650" status="PASS">
+        <test-method signature="addItem()[pri:0, instance:us.piit.luma.AddItemToCart@1433046b]" started-at="2023-05-05T16:38:51 EDT" name="addItem" finished-at="2023-05-05T16:38:57 EDT" duration-ms="6406" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addItem -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:us.piit.luma.AddItemToCar@6bb75258]" started-at="2023-05-04T21:51:17 EDT" name="teardown" finished-at="2023-05-04T21:51:17 EDT" duration-ms="599" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:us.piit.luma.AddItemToCart@1433046b]" started-at="2023-05-05T16:38:57 EDT" name="teardown" finished-at="2023-05-05T16:38:57 EDT" duration-ms="258" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- us.piit.luma.AddItemToCar -->
+      </class> <!-- us.piit.luma.AddItemToCart -->
     </test> <!-- AddToCar test -->
+    <test started-at="2023-05-05T16:38:57 EDT" name="searchbar test" finished-at="2023-05-05T16:39:01 EDT" duration-ms="3900">
+      <class name="us.piit.luma.SearchBarTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:us.piit.luma.SearchBarTest@72445aba]" started-at="2023-05-05T16:38:57 EDT" name="setup" finished-at="2023-05-05T16:38:59 EDT" duration-ms="1899" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[111]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://magento.softwaretestingboard.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="searchTest()[pri:0, instance:us.piit.luma.SearchBarTest@72445aba]" started-at="2023-05-05T16:38:59 EDT" name="searchTest" finished-at="2023-05-05T16:39:01 EDT" duration-ms="1693" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:us.piit.luma.SearchBarTest@72445aba]" started-at="2023-05-05T16:39:01 EDT" name="teardown" finished-at="2023-05-05T16:39:01 EDT" duration-ms="306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- us.piit.luma.SearchBarTest -->
+    </test> <!-- searchbar test -->
+    <test started-at="2023-05-05T16:39:01 EDT" name="create account test" finished-at="2023-05-05T16:39:15 EDT" duration-ms="13943">
+      <class name="us.piit.luma.PurchaseItemTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:us.piit.luma.PurchaseItemTest@9ed238c]" started-at="2023-05-05T16:39:01 EDT" name="setup" finished-at="2023-05-05T16:39:03 EDT" duration-ms="2176" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[111]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://magento.softwaretestingboard.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="purchaseItem()[pri:0, instance:us.piit.luma.PurchaseItemTest@9ed238c]" started-at="2023-05-05T16:39:03 EDT" name="purchaseItem" finished-at="2023-05-05T16:39:15 EDT" duration-ms="11392" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- purchaseItem -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:us.piit.luma.PurchaseItemTest@9ed238c]" started-at="2023-05-05T16:39:15 EDT" name="teardown" finished-at="2023-05-05T16:39:15 EDT" duration-ms="374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- us.piit.luma.PurchaseItemTest -->
+    </test> <!-- create account test -->
   </suite> <!-- Lumademo test -->
 </testng-results>

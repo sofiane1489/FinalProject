@@ -8,15 +8,15 @@
   <parameter name="browserName" value="chrome"/>
   <parameter name="osversion" value="11"/>
   <parameter name="url" value="https://magento.softwaretestingboard.com/"/>
-  <test thread-count="5" name="AddToCar test(failed)">
+  <test thread-count="5" name="create account test(failed)">
     <classes>
-      <class name="us.piit.luma.AddItemToCar">
+      <class name="us.piit.luma.PurchaseItemTest">
         <methods>
           <include name="setup"/>
-          <include name="addItem"/>
           <include name="teardown"/>
+          <include name="purchaseItem"/>
         </methods>
-      </class> <!-- us.piit.luma.AddItemToCar -->
+      </class> <!-- us.piit.luma.PurchaseItemTest -->
     </classes>
-  </test> <!-- AddToCar test(failed) -->
+  </test> <!-- create account test(failed) -->
 </suite> <!-- Failed suite [Lumademo test] -->

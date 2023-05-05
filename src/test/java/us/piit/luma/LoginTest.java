@@ -19,7 +19,7 @@ public class LoginTest extends SetUp {
          clickOn("body > div.page-wrapper > header > div.panel.wrapper > div > ul > li.authorization-link > a");
          log.info("click on sign in success");
 
-         type("#email","so@gmail.com");
+         type("#email","sof@gmail.com");
          log.info("email enter success");
 
          type("#pass","1234Abcd$");
@@ -29,8 +29,8 @@ public class LoginTest extends SetUp {
          log.info("click on sign in success");
 
          //check user logged in
-         String expectedWelcomeMess="Welcome, accene lost!";
-         String actualWelcomeMess=getElementText("//div[@class='panel header']//span[@class='logged-in'][normalize-space()='Welcome, accene lost!']");
+         String expectedWelcomeMess="Welcome, john lost!";
+         String actualWelcomeMess=getElementText("//div[@class='panel header']//span[@class='logged-in'][normalize-space()='Welcome, john lost!']");
          Assert.assertEquals(expectedWelcomeMess,actualWelcomeMess);
          log.info("login success");
     }
@@ -73,7 +73,7 @@ public class LoginTest extends SetUp {
         clickOn("body div.page-wrapper header div.panel.wrapper div ul li.authorization-link a");
         log.info("click on sign in success");
 
-        type("#email","so@gmail.com");
+        type("#email","sof@gmail.com");
         log.info("email enter success");
 
         type("#pass","");
