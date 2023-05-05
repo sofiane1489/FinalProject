@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-04T19:40:52 EDT" name="Lumademo test" finished-at="2023-05-04T19:40:59 EDT" duration-ms="6353">
+  <suite started-at="2023-05-05T19:21:02 EDT" name="Lumademo test" finished-at="2023-05-05T19:21:23 EDT" duration-ms="20678">
     <groups>
     </groups>
-    <test started-at="2023-05-04T19:40:52 EDT" name="Login test" finished-at="2023-05-04T19:40:59 EDT" duration-ms="6353">
-      <class name="us.piit.luma.LoginTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:us.piit.luma.LoginTest@666b83a4]" started-at="2023-05-04T19:40:53 EDT" name="setup" finished-at="2023-05-04T19:40:56 EDT" duration-ms="3116" status="PASS">
+    <test started-at="2023-05-05T19:21:02 EDT" name="buy product test" finished-at="2023-05-05T19:21:23 EDT" duration-ms="20678">
+      <class name="us.piit.automation.BuyProduct">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:us.piit.automation.BuyProduct@285c08c8]" started-at="2023-05-05T19:21:02 EDT" name="setup" finished-at="2023-05-05T19:21:07 EDT" duration-ms="4720" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,22 +41,22 @@
             </param>
             <param index="6">
               <value>
-                <![CDATA[https://magento.softwaretestingboard.com/]]>
+                <![CDATA[https://automationexercise.com/category_products/1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validCred()[pri:0, instance:us.piit.luma.LoginTest@666b83a4]" started-at="2023-05-04T19:40:56 EDT" name="validCred" finished-at="2023-05-04T19:40:59 EDT" duration-ms="2935" status="PASS">
+        <test-method signature="menTisherts()[pri:0, instance:us.piit.automation.BuyProduct@285c08c8]" started-at="2023-05-05T19:21:07 EDT" name="menTisherts" finished-at="2023-05-05T19:21:23 EDT" duration-ms="15640" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validCred -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:us.piit.luma.LoginTest@666b83a4]" started-at="2023-05-04T19:40:59 EDT" name="teardown" finished-at="2023-05-04T19:40:59 EDT" duration-ms="260" status="PASS">
+        </test-method> <!-- menTisherts -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:us.piit.automation.BuyProduct@285c08c8]" started-at="2023-05-05T19:21:23 EDT" name="teardown" finished-at="2023-05-05T19:21:23 EDT" duration-ms="258" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- us.piit.luma.LoginTest -->
-    </test> <!-- Login test -->
+      </class> <!-- us.piit.automation.BuyProduct -->
+    </test> <!-- buy product test -->
   </suite> <!-- Lumademo test -->
 </testng-results>

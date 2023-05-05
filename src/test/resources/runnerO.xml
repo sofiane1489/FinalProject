@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Lumademo test">
+    <parameter name="useCloudEnv" value="false"></parameter>
+    <parameter name="envName" value="browserstack"></parameter>
+    <parameter name="os" value="windows"></parameter>
+    <parameter name="osversion" value="11"></parameter>
+    <parameter name="browservesion" value="111"></parameter>
+    <parameter name="browserName" value="chrome"></parameter>
+    <parameter name="url" value="https://automationexercise.com/category_products/1"></parameter>
+
+<!--    <test name="registration test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.automation.UserRegistration"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="user login test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.automation.UserLogin"></class>-->
+
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="buy product test">
+        <classes>
+            <class name="us.piit.automation.BuyProduct"></class>
+        </classes>
+    </test>
+
+</suite>

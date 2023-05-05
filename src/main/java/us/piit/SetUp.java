@@ -107,6 +107,8 @@ public class SetUp {
         }catch(Exception e){
             Select select = new Select(driver.findElement(By.xpath(locator)));
         }
+
+
     }
     public void delete(String locator){
         driver.findElement(By.cssSelector(locator)).sendKeys(Keys.DELETE);

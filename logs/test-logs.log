@@ -66,3 +66,311 @@
 519:40:57.038 [main] INFO  25ogger {36} -password enter success
 519:40:59.055 [main] INFO  32ogger {36} -login success
 519:40:59.316 [main] INFO  74ogger {36} -browser close success
+521:53:28.424 [main] INFO  45ogger {36} -chrome browser open success
+521:53:29.731 [main] INFO  68ogger {36} -landed on website success
+521:53:40.041 [main] INFO  74ogger {36} -browser close success
+521:58:08.567 [main] INFO  45ogger {36} -chrome browser open success
+521:58:10.512 [main] INFO  68ogger {36} -landed on website success
+521:58:14.051 [main] INFO  13ogger {36} -click create account success
+521:58:14.596 [main] INFO  74ogger {36} -browser close success
+522:02:13.895 [main] INFO  45ogger {36} -chrome browser open success
+522:02:15.753 [main] INFO  68ogger {36} -landed on website success
+522:02:17.684 [main] INFO  13ogger {36} -click sign up success
+522:02:25.053 [main] INFO  74ogger {36} -browser close success
+522:03:15.484 [main] INFO  45ogger {36} -chrome browser open success
+522:03:16.892 [main] INFO  68ogger {36} -landed on website success
+522:03:19.065 [main] INFO  13ogger {36} -click sign up success
+522:03:29.361 [main] INFO  74ogger {36} -browser close success
+522:06:07.005 [main] INFO  45ogger {36} -chrome browser open success
+522:06:08.413 [main] INFO  68ogger {36} -landed on website success
+522:06:10.411 [main] INFO  13ogger {36} -click sign up success
+522:06:20.703 [main] INFO  74ogger {36} -browser close success
+522:22:41.525 [main] INFO  45ogger {36} -chrome browser open success
+522:22:43.852 [main] INFO  68ogger {36} -landed on website success
+522:22:46.136 [main] INFO  13ogger {36} -click sign up success
+522:22:46.299 [main] INFO  16ogger {36} -enter name  success
+522:22:46.632 [main] INFO  74ogger {36} -browser close success
+522:30:23.045 [main] INFO  45ogger {36} -chrome browser open success
+522:30:25.746 [main] INFO  68ogger {36} -landed on website success
+522:30:27.786 [main] INFO  13ogger {36} -click sign up success
+522:30:27.944 [main] INFO  16ogger {36} -enter name  success
+522:30:28.146 [main] INFO  74ogger {36} -browser close success
+522:35:30.799 [main] INFO  45ogger {36} -chrome browser open success
+522:35:32.039 [main] INFO  68ogger {36} -landed on website success
+522:35:38.583 [main] INFO  74ogger {36} -browser close success
+522:35:53.018 [main] INFO  45ogger {36} -chrome browser open success
+522:35:54.386 [main] INFO  68ogger {36} -landed on website success
+522:35:56.228 [main] INFO  13ogger {36} -click sign up success
+522:35:56.412 [main] INFO  16ogger {36} -enter name  success
+522:35:56.552 [main] INFO  19ogger {36} -enter email  success
+522:35:57.698 [main] INFO  74ogger {36} -browser close success
+522:44:19.481 [main] INFO  45ogger {36} -chrome browser open success
+522:44:21.477 [main] INFO  68ogger {36} -landed on website success
+522:44:23.763 [main] INFO  13ogger {36} -click sign up success
+522:44:23.910 [main] INFO  16ogger {36} -enter name  success
+522:44:24.019 [main] INFO  19ogger {36} -enter email  success
+522:44:24.415 [main] INFO  74ogger {36} -browser close success
+522:45:36.009 [main] INFO  45ogger {36} -chrome browser open success
+522:45:37.865 [main] INFO  68ogger {36} -landed on website success
+522:45:40.175 [main] INFO  13ogger {36} -click sign up success
+522:45:40.358 [main] INFO  16ogger {36} -enter name  success
+522:45:40.467 [main] INFO  19ogger {36} -enter email  success
+522:45:40.797 [main] INFO  74ogger {36} -browser close success
+522:46:27.399 [main] INFO  45ogger {36} -chrome browser open success
+522:46:30.205 [main] INFO  68ogger {36} -landed on website success
+522:46:31.734 [main] INFO  13ogger {36} -click sign up success
+522:46:31.869 [main] INFO  16ogger {36} -enter name  success
+522:46:31.989 [main] INFO  19ogger {36} -enter email  success
+522:46:36.361 [main] INFO  74ogger {36} -browser close success
+522:46:58.324 [main] INFO  45ogger {36} -chrome browser open success
+522:47:00.198 [main] INFO  68ogger {36} -landed on website success
+522:47:02.323 [main] INFO  13ogger {36} -click sign up success
+522:47:02.487 [main] INFO  16ogger {36} -enter name  success
+522:47:02.605 [main] INFO  19ogger {36} -enter email  success
+522:47:06.958 [main] INFO  74ogger {36} -browser close success
+522:48:16.805 [main] INFO  45ogger {36} -chrome browser open success
+522:48:18.326 [main] INFO  68ogger {36} -landed on website success
+522:48:25.904 [main] INFO  13ogger {36} -click sign up success
+522:48:26.027 [main] INFO  16ogger {36} -enter name  success
+522:48:26.176 [main] INFO  19ogger {36} -enter email  success
+522:48:30.494 [main] INFO  74ogger {36} -browser close success
+522:52:00.411 [main] INFO  45ogger {36} -chrome browser open success
+522:52:02.174 [main] INFO  68ogger {36} -landed on website success
+522:52:04.215 [main] INFO  13ogger {36} -click sign up success
+522:52:04.374 [main] INFO  16ogger {36} -enter name  success
+522:52:04.501 [main] INFO  19ogger {36} -enter email  success
+522:52:10.574 [main] INFO  74ogger {36} -browser close success
+522:57:59.535 [main] INFO  45ogger {36} -chrome browser open success
+522:58:01.085 [main] INFO  68ogger {36} -landed on website success
+522:58:27.420 [main] INFO  74ogger {36} -browser close success
+522:59:39.879 [main] INFO  45ogger {36} -chrome browser open success
+522:59:41.339 [main] INFO  68ogger {36} -landed on website success
+522:59:43.448 [main] INFO  13ogger {36} -click sign up success
+522:59:43.606 [main] INFO  16ogger {36} -enter name  success
+522:59:43.742 [main] INFO  19ogger {36} -enter email  success
+522:59:45.621 [main] INFO  74ogger {36} -browser close success
+523:00:20.021 [main] INFO  45ogger {36} -chrome browser open success
+523:00:22.949 [main] INFO  68ogger {36} -landed on website success
+523:00:24.668 [main] INFO  13ogger {36} -click sign up success
+523:00:24.818 [main] INFO  16ogger {36} -enter name  success
+523:00:24.951 [main] INFO  19ogger {36} -enter email  success
+523:00:31.213 [main] INFO  74ogger {36} -browser close success
+50:04:39.489 [main] INFO  45ogger {36} -chrome browser open success
+50:04:42.387 [main] INFO  68ogger {36} -landed on website success
+50:04:44.414 [main] INFO  13ogger {36} -click sign up success
+50:04:44.596 [main] INFO  16ogger {36} -enter name  success
+50:04:44.749 [main] INFO  19ogger {36} -enter email  success
+50:04:56.607 [main] INFO  74ogger {36} -browser close success
+50:06:07.277 [main] INFO  45ogger {36} -chrome browser open success
+50:06:09.639 [main] INFO  68ogger {36} -landed on website success
+50:06:11.382 [main] INFO  13ogger {36} -click sign up success
+50:06:11.524 [main] INFO  16ogger {36} -enter name  success
+50:06:11.639 [main] INFO  19ogger {36} -enter email  success
+50:06:17.498 [main] INFO  26ogger {36} -enter password success
+50:06:17.596 [main] INFO  29ogger {36} -enter firstname success
+50:06:17.694 [main] INFO  32ogger {36} -enter lastname success
+50:06:17.797 [main] INFO  35ogger {36} -enter company success
+50:06:17.920 [main] INFO  38ogger {36} -enter address success
+50:06:18.170 [main] INFO  43ogger {36} -enter state success
+50:06:18.267 [main] INFO  46ogger {36} -enter city success
+50:06:18.438 [main] INFO  49ogger {36} -enter zipcode success
+50:06:18.523 [main] INFO  52ogger {36} -enter zipcode success
+50:06:25.154 [main] INFO  74ogger {36} -browser close success
+51:00:50.204 [main] INFO  45ogger {36} -chrome browser open success
+51:00:53.122 [main] INFO  68ogger {36} -landed on website success
+51:00:55.448 [main] INFO  13ogger {36} -click sign up success
+51:00:55.633 [main] INFO  16ogger {36} -enter name  success
+51:00:55.768 [main] INFO  19ogger {36} -enter email  success
+51:01:08.151 [main] INFO  74ogger {36} -browser close success
+513:54:53.391 [main] INFO  45ogger {36} -chrome browser open success
+513:54:56.383 [main] INFO  68ogger {36} -landed on website success
+513:54:56.631 [main] INFO  74ogger {36} -browser close success
+513:56:44.718 [main] INFO  45ogger {36} -chrome browser open success
+513:56:48.214 [main] INFO  68ogger {36} -landed on website success
+513:56:50.396 [main] INFO  19ogger {36} -enter email success
+513:56:50.552 [main] INFO  21ogger {36} -enter password success
+513:56:50.672 [main] INFO  23ogger {36} -click on login button Success
+513:56:50.994 [main] INFO  74ogger {36} -browser close success
+513:57:58.799 [main] INFO  45ogger {36} -chrome browser open success
+513:58:01.081 [main] INFO  68ogger {36} -landed on website success
+513:58:03.682 [main] INFO  19ogger {36} -enter email success
+513:58:03.785 [main] INFO  21ogger {36} -enter password success
+513:58:03.907 [main] INFO  23ogger {36} -click on login button Success
+513:58:19.154 [main] INFO  74ogger {36} -browser close success
+513:58:40.768 [main] INFO  45ogger {36} -chrome browser open success
+513:58:42.215 [main] INFO  68ogger {36} -landed on website success
+513:58:44.586 [main] INFO  19ogger {36} -enter email success
+513:58:44.707 [main] INFO  21ogger {36} -enter password success
+513:58:44.849 [main] INFO  23ogger {36} -click on login button Success
+513:58:49.990 [main] INFO  74ogger {36} -browser close success
+513:59:21.973 [main] INFO  45ogger {36} -chrome browser open success
+513:59:24.010 [main] INFO  68ogger {36} -landed on website success
+513:59:24.298 [main] INFO  74ogger {36} -browser close success
+514:00:01.447 [main] INFO  45ogger {36} -chrome browser open success
+514:00:04.190 [main] INFO  68ogger {36} -landed on website success
+514:00:07.138 [main] INFO  19ogger {36} -enter email success
+514:00:07.241 [main] INFO  21ogger {36} -enter password success
+514:00:07.359 [main] INFO  23ogger {36} -click on login button Success
+514:00:12.493 [main] INFO  74ogger {36} -browser close success
+514:03:08.605 [main] INFO  45ogger {36} -chrome browser open success
+514:03:11.323 [main] INFO  68ogger {36} -landed on website success
+514:03:13.103 [main] INFO  19ogger {36} -enter email success
+514:03:13.206 [main] INFO  21ogger {36} -enter password success
+514:03:19.872 [main] INFO  23ogger {36} -click on login button Success
+514:03:25.080 [main] INFO  74ogger {36} -browser close success
+514:04:25.937 [main] INFO  45ogger {36} -chrome browser open success
+514:04:28.751 [main] INFO  68ogger {36} -landed on website success
+514:04:30.882 [main] INFO  19ogger {36} -enter email success
+514:04:31.003 [main] INFO  21ogger {36} -enter password success
+514:04:32.858 [main] INFO  23ogger {36} -click on login button Success
+514:04:38.081 [main] INFO  74ogger {36} -browser close success
+514:09:19.794 [main] INFO  45ogger {36} -chrome browser open success
+514:09:21.257 [main] INFO  68ogger {36} -landed on website success
+514:09:21.289 [main] INFO  17ogger {36} -landed on luma home page success
+514:09:22.062 [main] INFO  20ogger {36} -click on sign in success
+514:09:22.235 [main] INFO  23ogger {36} -email enter success
+514:09:22.335 [main] INFO  26ogger {36} -password enter success
+514:09:24.611 [main] INFO  33ogger {36} -login success
+514:09:24.877 [main] INFO  74ogger {36} -browser close success
+514:09:37.596 [main] INFO  45ogger {36} -chrome browser open success
+514:09:38.953 [main] INFO  68ogger {36} -landed on website success
+514:09:40.784 [main] INFO  19ogger {36} -enter email success
+514:09:40.919 [main] INFO  21ogger {36} -enter password success
+514:09:43.143 [main] INFO  23ogger {36} -click on login button Success
+514:09:49.065 [main] INFO  74ogger {36} -browser close success
+514:14:22.049 [main] INFO  45ogger {36} -chrome browser open success
+514:14:25.179 [main] INFO  68ogger {36} -landed on website success
+514:14:26.557 [main] INFO  19ogger {36} -enter email success
+514:14:26.733 [main] INFO  21ogger {36} -enter password success
+514:14:28.876 [main] INFO  23ogger {36} -click on login button Success
+514:14:34.213 [main] INFO  74ogger {36} -browser close success
+514:16:53.701 [main] INFO  45ogger {36} -chrome browser open success
+514:16:56.171 [main] INFO  68ogger {36} -landed on website success
+514:16:58.391 [main] INFO  19ogger {36} -enter email success
+514:16:58.533 [main] INFO  21ogger {36} -enter password success
+514:17:00.908 [main] INFO  23ogger {36} -click on login button Success
+514:17:06.215 [main] INFO  74ogger {36} -browser close success
+514:41:17.649 [main] INFO  45ogger {36} -chrome browser open success
+514:41:20.568 [main] INFO  68ogger {36} -landed on website success
+514:41:22.718 [main] INFO  41ogger {36} -enter email success
+514:41:22.846 [main] INFO  43ogger {36} -enter password success
+514:41:23.356 [main] INFO  74ogger {36} -browser close success
+514:44:45.755 [main] INFO  45ogger {36} -chrome browser open success
+514:44:47.866 [main] INFO  68ogger {36} -landed on website success
+514:44:49.638 [main] INFO  41ogger {36} -enter email success
+514:44:49.739 [main] INFO  43ogger {36} -enter password success
+514:44:50.828 [main] INFO  74ogger {36} -browser close success
+514:46:33.967 [main] INFO  45ogger {36} -chrome browser open success
+514:46:35.700 [main] INFO  68ogger {36} -landed on website success
+514:47:09.193 [main] INFO  74ogger {36} -browser close success
+514:49:21.058 [main] INFO  45ogger {36} -chrome browser open success
+514:49:23.923 [main] INFO  68ogger {36} -landed on website success
+514:49:26.148 [main] INFO  41ogger {36} -enter email success
+514:49:26.265 [main] INFO  43ogger {36} -enter password success
+514:49:26.657 [main] INFO  74ogger {36} -browser close success
+514:52:11.155 [main] INFO  45ogger {36} -chrome browser open success
+514:52:12.592 [main] INFO  68ogger {36} -landed on website success
+514:52:14.733 [main] INFO  41ogger {36} -enter email success
+514:52:14.859 [main] INFO  43ogger {36} -enter password success
+514:52:16.250 [main] INFO  45ogger {36} -click on login button Success
+514:52:20.330 [main] INFO  52ogger {36} -validate error success
+514:52:20.562 [main] INFO  74ogger {36} -browser close success
+516:48:42.936 [main] INFO  45ogger {36} -chrome browser open success
+516:48:46.075 [main] INFO  68ogger {36} -landed on website success
+516:48:49.566 [main] INFO  19ogger {36} -enter email success
+516:48:49.705 [main] INFO  21ogger {36} -enter password success
+516:48:52.914 [main] INFO  23ogger {36} -click on login button Success
+516:48:58.222 [main] INFO  74ogger {36} -browser close success
+518:34:16.990 [main] INFO  45ogger {36} -chrome browser open success
+518:34:46.060 [main] INFO  45ogger {36} -chrome browser open success
+518:34:50.603 [main] INFO  68ogger {36} -landed on website success
+518:34:52.679 [main] INFO  19ogger {36} -enter email success
+518:34:52.804 [main] INFO  21ogger {36} -enter password success
+518:34:55.392 [main] INFO  23ogger {36} -click on login button Success
+518:35:00.688 [main] INFO  74ogger {36} -browser close success
+518:37:03.262 [main] INFO  45ogger {36} -chrome browser open success
+518:37:07.477 [main] INFO  68ogger {36} -landed on website success
+518:37:10.343 [main] INFO  19ogger {36} -enter email success
+518:37:10.473 [main] INFO  21ogger {36} -enter password success
+518:37:13.140 [main] INFO  23ogger {36} -click on login button Success
+518:37:18.205 [main] INFO  31ogger {36} -user logged in success
+518:37:21.731 [main] INFO  74ogger {36} -browser close success
+518:46:10.935 [main] INFO  45ogger {36} -chrome browser open success
+518:46:15.087 [main] INFO  68ogger {36} -landed on website success
+518:46:17.430 [main] INFO  63ogger {36} -enter email success
+518:46:17.574 [main] INFO  65ogger {36} -enter password success
+518:46:17.671 [main] INFO  67ogger {36} -click on login button Success
+518:46:31.937 [main] INFO  74ogger {36} -browser close success
+518:49:18.754 [main] INFO  45ogger {36} -chrome browser open success
+518:49:22.827 [main] INFO  68ogger {36} -landed on website success
+518:49:25.178 [main] INFO  62ogger {36} -click on login success
+518:49:25.339 [main] INFO  64ogger {36} -enter email success
+518:49:25.468 [main] INFO  66ogger {36} -enter password success
+518:49:25.628 [main] INFO  68ogger {36} -click on login button Success
+518:49:29.771 [main] INFO  74ogger {36} -browser close success
+518:50:06.395 [main] INFO  45ogger {36} -chrome browser open success
+518:50:08.040 [main] INFO  68ogger {36} -landed on website success
+518:50:10.814 [main] INFO  62ogger {36} -click on login success
+518:50:10.990 [main] INFO  64ogger {36} -enter email success
+518:50:11.091 [main] INFO  66ogger {36} -enter password success
+518:50:12.923 [main] INFO  68ogger {36} -click on login button Success
+518:50:17.006 [main] INFO  75ogger {36} -validate error success
+518:50:17.250 [main] INFO  74ogger {36} -browser close success
+518:54:38.254 [main] INFO  45ogger {36} -chrome browser open success
+518:54:40.343 [main] INFO  68ogger {36} -landed on website success
+518:54:42.948 [main] INFO  62ogger {36} -click on login success
+518:54:43.115 [main] INFO  64ogger {36} -enter email success
+518:54:43.217 [main] INFO  66ogger {36} -enter password success
+518:54:45.351 [main] INFO  68ogger {36} -click on login button Success
+518:54:49.445 [main] INFO  75ogger {36} -validate error success
+518:54:49.670 [main] INFO  74ogger {36} -browser close success
+518:54:50.628 [main] INFO  45ogger {36} -chrome browser open success
+518:54:57.589 [main] INFO  68ogger {36} -landed on website success
+518:54:59.783 [main] INFO  42ogger {36} -enter email success
+518:54:59.910 [main] INFO  44ogger {36} -enter password success
+518:55:02.035 [main] INFO  46ogger {36} -click on login button Success
+518:55:06.133 [main] INFO  53ogger {36} -validate error success
+518:55:06.500 [main] INFO  74ogger {36} -browser close success
+518:55:07.308 [main] INFO  45ogger {36} -chrome browser open success
+518:55:10.688 [main] INFO  68ogger {36} -landed on website success
+518:55:12.343 [main] INFO  20ogger {36} -enter email success
+518:55:12.424 [main] INFO  22ogger {36} -enter password success
+518:55:14.771 [main] INFO  24ogger {36} -click on login button Success
+518:55:20.101 [main] INFO  74ogger {36} -browser close success
+518:59:35.442 [main] INFO  45ogger {36} -chrome browser open success
+518:59:38.239 [main] INFO  68ogger {36} -landed on website success
+518:59:39.656 [main] INFO  62ogger {36} -click on login success
+518:59:39.792 [main] INFO  64ogger {36} -enter email success
+518:59:39.879 [main] INFO  66ogger {36} -enter password success
+518:59:41.450 [main] INFO  68ogger {36} -click on login button Success
+518:59:45.549 [main] INFO  75ogger {36} -validate error success
+518:59:45.772 [main] INFO  74ogger {36} -browser close success
+518:59:46.762 [main] INFO  45ogger {36} -chrome browser open success
+518:59:50.235 [main] INFO  68ogger {36} -landed on website success
+518:59:52.036 [main] INFO  74ogger {36} -browser close success
+518:59:53.099 [main] INFO  45ogger {36} -chrome browser open success
+518:59:54.626 [main] INFO  68ogger {36} -landed on website success
+518:59:57.811 [main] INFO  20ogger {36} -enter email success
+518:59:57.900 [main] INFO  22ogger {36} -enter password success
+519:00:40.223 [main] INFO  45ogger {36} -chrome browser open success
+519:00:41.868 [main] INFO  68ogger {36} -landed on website success
+519:00:46.363 [main] INFO  19ogger {36} -enter email success
+519:00:46.477 [main] INFO  21ogger {36} -enter password success
+519:00:50.126 [main] INFO  23ogger {36} -click on login button Success
+519:00:55.178 [main] INFO  31ogger {36} -user logged in success
+519:00:58.687 [main] INFO  74ogger {36} -browser close success
+519:04:26.946 [main] INFO  45ogger {36} -chrome browser open success
+519:04:28.856 [main] INFO  68ogger {36} -landed on website success
+519:06:52.864 [main] INFO  74ogger {36} -browser close success
+519:12:33.093 [main] INFO  45ogger {36} -chrome browser open success
+519:12:34.950 [main] INFO  68ogger {36} -landed on website success
+519:12:48.125 [main] INFO  74ogger {36} -browser close success
+519:15:05.375 [main] INFO  45ogger {36} -chrome browser open success
+519:15:09.143 [main] INFO  68ogger {36} -landed on website success
+519:15:10.723 [main] INFO  74ogger {36} -browser close success
+519:15:27.453 [main] INFO  45ogger {36} -chrome browser open success
+519:15:29.442 [main] INFO  68ogger {36} -landed on website success
+519:15:44.602 [main] INFO  74ogger {36} -browser close success
+519:21:05.285 [main] INFO  45ogger {36} -chrome browser open success
+519:21:07.494 [main] INFO  68ogger {36} -landed on website success
+519:21:23.401 [main] INFO  74ogger {36} -browser close success
