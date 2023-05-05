@@ -2,6 +2,7 @@ package us.piit;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -22,7 +23,6 @@ import org.testng.annotations.BeforeMethod;
 public class SetUp {
     Logger log= LogManager.getLogger(SetUp.class.getName());
     WebDriver driver;
-
     //this method is to run in the cloud
     public void getCloudDriver(String envName,String os,String osVersion,String browserName,String browserVersion,String username,String password) throws MalformedURLException, MalformedURLException {
         DesiredCapabilities cap=new DesiredCapabilities();
@@ -76,7 +76,8 @@ public class SetUp {
 
     //-------------------------------------------------------------------------------------------------------------------
     //                                         Selenium methods
-    //-------------------------------------------------------------------------------------------------------------------
+    //------------------------------------------------------------------------------------------------------------------
+
     public String getCurrentTtile(){
         return driver.getTitle();
     }
@@ -101,6 +102,14 @@ public class SetUp {
             driver.findElement(By.xpath(locator)).sendKeys(text);
         }
     }
+    public void typeEnter(String locator,String text){
+        try{
+            driver.findElement(By.xpath(locator)).sendKeys(text,Keys.ENTER);
+        }catch(Exception e){
+            driver.findElement(By.cssSelector(locator)).sendKeys(text,Keys.ENTER);
+        }
+    }
+
     public void select(String locator){
         try {
             Select select = new Select(driver.findElement(By.cssSelector(locator)));
@@ -108,19 +117,30 @@ public class SetUp {
             Select select = new Select(driver.findElement(By.xpath(locator)));
         }
     }
+    public void selectBy(String locator,String value){
+        try {
+            Select select = new Select(driver.findElement(By.cssSelector(locator)));
+            select.selectByVisibleText(value);
+        }catch(Exception e){
+            Select select = new Select(driver.findElement(By.xpath(locator)));
+            select.selectByVisibleText(value);
+        }
+    }
     public void delete(String locator){
-        driver.findElement(By.cssSelector(locator)).sendKeys(Keys.DELETE);
+        try {
+            driver.findElement(By.cssSelector(locator)).sendKeys(Keys.DELETE);
+        }catch(Exception e){
+            driver.findElement(By.xpath(locator)).sendKeys(Keys.DELETE);
+        }
     }
     public void hoverOver(String locator){
         Actions action=new Actions(driver);
         try{
-            action.moveToElement(driver.findElement(By.cssSelector(locator))).build().perform(); ;
+            action.moveToElement(driver.findElement(By.cssSelector(locator))).build().perform();
         }catch (Exception e){
-            action.moveToElement(driver.findElement(By.xpath(locator))).build().perform(); ;
+            action.moveToElement(driver.findElement(By.xpath(locator))).build().perform();
         }
     }
-
-    //we handle the throw with try and catch to avoid another mistake in the class where we are going to use it
     public void waitFor(int seconds){
         try {
             Thread.sleep(seconds*1000);
