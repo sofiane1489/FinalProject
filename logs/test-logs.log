@@ -158,3 +158,130 @@
 520:51:19.830 [main] INFO  45ogger {36} -chrome browser open success
 520:51:21.474 [main] INFO  68ogger {36} -landed on website success
 520:51:28.827 [main] INFO  74ogger {36} -browser close success
+521:36:30.886 [main] INFO  45ogger {36} -chrome browser open success
+521:36:46.003 [main] INFO  68ogger {36} -landed on website success
+521:36:46.021 [main] INFO  44ogger {36} -landed on luma home page success
+521:36:47.418 [main] INFO  47ogger {36} -click on sign in success
+521:36:47.646 [main] INFO  50ogger {36} -email enter success
+521:36:47.777 [main] INFO  53ogger {36} -password enter success
+521:36:47.857 [main] INFO  56ogger {36} -click on sign in success
+521:36:47.914 [main] INFO  62ogger {36} -validate error success
+521:36:48.438 [main] INFO  74ogger {36} -browser close success
+521:36:49.615 [main] INFO  45ogger {36} -chrome browser open success
+521:36:51.050 [main] INFO  68ogger {36} -landed on website success
+521:36:51.062 [main] INFO  71ogger {36} -landed on luma home page success
+521:36:51.855 [main] INFO  74ogger {36} -click on sign in success
+521:36:52.087 [main] INFO  77ogger {36} -email enter success
+521:36:52.165 [main] INFO  80ogger {36} -password enter success
+521:36:52.251 [main] INFO  83ogger {36} -click on sign in success
+521:36:52.291 [main] INFO  89ogger {36} -validate error success
+521:36:52.771 [main] INFO  74ogger {36} -browser close success
+521:36:53.934 [main] INFO  45ogger {36} -chrome browser open success
+521:36:55.649 [main] INFO  68ogger {36} -landed on website success
+521:36:55.671 [main] INFO  17ogger {36} -landed on luma home page success
+521:36:56.658 [main] INFO  20ogger {36} -click on sign in success
+521:36:56.842 [main] INFO  23ogger {36} -email enter success
+521:36:56.921 [main] INFO  26ogger {36} -password enter success
+521:36:58.735 [main] INFO  29ogger {36} -click on sign in success
+521:37:00.220 [main] INFO  35ogger {36} -login success
+521:37:00.787 [main] INFO  74ogger {36} -browser close success
+521:37:02.015 [main] INFO  45ogger {36} -chrome browser open success
+521:37:03.405 [main] INFO  68ogger {36} -landed on website success
+521:37:03.415 [main] INFO  17ogger {36} -landed on luma home page success
+521:37:04.267 [main] INFO  20ogger {36} -click on sign in success
+521:37:04.450 [main] INFO  23ogger {36} -email enter success
+521:37:04.529 [main] INFO  26ogger {36} -password enter success
+521:37:05.883 [main] INFO  29ogger {36} -click on sign in success
+521:37:06.773 [main] INFO  35ogger {36} -login success
+521:37:07.772 [main] INFO  39ogger {36} -click on men section success
+521:37:09.269 [main] INFO  41ogger {36} -click on Top48 success
+521:37:29.587 [main] INFO  74ogger {36} -browser close success
+521:49:35.953 [main] INFO  45ogger {36} -chrome browser open success
+521:49:37.423 [main] INFO  68ogger {36} -landed on website success
+521:49:37.436 [main] INFO  44ogger {36} -landed on luma home page success
+521:49:38.418 [main] INFO  47ogger {36} -click on sign in success
+521:49:38.523 [main] INFO  50ogger {36} -email enter success
+521:49:38.599 [main] INFO  53ogger {36} -password enter success
+521:49:38.683 [main] INFO  56ogger {36} -click on sign in success
+521:49:38.726 [main] INFO  62ogger {36} -validate error success
+521:49:39.223 [main] INFO  74ogger {36} -browser close success
+521:49:40.379 [main] INFO  45ogger {36} -chrome browser open success
+521:49:41.994 [main] INFO  68ogger {36} -landed on website success
+521:49:42.003 [main] INFO  71ogger {36} -landed on luma home page success
+521:49:42.757 [main] INFO  74ogger {36} -click on sign in success
+521:49:42.954 [main] INFO  77ogger {36} -email enter success
+521:49:43.048 [main] INFO  80ogger {36} -password enter success
+521:49:43.130 [main] INFO  83ogger {36} -click on sign in success
+521:49:43.169 [main] INFO  89ogger {36} -validate error success
+521:49:43.704 [main] INFO  74ogger {36} -browser close success
+521:49:44.854 [main] INFO  45ogger {36} -chrome browser open success
+521:49:46.224 [main] INFO  68ogger {36} -landed on website success
+521:49:46.234 [main] INFO  17ogger {36} -landed on luma home page success
+521:49:47.020 [main] INFO  20ogger {36} -click on sign in success
+521:49:47.203 [main] INFO  23ogger {36} -email enter success
+521:49:47.308 [main] INFO  26ogger {36} -password enter success
+521:49:48.838 [main] INFO  29ogger {36} -click on sign in success
+521:49:49.901 [main] INFO  35ogger {36} -login success
+521:49:50.439 [main] INFO  74ogger {36} -browser close success
+521:49:51.604 [main] INFO  45ogger {36} -chrome browser open success
+521:49:53.063 [main] INFO  68ogger {36} -landed on website success
+521:49:53.071 [main] INFO  17ogger {36} -landed on luma home page success
+521:49:53.826 [main] INFO  20ogger {36} -click on sign in success
+521:49:54.007 [main] INFO  23ogger {36} -email enter success
+521:49:54.117 [main] INFO  26ogger {36} -password enter success
+521:49:55.533 [main] INFO  29ogger {36} -click on sign in success
+521:49:56.530 [main] INFO  35ogger {36} -login success
+521:49:57.504 [main] INFO  39ogger {36} -click on men section success
+521:49:58.745 [main] INFO  41ogger {36} -click on Top48 success
+521:49:59.882 [main] INFO  44ogger {36} -click on Cassius Sparring Tank success
+521:50:00.044 [main] INFO  46ogger {36} -click on size S success
+521:50:00.164 [main] INFO  48ogger {36} -click on color success
+521:50:00.248 [main] INFO  50ogger {36} -delete quantity success
+521:50:00.304 [main] INFO  52ogger {36} -update quantity success
+521:50:00.386 [main] INFO  54ogger {36} -click on add To car button success
+521:50:02.841 [main] INFO  74ogger {36} -browser close success
+521:50:52.856 [main] INFO  45ogger {36} -chrome browser open success
+521:50:54.405 [main] INFO  68ogger {36} -landed on website success
+521:50:54.418 [main] INFO  44ogger {36} -landed on luma home page success
+521:50:55.221 [main] INFO  47ogger {36} -click on sign in success
+521:50:55.401 [main] INFO  50ogger {36} -email enter success
+521:50:55.514 [main] INFO  53ogger {36} -password enter success
+521:50:55.595 [main] INFO  56ogger {36} -click on sign in success
+521:50:55.639 [main] INFO  62ogger {36} -validate error success
+521:50:56.138 [main] INFO  74ogger {36} -browser close success
+521:50:57.275 [main] INFO  45ogger {36} -chrome browser open success
+521:50:58.697 [main] INFO  68ogger {36} -landed on website success
+521:50:58.710 [main] INFO  71ogger {36} -landed on luma home page success
+521:50:59.581 [main] INFO  74ogger {36} -click on sign in success
+521:50:59.782 [main] INFO  77ogger {36} -email enter success
+521:50:59.854 [main] INFO  80ogger {36} -password enter success
+521:50:59.952 [main] INFO  83ogger {36} -click on sign in success
+521:50:59.988 [main] INFO  89ogger {36} -validate error success
+521:51:00.486 [main] INFO  74ogger {36} -browser close success
+521:51:01.605 [main] INFO  45ogger {36} -chrome browser open success
+521:51:03.167 [main] INFO  68ogger {36} -landed on website success
+521:51:03.177 [main] INFO  17ogger {36} -landed on luma home page success
+521:51:04.030 [main] INFO  20ogger {36} -click on sign in success
+521:51:04.215 [main] INFO  23ogger {36} -email enter success
+521:51:04.323 [main] INFO  26ogger {36} -password enter success
+521:51:05.559 [main] INFO  29ogger {36} -click on sign in success
+521:51:06.485 [main] INFO  35ogger {36} -login success
+521:51:07.035 [main] INFO  74ogger {36} -browser close success
+521:51:08.189 [main] INFO  45ogger {36} -chrome browser open success
+521:51:09.602 [main] INFO  68ogger {36} -landed on website success
+521:51:09.611 [main] INFO  17ogger {36} -landed on luma home page success
+521:51:10.365 [main] INFO  20ogger {36} -click on sign in success
+521:51:10.553 [main] INFO  23ogger {36} -email enter success
+521:51:10.642 [main] INFO  26ogger {36} -password enter success
+521:51:11.902 [main] INFO  29ogger {36} -click on sign in success
+521:51:12.736 [main] INFO  35ogger {36} -login success
+521:51:13.369 [main] INFO  39ogger {36} -click on men section success
+521:51:14.169 [main] INFO  41ogger {36} -click on Top48 success
+521:51:14.968 [main] INFO  44ogger {36} -click on Cassius Sparring Tank success
+521:51:15.326 [main] INFO  46ogger {36} -click on size S success
+521:51:15.483 [main] INFO  48ogger {36} -click on color success
+521:51:15.554 [main] INFO  50ogger {36} -delete quantity success
+521:51:15.600 [main] INFO  52ogger {36} -update quantity success
+521:51:15.662 [main] INFO  54ogger {36} -click on add To car button success
+521:51:17.253 [main] INFO  60ogger {36} -added to car success
+521:51:17.852 [main] INFO  74ogger {36} -browser close success
