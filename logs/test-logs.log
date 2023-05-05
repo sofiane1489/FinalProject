@@ -66,3 +66,95 @@
 519:40:57.038 [main] INFO  25ogger {36} -password enter success
 519:40:59.055 [main] INFO  32ogger {36} -login success
 519:40:59.316 [main] INFO  74ogger {36} -browser close success
+520:03:51.330 [main] INFO  45ogger {36} -chrome browser open success
+520:03:53.861 [main] INFO  68ogger {36} -landed on website success
+520:03:53.871 [main] INFO  17ogger {36} -landed on luma home page success
+520:03:55.387 [main] INFO  20ogger {36} -click on sign in success
+520:03:55.514 [main] INFO  23ogger {36} -email enter success
+520:03:55.587 [main] INFO  26ogger {36} -password enter success
+520:03:58.684 [main] INFO  33ogger {36} -login success
+520:03:59.004 [main] INFO  74ogger {36} -browser close success
+520:28:09.373 [main] INFO  45ogger {36} -chrome browser open success
+520:28:17.443 [main] INFO  68ogger {36} -landed on website success
+520:28:17.458 [main] INFO  17ogger {36} -landed on luma home page success
+520:28:18.583 [main] INFO  20ogger {36} -click on sign in success
+520:28:18.705 [main] INFO  23ogger {36} -email enter success
+520:28:18.763 [main] INFO  26ogger {36} -password enter success
+520:28:20.456 [main] INFO  29ogger {36} -click on sign in success
+520:28:21.688 [main] INFO  35ogger {36} -login success
+520:28:21.998 [main] INFO  74ogger {36} -browser close success
+520:34:09.483 [main] INFO  45ogger {36} -chrome browser open success
+520:34:11.734 [main] INFO  68ogger {36} -landed on website success
+520:34:11.743 [main] INFO  45ogger {36} -landed on luma home page success
+520:34:12.834 [main] INFO  48ogger {36} -click on sign in success
+520:34:12.993 [main] INFO  51ogger {36} -email enter success
+520:34:13.078 [main] INFO  54ogger {36} -password enter success
+520:34:13.143 [main] INFO  57ogger {36} -click on sign in success
+520:34:13.173 [main] INFO  63ogger {36} -validate error success
+520:34:13.585 [main] INFO  74ogger {36} -browser close success
+520:34:14.907 [main] INFO  45ogger {36} -chrome browser open success
+520:34:16.411 [main] INFO  68ogger {36} -landed on website success
+520:34:16.419 [main] INFO  17ogger {36} -landed on luma home page success
+520:34:17.199 [main] INFO  20ogger {36} -click on sign in success
+520:34:17.410 [main] INFO  23ogger {36} -email enter success
+520:34:17.484 [main] INFO  26ogger {36} -password enter success
+520:34:18.897 [main] INFO  29ogger {36} -click on sign in success
+520:34:20.292 [main] INFO  35ogger {36} -login success
+520:34:20.559 [main] INFO  74ogger {36} -browser close success
+520:42:08.732 [main] INFO  45ogger {36} -chrome browser open success
+520:42:10.558 [main] INFO  68ogger {36} -landed on website success
+520:42:10.568 [main] INFO  45ogger {36} -landed on luma home page success
+520:42:11.252 [main] INFO  48ogger {36} -click on sign in success
+520:42:11.365 [main] INFO  51ogger {36} -email enter success
+520:42:11.416 [main] INFO  54ogger {36} -password enter success
+520:42:11.459 [main] INFO  57ogger {36} -click on sign in success
+520:42:11.485 [main] INFO  63ogger {36} -validate error success
+520:42:11.753 [main] INFO  74ogger {36} -browser close success
+520:42:12.571 [main] INFO  45ogger {36} -chrome browser open success
+520:42:13.967 [main] INFO  68ogger {36} -landed on website success
+520:42:13.971 [main] INFO  72ogger {36} -landed on luma home page success
+520:42:14.673 [main] INFO  75ogger {36} -click on sign in success
+520:42:14.782 [main] INFO  78ogger {36} -email enter success
+520:42:14.827 [main] INFO  81ogger {36} -password enter success
+520:42:14.874 [main] INFO  84ogger {36} -click on sign in success
+520:42:14.907 [main] INFO  90ogger {36} -validate error success
+520:42:15.145 [main] INFO  74ogger {36} -browser close success
+520:42:15.986 [main] INFO  45ogger {36} -chrome browser open success
+520:42:18.288 [main] INFO  68ogger {36} -landed on website success
+520:42:18.298 [main] INFO  17ogger {36} -landed on luma home page success
+520:42:19.068 [main] INFO  20ogger {36} -click on sign in success
+520:42:19.179 [main] INFO  23ogger {36} -email enter success
+520:42:19.228 [main] INFO  26ogger {36} -password enter success
+520:42:20.767 [main] INFO  29ogger {36} -click on sign in success
+520:42:21.829 [main] INFO  35ogger {36} -login success
+520:42:22.138 [main] INFO  74ogger {36} -browser close success
+520:51:06.968 [main] INFO  45ogger {36} -chrome browser open success
+520:51:09.076 [main] INFO  68ogger {36} -landed on website success
+520:51:09.084 [main] INFO  44ogger {36} -landed on luma home page success
+520:51:09.797 [main] INFO  47ogger {36} -click on sign in success
+520:51:09.910 [main] INFO  50ogger {36} -email enter success
+520:51:09.958 [main] INFO  53ogger {36} -password enter success
+520:51:10.007 [main] INFO  56ogger {36} -click on sign in success
+520:51:10.036 [main] INFO  62ogger {36} -validate error success
+520:51:10.292 [main] INFO  74ogger {36} -browser close success
+520:51:11.109 [main] INFO  45ogger {36} -chrome browser open success
+520:51:12.345 [main] INFO  68ogger {36} -landed on website success
+520:51:12.350 [main] INFO  71ogger {36} -landed on luma home page success
+520:51:13.066 [main] INFO  74ogger {36} -click on sign in success
+520:51:13.176 [main] INFO  77ogger {36} -email enter success
+520:51:13.220 [main] INFO  80ogger {36} -password enter success
+520:51:13.264 [main] INFO  83ogger {36} -click on sign in success
+520:51:13.293 [main] INFO  89ogger {36} -validate error success
+520:51:13.547 [main] INFO  74ogger {36} -browser close success
+520:51:14.369 [main] INFO  45ogger {36} -chrome browser open success
+520:51:15.709 [main] INFO  68ogger {36} -landed on website success
+520:51:15.713 [main] INFO  17ogger {36} -landed on luma home page success
+520:51:16.424 [main] INFO  20ogger {36} -click on sign in success
+520:51:16.536 [main] INFO  23ogger {36} -email enter success
+520:51:16.586 [main] INFO  26ogger {36} -password enter success
+520:51:17.840 [main] INFO  29ogger {36} -click on sign in success
+520:51:18.714 [main] INFO  35ogger {36} -login success
+520:51:18.977 [main] INFO  74ogger {36} -browser close success
+520:51:19.830 [main] INFO  45ogger {36} -chrome browser open success
+520:51:21.474 [main] INFO  68ogger {36} -landed on website success
+520:51:28.827 [main] INFO  74ogger {36} -browser close success

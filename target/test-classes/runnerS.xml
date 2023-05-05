@@ -19,6 +19,11 @@
                 <class name="us.piit.luma.LoginTest"></class>
             </classes>
     </test>
+    <test name="AddToCar test">
+        <classes>
+            <class name="us.piit.luma.AddItemToCar"></class>
+        </classes>
+    </test>
 
 
 </suite>
