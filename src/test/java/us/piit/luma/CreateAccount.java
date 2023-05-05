@@ -1,5 +1,4 @@
 package us.piit.luma;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
@@ -7,7 +6,7 @@ import org.testng.annotations.Test;
 import us.piit.SetUp;
 
 public class CreateAccount extends SetUp {
-    Logger log= LogManager.getLogger(SetUp.class.getName());
+ //   Logger log= LogManager.getLogger(SetUp.class.getName());
 //    @Test
 //    public void createAccount(){
 //
@@ -40,6 +39,5 @@ public class CreateAccount extends SetUp {
 //
 //        waitFor(4);
 //    }
-
 
 }
