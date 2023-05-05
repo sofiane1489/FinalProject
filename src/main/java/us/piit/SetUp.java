@@ -57,7 +57,7 @@ public class SetUp {
                       @Optional("11") String osversion, @Optional("chrome") String browserName,
                       @Optional("111") String browservesion, @Optional("https://www.google.com") String url) throws MalformedURLException {
         if(useCloudEnv.equalsIgnoreCase("true")){
-            getCloudDriver(envName,os,osversion,browserName,browservesion,"sofianesehad_ClW76g","2f3G7QUqgScR9c7bbahr");
+            getCloudDriver(envName,os,osversion,browserName,browservesion,"yahiakara_kBasyo","M2EEjUqg3wYRpd25QKi3");
         } else if (useCloudEnv.equalsIgnoreCase("false")) {
             getLocalDriver(browserName);
         }

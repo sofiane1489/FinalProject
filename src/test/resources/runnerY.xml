@@ -7,18 +7,18 @@
     <parameter name="osversion" value="11"></parameter>
     <parameter name="browservesion" value="111"></parameter>
     <parameter name="browserName" value="chrome"></parameter>
-    <parameter name="url" value=""></parameter>
+    <parameter name="url" value="http://automationpractice.pl/"></parameter>
 
-<!--    <test name="create account test">-->
+<!--    <test name="registration test">-->
 <!--        <classes>-->
-<!--            <class name="us.piit.luma.CreateAccount"></class>-->
+<!--            <class name="us.piit.automationpractice.UserRegistration"></class>-->
 <!--        </classes>-->
 <!--    </test>-->
-<!--    <test name="Login test">-->
-<!--        <classes>-->
-<!--            <class name="us.piit.luma.LoginTest"></class>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="Login test">
+        <classes>
+            <class name="us.piit.automationpractice.LoginTest"></class>
+        </classes>
+    </test>
 
 
 </suite>
