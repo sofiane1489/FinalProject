@@ -9,7 +9,7 @@
     <parameter name="browserName" value="chrome"></parameter>
     <parameter name="url" value="https://magento.softwaretestingboard.com/"></parameter>
 
-    <test name="signup  test">
+    <test name="create account test">
         <classes>
             <class name="us.piit.luma.CreateAccount"></class>
         </classes>
@@ -29,11 +29,10 @@
             <class name="us.piit.luma.SearchBarTest"></class>
         </classes>
     </test>
-    <test name="create account test">
+    <test name="purchase test">
         <classes>
             <class name="us.piit.luma.PurchaseItemTest"></class>
         </classes>
     </test>
-
 
 </suite>

@@ -61,7 +61,7 @@ public class PurchaseItemTest extends SetUp {
         clickOn("//span[text()='Next']");
         log.info("click on next success");
 
-         waitFor(2);
+         waitFor(3);
          clickOn("//button[@title='Place Order']");
 
           log.info("click on place order success");

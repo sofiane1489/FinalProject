@@ -181,21 +181,6 @@
           <div class="suite-Lumademo_test-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">us.piit.luma.SearchBarTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="searchTest">
-                  </a> <!-- searchTest -->
-                  <span class="method-name">searchTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Lumademo_test-class-passed -->
-          <div class="suite-Lumademo_test-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">us.piit.luma.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -218,6 +203,21 @@
                   <a name="validCred">
                   </a> <!-- validCred -->
                   <span class="method-name">validCred</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Lumademo_test-class-passed -->
+          <div class="suite-Lumademo_test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">us.piit.luma.SearchBarTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchTest">
+                  </a> <!-- searchTest -->
+                  <span class="method-name">searchTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -254,11 +254,11 @@
   &lt;parameter name=&quot;browserName&quot; value=&quot;chrome&quot;/&gt;
   &lt;parameter name=&quot;osversion&quot; value=&quot;11&quot;/&gt;
   &lt;parameter name=&quot;url&quot; value=&quot;https://magento.softwaretestingboard.com/&quot;/&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;signup  test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;create account test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;us.piit.luma.CreateAccount&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- signup  test --&gt;
+  &lt;/test&gt; &lt;!-- create account test --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Login test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;us.piit.luma.LoginTest&quot;/&gt;
@@ -274,11 +274,11 @@
       &lt;class name=&quot;us.piit.luma.SearchBarTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- searchbar test --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;create account test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;purchase test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;us.piit.luma.PurchaseItemTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- create account test --&gt;
+  &lt;/test&gt; &lt;!-- purchase test --&gt;
 &lt;/suite&gt; &lt;!-- Lumademo test --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -290,7 +290,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">signup  test (1 class)</span>
+                <span class="test-name">create account test (1 class)</span>
               </li>
               <li>
                 <span class="test-name">Login test (1 class)</span>
@@ -302,7 +302,7 @@
                 <span class="test-name">searchbar test (1 class)</span>
               </li>
               <li>
-                <span class="test-name">create account test (1 class)</span>
+                <span class="test-name">purchase test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -332,36 +332,36 @@ data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'purchaseItem')
 data.setCell(0, 2, 'us.piit.luma.PurchaseItemTest')
-data.setCell(0, 3, 11392);
+data.setCell(0, 3, 16108);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'addItem')
-data.setCell(1, 2, 'us.piit.luma.AddItemToCart')
-data.setCell(1, 3, 6406);
+data.setCell(1, 1, 'searchTest')
+data.setCell(1, 2, 'us.piit.luma.SearchBarTest')
+data.setCell(1, 3, 13560);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'createWithExistingEmail')
-data.setCell(2, 2, 'us.piit.luma.CreateAccount')
-data.setCell(2, 3, 4698);
+data.setCell(2, 1, 'addItem')
+data.setCell(2, 2, 'us.piit.luma.AddItemToCart')
+data.setCell(2, 3, 8368);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'validCred')
 data.setCell(3, 2, 'us.piit.luma.LoginTest')
-data.setCell(3, 3, 2983);
+data.setCell(3, 3, 3235);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'searchTest')
-data.setCell(4, 2, 'us.piit.luma.SearchBarTest')
-data.setCell(4, 3, 1693);
+data.setCell(4, 1, 'createWithExistingEmail')
+data.setCell(4, 2, 'us.piit.luma.CreateAccount')
+data.setCell(4, 3, 2747);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'invalidEmail')
+data.setCell(5, 1, 'missingPassword')
 data.setCell(5, 2, 'us.piit.luma.LoginTest')
-data.setCell(5, 3, 1115);
+data.setCell(5, 3, 1218);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'missingPassword')
+data.setCell(6, 1, 'invalidEmail')
 data.setCell(6, 2, 'us.piit.luma.LoginTest')
-data.setCell(6, 3, 1104);
+data.setCell(6, 3, 981);
 window.suiteTableData['Lumademo_test']= { tableData: data, tableDiv: 'times-div-Lumademo_test'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 29 seconds</span>
+              <span class="suite-total-time">Total running time: 46 seconds</span>
               <div id="times-div-Lumademo_test">
               </div> <!-- times-div-Lumademo_test -->
             </div> <!-- times-div -->
@@ -394,95 +394,95 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createWithExistingEmail</span>
-                <span class="method-start">3041 ms</span>
+                <span class="method-start">3936 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">7740 ms</span>
+                <span class="method-start">6685 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">us.piit.luma.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup(false, browserstack, windows, 11, chrome, 111, https://magento.softwaretestingboard.com/)</span>
-                <span class="method-start">8077 ms</span>
+                <span class="method-start">7066 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidEmail</span>
-                <span class="method-start">10289 ms</span>
+                <span class="method-start">9415 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">11404 ms</span>
+                <span class="method-start">10396 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup(false, browserstack, windows, 11, chrome, 111, https://magento.softwaretestingboard.com/)</span>
-                <span class="method-start">11716 ms</span>
+                <span class="method-start">10769 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">missingPassword</span>
-                <span class="method-start">13703 ms</span>
+                <span class="method-start">13027 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">14808 ms</span>
+                <span class="method-start">14246 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup(false, browserstack, windows, 11, chrome, 111, https://magento.softwaretestingboard.com/)</span>
-                <span class="method-start">15111 ms</span>
+                <span class="method-start">14697 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validCred</span>
-                <span class="method-start">17134 ms</span>
+                <span class="method-start">17197 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">20117 ms</span>
+                <span class="method-start">20432 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">us.piit.luma.AddItemToCart</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup(false, browserstack, windows, 11, chrome, 111, https://magento.softwaretestingboard.com/)</span>
-                <span class="method-start">20361 ms</span>
+                <span class="method-start">20953 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addItem</span>
-                <span class="method-start">22397 ms</span>
+                <span class="method-start">23739 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">28804 ms</span>
+                <span class="method-start">32111 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">us.piit.luma.SearchBarTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup(false, browserstack, windows, 11, chrome, 111, https://magento.softwaretestingboard.com/)</span>
-                <span class="method-start">29062 ms</span>
+                <span class="method-start">32716 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">searchTest</span>
-                <span class="method-start">30962 ms</span>
+                <span class="method-start">35441 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">32656 ms</span>
+                <span class="method-start">49001 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">us.piit.luma.PurchaseItemTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup(false, browserstack, windows, 11, chrome, 111, https://magento.softwaretestingboard.com/)</span>
-                <span class="method-start">32972 ms</span>
+                <span class="method-start">49569 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">purchaseItem</span>
-                <span class="method-start">35148 ms</span>
+                <span class="method-start">52301 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">46540 ms</span>
+                <span class="method-start">68411 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
