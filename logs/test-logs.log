@@ -2438,3 +2438,307 @@
 516:39:12.948 [main] INFO  67ogger {36} -click on place order success
 516:39:15.268 [main] INFO  73ogger {36} -purchase validation success
 516:39:15.642 [main] INFO  74ogger {36} -browser close success
+516:59:19.756 [main] INFO  45ogger {36} -chrome browser open success
+516:59:20.973 [main] INFO  68ogger {36} -landed on website success
+516:59:21.234 [main] INFO  13ogger {36} -hover over Gear success
+516:59:21.787 [main] INFO  15ogger {36} -click on Fitness Equipment success
+516:59:22.376 [main] INFO  17ogger {36} -click on item Band success
+516:59:22.551 [main] INFO  19ogger {36} -click on add to cart button success
+516:59:23.713 [main] INFO  25ogger {36} -item added to cart success
+516:59:25.036 [main] INFO  29ogger {36} -click on shopping cart success
+516:59:25.894 [main] INFO  31ogger {36} -click on proceed to checkout  cart success
+516:59:26.806 [main] INFO  33ogger {36} -type email success
+516:59:26.889 [main] INFO  36ogger {36} -type first name success
+516:59:26.953 [main] INFO  39ogger {36} -type last name success
+516:59:27.022 [main] INFO  42ogger {36} -type company name success
+516:59:27.107 [main] INFO  45ogger {36} -type street address success
+516:59:27.204 [main] INFO  48ogger {36} -type city success
+516:59:27.351 [main] INFO  53ogger {36} -type postcode success
+516:59:27.432 [main] INFO  56ogger {36} -type phone number success
+516:59:27.484 [main] INFO  59ogger {36} -selcect Shipping Methods success
+516:59:27.533 [main] INFO  62ogger {36} -click on next success
+516:59:29.588 [main] INFO  67ogger {36} -click on place order success
+516:59:32.058 [main] INFO  73ogger {36} -purchase validation success
+516:59:32.462 [main] INFO  74ogger {36} -browser close success
+517:17:10.763 [main] INFO  46ogger {36} -chrome browser open success
+517:17:13.369 [main] INFO  69ogger {36} -landed on website success
+517:17:14.092 [main] INFO  44ogger {36} -click create account success
+517:17:14.371 [main] INFO  75ogger {36} -browser close success
+517:18:19.569 [main] INFO  45ogger {36} -chrome browser open success
+517:18:20.997 [main] INFO  68ogger {36} -landed on website success
+517:18:21.742 [main] INFO  44ogger {36} -click create account success
+517:18:21.878 [main] INFO  47ogger {36} -enter name  success
+517:18:21.941 [main] INFO  50ogger {36} -enter lastname success
+517:18:22.005 [main] INFO  53ogger {36} -enter email success
+517:18:22.079 [main] INFO  56ogger {36} -enter password success
+517:18:22.125 [main] INFO  59ogger {36} -reenter password success
+517:18:23.316 [main] INFO  62ogger {36} -click on create account success
+517:18:23.533 [main] INFO  68ogger {36} -error message validation success
+517:18:23.826 [main] INFO  74ogger {36} -browser close success
+518:51:29.238 [main] INFO  45ogger {36} -chrome browser open success
+518:51:37.567 [main] INFO  68ogger {36} -landed on website success
+518:51:38.663 [main] INFO  44ogger {36} -click create account success
+518:51:38.871 [main] INFO  47ogger {36} -enter name  success
+518:51:38.957 [main] INFO  50ogger {36} -enter lastname success
+518:51:39.067 [main] INFO  53ogger {36} -enter email success
+518:51:39.195 [main] INFO  56ogger {36} -enter password success
+518:51:39.280 [main] INFO  59ogger {36} -reenter password success
+518:51:40.851 [main] INFO  62ogger {36} -click on create account success
+518:51:41.224 [main] INFO  68ogger {36} -error message validation success
+518:51:41.755 [main] INFO  74ogger {36} -browser close success
+518:51:42.990 [main] INFO  45ogger {36} -chrome browser open success
+518:51:44.619 [main] INFO  68ogger {36} -landed on website success
+518:51:44.625 [main] INFO  44ogger {36} -landed on luma home page success
+518:51:45.506 [main] INFO  47ogger {36} -click on sign in success
+518:51:45.712 [main] INFO  50ogger {36} -email enter success
+518:51:45.795 [main] INFO  53ogger {36} -password enter success
+518:51:45.889 [main] INFO  56ogger {36} -click on sign in success
+518:51:45.934 [main] INFO  62ogger {36} -validate error success
+518:51:46.370 [main] INFO  74ogger {36} -browser close success
+518:51:47.514 [main] INFO  45ogger {36} -chrome browser open success
+518:51:49.461 [main] INFO  68ogger {36} -landed on website success
+518:51:49.470 [main] INFO  71ogger {36} -landed on luma home page success
+518:51:50.305 [main] INFO  74ogger {36} -click on sign in success
+518:51:50.505 [main] INFO  77ogger {36} -email enter success
+518:51:50.570 [main] INFO  80ogger {36} -password enter success
+518:51:50.655 [main] INFO  83ogger {36} -click on sign in success
+518:51:50.693 [main] INFO  89ogger {36} -validate error success
+518:51:51.138 [main] INFO  74ogger {36} -browser close success
+518:51:52.271 [main] INFO  45ogger {36} -chrome browser open success
+518:51:54.249 [main] INFO  68ogger {36} -landed on website success
+518:51:54.265 [main] INFO  17ogger {36} -landed on luma home page success
+518:51:55.138 [main] INFO  20ogger {36} -click on sign in success
+518:51:55.326 [main] INFO  23ogger {36} -email enter success
+518:51:55.403 [main] INFO  26ogger {36} -password enter success
+518:51:56.737 [main] INFO  29ogger {36} -click on sign in success
+518:51:57.842 [main] INFO  35ogger {36} -login success
+518:51:58.407 [main] INFO  74ogger {36} -browser close success
+518:51:59.529 [main] INFO  45ogger {36} -chrome browser open success
+518:52:01.055 [main] INFO  68ogger {36} -landed on website success
+518:52:01.063 [main] INFO  17ogger {36} -landed on luma home page success
+518:52:01.883 [main] INFO  20ogger {36} -click on sign in success
+518:52:02.096 [main] INFO  23ogger {36} -email enter success
+518:52:02.181 [main] INFO  26ogger {36} -password enter success
+518:52:03.578 [main] INFO  29ogger {36} -click on sign in success
+518:52:04.517 [main] INFO  35ogger {36} -login success
+518:52:05.513 [main] INFO  39ogger {36} -click on men section success
+518:52:06.343 [main] INFO  41ogger {36} -click on Top48 success
+518:52:07.435 [main] INFO  44ogger {36} -click on Cassius Sparring Tank success
+518:52:07.559 [main] INFO  46ogger {36} -click on size S success
+518:52:07.741 [main] INFO  48ogger {36} -click on color success
+518:52:07.827 [main] INFO  50ogger {36} -delete quantity success
+518:52:07.877 [main] INFO  52ogger {36} -update quantity success
+518:52:07.957 [main] INFO  54ogger {36} -click on add To cart button success
+518:52:09.522 [main] INFO  60ogger {36} -added to cart success
+518:52:10.076 [main] INFO  74ogger {36} -browser close success
+518:52:11.265 [main] INFO  45ogger {36} -chrome browser open success
+518:52:12.814 [main] INFO  68ogger {36} -landed on website success
+518:52:14.890 [main] INFO  14ogger {36} -type and hit enter text success
+518:52:14.944 [main] INFO  20ogger {36} -serach bar result success
+518:52:15.444 [main] INFO  74ogger {36} -browser close success
+518:52:16.659 [main] INFO  45ogger {36} -chrome browser open success
+518:52:18.163 [main] INFO  68ogger {36} -landed on website success
+518:52:18.624 [main] INFO  13ogger {36} -hover over Gear success
+518:52:19.527 [main] INFO  15ogger {36} -click on Fitness Equipment success
+518:52:20.333 [main] INFO  17ogger {36} -click on item Band success
+518:52:20.461 [main] INFO  19ogger {36} -click on add to cart button success
+518:52:21.818 [main] INFO  25ogger {36} -item added to cart success
+518:52:23.847 [main] INFO  29ogger {36} -click on shopping cart success
+518:52:25.103 [main] INFO  31ogger {36} -click on proceed to checkout  cart success
+518:52:26.909 [main] INFO  33ogger {36} -type email success
+518:52:27.016 [main] INFO  36ogger {36} -type first name success
+518:52:27.118 [main] INFO  39ogger {36} -type last name success
+518:52:27.239 [main] INFO  42ogger {36} -type company name success
+518:52:27.398 [main] INFO  45ogger {36} -type street address success
+518:52:27.525 [main] INFO  48ogger {36} -type city success
+518:52:27.745 [main] INFO  53ogger {36} -type postcode success
+518:52:27.907 [main] INFO  56ogger {36} -type phone number success
+518:52:27.993 [main] INFO  59ogger {36} -selcect Shipping Methods success
+518:52:28.092 [main] INFO  62ogger {36} -click on next success
+518:52:31.901 [main] INFO  74ogger {36} -browser close success
+518:53:16.253 [main] INFO  45ogger {36} -chrome browser open success
+518:53:17.599 [main] INFO  68ogger {36} -landed on website success
+518:53:18.020 [main] INFO  13ogger {36} -hover over Gear success
+518:53:18.654 [main] INFO  15ogger {36} -click on Fitness Equipment success
+518:53:19.370 [main] INFO  17ogger {36} -click on item Band success
+518:53:19.545 [main] INFO  19ogger {36} -click on add to cart button success
+518:53:20.775 [main] INFO  25ogger {36} -item added to cart success
+518:53:22.159 [main] INFO  29ogger {36} -click on shopping cart success
+518:53:23.164 [main] INFO  31ogger {36} -click on proceed to checkout  cart success
+518:53:24.287 [main] INFO  33ogger {36} -type email success
+518:53:24.438 [main] INFO  36ogger {36} -type first name success
+518:53:24.538 [main] INFO  39ogger {36} -type last name success
+518:53:24.667 [main] INFO  42ogger {36} -type company name success
+518:53:24.806 [main] INFO  45ogger {36} -type street address success
+518:53:24.951 [main] INFO  48ogger {36} -type city success
+518:53:25.161 [main] INFO  53ogger {36} -type postcode success
+518:53:25.309 [main] INFO  56ogger {36} -type phone number success
+518:53:25.398 [main] INFO  59ogger {36} -selcect Shipping Methods success
+518:53:25.489 [main] INFO  62ogger {36} -click on next success
+518:53:27.579 [main] INFO  67ogger {36} -click on place order success
+518:53:30.914 [main] INFO  73ogger {36} -purchase validation success
+518:53:31.561 [main] INFO  74ogger {36} -browser close success
+518:53:48.331 [main] INFO  45ogger {36} -chrome browser open success
+518:53:49.688 [main] INFO  68ogger {36} -landed on website success
+518:53:50.480 [main] INFO  44ogger {36} -click create account success
+518:53:50.683 [main] INFO  47ogger {36} -enter name  success
+518:53:50.840 [main] INFO  50ogger {36} -enter lastname success
+518:53:50.954 [main] INFO  53ogger {36} -enter email success
+518:53:51.066 [main] INFO  56ogger {36} -enter password success
+518:53:51.139 [main] INFO  59ogger {36} -reenter password success
+518:53:52.379 [main] INFO  62ogger {36} -click on create account success
+518:53:52.743 [main] INFO  68ogger {36} -error message validation success
+518:53:53.194 [main] INFO  74ogger {36} -browser close success
+518:53:54.363 [main] INFO  45ogger {36} -chrome browser open success
+518:53:55.788 [main] INFO  68ogger {36} -landed on website success
+518:53:55.799 [main] INFO  44ogger {36} -landed on luma home page success
+518:53:56.667 [main] INFO  47ogger {36} -click on sign in success
+518:53:56.834 [main] INFO  50ogger {36} -email enter success
+518:53:56.907 [main] INFO  53ogger {36} -password enter success
+518:53:56.982 [main] INFO  56ogger {36} -click on sign in success
+518:53:57.018 [main] INFO  62ogger {36} -validate error success
+518:53:57.462 [main] INFO  74ogger {36} -browser close success
+518:53:58.608 [main] INFO  45ogger {36} -chrome browser open success
+518:53:59.932 [main] INFO  68ogger {36} -landed on website success
+518:53:59.940 [main] INFO  71ogger {36} -landed on luma home page success
+518:54:00.783 [main] INFO  74ogger {36} -click on sign in success
+518:54:00.956 [main] INFO  77ogger {36} -email enter success
+518:54:01.019 [main] INFO  80ogger {36} -password enter success
+518:54:01.104 [main] INFO  83ogger {36} -click on sign in success
+518:54:01.135 [main] INFO  89ogger {36} -validate error success
+518:54:01.576 [main] INFO  74ogger {36} -browser close success
+518:54:02.742 [main] INFO  45ogger {36} -chrome browser open success
+518:54:04.069 [main] INFO  68ogger {36} -landed on website success
+518:54:04.076 [main] INFO  17ogger {36} -landed on luma home page success
+518:54:05.045 [main] INFO  20ogger {36} -click on sign in success
+518:54:05.247 [main] INFO  23ogger {36} -email enter success
+518:54:05.324 [main] INFO  26ogger {36} -password enter success
+518:54:06.577 [main] INFO  29ogger {36} -click on sign in success
+518:54:07.570 [main] INFO  35ogger {36} -login success
+518:54:08.137 [main] INFO  74ogger {36} -browser close success
+518:54:09.310 [main] INFO  45ogger {36} -chrome browser open success
+518:54:10.828 [main] INFO  68ogger {36} -landed on website success
+518:54:10.836 [main] INFO  17ogger {36} -landed on luma home page success
+518:54:11.655 [main] INFO  20ogger {36} -click on sign in success
+518:54:11.849 [main] INFO  23ogger {36} -email enter success
+518:54:11.930 [main] INFO  26ogger {36} -password enter success
+518:54:13.213 [main] INFO  29ogger {36} -click on sign in success
+518:54:14.160 [main] INFO  35ogger {36} -login success
+518:54:14.871 [main] INFO  39ogger {36} -click on men section success
+518:54:15.645 [main] INFO  41ogger {36} -click on Top48 success
+518:54:16.508 [main] INFO  44ogger {36} -click on Cassius Sparring Tank success
+518:54:16.801 [main] INFO  46ogger {36} -click on size S success
+518:54:16.964 [main] INFO  48ogger {36} -click on color success
+518:54:17.041 [main] INFO  50ogger {36} -delete quantity success
+518:54:17.090 [main] INFO  52ogger {36} -update quantity success
+518:54:17.157 [main] INFO  54ogger {36} -click on add To cart button success
+518:54:18.654 [main] INFO  60ogger {36} -added to cart success
+518:54:19.246 [main] INFO  74ogger {36} -browser close success
+518:54:20.431 [main] INFO  45ogger {36} -chrome browser open success
+518:54:21.826 [main] INFO  68ogger {36} -landed on website success
+518:54:23.626 [main] INFO  14ogger {36} -type and hit enter text success
+518:54:23.678 [main] INFO  20ogger {36} -serach bar result success
+518:54:24.155 [main] INFO  74ogger {36} -browser close success
+518:54:25.245 [main] INFO  45ogger {36} -chrome browser open success
+518:54:26.584 [main] INFO  68ogger {36} -landed on website success
+518:54:27.007 [main] INFO  13ogger {36} -hover over Gear success
+518:54:27.932 [main] INFO  15ogger {36} -click on Fitness Equipment success
+518:54:28.804 [main] INFO  17ogger {36} -click on item Band success
+518:54:28.904 [main] INFO  19ogger {36} -click on add to cart button success
+518:54:30.249 [main] INFO  25ogger {36} -item added to cart success
+518:54:32.097 [main] INFO  29ogger {36} -click on shopping cart success
+518:54:33.172 [main] INFO  31ogger {36} -click on proceed to checkout  cart success
+518:54:35.062 [main] INFO  33ogger {36} -type email success
+518:54:35.183 [main] INFO  36ogger {36} -type first name success
+518:54:35.294 [main] INFO  39ogger {36} -type last name success
+518:54:35.412 [main] INFO  42ogger {36} -type company name success
+518:54:35.556 [main] INFO  45ogger {36} -type street address success
+518:54:35.707 [main] INFO  48ogger {36} -type city success
+518:54:35.957 [main] INFO  53ogger {36} -type postcode success
+518:54:36.100 [main] INFO  56ogger {36} -type phone number success
+518:54:36.179 [main] INFO  59ogger {36} -selcect Shipping Methods success
+518:54:36.256 [main] INFO  62ogger {36} -click on next success
+518:54:40.102 [main] INFO  74ogger {36} -browser close success
+518:55:43.640 [main] INFO  45ogger {36} -chrome browser open success
+518:55:45.086 [main] INFO  68ogger {36} -landed on website success
+518:55:45.863 [main] INFO  44ogger {36} -click create account success
+518:55:46.001 [main] INFO  47ogger {36} -enter name  success
+518:55:46.058 [main] INFO  50ogger {36} -enter lastname success
+518:55:46.140 [main] INFO  53ogger {36} -enter email success
+518:55:46.222 [main] INFO  56ogger {36} -enter password success
+518:55:46.273 [main] INFO  59ogger {36} -reenter password success
+518:55:47.554 [main] INFO  62ogger {36} -click on create account success
+518:55:47.834 [main] INFO  68ogger {36} -error message validation success
+518:55:48.192 [main] INFO  74ogger {36} -browser close success
+518:55:49.186 [main] INFO  45ogger {36} -chrome browser open success
+518:55:50.565 [main] INFO  68ogger {36} -landed on website success
+518:55:50.572 [main] INFO  44ogger {36} -landed on luma home page success
+518:55:51.245 [main] INFO  47ogger {36} -click on sign in success
+518:55:51.387 [main] INFO  50ogger {36} -email enter success
+518:55:51.443 [main] INFO  53ogger {36} -password enter success
+518:55:51.514 [main] INFO  56ogger {36} -click on sign in success
+518:55:51.547 [main] INFO  62ogger {36} -validate error success
+518:55:51.919 [main] INFO  74ogger {36} -browser close success
+518:55:52.862 [main] INFO  45ogger {36} -chrome browser open success
+518:55:54.178 [main] INFO  68ogger {36} -landed on website success
+518:55:54.184 [main] INFO  71ogger {36} -landed on luma home page success
+518:55:55.038 [main] INFO  74ogger {36} -click on sign in success
+518:55:55.204 [main] INFO  77ogger {36} -email enter success
+518:55:55.266 [main] INFO  80ogger {36} -password enter success
+518:55:55.353 [main] INFO  83ogger {36} -click on sign in success
+518:55:55.396 [main] INFO  89ogger {36} -validate error success
+518:55:55.846 [main] INFO  74ogger {36} -browser close success
+518:55:56.939 [main] INFO  45ogger {36} -chrome browser open success
+518:55:58.347 [main] INFO  68ogger {36} -landed on website success
+518:55:58.357 [main] INFO  17ogger {36} -landed on luma home page success
+518:55:59.118 [main] INFO  20ogger {36} -click on sign in success
+518:55:59.294 [main] INFO  23ogger {36} -email enter success
+518:55:59.366 [main] INFO  26ogger {36} -password enter success
+518:56:00.681 [main] INFO  29ogger {36} -click on sign in success
+518:56:01.582 [main] INFO  35ogger {36} -login success
+518:56:02.090 [main] INFO  74ogger {36} -browser close success
+518:56:03.241 [main] INFO  45ogger {36} -chrome browser open success
+518:56:04.889 [main] INFO  68ogger {36} -landed on website success
+518:56:04.898 [main] INFO  17ogger {36} -landed on luma home page success
+518:56:05.763 [main] INFO  20ogger {36} -click on sign in success
+518:56:05.967 [main] INFO  23ogger {36} -email enter success
+518:56:06.045 [main] INFO  26ogger {36} -password enter success
+518:56:07.325 [main] INFO  29ogger {36} -click on sign in success
+518:56:08.331 [main] INFO  35ogger {36} -login success
+518:56:09.150 [main] INFO  39ogger {36} -click on men section success
+518:56:09.977 [main] INFO  41ogger {36} -click on Top48 success
+518:56:11.115 [main] INFO  44ogger {36} -click on Cassius Sparring Tank success
+518:56:11.241 [main] INFO  46ogger {36} -click on size S success
+518:56:11.419 [main] INFO  48ogger {36} -click on color success
+518:56:11.494 [main] INFO  50ogger {36} -delete quantity success
+518:56:11.550 [main] INFO  52ogger {36} -update quantity success
+518:56:11.625 [main] INFO  54ogger {36} -click on add To cart button success
+518:56:13.258 [main] INFO  60ogger {36} -added to cart success
+518:56:13.850 [main] INFO  74ogger {36} -browser close success
+518:56:15.135 [main] INFO  45ogger {36} -chrome browser open success
+518:56:16.592 [main] INFO  68ogger {36} -landed on website success
+518:56:30.111 [main] INFO  14ogger {36} -type and hit enter text success
+518:56:30.152 [main] INFO  20ogger {36} -serach bar result success
+518:56:30.704 [main] INFO  74ogger {36} -browser close success
+518:56:31.931 [main] INFO  45ogger {36} -chrome browser open success
+518:56:33.451 [main] INFO  68ogger {36} -landed on website success
+518:56:33.826 [main] INFO  13ogger {36} -hover over Gear success
+518:56:34.799 [main] INFO  15ogger {36} -click on Fitness Equipment success
+518:56:35.765 [main] INFO  17ogger {36} -click on item Band success
+518:56:35.873 [main] INFO  19ogger {36} -click on add to cart button success
+518:56:37.300 [main] INFO  25ogger {36} -item added to cart success
+518:56:38.930 [main] INFO  29ogger {36} -click on shopping cart success
+518:56:40.058 [main] INFO  31ogger {36} -click on proceed to checkout  cart success
+518:56:42.516 [main] INFO  33ogger {36} -type email success
+518:56:42.631 [main] INFO  36ogger {36} -type first name success
+518:56:42.736 [main] INFO  39ogger {36} -type last name success
+518:56:42.843 [main] INFO  42ogger {36} -type company name success
+518:56:43.002 [main] INFO  45ogger {36} -type street address success
+518:56:43.136 [main] INFO  48ogger {36} -type city success
+518:56:43.383 [main] INFO  53ogger {36} -type postcode success
+518:56:43.528 [main] INFO  56ogger {36} -type phone number success
+518:56:43.622 [main] INFO  59ogger {36} -selcect Shipping Methods success
+518:56:43.699 [main] INFO  62ogger {36} -click on next success
+518:56:46.786 [main] INFO  67ogger {36} -click on place order success
+518:56:49.560 [main] INFO  73ogger {36} -purchase validation success
+518:56:50.231 [main] INFO  74ogger {36} -browser close success

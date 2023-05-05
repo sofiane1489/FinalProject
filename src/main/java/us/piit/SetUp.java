@@ -78,6 +78,7 @@ public class SetUp {
     //                                         Selenium methods
     //------------------------------------------------------------------------------------------------------------------
 
+
     public String getCurrentTtile(){
         return driver.getTitle();
     }

@@ -42,6 +42,7 @@ public class CreateAccount extends SetUp {
     public void createWithExistingEmail(){
         clickOn("//div[@class='panel header']//a[normalize-space()='Create an Account']");
                log.info("click create account success");
+
         type("#firstname","john");
                log.info("enter name  success");
 
@@ -66,6 +67,5 @@ public class CreateAccount extends SetUp {
         Assert.assertEquals(actualErrorMessage,expectedErrorMessage);
         log.info("error message validation success");
 
-        waitFor(2);
     }
 }
