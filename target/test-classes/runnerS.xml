@@ -3,32 +3,27 @@
 <suite name="Lumademo test">
     <parameter name="useCloudEnv" value="false"></parameter>
     <parameter name="envName" value="browserstack"></parameter>
-    <parameter name="os" value="windows"></parameter>
-    <parameter name="osversion" value="11"></parameter>
-    <parameter name="browservesion" value="111"></parameter>
+    <parameter name="os" value="os x"></parameter>
+    <parameter name="osversion" value="Big sur"></parameter>
+    <parameter name="browservesion" value="98"></parameter>
     <parameter name="browserName" value="chrome"></parameter>
     <parameter name="url" value="https://magento.softwaretestingboard.com/"></parameter>
 
-    <test name="create account test">
-        <classes>
-            <class name="us.piit.luma.CreateAccount"></class>
-        </classes>
-    </test>
-    <test name="Login test">
-            <classes>
-                <class name="us.piit.luma.LoginTest"></class>
-            </classes>
-    </test>
-    <test name="AddToCar test">
-        <classes>
-            <class name="us.piit.luma.AddItemToCart"></class>
-        </classes>
-    </test>
-    <test name="searchbar test">
-        <classes>
-            <class name="us.piit.luma.SearchBarTest"></class>
-        </classes>
-    </test>
+<!--    <test name="create account test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.luma.CreateAccount"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Login test">-->
+<!--            <classes>-->
+<!--                <class name="us.piit.luma.LoginTest"></class>-->
+<!--            </classes>-->
+<!--    </test>-->
+<!--    <test name="searchbar test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.luma.SearchBarTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
     <test name="purchase test">
         <classes>
             <class name="us.piit.luma.PurchaseItemTest"></class>

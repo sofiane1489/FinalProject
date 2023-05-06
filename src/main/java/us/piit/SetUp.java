@@ -38,7 +38,6 @@ public class SetUp {
         }
     }
 
-    //this method is to run it locally
     public void getLocalDriver(String browserName){
         if(browserName.equalsIgnoreCase("chrome")) {
             driver = new ChromeDriver();

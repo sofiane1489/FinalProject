@@ -10,7 +10,13 @@ public class SearchBarTest extends SetUp {
 
        @Test
     public void searchTest(){
-          typeEnter("#search","bag pack for man");
+           // website validation
+           String expectedTitle="Home Page";
+           String actualTitle=getCurrentTtile();
+           Assert.assertEquals(expectedTitle,actualTitle);
+           log.info("landed on luma home page success");
+
+           typeEnter("#search","bag pack for man");
               log.info("type and hit enter text success");
 
         //search result validation
@@ -18,6 +24,5 @@ public class SearchBarTest extends SetUp {
         boolean actualPageWraperTitle=isVisible("#maincontent div h1 span");
         Assert.assertEquals(actualPageWraperTitle,expectedPageWraperTitle);
              log.info("serach bar result success");
-
        }
 }
