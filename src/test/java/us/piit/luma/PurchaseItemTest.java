@@ -66,7 +66,7 @@ public class PurchaseItemTest extends SetUp {
 
           log.info("click on place order success");
 
-         //purchase validation
+         //purchase validation:
         String expectedMessage="Thank you for your purchase!";
         String actualMessage=getElementText("//span[text()='Thank you for your purchase!']");
         Assert.assertEquals(actualMessage,expectedMessage);
