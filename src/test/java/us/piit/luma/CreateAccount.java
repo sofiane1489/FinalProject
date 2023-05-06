@@ -9,7 +9,12 @@ public class CreateAccount extends SetUp {
     Logger log= LogManager.getLogger(CreateAccount.class.getName());
 //    @Test
 //    public void createNewAccount(){
-//
+//          //website validation
+//          String expectedTitle="Home Page";
+//          String actualTitle=getCurrentTtile();
+//          Assert.assertEquals(expectedTitle,actualTitle);
+//          log.info("landed on luma home page success");
+////
 //        clickOn("//div[@class='panel header']//a[normalize-space()='Create an Account']");
 //               log.info("click create account success");
 //        type("#firstname","mike");
@@ -18,7 +23,7 @@ public class CreateAccount extends SetUp {
 //        type("#lastname","lee");
 //        log.info("enter lastname success");
 //
-//        type("#email_address","sos@gmail.com");
+//        type("#email_address","Bettta@gmail.com");
 //        log.info("enter email success");
 //
 //        type("#password","1234Abcd$");
@@ -32,14 +37,19 @@ public class CreateAccount extends SetUp {
 //
 //        //create account validation
 //        String expectedContInfor="mike lee\n" +
-//                "sos@gmail.com";
+//                "Bettta@gmail.com";
 //        String actualContInfor=getElementText("div[class='box box-information'] p");
 //        Assert.assertEquals(expectedContInfor,actualContInfor);
 //        log.info("account create success");
 //}
-
     @Test
     public void createWithExistingEmail(){
+        // website validation
+        String expectedTitle="Home Page";
+        String actualTitle=getCurrentTtile();
+        Assert.assertEquals(expectedTitle,actualTitle);
+        log.info("landed on luma home page success");
+
         clickOn("//div[@class='panel header']//a[normalize-space()='Create an Account']");
                log.info("click create account success");
 
@@ -49,7 +59,7 @@ public class CreateAccount extends SetUp {
         type("#lastname","lost");
         log.info("enter lastname success");
 
-        type("#email_address","sof@gmail.com");
+        type("#email_address","Betta@gmail.com");
         log.info("enter email success");
 
         type("#password","1234Abcd$");
