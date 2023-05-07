@@ -3507,3 +3507,378 @@
 514:39:47.775 [main] INFO  120ogger {36} -click on place order success
 514:39:51.007 [main] INFO  126ogger {36} -purchase validation success
 514:39:51.763 [main] INFO  73ogger {36} -browser close success
+523:10:48.460 [main] INFO  44ogger {36} -chrome browser open success
+523:10:57.357 [main] INFO  67ogger {36} -landed on website success
+523:10:57.367 [main] INFO  35ogger {36} -landed on luma home page success
+523:10:58.184 [main] INFO  40ogger {36} -click on what's new success
+523:10:59.143 [main] INFO  73ogger {36} -browser close success
+523:10:59.974 [main] INFO  44ogger {36} -chrome browser open success
+523:11:01.339 [main] INFO  67ogger {36} -landed on website success
+523:11:01.350 [main] INFO  17ogger {36} -landed on luma home page success
+523:11:03.393 [main] INFO  20ogger {36} -type and hit enter text success
+523:11:03.420 [main] INFO  26ogger {36} -serach bar result success
+523:11:03.724 [main] INFO  73ogger {36} -browser close success
+523:15:25.873 [main] INFO  44ogger {36} -chrome browser open success
+523:15:27.270 [main] INFO  67ogger {36} -landed on website success
+523:15:27.279 [main] INFO  35ogger {36} -landed on luma home page success
+523:15:27.314 [main] INFO  40ogger {36} -luma logo is interactable
+523:15:29.878 [main] INFO  43ogger {36} -click on what's new success
+523:15:34.704 [main] INFO  73ogger {36} -browser close success
+523:19:28.425 [main] INFO  44ogger {36} -chrome browser open success
+523:19:29.781 [main] INFO  35ogger {36} -landed on luma home page success
+523:19:29.814 [main] INFO  39ogger {36} -luma logo is interactable
+523:19:32.812 [main] INFO  45ogger {36} -click on what's new success
+523:19:37.694 [main] INFO  72ogger {36} -browser close success
+523:20:14.340 [main] INFO  44ogger {36} -chrome browser open success
+523:20:15.690 [main] INFO  35ogger {36} -landed on luma home page success
+523:20:15.725 [main] INFO  39ogger {36} -luma logo is interactable
+523:20:20.669 [main] INFO  45ogger {36} -click on what's new success
+523:20:25.692 [main] INFO  72ogger {36} -browser close success
+523:20:32.088 [main] INFO  44ogger {36} -chrome browser open success
+523:20:33.481 [main] INFO  35ogger {36} -landed on luma home page success
+523:20:33.518 [main] INFO  39ogger {36} -luma logo is interactable
+523:20:38.468 [main] INFO  45ogger {36} -click on what's new success
+523:20:43.473 [main] INFO  72ogger {36} -browser close success
+523:20:51.457 [main] INFO  44ogger {36} -chrome browser open success
+523:20:52.775 [main] INFO  35ogger {36} -landed on luma home page success
+523:20:52.809 [main] INFO  39ogger {36} -luma logo is interactable
+523:20:57.742 [main] INFO  45ogger {36} -click on what's new success
+523:21:02.736 [main] INFO  72ogger {36} -browser close success
+523:27:58.794 [main] INFO  44ogger {36} -chrome browser open success
+523:28:00.148 [main] INFO  35ogger {36} -landed on luma home page success
+523:28:00.194 [main] INFO  39ogger {36} -luma logo is interactable
+523:28:00.645 [main] INFO  42ogger {36} -click on luma logo success
+523:28:01.357 [main] INFO  45ogger {36} -click on what's new success
+523:28:02.027 [main] INFO  48ogger {36} -click on jackets in NEW in men's success
+523:28:02.543 [main] INFO  51ogger {36} -click on luma logo success
+523:28:02.624 [main] INFO  56ogger {36} -landed in home page success
+523:28:02.929 [main] INFO  72ogger {36} -browser close success
+523:28:25.099 [main] INFO  44ogger {36} -chrome browser open success
+523:28:26.439 [main] INFO  35ogger {36} -landed on luma home page success
+523:28:26.473 [main] INFO  39ogger {36} -luma logo is interactable
+523:28:26.919 [main] INFO  42ogger {36} -click on luma logo success
+523:28:27.537 [main] INFO  45ogger {36} -click on what's new success
+523:28:28.146 [main] INFO  48ogger {36} -click on jackets in NEW in men's success
+523:28:28.697 [main] INFO  51ogger {36} -click on luma logo success
+523:28:31.748 [main] INFO  57ogger {36} -landed in home page success
+523:28:32.113 [main] INFO  72ogger {36} -browser close success
+523:40:06.890 [main] INFO  44ogger {36} -chrome browser open success
+523:40:08.176 [main] INFO  17ogger {36} -landed on luma home page success
+523:40:09.468 [main] INFO  20ogger {36} -type and hit enter text success
+523:40:09.861 [main] INFO  72ogger {36} -browser close success
+523:41:21.156 [main] INFO  44ogger {36} -chrome browser open success
+523:41:22.504 [main] INFO  17ogger {36} -landed on luma home page success
+523:41:23.764 [main] INFO  20ogger {36} -type and hit enter text success
+523:41:23.814 [main] INFO  26ogger {36} -serach bar result success
+523:41:24.197 [main] INFO  72ogger {36} -browser close success
+59:35:59.697 [main] INFO  44ogger {36} -chrome browser open success
+59:36:07.812 [main] INFO  16ogger {36} -landed on luma home page success
+59:36:08.675 [main] INFO  20ogger {36} -click on men section success
+59:36:09.529 [main] INFO  22ogger {36} -click on Top48 success
+59:36:10.421 [main] INFO  25ogger {36} -click on Cassius Sparring Tank success
+59:36:10.700 [main] INFO  27ogger {36} -click on size S success
+59:36:10.904 [main] INFO  29ogger {36} -click on color success
+59:36:10.984 [main] INFO  35ogger {36} -click on add To cart button success
+59:36:12.509 [main] INFO  41ogger {36} -added to cart success
+59:36:13.098 [main] INFO  72ogger {36} -browser close success
+511:11:37.118 [main] INFO  45ogger {36} -chrome browser open success
+511:11:45.870 [main] INFO  119ogger {36} -landed on luma home page success
+511:11:46.710 [main] INFO  123ogger {36} -click on men section success
+511:11:47.469 [main] INFO  125ogger {36} -click on Top48 success
+511:11:48.456 [main] INFO  128ogger {36} -click on Cassius Sparring Tank success
+511:11:48.732 [main] INFO  130ogger {36} -click on size S success
+511:11:48.942 [main] INFO  132ogger {36} -click on blue color success
+511:11:49.024 [main] INFO  134ogger {36} -click on add To cart button success
+511:11:49.590 [main] INFO  73ogger {36} -browser close success
+511:13:25.229 [main] INFO  45ogger {36} -chrome browser open success
+511:13:26.658 [main] INFO  119ogger {36} -landed on luma home page success
+511:13:27.602 [main] INFO  123ogger {36} -click on men section success
+511:13:28.453 [main] INFO  125ogger {36} -click on Top48 success
+511:13:29.150 [main] INFO  128ogger {36} -click on Cassius Sparring Tank success
+511:13:29.362 [main] INFO  130ogger {36} -click on size S success
+511:13:29.458 [main] INFO  132ogger {36} -click on blue color success
+511:13:29.612 [main] INFO  134ogger {36} -click on add To cart button success
+511:13:31.002 [main] INFO  140ogger {36} -added to cart success
+511:13:31.588 [main] INFO  73ogger {36} -browser close success
+511:17:09.929 [main] INFO  45ogger {36} -chrome browser open success
+511:17:11.341 [main] INFO  119ogger {36} -landed on luma home page success
+511:17:12.320 [main] INFO  123ogger {36} -click on Gear section success
+511:17:12.862 [main] INFO  125ogger {36} -click on Watches success
+511:17:13.630 [main] INFO  128ogger {36} -click on Dash Digital Watch success
+511:17:13.834 [main] INFO  131ogger {36} -click on add To cart button success
+511:17:15.669 [main] INFO  73ogger {36} -browser close success
+511:17:41.981 [main] INFO  45ogger {36} -chrome browser open success
+511:17:43.401 [main] INFO  119ogger {36} -landed on luma home page success
+511:17:44.320 [main] INFO  123ogger {36} -click on Gear section success
+511:17:44.978 [main] INFO  125ogger {36} -click on Watches success
+511:17:45.817 [main] INFO  128ogger {36} -click on Dash Digital Watch success
+511:17:45.988 [main] INFO  131ogger {36} -click on add To cart button success
+511:17:47.315 [main] INFO  137ogger {36} -added to cart success
+511:17:47.911 [main] INFO  73ogger {36} -browser close success
+511:35:21.660 [main] INFO  45ogger {36} -chrome browser open success
+511:35:23.075 [main] INFO  119ogger {36} -landed on luma home page success
+511:35:23.972 [main] INFO  123ogger {36} -click on Gear section success
+511:35:24.631 [main] INFO  125ogger {36} -click on Watches success
+511:35:25.263 [main] INFO  128ogger {36} -click on Dash Digital Watch success
+511:35:25.523 [main] INFO  131ogger {36} -click on add To cart button success
+511:35:26.724 [main] INFO  137ogger {36} -added to cart success
+511:35:27.987 [main] INFO  140ogger {36} -click on shopping cart success
+511:35:29.339 [main] INFO  143ogger {36} -click on trash can icon success
+511:35:29.474 [main] INFO  148ogger {36} -item removed success
+511:35:30.110 [main] INFO  73ogger {36} -browser close success
+511:45:37.032 [main] INFO  45ogger {36} -chrome browser open success
+511:45:38.447 [main] INFO  119ogger {36} -landed on luma home page success
+511:45:39.490 [main] INFO  123ogger {36} -click on Gear section success
+511:45:40.218 [main] INFO  125ogger {36} -click on Watches success
+511:45:41.061 [main] INFO  128ogger {36} -click on Dash Digital Watch success
+511:45:41.299 [main] INFO  131ogger {36} -click on add To cart button success
+511:45:42.711 [main] INFO  137ogger {36} -added to cart success
+511:45:42.824 [main] INFO  140ogger {36} -click on shopping cart success
+511:45:44.526 [main] INFO  143ogger {36} -click on view and edit success
+511:45:46.117 [main] INFO  146ogger {36} -click on trash can icon success
+511:45:46.247 [main] INFO  151ogger {36} -item removed success
+511:45:46.899 [main] INFO  73ogger {36} -browser close success
+511:47:53.790 [main] INFO  45ogger {36} -chrome browser open success
+511:47:55.186 [main] INFO  119ogger {36} -landed on luma home page success
+511:47:56.287 [main] INFO  123ogger {36} -click on Gear section success
+511:47:57.145 [main] INFO  125ogger {36} -click on Watches success
+511:47:57.922 [main] INFO  128ogger {36} -click on Dash Digital Watch success
+511:47:58.177 [main] INFO  131ogger {36} -click on add To cart button success
+511:47:59.461 [main] INFO  137ogger {36} -added to cart success
+511:47:59.570 [main] INFO  140ogger {36} -click on shopping cart success
+511:47:59.674 [main] INFO  143ogger {36} -click on view and edit success
+511:47:59.785 [main] INFO  146ogger {36} -click on trash can icon success
+511:48:10.572 [main] INFO  73ogger {36} -browser close success
+511:50:18.156 [main] INFO  45ogger {36} -chrome browser open success
+511:50:19.540 [main] INFO  119ogger {36} -landed on luma home page success
+511:50:20.365 [main] INFO  123ogger {36} -click on Gear section success
+511:50:20.992 [main] INFO  125ogger {36} -click on Watches success
+511:50:21.620 [main] INFO  128ogger {36} -click on Dash Digital Watch success
+511:50:21.806 [main] INFO  131ogger {36} -click on add To cart button success
+511:50:23.076 [main] INFO  137ogger {36} -added to cart success
+511:50:23.138 [main] INFO  140ogger {36} -click on shopping cart success
+511:50:23.219 [main] INFO  143ogger {36} -click on view and edit success
+511:50:23.709 [main] INFO  73ogger {36} -browser close success
+511:50:56.752 [main] INFO  45ogger {36} -chrome browser open success
+511:50:58.121 [main] INFO  119ogger {36} -landed on luma home page success
+511:50:59.149 [main] INFO  123ogger {36} -click on Gear section success
+511:50:59.838 [main] INFO  125ogger {36} -click on Watches success
+511:51:00.565 [main] INFO  128ogger {36} -click on Dash Digital Watch success
+511:51:00.906 [main] INFO  131ogger {36} -click on add To cart button success
+511:51:02.203 [main] INFO  137ogger {36} -added to cart success
+511:51:02.286 [main] INFO  140ogger {36} -click on shopping cart success
+511:51:02.401 [main] INFO  143ogger {36} -click on view and edit success
+511:51:06.032 [main] INFO  73ogger {36} -browser close success
+511:55:13.125 [main] INFO  45ogger {36} -chrome browser open success
+511:55:14.634 [main] INFO  119ogger {36} -landed on luma home page success
+511:55:15.788 [main] INFO  123ogger {36} -click on Gear section success
+511:55:16.592 [main] INFO  125ogger {36} -click on Watches success
+511:55:17.530 [main] INFO  128ogger {36} -click on Dash Digital Watch success
+511:55:17.724 [main] INFO  131ogger {36} -click on add To cart button success
+511:55:19.000 [main] INFO  137ogger {36} -added to cart success
+511:55:19.099 [main] INFO  140ogger {36} -click on shopping cart success
+511:55:20.576 [main] INFO  143ogger {36} -click on view and edit success
+511:55:22.103 [main] INFO  146ogger {36} -click on trash can icon success
+511:55:22.980 [main] INFO  73ogger {36} -browser close success
+511:56:24.456 [main] INFO  45ogger {36} -chrome browser open success
+511:56:26.071 [main] INFO  119ogger {36} -landed on luma home page success
+511:56:27.015 [main] INFO  123ogger {36} -click on Gear section success
+511:56:27.752 [main] INFO  125ogger {36} -click on Watches success
+511:56:28.708 [main] INFO  128ogger {36} -click on Dash Digital Watch success
+511:56:28.958 [main] INFO  131ogger {36} -click on add To cart button success
+511:56:30.256 [main] INFO  137ogger {36} -added to cart success
+511:56:30.363 [main] INFO  140ogger {36} -click on shopping cart success
+511:56:31.745 [main] INFO  143ogger {36} -click on view and edit success
+511:56:33.368 [main] INFO  146ogger {36} -click on trash can icon success
+511:56:33.493 [main] INFO  151ogger {36} -item removed success
+511:56:34.167 [main] INFO  73ogger {36} -browser close success
+513:34:03.286 [main] INFO  45ogger {36} -chrome browser open success
+513:34:11.344 [main] INFO  73ogger {36} -browser close success
+513:35:16.724 [main] INFO  45ogger {36} -chrome browser open success
+513:35:50.154 [main] INFO  45ogger {36} -chrome browser open success
+513:36:33.105 [main] INFO  45ogger {36} -chrome browser open success
+513:36:34.773 [main] INFO  73ogger {36} -browser close success
+513:36:44.900 [main] INFO  45ogger {36} -chrome browser open success
+513:36:46.535 [main] INFO  73ogger {36} -browser close success
+513:49:00.893 [main] INFO  44ogger {36} -chrome browser open success
+513:49:02.215 [main] INFO  35ogger {36} -landed on luma home page success
+513:49:03.706 [main] INFO  38ogger {36} -click on contact us success
+513:49:05.651 [main] INFO  45ogger {36} -click on submit success
+513:49:05.861 [main] INFO  50ogger {36} -Email sent success
+513:49:06.168 [main] INFO  72ogger {36} -browser close success
+517:26:41.403 [main] INFO  47ogger {36} -firefox browser open success
+517:26:47.179 [main] INFO  17ogger {36} -landed on luma home page success
+517:26:48.307 [main] INFO  20ogger {36} -click on contact us success
+517:26:48.468 [main] INFO  23ogger {36} -type Name success
+517:26:48.637 [main] INFO  25ogger {36} -type Email address success
+517:26:48.718 [main] INFO  27ogger {36} -type telephone success
+517:26:48.868 [main] INFO  29ogger {36} -type text in the box success
+517:26:51.573 [main] INFO  31ogger {36} -click on submit success
+517:26:52.116 [main] INFO  36ogger {36} -Email sent success
+517:26:53.766 [main] INFO  72ogger {36} -browser close success
+517:27:20.644 [main] INFO  47ogger {36} -firefox browser open success
+517:27:22.561 [main] INFO  17ogger {36} -landed on luma home page success
+517:27:22.640 [main] INFO  22ogger {36} -luma logo is interactable
+517:27:25.093 [main] INFO  25ogger {36} -click on what's new success
+517:27:25.907 [main] INFO  28ogger {36} -click on jackets in NEW in men's success
+517:27:26.659 [main] INFO  31ogger {36} -click on luma logo success
+517:27:26.786 [main] INFO  36ogger {36} -landed in home page success
+517:27:28.333 [main] INFO  72ogger {36} -browser close success
+517:27:48.929 [main] INFO  47ogger {36} -firefox browser open success
+517:27:52.158 [main] INFO  16ogger {36} -landed on luma home page success
+517:27:53.439 [main] INFO  20ogger {36} -click on men section success
+517:27:54.677 [main] INFO  22ogger {36} -click on Top48 success
+517:27:55.685 [main] INFO  25ogger {36} -click on Cassius Sparring Tank success
+517:27:56.242 [main] INFO  27ogger {36} -click on size S success
+517:27:56.486 [main] INFO  29ogger {36} -click on blue color success
+517:27:58.193 [main] INFO  72ogger {36} -browser close success
+517:28:01.659 [main] INFO  47ogger {36} -firefox browser open success
+517:28:03.493 [main] INFO  47ogger {36} -landed on luma home page success
+517:28:03.914 [main] INFO  50ogger {36} -hover over Gear success
+517:28:05.241 [main] INFO  52ogger {36} -click on Fitness Equipment success
+517:28:06.457 [main] INFO  54ogger {36} -click on item Band success
+517:28:08.134 [main] INFO  72ogger {36} -browser close success
+517:28:12.520 [main] INFO  47ogger {36} -firefox browser open success
+517:28:16.080 [main] INFO  119ogger {36} -landed on luma home page success
+517:28:17.043 [main] INFO  123ogger {36} -click on Gear section success
+517:28:17.962 [main] INFO  125ogger {36} -click on Watches success
+517:28:19.950 [main] INFO  128ogger {36} -click on Dash Digital Watch success
+517:28:20.318 [main] INFO  131ogger {36} -click on add To cart button success
+517:28:21.623 [main] INFO  137ogger {36} -added to cart success
+517:28:21.868 [main] INFO  140ogger {36} -click on shopping cart success
+517:28:24.136 [main] INFO  143ogger {36} -click on view and edit success
+517:28:25.777 [main] INFO  146ogger {36} -click on trash can icon success
+517:28:25.861 [main] INFO  151ogger {36} -item removed success
+517:28:27.655 [main] INFO  72ogger {36} -browser close success
+517:32:10.675 [main] INFO  47ogger {36} -firefox browser open success
+517:32:12.706 [main] INFO  16ogger {36} -landed on luma home page success
+517:32:20.780 [main] INFO  20ogger {36} -click on men section success
+517:32:22.596 [main] INFO  22ogger {36} -click on Top48 success
+517:32:23.241 [main] INFO  25ogger {36} -click on Cassius Sparring Tank success
+517:32:24.066 [main] INFO  27ogger {36} -click on size S success
+517:32:24.415 [main] INFO  29ogger {36} -click on blue color success
+517:32:24.688 [main] INFO  31ogger {36} -click on add To cart button success
+517:32:25.868 [main] INFO  37ogger {36} -added to cart success
+517:32:27.590 [main] INFO  72ogger {36} -browser close success
+517:32:31.709 [main] INFO  47ogger {36} -firefox browser open success
+517:32:38.258 [main] INFO  47ogger {36} -landed on luma home page success
+517:32:38.456 [main] INFO  50ogger {36} -hover over Gear success
+517:32:39.441 [main] INFO  52ogger {36} -click on Fitness Equipment success
+517:32:40.373 [main] INFO  54ogger {36} -click on item Band success
+517:32:41.891 [main] INFO  72ogger {36} -browser close success
+517:32:45.411 [main] INFO  47ogger {36} -firefox browser open success
+517:32:48.516 [main] INFO  119ogger {36} -landed on luma home page success
+517:32:51.008 [main] INFO  123ogger {36} -click on Gear section success
+517:32:54.627 [main] INFO  125ogger {36} -click on Watches success
+517:32:56.209 [main] INFO  128ogger {36} -click on Dash Digital Watch success
+517:32:57.912 [main] INFO  72ogger {36} -browser close success
+517:34:46.217 [main] INFO  47ogger {36} -firefox browser open success
+517:34:48.748 [main] INFO  16ogger {36} -landed on luma home page success
+517:34:51.047 [main] INFO  20ogger {36} -click on men section success
+517:34:51.781 [main] INFO  22ogger {36} -click on Top48 success
+517:34:53.283 [main] INFO  25ogger {36} -click on Cassius Sparring Tank success
+517:34:54.085 [main] INFO  27ogger {36} -click on size S success
+517:34:54.427 [main] INFO  29ogger {36} -click on blue color success
+517:34:54.695 [main] INFO  31ogger {36} -click on add To cart button success
+517:34:56.139 [main] INFO  37ogger {36} -added to cart success
+517:34:57.925 [main] INFO  72ogger {36} -browser close success
+517:35:01.530 [main] INFO  47ogger {36} -firefox browser open success
+517:35:05.600 [main] INFO  47ogger {36} -landed on luma home page success
+517:35:05.949 [main] INFO  50ogger {36} -hover over Gear success
+517:35:06.584 [main] INFO  52ogger {36} -click on Fitness Equipment success
+517:35:07.362 [main] INFO  54ogger {36} -click on item Band success
+517:35:08.820 [main] INFO  72ogger {36} -browser close success
+517:35:12.369 [main] INFO  47ogger {36} -firefox browser open success
+517:35:15.862 [main] INFO  119ogger {36} -landed on luma home page success
+517:35:17.568 [main] INFO  123ogger {36} -click on Gear section success
+517:35:19.365 [main] INFO  125ogger {36} -click on Watches success
+517:35:21.163 [main] INFO  128ogger {36} -click on Dash Digital Watch success
+517:35:22.750 [main] INFO  72ogger {36} -browser close success
+517:38:16.569 [main] INFO  47ogger {36} -firefox browser open success
+517:38:26.052 [main] INFO  16ogger {36} -landed on luma home page success
+517:38:26.866 [main] INFO  20ogger {36} -click on men section success
+517:38:27.683 [main] INFO  22ogger {36} -click on Top48 success
+517:38:28.411 [main] INFO  25ogger {36} -click on Cassius Sparring Tank success
+517:38:29.211 [main] INFO  27ogger {36} -click on size S success
+517:38:29.616 [main] INFO  29ogger {36} -click on blue color success
+517:38:29.889 [main] INFO  31ogger {36} -click on add To cart button success
+517:38:31.021 [main] INFO  37ogger {36} -added to cart success
+517:38:32.749 [main] INFO  72ogger {36} -browser close success
+517:38:36.773 [main] INFO  47ogger {36} -firefox browser open success
+517:38:38.291 [main] INFO  47ogger {36} -landed on luma home page success
+517:38:40.548 [main] INFO  50ogger {36} -hover over Gear success
+517:38:41.398 [main] INFO  52ogger {36} -click on Fitness Equipment success
+517:38:42.140 [main] INFO  54ogger {36} -click on item Band success
+517:38:43.603 [main] INFO  72ogger {36} -browser close success
+517:38:47.314 [main] INFO  47ogger {36} -firefox browser open success
+517:38:53.613 [main] INFO  119ogger {36} -landed on luma home page success
+517:38:55.866 [main] INFO  123ogger {36} -click on Gear section success
+517:38:57.882 [main] INFO  125ogger {36} -click on Watches success
+517:38:58.780 [main] INFO  128ogger {36} -click on Dash Digital Watch success
+517:39:00.489 [main] INFO  72ogger {36} -browser close success
+517:41:15.279 [main] INFO  47ogger {36} -firefox browser open success
+517:41:23.541 [main] INFO  16ogger {36} -landed on luma home page success
+517:41:25.707 [main] INFO  20ogger {36} -click on men section success
+517:41:27.016 [main] INFO  22ogger {36} -click on Top48 success
+517:41:28.170 [main] INFO  25ogger {36} -click on Cassius Sparring Tank success
+517:41:28.875 [main] INFO  27ogger {36} -click on size S success
+517:41:29.108 [main] INFO  29ogger {36} -click on blue color success
+517:41:29.362 [main] INFO  31ogger {36} -click on add To cart button success
+517:41:33.098 [main] INFO  37ogger {36} -added to cart success
+517:41:34.801 [main] INFO  72ogger {36} -browser close success
+517:41:38.414 [main] INFO  47ogger {36} -firefox browser open success
+517:41:41.098 [main] INFO  47ogger {36} -landed on luma home page success
+517:41:41.621 [main] INFO  50ogger {36} -hover over Gear success
+517:41:42.672 [main] INFO  52ogger {36} -click on Fitness Equipment success
+517:41:43.536 [main] INFO  54ogger {36} -click on item Band success
+517:41:45.035 [main] INFO  72ogger {36} -browser close success
+517:41:48.456 [main] INFO  47ogger {36} -firefox browser open success
+517:42:29.819 [main] INFO  119ogger {36} -landed on luma home page success
+517:42:30.536 [main] INFO  123ogger {36} -click on Gear section success
+517:42:31.286 [main] INFO  125ogger {36} -click on Watches success
+517:42:31.903 [main] INFO  128ogger {36} -click on Dash Digital Watch success
+517:42:33.566 [main] INFO  72ogger {36} -browser close success
+517:43:27.610 [main] INFO  44ogger {36} -chrome browser open success
+517:43:30.411 [main] INFO  16ogger {36} -landed on luma home page success
+517:43:31.484 [main] INFO  20ogger {36} -click on men section success
+517:43:32.624 [main] INFO  22ogger {36} -click on Top48 success
+517:43:33.356 [main] INFO  25ogger {36} -click on Cassius Sparring Tank success
+517:43:33.646 [main] INFO  27ogger {36} -click on size S success
+517:43:33.813 [main] INFO  29ogger {36} -click on blue color success
+517:43:33.924 [main] INFO  31ogger {36} -click on add To cart button success
+517:43:35.712 [main] INFO  37ogger {36} -added to cart success
+517:43:36.300 [main] INFO  72ogger {36} -browser close success
+517:43:37.532 [main] INFO  44ogger {36} -chrome browser open success
+517:43:39.478 [main] INFO  47ogger {36} -landed on luma home page success
+517:43:39.897 [main] INFO  50ogger {36} -hover over Gear success
+517:43:40.691 [main] INFO  52ogger {36} -click on Fitness Equipment success
+517:43:41.869 [main] INFO  54ogger {36} -click on item Band success
+517:43:41.975 [main] INFO  56ogger {36} -click on add to cart button success
+517:43:43.373 [main] INFO  62ogger {36} -item added to cart success
+517:43:45.447 [main] INFO  66ogger {36} -click on shopping cart success
+517:43:46.734 [main] INFO  68ogger {36} -click on proceed to checkout  cart success
+517:43:49.177 [main] INFO  70ogger {36} -type email success
+517:43:49.315 [main] INFO  73ogger {36} -type first name success
+517:43:49.427 [main] INFO  76ogger {36} -type last name success
+517:43:49.566 [main] INFO  79ogger {36} -type company name success
+517:43:49.725 [main] INFO  82ogger {36} -type street address success
+517:43:49.869 [main] INFO  85ogger {36} -type city success
+517:43:50.118 [main] INFO  90ogger {36} -type postcode success
+517:43:50.268 [main] INFO  93ogger {36} -type phone number success
+517:43:50.362 [main] INFO  96ogger {36} -selcect Shipping Methods success
+517:43:50.454 [main] INFO  99ogger {36} -click on next success
+517:43:53.547 [main] INFO  104ogger {36} -click on place order success
+517:43:56.419 [main] INFO  110ogger {36} -purchase validation success
+517:43:57.051 [main] INFO  72ogger {36} -browser close success
+517:43:58.304 [main] INFO  44ogger {36} -chrome browser open success
+517:44:01.413 [main] INFO  119ogger {36} -landed on luma home page success
+517:44:02.376 [main] INFO  123ogger {36} -click on Gear section success
+517:44:03.487 [main] INFO  125ogger {36} -click on Watches success
+517:44:04.198 [main] INFO  128ogger {36} -click on Dash Digital Watch success
+517:44:04.603 [main] INFO  131ogger {36} -click in Add To cart success
+517:44:06.616 [main] INFO  137ogger {36} -added to cart success
+517:44:06.700 [main] INFO  140ogger {36} -click on shopping cart success
+517:44:14.526 [main] INFO  143ogger {36} -click on view and edit success
+517:44:16.571 [main] INFO  146ogger {36} -click on trash can icon success
+517:44:16.692 [main] INFO  151ogger {36} -item removed success
+517:44:17.338 [main] INFO  72ogger {36} -browser close success

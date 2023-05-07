@@ -26,12 +26,8 @@ public class PurchaseItemTest extends SetUp {
         clickOn("#option-label-size-143-item-167");
         log.info("click on size S success");
         clickOn("#option-label-color-93-item-50");
-        log.info("click on color success");
-        delete("#qty");
-        log.info("delete quantity success");
-        type("#qty","4");
-        log.info("update quantity success");
-        clickOn("#product-addtocart-button");
+        log.info("click on blue color success");
+        clickOn("//button[@id='product-addtocart-button']");
         log.info("click on add To cart button success");
 
         //add to car validation
@@ -56,7 +52,7 @@ public class PurchaseItemTest extends SetUp {
            log.info("click on Fitness Equipment success");
         clickOn(".item.product.product-item:nth-child(6) div a span span");
             log.info("click on item Band success");
-       clickOn("//button[@id='product-addtocart-button']");
+       clickOn("#product-addtocart-button");
             log.info("click on add to cart button success");
 
        //add to cart validation
@@ -114,4 +110,47 @@ public class PurchaseItemTest extends SetUp {
         log.info("purchase validation success");
 
     }
+    @Test
+    public void removeItemsFromTheCart(){
+        // website validation
+        String expectedTitle="Home Page";
+        String actualTitle=getCurrentTtile();
+        Assert.assertEquals(expectedTitle,actualTitle);
+        log.info("landed on luma home page success");
+
+        //click on Gear section
+        clickOn("//a[@id='ui-id-6']");
+        log.info("click on Gear section success");
+        clickOn("//ol[@class='items']//a[normalize-space()='Watches']");
+        log.info("click on Watches success");
+
+        clickOn("//img[@alt='Dash Digital Watch']");
+        log.info("click on Dash Digital Watch success");
+
+        clickOn("//span[normalize-space()='Add to Cart']");
+        log.info("click in Add To cart success");
+
+        //add to car validation
+        String expextedText="You added Dash Digital Watch to your shopping cart.";
+        String actualText=getElementText("//main[@id='maincontent']/div/div[2]/div/div/div");
+        Assert.assertEquals(actualText,expextedText);
+        log.info("added to cart success");
+
+        clickOn("//a[@class='action showcart']");
+        log.info("click on shopping cart success");
+
+        clickOn("//span[text()='View and Edit Cart']");
+        log.info("click on view and edit success");
+
+        clickOn("//div[@class='actions-toolbar']/a[2]");
+        log.info("click on trash can icon success");
+
+        String expectedpageTitleWrapper="You have no items in your shopping cart.";
+        String actualpageTitleWrapper=getElementText("//p[text()='You have no items in your shopping cart.']");
+        Assert.assertEquals(actualpageTitleWrapper,expectedpageTitleWrapper);
+        log.info("item removed success");
+
+
+    }
+
 }

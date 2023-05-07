@@ -11,6 +11,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
@@ -23,7 +24,6 @@ import org.testng.annotations.BeforeMethod;
 public class SetUp {
     Logger log= LogManager.getLogger(SetUp.class.getName());
     WebDriver driver;
-    //this method is to run in the cloud
     public void getCloudDriver(String envName,String os,String osVersion,String browserName,String browserVersion,String username,String password) throws MalformedURLException, MalformedURLException {
         DesiredCapabilities cap=new DesiredCapabilities();
         cap.setCapability("os",os);
@@ -64,7 +64,6 @@ public class SetUp {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().window().maximize();
         driver.get(url);
-        log.info("landed on website success");
     }
     @AfterMethod
     public void teardown(){
@@ -155,7 +154,7 @@ public class SetUp {
             return driver.findElement(By.xpath(locator)).isDisplayed();
         }
     }
-    public boolean isInteractible(String locator){
+    public boolean isInteractable(String locator){
         try{
             return driver.findElement(By.cssSelector(locator)).isEnabled();
         }catch (Exception e){
@@ -169,4 +168,5 @@ public class SetUp {
             return driver.findElement(By.xpath(locator)).isSelected();
         }
     }
+
 }
