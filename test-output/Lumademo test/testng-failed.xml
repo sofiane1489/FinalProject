@@ -5,18 +5,19 @@
   <parameter name="useCloudEnv" value="false"/>
   <parameter name="os" value="os x"/>
   <parameter name="envName" value="browserstack"/>
-  <parameter name="browserName" value="chrome"/>
+  <parameter name="browserName" value="firefox"/>
   <parameter name="osversion" value="Big sur"/>
   <parameter name="url" value="https://magento.softwaretestingboard.com/"/>
-  <test thread-count="5" name="Login test(failed)">
+  <test thread-count="5" name="purchase test(failed)">
     <classes>
-      <class name="us.piit.luma.LoginTest">
+      <class name="us.piit.luma.PurchaseItemTest">
         <methods>
           <include name="setup"/>
-          <include name="validCred"/>
           <include name="teardown"/>
+          <include name="buyProduct"/>
+          <include name="removeItemsFromTheCart"/>
         </methods>
-      </class> <!-- us.piit.luma.LoginTest -->
+      </class> <!-- us.piit.luma.PurchaseItemTest -->
     </classes>
-  </test> <!-- Login test(failed) -->
+  </test> <!-- purchase test(failed) -->
 </suite> <!-- Failed suite [Lumademo test] -->

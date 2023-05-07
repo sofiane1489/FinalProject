@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -109,6 +109,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Lumademo_test" title="us.piit.luma.PurchaseItemTest" class="method navigator-link" hash-for-method="buyProduct">buyProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Lumademo_test" title="us.piit.luma.PurchaseItemTest" class="method navigator-link" hash-for-method="removeItemsFromTheCart">removeItemsFromTheCart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Lumademo_test -->
@@ -141,6 +146,13 @@
                   <a name="buyProduct">
                   </a> <!-- buyProduct -->
                   <span class="method-name">buyProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="removeItemsFromTheCart">
+                  </a> <!-- removeItemsFromTheCart -->
+                  <span class="method-name">removeItemsFromTheCart</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -204,20 +216,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'buyProduct')
 data.setCell(0, 2, 'us.piit.luma.PurchaseItemTest')
-data.setCell(0, 3, 17987);
+data.setCell(0, 3, 16957);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'addItemToCart')
+data.setCell(1, 1, 'removeItemsFromTheCart')
 data.setCell(1, 2, 'us.piit.luma.PurchaseItemTest')
-data.setCell(1, 3, 7520);
+data.setCell(1, 3, 15290);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addItemToCart')
+data.setCell(2, 2, 'us.piit.luma.PurchaseItemTest')
+data.setCell(2, 3, 5315);
 window.suiteTableData['Lumademo_test']= { tableData: data, tableDiv: 'times-div-Lumademo_test'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 25 seconds</span>
+              <span class="suite-total-time">Total running time: 37 seconds</span>
               <div id="times-div-Lumademo_test">
               </div> <!-- times-div-Lumademo_test -->
             </div> <!-- times-div -->
@@ -250,23 +266,35 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addItemToCart</span>
-                <span class="method-start">11027 ms</span>
+                <span class="method-start">5490 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">18553 ms</span>
+                <span class="method-start">10805 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup(false, browserstack, os x, Big sur, chrome, 98, https://magento.softwaretestingboard.com/)</span>
-                <span class="method-start">19126 ms</span>
+                <span class="method-start">11394 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">buyProduct</span>
-                <span class="method-start">21551 ms</span>
+                <span class="method-start">14559 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">39538 ms</span>
+                <span class="method-start">31516 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(false, browserstack, os x, Big sur, chrome, 98, https://magento.softwaretestingboard.com/)</span>
+                <span class="method-start">32144 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">removeItemsFromTheCart</span>
+                <span class="method-start">36495 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">51789 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

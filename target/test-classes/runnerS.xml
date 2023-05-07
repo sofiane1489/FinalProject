@@ -29,5 +29,15 @@
             <class name="us.piit.luma.PurchaseItemTest"></class>
         </classes>
     </test>
+<!--    <test name="lumalogo test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.luma.LumaLogoTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="CustomerService test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.luma.CustomerServiceTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
 
 </suite>
