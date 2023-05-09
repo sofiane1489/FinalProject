@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-09T07:32:12 EDT" name="Lumademo test" finished-at="2023-05-09T07:32:18 EDT" duration-ms="5774">
+  <suite started-at="2023-05-09T10:04:41 EDT" name="Lumademo test" finished-at="2023-05-09T10:06:03 EDT" duration-ms="81812">
     <groups>
     </groups>
-    <test started-at="2023-05-09T07:32:12 EDT" name="searchbar test" finished-at="2023-05-09T07:32:18 EDT" duration-ms="5774">
-      <class name="us.piit.luma.SearchBarTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:us.piit.luma.SearchBarTest@75ed9710]" started-at="2023-05-09T07:32:12 EDT" name="setup" finished-at="2023-05-09T07:32:16 EDT" duration-ms="4005" status="PASS">
+    <test started-at="2023-05-09T10:04:41 EDT" name="create account test" finished-at="2023-05-09T10:04:48 EDT" duration-ms="6828">
+      <class name="us.piit.luma.CreateAccount">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:us.piit.luma.CreateAccount@5b07730f]" started-at="2023-05-09T10:04:41 EDT" name="setup" finished-at="2023-05-09T10:04:45 EDT" duration-ms="3540" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,11 +48,525 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="searchTest()[pri:0, instance:us.piit.luma.SearchBarTest@75ed9710]" started-at="2023-05-09T07:32:16 EDT" name="searchTest" finished-at="2023-05-09T07:32:18 EDT" duration-ms="1230" status="PASS">
+        <test-method signature="emailAlreadyTaken()[pri:0, instance:us.piit.luma.CreateAccount@5b07730f]" started-at="2023-05-09T10:04:45 EDT" name="emailAlreadyTaken" finished-at="2023-05-09T10:04:48 EDT" duration-ms="2892" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emailAlreadyTaken -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:us.piit.luma.CreateAccount@5b07730f]" started-at="2023-05-09T10:04:48 EDT" name="teardown" finished-at="2023-05-09T10:04:48 EDT" duration-ms="351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- us.piit.luma.CreateAccount -->
+    </test> <!-- create account test -->
+    <test started-at="2023-05-09T10:04:48 EDT" name="CustomerService test" finished-at="2023-05-09T10:04:55 EDT" duration-ms="6620">
+      <class name="us.piit.luma.CustomerServiceTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:us.piit.luma.CustomerServiceTest@4a335fa8]" started-at="2023-05-09T10:04:48 EDT" name="setup" finished-at="2023-05-09T10:04:50 EDT" duration-ms="2197" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[os x]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Big sur]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[98]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://magento.softwaretestingboard.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="sendEmail()[pri:0, instance:us.piit.luma.CustomerServiceTest@4a335fa8]" started-at="2023-05-09T10:04:50 EDT" name="sendEmail" finished-at="2023-05-09T10:04:54 EDT" duration-ms="4100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendEmail -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:us.piit.luma.CustomerServiceTest@4a335fa8]" started-at="2023-05-09T10:04:54 EDT" name="teardown" finished-at="2023-05-09T10:04:55 EDT" duration-ms="322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- us.piit.luma.CustomerServiceTest -->
+    </test> <!-- CustomerService test -->
+    <test started-at="2023-05-09T10:04:55 EDT" name="EditAccountInfo test" finished-at="2023-05-09T10:05:03 EDT" duration-ms="8878">
+      <class name="us.piit.luma.EditAccountInfoTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:us.piit.luma.EditAccountInfoTest@15eebbff]" started-at="2023-05-09T10:04:55 EDT" name="setup" finished-at="2023-05-09T10:04:57 EDT" duration-ms="2141" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[os x]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Big sur]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[98]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://magento.softwaretestingboard.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="editAccountInfo()[pri:0, instance:us.piit.luma.EditAccountInfoTest@15eebbff]" started-at="2023-05-09T10:04:57 EDT" name="editAccountInfo" finished-at="2023-05-09T10:05:03 EDT" duration-ms="6397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editAccountInfo -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:us.piit.luma.EditAccountInfoTest@15eebbff]" started-at="2023-05-09T10:05:03 EDT" name="teardown" finished-at="2023-05-09T10:05:03 EDT" duration-ms="339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- us.piit.luma.EditAccountInfoTest -->
+    </test> <!-- EditAccountInfo test -->
+    <test started-at="2023-05-09T10:05:03 EDT" name="Login test" finished-at="2023-05-09T10:05:17 EDT" duration-ms="14079">
+      <class name="us.piit.luma.LoginTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:us.piit.luma.LoginTest@3e34ace1]" started-at="2023-05-09T10:05:03 EDT" name="setup" finished-at="2023-05-09T10:05:06 EDT" duration-ms="2183" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[os x]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Big sur]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[98]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://magento.softwaretestingboard.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidEmail()[pri:0, instance:us.piit.luma.LoginTest@3e34ace1]" started-at="2023-05-09T10:05:06 EDT" name="invalidEmail" finished-at="2023-05-09T10:05:07 EDT" duration-ms="1612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidEmail -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:us.piit.luma.LoginTest@3e34ace1]" started-at="2023-05-09T10:05:07 EDT" name="teardown" finished-at="2023-05-09T10:05:08 EDT" duration-ms="368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:us.piit.luma.LoginTest@3e34ace1]" started-at="2023-05-09T10:05:08 EDT" name="setup" finished-at="2023-05-09T10:05:10 EDT" duration-ms="2473" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[os x]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Big sur]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[98]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://magento.softwaretestingboard.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="missingPassword()[pri:0, instance:us.piit.luma.LoginTest@3e34ace1]" started-at="2023-05-09T10:05:10 EDT" name="missingPassword" finished-at="2023-05-09T10:05:11 EDT" duration-ms="1214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- missingPassword -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:us.piit.luma.LoginTest@3e34ace1]" started-at="2023-05-09T10:05:11 EDT" name="teardown" finished-at="2023-05-09T10:05:12 EDT" duration-ms="363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:us.piit.luma.LoginTest@3e34ace1]" started-at="2023-05-09T10:05:12 EDT" name="setup" finished-at="2023-05-09T10:05:14 EDT" duration-ms="2087" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[os x]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Big sur]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[98]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://magento.softwaretestingboard.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validCred()[pri:0, instance:us.piit.luma.LoginTest@3e34ace1]" started-at="2023-05-09T10:05:14 EDT" name="validCred" finished-at="2023-05-09T10:05:17 EDT" duration-ms="3463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validCred -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:us.piit.luma.LoginTest@3e34ace1]" started-at="2023-05-09T10:05:17 EDT" name="teardown" finished-at="2023-05-09T10:05:17 EDT" duration-ms="309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- us.piit.luma.LoginTest -->
+    </test> <!-- Login test -->
+    <test started-at="2023-05-09T10:05:17 EDT" name="lumalogo test" finished-at="2023-05-09T10:05:23 EDT" duration-ms="5917">
+      <class name="us.piit.luma.LumaLogoTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:us.piit.luma.LumaLogoTest@339bf286]" started-at="2023-05-09T10:05:17 EDT" name="setup" finished-at="2023-05-09T10:05:20 EDT" duration-ms="2607" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[os x]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Big sur]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[98]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://magento.softwaretestingboard.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="lumaLogo()[pri:0, instance:us.piit.luma.LumaLogoTest@339bf286]" started-at="2023-05-09T10:05:20 EDT" name="lumaLogo" finished-at="2023-05-09T10:05:23 EDT" duration-ms="2920" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lumaLogo -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:us.piit.luma.LumaLogoTest@339bf286]" started-at="2023-05-09T10:05:23 EDT" name="teardown" finished-at="2023-05-09T10:05:23 EDT" duration-ms="389" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- us.piit.luma.LumaLogoTest -->
+    </test> <!-- lumalogo test -->
+    <test started-at="2023-05-09T10:05:23 EDT" name="purchase test" finished-at="2023-05-09T10:05:59 EDT" duration-ms="35749">
+      <class name="us.piit.luma.PurchaseItemTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:us.piit.luma.PurchaseItemTest@33e01298]" started-at="2023-05-09T10:05:23 EDT" name="setup" finished-at="2023-05-09T10:05:26 EDT" duration-ms="2142" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[os x]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Big sur]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[98]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://magento.softwaretestingboard.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="addItemToCart()[pri:0, instance:us.piit.luma.PurchaseItemTest@33e01298]" started-at="2023-05-09T10:05:26 EDT" name="addItemToCart" finished-at="2023-05-09T10:05:30 EDT" duration-ms="4919" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addItemToCart -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:us.piit.luma.PurchaseItemTest@33e01298]" started-at="2023-05-09T10:05:30 EDT" name="teardown" finished-at="2023-05-09T10:05:31 EDT" duration-ms="396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:us.piit.luma.PurchaseItemTest@33e01298]" started-at="2023-05-09T10:05:31 EDT" name="setup" finished-at="2023-05-09T10:05:33 EDT" duration-ms="2281" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[os x]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Big sur]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[98]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://magento.softwaretestingboard.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="buyProduct()[pri:0, instance:us.piit.luma.PurchaseItemTest@33e01298]" started-at="2023-05-09T10:05:33 EDT" name="buyProduct" finished-at="2023-05-09T10:05:48 EDT" duration-ms="14761" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyProduct -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:us.piit.luma.PurchaseItemTest@33e01298]" started-at="2023-05-09T10:05:48 EDT" name="teardown" finished-at="2023-05-09T10:05:48 EDT" duration-ms="566" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:us.piit.luma.PurchaseItemTest@33e01298]" started-at="2023-05-09T10:05:48 EDT" name="setup" finished-at="2023-05-09T10:05:51 EDT" duration-ms="2306" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[os x]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Big sur]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[98]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://magento.softwaretestingboard.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="removeItemsFromTheCart()[pri:0, instance:us.piit.luma.PurchaseItemTest@33e01298]" started-at="2023-05-09T10:05:51 EDT" name="removeItemsFromTheCart" finished-at="2023-05-09T10:05:59 EDT" duration-ms="7933" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeItemsFromTheCart -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:us.piit.luma.PurchaseItemTest@33e01298]" started-at="2023-05-09T10:05:59 EDT" name="teardown" finished-at="2023-05-09T10:05:59 EDT" duration-ms="431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- us.piit.luma.PurchaseItemTest -->
+    </test> <!-- purchase test -->
+    <test started-at="2023-05-09T10:05:59 EDT" name="searchbar test" finished-at="2023-05-09T10:06:03 EDT" duration-ms="3712">
+      <class name="us.piit.luma.SearchBarTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:us.piit.luma.SearchBarTest@21aa6d6c]" started-at="2023-05-09T10:05:59 EDT" name="setup" finished-at="2023-05-09T10:06:02 EDT" duration-ms="2368" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[os x]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Big sur]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[98]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://magento.softwaretestingboard.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="searchTest()[pri:0, instance:us.piit.luma.SearchBarTest@21aa6d6c]" started-at="2023-05-09T10:06:02 EDT" name="searchTest" finished-at="2023-05-09T10:06:02 EDT" duration-ms="962" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:us.piit.luma.SearchBarTest@75ed9710]" started-at="2023-05-09T07:32:18 EDT" name="teardown" finished-at="2023-05-09T07:32:18 EDT" duration-ms="492" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:us.piit.luma.SearchBarTest@21aa6d6c]" started-at="2023-05-09T10:06:02 EDT" name="teardown" finished-at="2023-05-09T10:06:03 EDT" duration-ms="373" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
