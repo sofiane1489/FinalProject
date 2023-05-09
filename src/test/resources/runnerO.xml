@@ -24,16 +24,16 @@
 <!--            <class name="us.piit.automation.AddItemsToCart"></class>-->
 <!--        </classes>-->
 <!--    </test>-->
-<!--    <test name="checkout confirme">-->
-<!--        <classes>-->
-<!--            <class name="us.piit.automation.CheckOutConfirme"></class>-->
-<!--        </classes>-->
-<!--    </test>-->
-    <test name="search bar test">
+    <test name="checkout confirme">
         <classes>
-            <class name="us.piit.automation.SearchProducts"></class>
+            <class name="us.piit.automation.CheckOutConfirme"></class>
         </classes>
     </test>
+<!--    <test name="search bar test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.automation.SearchProducts"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
 
 
 </suite>

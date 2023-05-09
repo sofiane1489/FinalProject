@@ -7,36 +7,36 @@ import us.piit.SetUp;
 
 public class CreateAccount extends SetUp {
     Logger log= LogManager.getLogger(CreateAccount.class.getName());
-//    @Test
-//    public void createNewAccount(){
-//
-//        clickOn("//div[@class='panel header']//a[normalize-space()='Create an Account']");
-//               log.info("click create account success");
-//        type("#firstname","mike");
-//               log.info("enter name  success");
-//
-//        type("#lastname","lee");
-//        log.info("enter lastname success");
-//
-//        type("#email_address","sos@gmail.com");
-//        log.info("enter email success");
-//
-//        type("#password","1234Abcd$");
-//        log.info("enter password success");
-//
-//        type("#password-confirmation","1234Abcd$");
-//        log.info("reenter password success");
-//
-//        clickOn("//form[@class='form create account form-create-account']/div/div/button/span");
-//        log.info("click on create account success");
-//
-//        //create account validation
-//        String expectedContInfor="mike lee\n" +
-//                "sos@gmail.com";
-//        String actualContInfor=getElementText("div[class='box box-information'] p");
-//        Assert.assertEquals(expectedContInfor,actualContInfor);
-//        log.info("account create success");
-//}
+    @Test
+    public void createNewAccount(){
+
+        clickOn("//div[@class='panel header']//a[normalize-space()='Create an Account']");
+               log.info("click create account success");
+        type("#firstname","mike");
+               log.info("enter name  success");
+
+        type("#lastname","lee");
+        log.info("enter lastname success");
+
+        type("#email_address","sos@gmail.com");
+        log.info("enter email success");
+
+        type("#password","1234Abcd$");
+        log.info("enter password success");
+
+        type("#password-confirmation","1234Abcd$");
+        log.info("reenter password success");
+
+        clickOn("//form[@class='form create account form-create-account']/div/div/button/span");
+        log.info("click on create account success");
+
+        //create account validation
+        String expectedContInfor="mike lee\n" +
+                "sos@gmail.com";
+        String actualContInfor=getElementText("div[class='box box-information'] p");
+        Assert.assertEquals(expectedContInfor,actualContInfor);
+        log.info("account create success");
+}
 
     @Test
     public void createWithExistingEmail(){

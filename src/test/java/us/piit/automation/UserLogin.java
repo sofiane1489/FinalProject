@@ -12,7 +12,7 @@ public class UserLogin extends SetUp {
     @Test
     public void validCredentials() {
         // Verify the title of the page
-        String expectedTitle = "Automation Exercise - Dress Products";
+        String expectedTitle = "Automation Exercise";
         String actualTitle = getCurrentTtile();
         Assert.assertEquals(expectedTitle, actualTitle);
 
@@ -27,7 +27,7 @@ public class UserLogin extends SetUp {
         waitFor(5);
 
         // Check if user is logged in
-        String expectedHomePageHeader = " Full-Fledged practice website for Automation Engineers";
+        String expectedHomePageHeader = "Full-Fledged practice website for Automation Engineers";
         String actualHomePageHeader = getElementText("div.container div.row div.col-sm-12 div.carousel.slide div.carousel-inner div.item.active:nth-child(1) div.col-sm-6:nth-child(1) > h2:nth-child(2)");
         Assert.assertEquals(expectedHomePageHeader, actualHomePageHeader);
         log.info("user logged in success");
@@ -35,7 +35,7 @@ public class UserLogin extends SetUp {
     @Test
     public void invalidemail() {
         // verify the title of the homepage
-        String expectedTitle = "Automation Exercise - Dress Products";
+        String expectedTitle = "Automation Exercise";
         String actualTitle = getCurrentTtile();
         Assert.assertEquals(expectedTitle, actualTitle);
 
@@ -57,7 +57,7 @@ public class UserLogin extends SetUp {
     }
     @Test
     public void invalidPassword (){
-        String expectedTitle = "Automation Exercise - Dress Products";
+        String expectedTitle = "Automation Exercise";
         String actualTitle = getCurrentTtile();
         Assert.assertEquals(expectedTitle, actualTitle);
         //clickon signin,enter  email, password, and click on login button

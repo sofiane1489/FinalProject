@@ -14,7 +14,7 @@ public class CheckOutConfirme extends SetUp {
 
          //Enter Email, password, and click on login button
          clickOn("//header/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[4]/a[1]");
-        type("//input[@type='email']", "adam2023@outlook.com");
+        type("//input[@type='email']", "adam20023@outlook.com");
         log.info("enter email success");
         type("//body/section[@id='form']/div[1]/div[1]/div[1]/div[1]/form[1]/input[3]", "Adana2023#");
         log.info("enter password success");
