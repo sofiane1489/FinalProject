@@ -17,11 +17,11 @@ public class SearchBarTest extends SetUp {
            log.info("landed on luma home page success");
 
            typeEnter("#search","bag pack for man");
-           log.info("type and hit enter text success");
+           log.info("type text and hit enter success");
 
         //search result validation
         String expectedPageWraperTitle="Search results for: 'bag pack for man'";
-        String actualPageWraperTitle=getElementText("#maincontent div h1 span");
+        String actualPageWraperTitle=getElementText("//div[@class='page-title-wrapper']");
         Assert.assertEquals(actualPageWraperTitle,expectedPageWraperTitle);
              log.info("serach bar result success");
        }

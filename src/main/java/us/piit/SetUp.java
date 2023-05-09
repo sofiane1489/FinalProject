@@ -52,7 +52,7 @@ public class SetUp {
     }
     @Parameters({"useCloudEnv","envName","os","osversion","browserName","browservesion","url"})
     @BeforeMethod
-    public void setup(@Optional("false")String useCloudEnv, @Optional("browserstack") String envName, @Optional("windows")String os,
+    public void setup(@Optional("false") String useCloudEnv, @Optional("browserstack") String envName, @Optional("windows")  String os,
                       @Optional("11") String osversion, @Optional("chrome") String browserName,
                       @Optional("111") String browservesion, @Optional("https://www.google.com/") String url) throws MalformedURLException {
         if(useCloudEnv.equalsIgnoreCase("true")){

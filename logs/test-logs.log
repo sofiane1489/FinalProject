@@ -4168,3 +4168,240 @@
 57:32:17.992 [main] INFO  20ogger {36} -type and hit enter text success
 57:32:18.179 [main] INFO  26ogger {36} -serach bar result success
 57:32:18.672 [main] INFO  72ogger {36} -browser close success
+59:13:47.288 [main] INFO  44ogger {36} -chrome browser open success
+59:13:50.191 [main] INFO  17ogger {36} -landed on luma home page success
+59:13:51.371 [main] INFO  20ogger {36} -type and hit enter text success
+59:13:51.402 [main] INFO  26ogger {36} -serach bar result success
+59:13:51.896 [main] INFO  72ogger {36} -browser close success
+59:14:22.492 [main] INFO  44ogger {36} -chrome browser open success
+59:14:34.671 [main] INFO  72ogger {36} -browser close success
+59:22:30.741 [main] INFO  44ogger {36} -chrome browser open success
+59:22:42.329 [main] INFO  72ogger {36} -browser close success
+59:36:27.043 [main] INFO  44ogger {36} -chrome browser open success
+59:36:38.332 [main] INFO  72ogger {36} -browser close success
+59:37:09.155 [main] INFO  44ogger {36} -chrome browser open success
+59:37:20.699 [main] INFO  72ogger {36} -browser close success
+59:37:55.447 [main] INFO  47ogger {36} -firefox browser open success
+59:37:57.008 [main] INFO  17ogger {36} -landed on luma home page success
+59:37:57.115 [main] INFO  20ogger {36} -type and hit enter text success
+59:37:58.159 [main] INFO  72ogger {36} -browser close success
+59:42:24.432 [main] INFO  47ogger {36} -firefox browser open success
+59:42:25.791 [main] INFO  17ogger {36} -landed on luma home page success
+59:42:25.978 [main] INFO  20ogger {36} -type text and hit enter success
+59:42:26.958 [main] INFO  72ogger {36} -browser close success
+59:44:43.887 [main] INFO  47ogger {36} -firefox browser open success
+59:44:45.700 [main] INFO  17ogger {36} -landed on luma home page success
+59:44:45.877 [main] INFO  20ogger {36} -type text and hit enter success
+59:44:46.997 [main] INFO  72ogger {36} -browser close success
+59:46:43.917 [main] INFO  47ogger {36} -firefox browser open success
+59:46:45.153 [main] INFO  17ogger {36} -landed on luma home page success
+59:46:45.306 [main] INFO  20ogger {36} -type text and hit enter success
+59:46:46.224 [main] INFO  72ogger {36} -browser close success
+59:47:51.146 [main] INFO  47ogger {36} -firefox browser open success
+59:47:52.780 [main] INFO  17ogger {36} -landed on luma home page success
+59:47:52.928 [main] INFO  20ogger {36} -type text and hit enter success
+59:47:53.999 [main] INFO  72ogger {36} -browser close success
+59:48:48.779 [main] INFO  50ogger {36} -edge browser open success
+59:49:09.052 [main] INFO  17ogger {36} -landed on luma home page success
+59:49:09.928 [main] INFO  20ogger {36} -type text and hit enter success
+59:49:10.188 [main] INFO  26ogger {36} -serach bar result success
+59:49:10.679 [main] INFO  72ogger {36} -browser close success
+59:50:15.032 [main] INFO  47ogger {36} -firefox browser open success
+59:50:16.158 [main] INFO  17ogger {36} -landed on luma home page success
+59:50:16.397 [main] INFO  20ogger {36} -type text and hit enter success
+59:50:17.310 [main] INFO  72ogger {36} -browser close success
+59:50:53.275 [main] INFO  50ogger {36} -edge browser open success
+59:50:54.835 [main] INFO  17ogger {36} -landed on luma home page success
+59:50:55.838 [main] INFO  20ogger {36} -type text and hit enter success
+59:50:56.088 [main] INFO  26ogger {36} -serach bar result success
+59:50:56.482 [main] INFO  72ogger {36} -browser close success
+59:51:09.799 [main] INFO  44ogger {36} -chrome browser open success
+59:51:11.190 [main] INFO  17ogger {36} -landed on luma home page success
+59:51:11.851 [main] INFO  20ogger {36} -type text and hit enter success
+59:51:12.048 [main] INFO  26ogger {36} -serach bar result success
+59:51:12.376 [main] INFO  72ogger {36} -browser close success
+59:52:39.811 [main] INFO  17ogger {36} -landed on luma home page success
+59:52:41.174 [main] INFO  20ogger {36} -type text and hit enter success
+59:52:41.791 [main] INFO  26ogger {36} -serach bar result success
+59:52:42.671 [main] INFO  72ogger {36} -browser close success
+59:55:01.176 [main] INFO  42ogger {36} -landed on luma home page success
+59:55:03.726 [main] INFO  45ogger {36} -click on sign in success
+59:55:04.177 [main] INFO  48ogger {36} -email enter success
+59:55:04.345 [main] INFO  51ogger {36} -password enter success
+59:55:04.595 [main] INFO  54ogger {36} -click on sign in success
+59:55:04.794 [main] INFO  60ogger {36} -validate error success
+59:55:05.596 [main] INFO  72ogger {36} -browser close success
+59:55:15.095 [main] INFO  68ogger {36} -landed on luma home page success
+59:55:16.562 [main] INFO  71ogger {36} -click on sign in success
+59:55:16.978 [main] INFO  74ogger {36} -email enter success
+59:55:17.161 [main] INFO  77ogger {36} -password enter success
+59:55:17.446 [main] INFO  80ogger {36} -click on sign in success
+59:55:17.679 [main] INFO  86ogger {36} -validate error success
+59:55:18.451 [main] INFO  72ogger {36} -browser close success
+59:55:26.159 [main] INFO  16ogger {36} -landed on luma home page success
+59:55:27.562 [main] INFO  19ogger {36} -click on sign in success
+59:55:27.993 [main] INFO  22ogger {36} -email enter success
+59:55:28.195 [main] INFO  25ogger {36} -password enter success
+59:55:30.745 [main] INFO  28ogger {36} -click on sign in success
+59:55:32.798 [main] INFO  34ogger {36} -login success
+59:55:33.519 [main] INFO  72ogger {36} -browser close success
+59:55:43.691 [main] INFO  15ogger {36} -landed on luma home page success
+59:55:44.849 [main] INFO  19ogger {36} -click on men section success
+59:55:46.309 [main] INFO  21ogger {36} -click on Top48 success
+59:55:47.976 [main] INFO  24ogger {36} -click on Cassius Sparring Tank success
+59:55:48.817 [main] INFO  26ogger {36} -click on size S success
+59:55:49.094 [main] INFO  28ogger {36} -click on blue color success
+59:55:49.442 [main] INFO  33ogger {36} -click on add To cart button success
+59:55:51.759 [main] INFO  39ogger {36} -added to cart success
+59:55:52.594 [main] INFO  72ogger {36} -browser close success
+59:56:02.003 [main] INFO  48ogger {36} -landed on luma home page success
+59:56:02.392 [main] INFO  51ogger {36} -hover over Gear success
+59:56:03.632 [main] INFO  53ogger {36} -click on Fitness Equipment success
+59:56:05.716 [main] INFO  55ogger {36} -click on item Band success
+59:56:06.143 [main] INFO  57ogger {36} -click on add to cart button success
+59:56:07.659 [main] INFO  63ogger {36} -item added to cart success
+59:56:12.057 [main] INFO  67ogger {36} -click on shopping cart success
+59:56:13.942 [main] INFO  69ogger {36} -click on proceed to checkout  cart success
+59:56:16.377 [main] INFO  71ogger {36} -type email success
+59:56:16.725 [main] INFO  74ogger {36} -type first name success
+59:56:17.072 [main] INFO  77ogger {36} -type last name success
+59:56:17.444 [main] INFO  80ogger {36} -type company name success
+59:56:17.803 [main] INFO  83ogger {36} -type street address success
+59:56:18.108 [main] INFO  86ogger {36} -type city success
+59:56:19.295 [main] INFO  91ogger {36} -type postcode success
+59:56:19.660 [main] INFO  94ogger {36} -type phone number success
+59:56:19.915 [main] INFO  97ogger {36} -selcect Shipping Methods success
+59:56:20.394 [main] INFO  100ogger {36} -click on next success
+59:56:23.693 [main] INFO  105ogger {36} -click on place order success
+59:56:28.009 [main] INFO  111ogger {36} -purchase validation success
+59:56:28.847 [main] INFO  72ogger {36} -browser close success
+59:56:36.961 [main] INFO  119ogger {36} -landed on luma home page success
+59:56:38.290 [main] INFO  123ogger {36} -click on Gear section success
+59:56:39.746 [main] INFO  125ogger {36} -click on Watches success
+59:56:40.982 [main] INFO  128ogger {36} -click on Dash Digital Watch success
+59:56:41.563 [main] INFO  131ogger {36} -click in Add To cart success
+59:56:42.928 [main] INFO  137ogger {36} -added to cart success
+59:56:43.377 [main] INFO  140ogger {36} -click on shopping cart success
+59:56:45.627 [main] INFO  143ogger {36} -click on view and edit success
+59:56:48.527 [main] INFO  146ogger {36} -click on trash can icon success
+59:56:49.043 [main] INFO  151ogger {36} -item removed success
+59:56:49.993 [main] INFO  72ogger {36} -browser close success
+510:04:43.690 [main] INFO  44ogger {36} -chrome browser open success
+510:04:45.186 [main] INFO  49ogger {36} -landed on luma home page success
+510:04:45.958 [main] INFO  52ogger {36} -click create account success
+510:04:46.183 [main] INFO  55ogger {36} -enter name  success
+510:04:46.274 [main] INFO  58ogger {36} -enter lastname success
+510:04:46.362 [main] INFO  61ogger {36} -enter email success
+510:04:46.449 [main] INFO  64ogger {36} -enter password success
+510:04:46.507 [main] INFO  67ogger {36} -reenter password success
+510:04:47.779 [main] INFO  70ogger {36} -click on create account success
+510:04:48.024 [main] INFO  76ogger {36} -error message validation success
+510:04:48.377 [main] INFO  72ogger {36} -browser close success
+510:04:49.289 [main] INFO  44ogger {36} -chrome browser open success
+510:04:50.650 [main] INFO  16ogger {36} -landed on luma home page success
+510:04:51.662 [main] INFO  19ogger {36} -click on contact us success
+510:04:51.832 [main] INFO  22ogger {36} -type Name success
+510:04:51.938 [main] INFO  24ogger {36} -type Email address success
+510:04:52.024 [main] INFO  26ogger {36} -type telephone success
+510:04:52.189 [main] INFO  28ogger {36} -type text in the box success
+510:04:54.425 [main] INFO  30ogger {36} -click on submit success
+510:04:54.693 [main] INFO  35ogger {36} -Email sent success
+510:04:55.015 [main] INFO  72ogger {36} -browser close success
+510:04:55.952 [main] INFO  44ogger {36} -chrome browser open success
+510:04:57.203 [main] INFO  16ogger {36} -landed on luma home page success
+510:04:57.987 [main] INFO  19ogger {36} -click on sign in success
+510:04:58.136 [main] INFO  22ogger {36} -email enter success
+510:04:58.210 [main] INFO  25ogger {36} -password enter success
+510:04:59.442 [main] INFO  28ogger {36} -click on sign in success
+510:04:59.511 [main] INFO  34ogger {36} -it is visible success
+510:04:59.587 [main] INFO  39ogger {36} -it is interactable success
+510:04:59.666 [main] INFO  42ogger {36} -click on drop down list success
+510:05:00.541 [main] INFO  45ogger {36} -click on My Account success
+510:05:01.487 [main] INFO  48ogger {36} -click on edit success
+510:05:01.824 [main] INFO  51ogger {36} -double click on last name field success
+510:05:01.975 [main] INFO  54ogger {36} -delete element success
+510:05:02.037 [main] INFO  57ogger {36} -type last name success
+510:05:03.515 [main] INFO  60ogger {36} -click on save button success
+510:05:03.561 [main] INFO  65ogger {36} -account edit success
+510:05:03.900 [main] INFO  72ogger {36} -browser close success
+510:05:04.779 [main] INFO  44ogger {36} -chrome browser open success
+510:05:06.242 [main] INFO  42ogger {36} -landed on luma home page success
+510:05:07.308 [main] INFO  45ogger {36} -click on sign in success
+510:05:07.523 [main] INFO  48ogger {36} -email enter success
+510:05:07.602 [main] INFO  51ogger {36} -password enter success
+510:05:07.671 [main] INFO  54ogger {36} -click on sign in success
+510:05:07.701 [main] INFO  60ogger {36} -validate error success
+510:05:08.068 [main] INFO  72ogger {36} -browser close success
+510:05:09.056 [main] INFO  44ogger {36} -chrome browser open success
+510:05:10.658 [main] INFO  68ogger {36} -landed on luma home page success
+510:05:11.447 [main] INFO  71ogger {36} -click on sign in success
+510:05:11.613 [main] INFO  74ogger {36} -email enter success
+510:05:11.672 [main] INFO  77ogger {36} -password enter success
+510:05:11.733 [main] INFO  80ogger {36} -click on sign in success
+510:05:11.756 [main] INFO  86ogger {36} -validate error success
+510:05:12.119 [main] INFO  72ogger {36} -browser close success
+510:05:13.019 [main] INFO  44ogger {36} -chrome browser open success
+510:05:14.260 [main] INFO  16ogger {36} -landed on luma home page success
+510:05:15.023 [main] INFO  19ogger {36} -click on sign in success
+510:05:15.174 [main] INFO  22ogger {36} -email enter success
+510:05:15.236 [main] INFO  25ogger {36} -password enter success
+510:05:16.718 [main] INFO  28ogger {36} -click on sign in success
+510:05:17.670 [main] INFO  34ogger {36} -login success
+510:05:17.980 [main] INFO  72ogger {36} -browser close success
+510:05:18.889 [main] INFO  44ogger {36} -chrome browser open success
+510:05:20.630 [main] INFO  16ogger {36} -landed on luma home page success
+510:05:20.664 [main] INFO  21ogger {36} -luma logo is interactable
+510:05:21.976 [main] INFO  24ogger {36} -click on what's new success
+510:05:22.795 [main] INFO  27ogger {36} -click on jackets in NEW in men's success
+510:05:23.428 [main] INFO  30ogger {36} -click on luma logo success
+510:05:23.511 [main] INFO  35ogger {36} -landed in home page success
+510:05:23.900 [main] INFO  72ogger {36} -browser close success
+510:05:24.833 [main] INFO  44ogger {36} -chrome browser open success
+510:05:26.089 [main] INFO  15ogger {36} -landed on luma home page success
+510:05:27.214 [main] INFO  19ogger {36} -click on men section success
+510:05:27.805 [main] INFO  21ogger {36} -click on Top48 success
+510:05:29.318 [main] INFO  24ogger {36} -click on Cassius Sparring Tank success
+510:05:29.381 [main] INFO  26ogger {36} -click on size S success
+510:05:29.441 [main] INFO  28ogger {36} -click on blue color success
+510:05:29.504 [main] INFO  33ogger {36} -click on add To cart button success
+510:05:30.971 [main] INFO  39ogger {36} -added to cart success
+510:05:31.368 [main] INFO  72ogger {36} -browser close success
+510:05:32.355 [main] INFO  44ogger {36} -chrome browser open success
+510:05:33.686 [main] INFO  48ogger {36} -landed on luma home page success
+510:05:34.063 [main] INFO  51ogger {36} -hover over Gear success
+510:05:34.854 [main] INFO  53ogger {36} -click on Fitness Equipment success
+510:05:35.657 [main] INFO  55ogger {36} -click on item Band success
+510:05:35.706 [main] INFO  57ogger {36} -click on add to cart button success
+510:05:36.987 [main] INFO  63ogger {36} -item added to cart success
+510:05:39.404 [main] INFO  67ogger {36} -click on shopping cart success
+510:05:40.552 [main] INFO  69ogger {36} -click on proceed to checkout  cart success
+510:05:41.685 [main] INFO  71ogger {36} -type email success
+510:05:41.766 [main] INFO  74ogger {36} -type first name success
+510:05:41.847 [main] INFO  77ogger {36} -type last name success
+510:05:41.922 [main] INFO  80ogger {36} -type company name success
+510:05:42.023 [main] INFO  83ogger {36} -type street address success
+510:05:42.117 [main] INFO  86ogger {36} -type city success
+510:05:42.290 [main] INFO  91ogger {36} -type postcode success
+510:05:42.393 [main] INFO  94ogger {36} -type phone number success
+510:05:42.454 [main] INFO  97ogger {36} -selcect Shipping Methods success
+510:05:42.512 [main] INFO  100ogger {36} -click on next success
+510:05:45.575 [main] INFO  105ogger {36} -click on place order success
+510:05:48.411 [main] INFO  111ogger {36} -purchase validation success
+510:05:48.979 [main] INFO  72ogger {36} -browser close success
+510:05:49.933 [main] INFO  44ogger {36} -chrome browser open success
+510:05:51.324 [main] INFO  119ogger {36} -landed on luma home page success
+510:05:52.335 [main] INFO  123ogger {36} -click on Gear section success
+510:05:53.129 [main] INFO  125ogger {36} -click on Watches success
+510:05:53.925 [main] INFO  128ogger {36} -click on Dash Digital Watch success
+510:05:54.016 [main] INFO  131ogger {36} -click in Add To cart success
+510:05:55.564 [main] INFO  137ogger {36} -added to cart success
+510:05:55.616 [main] INFO  140ogger {36} -click on shopping cart success
+510:05:57.455 [main] INFO  143ogger {36} -click on view and edit success
+510:05:59.141 [main] INFO  146ogger {36} -click on trash can icon success
+510:05:59.216 [main] INFO  151ogger {36} -item removed success
+510:05:59.649 [main] INFO  72ogger {36} -browser close success
+510:06:00.551 [main] INFO  44ogger {36} -chrome browser open success
+510:06:02.067 [main] INFO  17ogger {36} -landed on luma home page success
+510:06:02.805 [main] INFO  20ogger {36} -type text and hit enter success
+510:06:02.989 [main] INFO  26ogger {36} -serach bar result success
+510:06:03.362 [main] INFO  72ogger {36} -browser close success
