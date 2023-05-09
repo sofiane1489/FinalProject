@@ -10,10 +10,9 @@ public class LumaLogoTest extends SetUp{
     Logger log= LogManager.getLogger(LumaLogoTest.class.getName());
     @Test
     public void lumaLogo(){
-        // website validation
-        String expectedTitle="Home Page";
-        String actualTitle=getCurrentTtile();
-        Assert.assertEquals(expectedTitle,actualTitle);
+        // website validation with luma logo
+        boolean actualTitle=isVisible("//a[@aria-label='store logo']//img");
+        Assert.assertTrue(actualTitle);
         log.info("landed on luma home page success");
 
         //check the intractability of luma logo

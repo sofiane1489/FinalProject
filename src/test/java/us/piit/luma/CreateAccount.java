@@ -9,12 +9,11 @@ public class CreateAccount extends SetUp {
     Logger log= LogManager.getLogger(CreateAccount.class.getName());
 //    @Test
 //    public void createNewAccount(){
-//          //website validation
-//          String expectedTitle="Home Page";
-//          String actualTitle=getCurrentTtile();
-//          Assert.assertEquals(expectedTitle,actualTitle);
-//          log.info("landed on luma home page success");
-////
+//         // website validation with luma logo
+//           boolean actualTitle=isVisible("//a[@aria-label='store logo']//img");
+//           Assert.assertTrue(actualTitle);
+//           log.info("landed on luma home page success");
+//
 //        clickOn("//div[@class='panel header']//a[normalize-space()='Create an Account']");
 //               log.info("click create account success");
 //        type("#firstname","mike");
@@ -43,11 +42,10 @@ public class CreateAccount extends SetUp {
 //        log.info("account create success");
 //}
     @Test
-    public void createWithExistingEmail(){
-        // website validation
-        String expectedTitle="Home Page";
-        String actualTitle=getCurrentTtile();
-        Assert.assertEquals(expectedTitle,actualTitle);
+    public void emailAlreadyTaken(){
+        // website validation with luma logo
+        boolean actualTitle=isVisible("//a[@aria-label='store logo']//img");
+        Assert.assertTrue(actualTitle);
         log.info("landed on luma home page success");
 
         clickOn("//div[@class='panel header']//a[normalize-space()='Create an Account']");

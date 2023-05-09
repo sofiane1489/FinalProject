@@ -10,11 +10,10 @@ public class LoginTest extends SetUp {
     Logger log= LogManager.getLogger(LoginTest.class.getName());
     @Test
     public void validCred(){
-          //website validation
-           String expectedTitle="Home Page";
-           String actualTitle=getCurrentTtile();
-           Assert.assertEquals(expectedTitle,actualTitle);
-           log.info("landed on luma home page success");
+        // website validation with luma logo
+        boolean actualTitle=isVisible("//a[@aria-label='store logo']//img");
+        Assert.assertTrue(actualTitle);
+        log.info("landed on luma home page success");
 
          clickOn("body > div.page-wrapper > header > div.panel.wrapper > div > ul > li.authorization-link > a");
          log.info("click on sign in success");
@@ -37,10 +36,9 @@ public class LoginTest extends SetUp {
 
     @Test
     public void invalidEmail(){
-        //website validation
-        String expectedTitle="Home Page";
-        String actualTitle=getCurrentTtile();
-        Assert.assertEquals(expectedTitle,actualTitle);
+        // website validation with luma logo
+        boolean actualTitle=isVisible("//a[@aria-label='store logo']//img");
+        Assert.assertTrue(actualTitle);
         log.info("landed on luma home page success");
 
         clickOn("body div.page-wrapper header div.panel.wrapper div ul li.authorization-link a");
@@ -64,10 +62,9 @@ public class LoginTest extends SetUp {
 
     @Test
     public void missingPassword(){
-        //website validation
-        String expectedTitle="Home Page";
-        String actualTitle=getCurrentTtile();
-        Assert.assertEquals(expectedTitle,actualTitle);
+        // website validation with luma logo
+        boolean actualTitle=isVisible("//a[@aria-label='store logo']//img");
+        Assert.assertTrue(actualTitle);
         log.info("landed on luma home page success");
 
         clickOn("body div.page-wrapper header div.panel.wrapper div ul li.authorization-link a");
