@@ -6,10 +6,10 @@ import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import us.piit.SetUp;
-import us.piit.luma.CreateAccount;
+import us.piit.freecrm.signUp;
 
 public class signUp extends SetUp {
-    Logger log= LogManager.getLogger(CreateAccount.class.getName());
+    Logger log= LogManager.getLogger(signUp.class.getName());
 
     @Test
     public void validCredentials(){
