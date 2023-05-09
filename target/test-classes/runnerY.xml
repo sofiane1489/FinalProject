@@ -14,16 +14,16 @@
 <!--            <class name="us.piit.automationpractice.CreatAccountTest"></class>-->
 <!--        </classes>-->
 <!--    </test>-->
-    <test name="Login test">
-        <classes>
-            <class name="us.piit.automationpractice.LogingTest"></class>
-        </classes>
-    </test>
-<!--    <test name="search test">-->
+<!--    <test name="Login test">-->
 <!--        <classes>-->
-<!--            <class name="us.piit.automationpractice.SearchBarTest"></class>-->
+<!--            <class name="us.piit.automationpractice.LogingTest"></class>-->
 <!--        </classes>-->
 <!--    </test>-->
+    <test name="search test">
+        <classes>
+            <class name="us.piit.automationpractice.SearchBarTest"></class>
+        </classes>
+    </test>
 
 
 </suite>

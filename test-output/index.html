@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,12 +103,7 @@
                     <div class="method-list-content passed suite-saucedemo_test">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-saucedemo_test" title="us.piit.automationpractice.LogingTest" class="method navigator-link" hash-for-method="invalidEmail">invalidEmail</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-saucedemo_test" title="us.piit.automationpractice.LogingTest" class="method navigator-link" hash-for-method="missingPassword">missingPassword</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-saucedemo_test" title="us.piit.automationpractice.SearchBarTest" class="method navigator-link" hash-for-method="searchItem">searchItem</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-saucedemo_test -->
@@ -126,21 +121,14 @@
           <div class="suite-saucedemo_test-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">us.piit.automationpractice.LogingTest</span>
+              <span class="class-name">us.piit.automationpractice.SearchBarTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="invalidEmail">
-                  </a> <!-- invalidEmail -->
-                  <span class="method-name">invalidEmail</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="missingPassword">
-                  </a> <!-- missingPassword -->
-                  <span class="method-name">missingPassword</span>
+                  <a name="searchItem">
+                  </a> <!-- searchItem -->
+                  <span class="method-name">searchItem</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -162,11 +150,11 @@
   &lt;parameter name=&quot;browserName&quot; value=&quot;chrome&quot;/&gt;
   &lt;parameter name=&quot;osversion&quot; value=&quot;11&quot;/&gt;
   &lt;parameter name=&quot;url&quot; value=&quot;http://automationpractice.pl&quot;/&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Login test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;search test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;us.piit.automationpractice.LogingTest&quot;/&gt;
+      &lt;class name=&quot;us.piit.automationpractice.SearchBarTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Login test --&gt;
+  &lt;/test&gt; &lt;!-- search test --&gt;
 &lt;/suite&gt; &lt;!-- saucedemo test --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -178,7 +166,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Login test (1 class)</span>
+                <span class="test-name">search test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -204,20 +192,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'invalidEmail')
-data.setCell(0, 2, 'us.piit.automationpractice.LogingTest')
-data.setCell(0, 3, 1747);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'missingPassword')
-data.setCell(1, 2, 'us.piit.automationpractice.LogingTest')
-data.setCell(1, 3, 1720);
+data.setCell(0, 1, 'searchItem')
+data.setCell(0, 2, 'us.piit.automationpractice.SearchBarTest')
+data.setCell(0, 3, 2913);
 window.suiteTableData['saucedemo_test']= { tableData: data, tableDiv: 'times-div-saucedemo_test'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-saucedemo_test">
               </div> <!-- times-div-saucedemo_test -->
             </div> <!-- times-div -->
@@ -243,30 +227,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">us.piit.automationpractice.LogingTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">us.piit.automationpractice.SearchBarTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup(false, browserstack, windows, 11, chrome, 111, http://automationpractice.pl)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">invalidEmail</span>
-                <span class="method-start">6529 ms</span>
+                <span class="method-name">searchItem</span>
+                <span class="method-start">5685 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">8276 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(false, browserstack, windows, 11, chrome, 111, http://automationpractice.pl)</span>
-                <span class="method-start">8583 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">missingPassword</span>
-                <span class="method-start">15294 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">17015 ms</span>
+                <span class="method-start">8599 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
