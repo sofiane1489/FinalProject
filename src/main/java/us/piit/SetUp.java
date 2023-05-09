@@ -127,6 +127,25 @@ public class SetUp {
             select.selectByVisibleText(value);
         }
     }
+    public void selectByIn(String locator,int value){
+        try {
+            Select select = new Select(driver.findElement(By.cssSelector(locator)));
+            select.selectByIndex(value);
+        }catch(Exception e){
+            Select select = new Select(driver.findElement(By.xpath(locator)));
+            select.selectByIndex(value);
+        }
+    }
+    public void selectByVal(String locator,String value){
+        try {
+            Select select = new Select(driver.findElement(By.cssSelector(locator)));
+            select.selectByValue(value);
+        }catch(Exception e){
+            Select select = new Select(driver.findElement(By.xpath(locator)));
+            select.selectByValue(value);
+        }
+    }
+
     public void delete(String locator){
         try {
             driver.findElement(By.cssSelector(locator)).sendKeys(Keys.DELETE);
