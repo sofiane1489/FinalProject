@@ -9,10 +9,9 @@ public class PurchaseItemTest extends SetUp {
 
     @Test
     public void addItemToCart(){
-        // website validation
-        String expectedTitle="Home Page";
-        String actualTitle=getCurrentTtile();
-        Assert.assertEquals(expectedTitle,actualTitle);
+        // website validation with luma logo
+        boolean actualTitle=isVisible("//a[@aria-label='store logo']//img");
+        Assert.assertTrue(actualTitle);
         log.info("landed on luma home page success");
 
         //click on men section
@@ -27,6 +26,9 @@ public class PurchaseItemTest extends SetUp {
         log.info("click on size S success");
         clickOn("#option-label-color-93-item-50");
         log.info("click on blue color success");
+//        delete("//input[@id='qty']");
+//        type("//input[@id='qty']","3");
+//        log.info("quantity updated success");
         clickOn("//button[@id='product-addtocart-button']");
         log.info("click on add To cart button success");
 
@@ -40,10 +42,9 @@ public class PurchaseItemTest extends SetUp {
 
     @Test
     public void buyProduct(){
-        // website validation
-        String expectedTitle="Home Page";
-        String actualTitle=getCurrentTtile();
-        Assert.assertEquals(expectedTitle,actualTitle);
+        // website validation with luma logo
+        boolean actualTitle=isVisible("//a[@aria-label='store logo']//img");
+        Assert.assertTrue(actualTitle);
         log.info("landed on luma home page success");
 
         hoverOver("#ui-id-6");
@@ -112,10 +113,9 @@ public class PurchaseItemTest extends SetUp {
     }
     @Test
     public void removeItemsFromTheCart(){
-        // website validation
-        String expectedTitle="Home Page";
-        String actualTitle=getCurrentTtile();
-        Assert.assertEquals(expectedTitle,actualTitle);
+        // website validation with luma logo
+        boolean actualTitle=isVisible("//a[@aria-label='store logo']//img");
+        Assert.assertTrue(actualTitle);
         log.info("landed on luma home page success");
 
         //click on Gear section

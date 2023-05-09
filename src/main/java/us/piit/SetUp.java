@@ -54,7 +54,7 @@ public class SetUp {
     @BeforeMethod
     public void setup(@Optional("false")String useCloudEnv, @Optional("browserstack") String envName, @Optional("windows")String os,
                       @Optional("11") String osversion, @Optional("chrome") String browserName,
-                      @Optional("111") String browservesion, @Optional("https://www.google.com") String url) throws MalformedURLException {
+                      @Optional("111") String browservesion, @Optional("https://www.google.com/") String url) throws MalformedURLException {
         if(useCloudEnv.equalsIgnoreCase("true")){
             getCloudDriver(envName,os,osversion,browserName,browservesion,"sofianesehad_ClW76g","2f3G7QUqgScR9c7bbahr");
         } else if (useCloudEnv.equalsIgnoreCase("false")) {
@@ -72,10 +72,9 @@ public class SetUp {
         log.info("browser close success");
     }
 
-    //-------------------------------------------------------------------------------------------------------------------
-    //                                         Selenium methods
-    //------------------------------------------------------------------------------------------------------------------
-
+/*----------------------------------------------------------------------------------------------------------------*/
+/*                                         Selenium methods                                                       */
+/*----------------------------------------------------------------------------------------------------------------*/
 
     public String getCurrentTtile(){
         return driver.getTitle();
@@ -138,6 +137,14 @@ public class SetUp {
             action.moveToElement(driver.findElement(By.cssSelector(locator))).build().perform();
         }catch (Exception e){
             action.moveToElement(driver.findElement(By.xpath(locator))).build().perform();
+        }
+    }
+    public void doubleClick(String locator){
+        Actions action=new Actions(driver);
+        try{
+            action.doubleClick(driver.findElement(By.cssSelector(locator))).build().perform();
+        }catch (Exception e){
+            action.doubleClick(driver.findElement(By.xpath(locator))).build().perform();
         }
     }
     public void waitFor(int seconds){

@@ -10,15 +10,14 @@ public class SearchBarTest extends SetUp {
     Logger log= LogManager.getLogger(SearchBarTest.class.getName());
 
        @Test
-    public void searchTest(){
-           // website validation
-           String expectedTitle="Home Page";
-           String actualTitle=getCurrentTtile();
-           Assert.assertEquals(expectedTitle,actualTitle);
+       public void searchTest(){
+           // website validation with luma logo
+           boolean actualTitle=isVisible("//a[@aria-label='store logo']//img");
+           Assert.assertTrue(actualTitle);
            log.info("landed on luma home page success");
 
            typeEnter("#search","bag pack for man");
-              log.info("type and hit enter text success");
+           log.info("type and hit enter text success");
 
         //search result validation
         String expectedPageWraperTitle="Search results for: 'bag pack for man'";

@@ -10,10 +10,9 @@ public class CustomerServiceTest extends SetUp {
     Logger log= LogManager.getLogger(CustomerServiceTest.class.getName());
     @Test
     public void sendEmail(){
-        // website validation
-        String expectedTitle="Home Page";
-        String actualTitle=getCurrentTtile();
-        Assert.assertEquals(expectedTitle,actualTitle);
+        // website validation with luma logo
+        boolean actualTitle=isVisible("//a[@aria-label='store logo']//img");
+        Assert.assertTrue(actualTitle);
         log.info("landed on luma home page success");
 
         clickOn("//a[text()='Contact Us']");
@@ -36,5 +35,4 @@ public class CustomerServiceTest extends SetUp {
         log.info("Email sent success");
 
     }
-
 }
