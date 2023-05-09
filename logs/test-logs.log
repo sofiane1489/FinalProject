@@ -4405,3 +4405,59 @@
 510:06:02.805 [main] INFO  20ogger {36} -type text and hit enter success
 510:06:02.989 [main] INFO  26ogger {36} -serach bar result success
 510:06:03.362 [main] INFO  72ogger {36} -browser close success
+517:07:17.905 [main] INFO  44ogger {36} -chrome browser open success
+517:08:27.036 [main] INFO  44ogger {36} -chrome browser open success
+517:08:32.013 [main] INFO  19ogger {36} -enter email success
+517:08:32.147 [main] INFO  22ogger {36} -enter password success
+517:08:32.941 [main] INFO  25ogger {36} -click on login button Success
+517:08:33.090 [main] INFO  28ogger {36} -type on search bar success
+517:08:34.655 [main] INFO  31ogger {36} -click on search button success
+517:08:34.722 [main] INFO  36ogger {36} -message validation success
+517:08:34.783 [main] INFO  41ogger {36} -search validation success
+517:08:35.115 [main] INFO  72ogger {36} -browser close success
+517:08:53.172 [main] INFO  44ogger {36} -chrome browser open success
+517:08:59.652 [main] INFO  19ogger {36} -enter email success
+517:08:59.807 [main] INFO  22ogger {36} -enter password success
+517:09:00.328 [main] INFO  25ogger {36} -click on login button Success
+517:09:00.711 [main] INFO  72ogger {36} -browser close success
+517:10:36.322 [main] INFO  44ogger {36} -chrome browser open success
+517:10:42.577 [main] INFO  19ogger {36} -enter email success
+517:10:42.729 [main] INFO  22ogger {36} -enter password success
+517:10:43.567 [main] INFO  25ogger {36} -click on login button Success
+517:10:43.648 [main] INFO  31ogger {36} -user logged in success
+517:10:43.958 [main] INFO  72ogger {36} -browser close success
+517:12:12.738 [main] INFO  44ogger {36} -chrome browser open success
+517:12:17.750 [main] INFO  64ogger {36} -click on sign in success
+517:12:17.926 [main] INFO  67ogger {36} -enter email success
+517:12:18.031 [main] INFO  69ogger {36} -click on create an account success
+517:12:18.392 [main] INFO  74ogger {36} -error validation success
+517:12:18.763 [main] INFO  72ogger {36} -browser close success
+517:12:20.025 [main] INFO  44ogger {36} -chrome browser open success
+517:12:25.350 [main] INFO  18ogger {36} -click on sign in success
+517:12:25.503 [main] INFO  21ogger {36} -enter email success
+517:12:25.602 [main] INFO  24ogger {36} -click on create an account success
+517:12:26.539 [main] INFO  27ogger {36} -enter gender success
+517:12:26.661 [main] INFO  30ogger {36} -enter first name success
+517:12:26.774 [main] INFO  33ogger {36} -enter last name success
+517:12:26.897 [main] INFO  36ogger {36} -enter email success
+517:12:27.017 [main] INFO  39ogger {36} -enter password success
+517:12:27.397 [main] INFO  42ogger {36} -select day success
+517:12:27.658 [main] INFO  45ogger {36} -select month success
+517:12:27.809 [main] INFO  48ogger {36} -select year success
+517:12:28.922 [main] INFO  51ogger {36} -click on register button success
+517:12:28.994 [main] INFO  56ogger {36} -user logged in success
+517:12:29.304 [main] INFO  72ogger {36} -browser close success
+517:13:34.382 [main] INFO  44ogger {36} -chrome browser open success
+517:13:38.681 [main] INFO  40ogger {36} -click on sign in success
+517:13:38.852 [main] INFO  43ogger {36} -enter email success
+517:13:38.997 [main] INFO  46ogger {36} -enter password success
+517:13:39.480 [main] INFO  49ogger {36} -click on login button Success
+517:13:39.569 [main] INFO  55ogger {36} -validate error success
+517:13:39.874 [main] INFO  72ogger {36} -browser close success
+517:13:41.141 [main] INFO  44ogger {36} -chrome browser open success
+517:13:47.455 [main] INFO  64ogger {36} -cilck on singn in success
+517:13:47.638 [main] INFO  67ogger {36} -enter email success
+517:13:47.751 [main] INFO  70ogger {36} -enter password success
+517:13:48.236 [main] INFO  73ogger {36} -click on login button Success
+517:13:48.307 [main] INFO  79ogger {36} -validate error success
+517:13:48.629 [main] INFO  72ogger {36} -browser close success

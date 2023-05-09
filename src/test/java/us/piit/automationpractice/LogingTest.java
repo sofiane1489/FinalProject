@@ -18,65 +18,65 @@ public class LogingTest extends  SetUp{
         type("#email","yaya@gmail.com");
         log.info("enter email success");
 
-        type("#passwd","1234abcd$");
+        type("#passwd","abcd1234$");
         log.info("enter password success");
 
         clickOn("#SubmitLogin");
         log.info("click on login button Success");
 
         //check user is logged in
-        String expectedHomePageHeader = "your logo";
-        String actualHomePageHeader = getElementText("#header_logo > a > img");
-        Assert.assertEquals(expectedHomePageHeader, actualHomePageHeader);
+        String expectedAccountInformation = "Jhon Claud";
+        String actualAccountInformation = getElementText("//div[@class='header_user_info']//a[@class='account']/span");
+        Assert.assertEquals(expectedAccountInformation, actualAccountInformation);
         log.info("user logged in success");
     }
-//
-//    @Test
-//  public void invalidEmail() {
-//       String expectedTitle = "nopCommerce demo store";
-//      String actualTitle = getCurrentTtile();
-//       Assert.assertEquals(expectedTitle, actualTitle);
-//        //enter  username, password, and click on login button
-//        clickOn(".ico-login");
-//        type("#Email","yay@gmail.com");
-//        log.info("enter email success");
-//
-//        type("#Password","abcd1234$");
-//        log.info("enter password success");
-//
-//        clickOn(".button-1.login-button");
-//        log.info("click on login button Success");
-//
-//       //validate error
-//        String expectedHomePageHeader = "Login was unsuccessful. Please correct the errors and try again.\n" +
-//                "No customer account found";
-//        String actualHomePageHeader = getElementText(".message-error.validation-summary-errors");
-//        Assert.assertEquals(expectedHomePageHeader, actualHomePageHeader);
-//        log.info("error validate success");
-//   }
-//
-//    @Test
-//    public void missingidEmail() {
-//       String expectedTitle = "nopCommerce demo store";
-//       String actualTitle = getCurrentTtile();
-//        Assert.assertEquals(expectedTitle, actualTitle);
-//        //enter  username, password, and click on login button
-//       clickOn(".ico-login");
-//
-//        type("#Email","");
-//        log.info("enter email success");
-//
-//        type("#Password","abcd1234$");
-//       log.info("enter password success");
-//
-//       clickOn(".button-1.login-button");
-//        log.info("click on login button Success");
-//
-//       //validate error
-//       String expectedHomePageHeader = "Please enter your email";
-//        String actualHomePageHeader = getElementText("#Email-error");
-//        Assert.assertEquals(expectedHomePageHeader, actualHomePageHeader);
-//        log.info("error validate success");
-//   }
+    @Test
+    public void invalidEmail() {
+        String expectedTitle = "My Store";
+        String actualTitle = getCurrentTtile();
+        Assert.assertEquals(expectedTitle, actualTitle);
+        //enter  username, password, and click on login button
+        clickOn("#header > div.nav > div > div > nav > div.header_user_info > a");
+        log.info("click on sign in success");
+
+        type("#email","yay@gmail.com");
+        log.info("enter email success");
+
+        type("#passwd","abcd1234$");
+        log.info("enter password success");
+
+        clickOn("#SubmitLogin");
+        log.info("click on login button Success");
+
+        //error validation
+        boolean expectError = true;
+        boolean actualError = isVisible("//div[@class='alert alert-danger']");
+        Assert.assertEquals(actualError, expectError);
+        log.info("validate error success");
+    }
+    @Test
+    public void missingPassword() {
+        String expectedTitle = "My Store";
+        String actualTitle = getCurrentTtile();
+        Assert.assertEquals(expectedTitle, actualTitle);
+        //enter  username, password, and click on login button
+        clickOn("#header > div.nav > div > div > nav > div.header_user_info > a");
+        log.info("cilck on singn in success");
+
+        type("#email","yaya@gmail.com");
+        log.info("enter email success");
+
+        type("#passwd","");
+        log.info("enter password success");
+
+        clickOn("#SubmitLogin");
+        log.info("click on login button Success");
+
+        //error validation
+        boolean expectresult = true;
+        boolean actualresult = isVisible("//div[@class='alert alert-danger']");
+        Assert.assertEquals(actualresult, expectresult);
+        log.info("validate error success");
+    }
 
 }
