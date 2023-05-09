@@ -16,7 +16,7 @@ public class LogingTest extends  SetUp{
         //enter  username, password, and click on login button
         clickOn("#header > div.nav > div > div > nav > div.header_user_info > a");
         type("#email","yaya@gmail.com");
-        log.info("enter email success");
+        log.info("enter email success.");
 
         type("#passwd","abcd1234$");
         log.info("enter password success");
