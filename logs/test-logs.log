@@ -2742,3 +2742,562 @@
 518:56:46.786 [main] INFO  67ogger {36} -click on place order success
 518:56:49.560 [main] INFO  73ogger {36} -purchase validation success
 518:56:50.231 [main] INFO  74ogger {36} -browser close success
+520:20:33.285 [main] INFO  45ogger {36} -chrome browser open success
+520:20:41.712 [main] INFO  45ogger {36} -chrome browser open success
+520:20:49.756 [main] INFO  45ogger {36} -chrome browser open success
+520:24:44.040 [main] INFO  45ogger {36} -chrome browser open success
+520:24:47.470 [main] INFO  68ogger {36} -landed on website success
+520:24:49.016 [main] INFO  74ogger {36} -browser close success
+520:25:08.572 [main] INFO  45ogger {36} -chrome browser open success
+520:25:12.174 [main] INFO  68ogger {36} -landed on website success
+520:25:13.704 [main] INFO  74ogger {36} -browser close success
+520:25:37.343 [main] INFO  45ogger {36} -chrome browser open success
+520:25:40.593 [main] INFO  68ogger {36} -landed on website success
+520:25:42.121 [main] INFO  74ogger {36} -browser close success
+520:27:04.273 [main] INFO  45ogger {36} -chrome browser open success
+520:27:10.401 [main] INFO  68ogger {36} -landed on website success
+520:27:13.906 [main] INFO  74ogger {36} -browser close success
+520:27:51.331 [main] INFO  45ogger {36} -chrome browser open success
+520:27:58.243 [main] INFO  68ogger {36} -landed on website success
+520:28:12.747 [main] INFO  74ogger {36} -browser close success
+520:28:54.127 [main] INFO  45ogger {36} -chrome browser open success
+520:28:57.002 [main] INFO  68ogger {36} -landed on website success
+520:29:07.456 [main] INFO  74ogger {36} -browser close success
+520:37:56.704 [main] INFO  45ogger {36} -chrome browser open success
+520:38:01.102 [main] INFO  68ogger {36} -landed on website success
+520:38:01.227 [main] INFO  13ogger {36} -click on view product success
+520:38:05.651 [main] INFO  16ogger {36} -click on add to cart  success
+520:38:24.102 [main] INFO  74ogger {36} -browser close success
+520:41:34.167 [main] INFO  45ogger {36} -chrome browser open success
+520:41:38.752 [main] INFO  68ogger {36} -landed on website success
+520:41:38.863 [main] INFO  13ogger {36} -click on view product success
+520:41:45.506 [main] INFO  16ogger {36} -click on add to cart  success
+520:42:38.969 [main] INFO  74ogger {36} -browser close success
+520:44:01.929 [main] INFO  45ogger {36} -chrome browser open success
+520:44:05.935 [main] INFO  68ogger {36} -landed on website success
+520:44:06.059 [main] INFO  13ogger {36} -click on view product success
+520:44:16.396 [main] INFO  74ogger {36} -browser close success
+520:46:07.605 [main] INFO  45ogger {36} -chrome browser open success
+520:46:12.345 [main] INFO  68ogger {36} -landed on website success
+520:46:12.479 [main] INFO  13ogger {36} -click on view product success
+520:46:21.158 [main] INFO  16ogger {36} -click on add to cart  success
+520:46:28.145 [main] INFO  74ogger {36} -browser close success
+520:48:01.599 [main] INFO  45ogger {36} -chrome browser open success
+520:48:05.229 [main] INFO  68ogger {36} -landed on website success
+520:48:05.352 [main] INFO  13ogger {36} -click on view product success
+520:48:08.711 [main] INFO  16ogger {36} -click on add to cart  success
+520:48:58.233 [main] INFO  74ogger {36} -browser close success
+520:51:48.347 [main] INFO  45ogger {36} -chrome browser open success
+520:51:54.967 [main] INFO  68ogger {36} -landed on website success
+520:51:55.093 [main] INFO  13ogger {36} -click on view product success
+520:52:02.114 [main] INFO  16ogger {36} -click on add to cart  success
+520:52:31.997 [main] INFO  19ogger {36} -click on view cart  success
+520:52:32.159 [main] INFO  74ogger {36} -browser close success
+520:52:57.957 [main] INFO  45ogger {36} -chrome browser open success
+520:53:05.634 [main] INFO  68ogger {36} -landed on website success
+520:53:05.755 [main] INFO  13ogger {36} -click on view product success
+520:53:09.357 [main] INFO  16ogger {36} -click on add to cart  success
+520:53:12.068 [main] INFO  19ogger {36} -click on view cart  success
+520:53:12.186 [main] INFO  22ogger {36} -proceed to checkout
+520:53:15.459 [main] INFO  74ogger {36} -browser close success
+520:53:33.090 [main] INFO  45ogger {36} -chrome browser open success
+520:53:36.611 [main] INFO  68ogger {36} -landed on website success
+520:53:36.745 [main] INFO  13ogger {36} -click on view product success
+520:53:42.145 [main] INFO  16ogger {36} -click on add to cart  success
+520:53:54.218 [main] INFO  74ogger {36} -browser close success
+520:56:28.915 [main] INFO  45ogger {36} -chrome browser open success
+520:56:33.842 [main] INFO  68ogger {36} -landed on website success
+520:56:33.970 [main] INFO  13ogger {36} -click on view product success
+520:56:44.273 [main] INFO  74ogger {36} -browser close success
+520:57:21.134 [main] INFO  45ogger {36} -chrome browser open success
+520:57:25.092 [main] INFO  68ogger {36} -landed on website success
+520:57:25.217 [main] INFO  13ogger {36} -click on view product success
+520:57:28.039 [main] INFO  16ogger {36} -click on add to cart  success
+520:57:29.129 [main] INFO  19ogger {36} -click on view cart  success
+520:57:32.270 [main] INFO  74ogger {36} -browser close success
+520:57:44.736 [main] INFO  45ogger {36} -chrome browser open success
+520:57:48.468 [main] INFO  68ogger {36} -landed on website success
+520:57:48.592 [main] INFO  13ogger {36} -click on view product success
+520:57:51.593 [main] INFO  16ogger {36} -click on add to cart  success
+520:57:52.166 [main] INFO  19ogger {36} -click on view cart  success
+520:57:55.259 [main] INFO  22ogger {36} -proceed to checkout
+520:57:58.491 [main] INFO  74ogger {36} -browser close success
+520:58:20.798 [main] INFO  45ogger {36} -chrome browser open success
+520:58:24.775 [main] INFO  68ogger {36} -landed on website success
+520:58:24.894 [main] INFO  13ogger {36} -click on view product success
+520:58:35.247 [main] INFO  74ogger {36} -browser close success
+520:58:51.341 [main] INFO  45ogger {36} -chrome browser open success
+520:58:54.139 [main] INFO  68ogger {36} -landed on website success
+520:58:54.273 [main] INFO  13ogger {36} -click on view product success
+520:59:04.594 [main] INFO  74ogger {36} -browser close success
+521:00:27.501 [main] INFO  45ogger {36} -chrome browser open success
+521:00:31.967 [main] INFO  68ogger {36} -landed on website success
+521:00:32.091 [main] INFO  13ogger {36} -click on view product success
+521:00:42.471 [main] INFO  74ogger {36} -browser close success
+521:01:02.039 [main] INFO  45ogger {36} -chrome browser open success
+521:01:05.390 [main] INFO  68ogger {36} -landed on website success
+521:01:05.514 [main] INFO  13ogger {36} -click on view product success
+521:01:15.861 [main] INFO  74ogger {36} -browser close success
+521:01:49.938 [main] INFO  45ogger {36} -chrome browser open success
+521:01:52.232 [main] INFO  68ogger {36} -landed on website success
+521:01:55.272 [main] INFO  13ogger {36} -click on view product success
+521:01:55.413 [main] INFO  16ogger {36} -click on add to cart  success
+521:02:05.619 [main] INFO  74ogger {36} -browser close success
+521:02:56.736 [main] INFO  45ogger {36} -chrome browser open success
+521:03:00.729 [main] INFO  68ogger {36} -landed on website success
+521:03:00.818 [main] INFO  13ogger {36} -click on view product success
+521:03:11.122 [main] INFO  74ogger {36} -browser close success
+521:03:26.880 [main] INFO  45ogger {36} -chrome browser open success
+521:03:30.437 [main] INFO  68ogger {36} -landed on website success
+521:03:30.535 [main] INFO  13ogger {36} -click on view product success
+521:03:37.155 [main] INFO  16ogger {36} -click on add to cart  success
+521:03:38.553 [main] INFO  19ogger {36} -click on view cart  success
+521:04:01.564 [main] INFO  45ogger {36} -chrome browser open success
+521:04:05.426 [main] INFO  68ogger {36} -landed on website success
+521:04:05.520 [main] INFO  13ogger {36} -click on view product success
+521:04:15.774 [main] INFO  74ogger {36} -browser close success
+521:04:25.884 [main] INFO  45ogger {36} -chrome browser open success
+521:04:29.182 [main] INFO  68ogger {36} -landed on website success
+521:04:29.279 [main] INFO  13ogger {36} -click on view product success
+521:04:39.558 [main] INFO  74ogger {36} -browser close success
+521:05:13.007 [main] INFO  45ogger {36} -chrome browser open success
+521:05:15.953 [main] INFO  68ogger {36} -landed on website success
+521:05:16.059 [main] INFO  13ogger {36} -click on view product success
+521:05:26.352 [main] INFO  74ogger {36} -browser close success
+521:05:56.699 [main] INFO  45ogger {36} -chrome browser open success
+521:06:00.135 [main] INFO  68ogger {36} -landed on website success
+521:06:00.230 [main] INFO  13ogger {36} -click on view product success
+521:06:10.487 [main] INFO  74ogger {36} -browser close success
+521:07:35.987 [main] INFO  45ogger {36} -chrome browser open success
+521:07:40.366 [main] INFO  68ogger {36} -landed on website success
+521:07:40.478 [main] INFO  13ogger {36} -click on view product success
+521:07:50.729 [main] INFO  74ogger {36} -browser close success
+521:08:18.477 [main] INFO  45ogger {36} -chrome browser open success
+521:08:23.261 [main] INFO  68ogger {36} -landed on website success
+521:08:23.358 [main] INFO  13ogger {36} -click on view product success
+521:08:33.642 [main] INFO  74ogger {36} -browser close success
+521:09:21.673 [main] INFO  45ogger {36} -chrome browser open success
+521:09:24.920 [main] INFO  68ogger {36} -landed on website success
+521:09:25.020 [main] INFO  13ogger {36} -click on view product success
+521:09:35.315 [main] INFO  74ogger {36} -browser close success
+521:16:23.471 [main] INFO  45ogger {36} -chrome browser open success
+521:16:26.672 [main] INFO  68ogger {36} -landed on website success
+521:16:26.763 [main] INFO  13ogger {36} -click on view product success
+521:16:36.995 [main] INFO  74ogger {36} -browser close success
+521:17:18.232 [main] INFO  45ogger {36} -chrome browser open success
+521:17:21.559 [main] INFO  68ogger {36} -landed on website success
+521:17:21.645 [main] INFO  13ogger {36} -click on view product success
+521:17:31.863 [main] INFO  74ogger {36} -browser close success
+521:17:55.481 [main] INFO  45ogger {36} -chrome browser open success
+521:17:59.412 [main] INFO  68ogger {36} -landed on website success
+521:17:59.496 [main] INFO  13ogger {36} -click on view product success
+521:18:06.355 [main] INFO  74ogger {36} -browser close success
+521:18:41.233 [main] INFO  45ogger {36} -chrome browser open success
+521:18:45.075 [main] INFO  68ogger {36} -landed on website success
+521:18:45.171 [main] INFO  13ogger {36} -click on view product success
+521:18:53.792 [main] INFO  74ogger {36} -browser close success
+521:19:09.030 [main] INFO  45ogger {36} -chrome browser open success
+521:19:12.345 [main] INFO  68ogger {36} -landed on website success
+521:19:12.433 [main] INFO  13ogger {36} -click on view product success
+521:19:14.638 [main] INFO  16ogger {36} -click on add to cart  success
+521:19:15.186 [main] INFO  19ogger {36} -click on view cart  success
+521:19:15.283 [main] INFO  24ogger {36} -proceed to checkout
+521:19:18.433 [main] INFO  74ogger {36} -browser close success
+59:46:16.094 [main] INFO  45ogger {36} -chrome browser open success
+59:46:18.801 [main] INFO  68ogger {36} -landed on website success
+59:46:18.945 [main] INFO  14ogger {36} -click on view product success
+59:46:22.292 [main] INFO  17ogger {36} -click on add to cart  success
+59:46:33.430 [main] INFO  74ogger {36} -browser close success
+59:46:50.278 [main] INFO  45ogger {36} -chrome browser open success
+59:46:52.751 [main] INFO  68ogger {36} -landed on website success
+59:46:52.905 [main] INFO  14ogger {36} -click on view product success
+59:46:54.891 [main] INFO  17ogger {36} -click on add to cart  success
+59:46:55.437 [main] INFO  20ogger {36} -click on view cart  success
+59:46:55.595 [main] INFO  23ogger {36} -proceed to checkout
+59:46:58.943 [main] INFO  74ogger {36} -browser close success
+59:52:10.714 [main] INFO  45ogger {36} -chrome browser open success
+59:52:14.376 [main] INFO  68ogger {36} -landed on website success
+59:52:14.500 [main] INFO  16ogger {36} -click on view product success
+59:52:18.426 [main] INFO  19ogger {36} -click on add to cart  success
+59:52:33.412 [main] INFO  74ogger {36} -browser close success
+59:52:50.337 [main] INFO  45ogger {36} -chrome browser open success
+59:52:52.275 [main] INFO  68ogger {36} -landed on website success
+59:52:54.147 [main] INFO  16ogger {36} -click on view product success
+59:52:54.305 [main] INFO  19ogger {36} -click on add to cart  success
+59:52:55.631 [main] INFO  22ogger {36} -click on view cart  success
+59:52:55.753 [main] INFO  25ogger {36} -proceed to checkout
+59:52:59.785 [main] INFO  29ogger {36} -clcik on login proceed success
+59:53:00.092 [main] INFO  74ogger {36} -browser close success
+59:54:07.974 [main] INFO  45ogger {36} -chrome browser open success
+59:54:10.578 [main] INFO  68ogger {36} -landed on website success
+59:54:10.716 [main] INFO  16ogger {36} -click on view product success
+59:54:12.890 [main] INFO  19ogger {36} -click on add to cart  success
+59:54:25.431 [main] INFO  74ogger {36} -browser close success
+59:54:36.371 [main] INFO  45ogger {36} -chrome browser open success
+59:54:38.990 [main] INFO  68ogger {36} -landed on website success
+59:54:39.514 [main] INFO  16ogger {36} -click on view product success
+59:54:41.032 [main] INFO  19ogger {36} -click on add to cart  success
+59:54:42.126 [main] INFO  22ogger {36} -click on view cart  success
+59:54:42.227 [main] INFO  25ogger {36} -proceed to checkout
+59:54:45.893 [main] INFO  29ogger {36} -clcik on login proceed success
+59:54:46.666 [main] INFO  39ogger {36} -enter email success
+59:54:46.896 [main] INFO  41ogger {36} -enter password success
+59:54:48.878 [main] INFO  43ogger {36} -click on login button Success
+59:54:51.255 [main] INFO  74ogger {36} -browser close success
+59:57:58.202 [main] INFO  45ogger {36} -chrome browser open success
+59:58:00.973 [main] INFO  68ogger {36} -landed on website success
+59:58:01.110 [main] INFO  16ogger {36} -click on view product success
+59:58:04.176 [main] INFO  19ogger {36} -click on add to cart  success
+59:58:08.523 [main] INFO  74ogger {36} -browser close success
+59:58:18.426 [main] INFO  45ogger {36} -chrome browser open success
+59:58:20.905 [main] INFO  68ogger {36} -landed on website success
+59:58:21.101 [main] INFO  16ogger {36} -click on view product success
+59:58:22.939 [main] INFO  19ogger {36} -click on add to cart  success
+59:58:24.028 [main] INFO  22ogger {36} -click on view cart  success
+59:58:24.183 [main] INFO  25ogger {36} -proceed to checkout
+59:58:25.584 [main] INFO  29ogger {36} -clcik on login proceed success
+59:58:26.152 [main] INFO  39ogger {36} -enter email success
+59:58:26.267 [main] INFO  41ogger {36} -enter password success
+59:58:28.737 [main] INFO  43ogger {36} -click on login button Success
+59:58:30.119 [main] INFO  74ogger {36} -browser close success
+510:04:48.249 [main] INFO  45ogger {36} -chrome browser open success
+510:04:51.894 [main] INFO  68ogger {36} -landed on website success
+510:04:52.176 [main] INFO  16ogger {36} -click on view product success
+510:04:54.009 [main] INFO  19ogger {36} -click on add to cart  success
+510:04:55.597 [main] INFO  22ogger {36} -click on view cart  success
+510:04:55.709 [main] INFO  25ogger {36} -proceed to checkout
+510:04:57.106 [main] INFO  29ogger {36} -clcik on login proceed success
+510:04:57.627 [main] INFO  39ogger {36} -enter email success
+510:04:57.753 [main] INFO  41ogger {36} -enter password success
+510:04:59.625 [main] INFO  43ogger {36} -click on login button Success
+510:05:01.113 [main] INFO  46ogger {36} -click on shooping cart success
+510:05:02.273 [main] INFO  49ogger {36} -checkout proceed success
+510:05:02.677 [main] INFO  74ogger {36} -browser close success
+510:07:59.624 [main] INFO  45ogger {36} -chrome browser open success
+510:08:02.649 [main] INFO  68ogger {36} -landed on website success
+510:08:02.796 [main] INFO  16ogger {36} -click on view product success
+510:08:05.192 [main] INFO  19ogger {36} -click on add to cart  success
+510:08:05.729 [main] INFO  22ogger {36} -click on view cart  success
+510:08:05.871 [main] INFO  25ogger {36} -proceed to checkout
+510:08:07.618 [main] INFO  29ogger {36} -clcik on login proceed success
+510:08:08.385 [main] INFO  39ogger {36} -enter email success
+510:08:08.524 [main] INFO  41ogger {36} -enter password success
+510:08:31.596 [main] INFO  74ogger {36} -browser close success
+510:08:48.441 [main] INFO  45ogger {36} -chrome browser open success
+510:08:51.221 [main] INFO  68ogger {36} -landed on website success
+510:08:51.345 [main] INFO  16ogger {36} -click on view product success
+510:08:53.185 [main] INFO  19ogger {36} -click on add to cart  success
+510:08:54.349 [main] INFO  22ogger {36} -click on view cart  success
+510:08:54.466 [main] INFO  25ogger {36} -proceed to checkout
+510:08:55.916 [main] INFO  29ogger {36} -clcik on login proceed success
+510:08:56.627 [main] INFO  39ogger {36} -enter email success
+510:08:56.947 [main] INFO  41ogger {36} -enter password success
+510:08:58.603 [main] INFO  43ogger {36} -click on login button Success
+510:09:00.624 [main] INFO  46ogger {36} -click on shooping cart success
+510:09:00.764 [main] INFO  49ogger {36} -delete an item success
+510:09:01.927 [main] INFO  52ogger {36} -checkout proceed success
+510:09:02.127 [main] INFO  74ogger {36} -browser close success
+510:09:42.087 [main] INFO  45ogger {36} -chrome browser open success
+510:09:44.354 [main] INFO  68ogger {36} -landed on website success
+510:09:44.534 [main] INFO  16ogger {36} -click on view product success
+510:09:46.230 [main] INFO  19ogger {36} -click on add to cart  success
+510:09:47.388 [main] INFO  22ogger {36} -click on view cart  success
+510:09:47.519 [main] INFO  25ogger {36} -proceed to checkout
+510:09:49.172 [main] INFO  29ogger {36} -clcik on login proceed success
+510:09:49.934 [main] INFO  39ogger {36} -enter email success
+510:09:50.029 [main] INFO  41ogger {36} -enter password success
+510:09:52.130 [main] INFO  43ogger {36} -click on login button Success
+510:09:53.621 [main] INFO  46ogger {36} -click on shooping cart success
+510:09:53.721 [main] INFO  49ogger {36} -delete an item success
+510:10:00.166 [main] INFO  53ogger {36} -checkout proceed success
+510:10:00.367 [main] INFO  74ogger {36} -browser close success
+510:11:28.227 [main] INFO  45ogger {36} -chrome browser open success
+510:11:30.681 [main] INFO  68ogger {36} -landed on website success
+510:11:30.883 [main] INFO  16ogger {36} -click on view product success
+510:11:33.134 [main] INFO  19ogger {36} -click on add to cart  success
+510:11:33.612 [main] INFO  22ogger {36} -click on view cart  success
+510:11:33.753 [main] INFO  25ogger {36} -proceed to checkout
+510:11:35.521 [main] INFO  29ogger {36} -clcik on login proceed success
+510:11:36.341 [main] INFO  39ogger {36} -enter email success
+510:11:36.437 [main] INFO  41ogger {36} -enter password success
+510:11:38.721 [main] INFO  43ogger {36} -click on login button Success
+510:11:41.170 [main] INFO  46ogger {36} -click on shooping cart success
+510:11:41.296 [main] INFO  49ogger {36} -delete an item success
+510:11:44.926 [main] INFO  53ogger {36} -checkout proceed success
+510:11:45.537 [main] INFO  56ogger {36} -place order success
+510:11:45.760 [main] INFO  74ogger {36} -browser close success
+510:12:21.724 [main] INFO  45ogger {36} -chrome browser open success
+510:12:27.113 [main] INFO  68ogger {36} -landed on website success
+510:12:27.247 [main] INFO  16ogger {36} -click on view product success
+510:12:29.654 [main] INFO  19ogger {36} -click on add to cart  success
+510:12:30.943 [main] INFO  22ogger {36} -click on view cart  success
+510:12:31.080 [main] INFO  25ogger {36} -proceed to checkout
+510:12:37.283 [main] INFO  29ogger {36} -clcik on login proceed success
+510:12:38.074 [main] INFO  74ogger {36} -browser close success
+510:12:48.577 [main] INFO  45ogger {36} -chrome browser open success
+510:12:51.376 [main] INFO  68ogger {36} -landed on website success
+510:12:51.621 [main] INFO  16ogger {36} -click on view product success
+510:12:54.511 [main] INFO  19ogger {36} -click on add to cart  success
+510:12:55.870 [main] INFO  22ogger {36} -click on view cart  success
+510:12:55.990 [main] INFO  25ogger {36} -proceed to checkout
+510:12:57.421 [main] INFO  29ogger {36} -clcik on login proceed success
+510:12:57.998 [main] INFO  39ogger {36} -enter email success
+510:12:58.105 [main] INFO  41ogger {36} -enter password success
+510:12:59.632 [main] INFO  43ogger {36} -click on login button Success
+510:13:01.527 [main] INFO  46ogger {36} -click on shooping cart success
+510:13:01.638 [main] INFO  49ogger {36} -delete an item success
+510:13:04.755 [main] INFO  53ogger {36} -checkout proceed success
+510:13:05.518 [main] INFO  56ogger {36} -place order success
+510:13:10.796 [main] INFO  74ogger {36} -browser close success
+510:21:27.702 [main] INFO  45ogger {36} -chrome browser open success
+510:21:29.559 [main] INFO  68ogger {36} -landed on website success
+510:21:30.923 [main] INFO  17ogger {36} -click on view product success
+510:21:30.999 [main] INFO  20ogger {36} -click on add to cart  success
+510:21:40.834 [main] INFO  74ogger {36} -browser close success
+510:22:47.910 [main] INFO  45ogger {36} -chrome browser open success
+510:22:50.249 [main] INFO  68ogger {36} -landed on website success
+510:22:50.393 [main] INFO  17ogger {36} -click on view product success
+510:22:52.124 [main] INFO  20ogger {36} -click on add to cart  success
+510:22:53.492 [main] INFO  23ogger {36} -click on view cart  success
+510:22:53.624 [main] INFO  26ogger {36} -proceed to checkout
+510:22:54.946 [main] INFO  74ogger {36} -browser close success
+510:23:30.118 [main] INFO  45ogger {36} -chrome browser open success
+510:23:37.785 [main] INFO  68ogger {36} -landed on website success
+510:23:37.931 [main] INFO  17ogger {36} -click on view product success
+510:23:39.848 [main] INFO  20ogger {36} -click on add to cart  success
+510:23:48.682 [main] INFO  74ogger {36} -browser close success
+510:24:03.531 [main] INFO  45ogger {36} -chrome browser open success
+510:24:05.816 [main] INFO  68ogger {36} -landed on website success
+510:24:06.098 [main] INFO  17ogger {36} -click on view product success
+510:24:07.663 [main] INFO  20ogger {36} -click on add to cart  success
+510:24:08.145 [main] INFO  23ogger {36} -click on view cart  success
+510:24:08.288 [main] INFO  26ogger {36} -proceed to checkout
+510:24:09.553 [main] INFO  74ogger {36} -browser close success
+510:49:24.179 [main] INFO  45ogger {36} -chrome browser open success
+510:49:26.578 [main] INFO  68ogger {36} -landed on website success
+510:49:28.647 [main] INFO  18ogger {36} -enter email success
+510:49:28.709 [main] INFO  20ogger {36} -enter password success
+510:49:30.262 [main] INFO  22ogger {36} -click on login button Success
+510:49:31.481 [main] INFO  74ogger {36} -browser close success
+510:50:21.016 [main] INFO  45ogger {36} -chrome browser open success
+510:50:23.324 [main] INFO  68ogger {36} -landed on website success
+510:50:26.169 [main] INFO  18ogger {36} -enter email success
+510:50:26.228 [main] INFO  20ogger {36} -enter password success
+510:50:29.582 [main] INFO  22ogger {36} -click on login button Success
+510:50:30.616 [main] INFO  30ogger {36} -user logged in success
+510:50:33.166 [main] INFO  32ogger {36} -click on shooping cart success
+510:50:43.448 [main] INFO  74ogger {36} -browser close success
+510:51:55.330 [main] INFO  45ogger {36} -chrome browser open success
+510:51:57.526 [main] INFO  68ogger {36} -landed on website success
+510:51:59.411 [main] INFO  18ogger {36} -enter email success
+510:51:59.469 [main] INFO  20ogger {36} -enter password success
+510:52:01.091 [main] INFO  22ogger {36} -click on login button Success
+510:52:02.132 [main] INFO  30ogger {36} -user logged in success
+510:52:03.501 [main] INFO  35ogger {36} -click on shooping cart success
+510:52:13.742 [main] INFO  74ogger {36} -browser close success
+510:53:29.034 [main] INFO  45ogger {36} -chrome browser open success
+510:53:31.205 [main] INFO  68ogger {36} -landed on website success
+510:53:37.251 [main] INFO  18ogger {36} -enter email success
+510:53:37.313 [main] INFO  20ogger {36} -enter password success
+510:53:39.184 [main] INFO  22ogger {36} -click on login button Success
+510:53:40.225 [main] INFO  30ogger {36} -user logged in success
+510:53:41.820 [main] INFO  35ogger {36} -click on shooping cart success
+510:53:52.025 [main] INFO  74ogger {36} -browser close success
+510:54:27.599 [main] INFO  45ogger {36} -chrome browser open success
+510:54:33.084 [main] INFO  68ogger {36} -landed on website success
+510:54:34.850 [main] INFO  18ogger {36} -enter email success
+510:54:34.906 [main] INFO  20ogger {36} -enter password success
+510:54:36.890 [main] INFO  22ogger {36} -click on login button Success
+510:54:37.922 [main] INFO  30ogger {36} -user logged in success
+510:54:39.604 [main] INFO  35ogger {36} -click on shooping cart success
+510:54:39.679 [main] INFO  38ogger {36} -delete an item success
+510:54:42.941 [main] INFO  42ogger {36} -checkout proceed success
+510:54:43.006 [main] INFO  45ogger {36} -place order success
+510:54:48.196 [main] INFO  74ogger {36} -browser close success
+511:00:01.518 [main] INFO  45ogger {36} -chrome browser open success
+511:00:05.739 [main] INFO  68ogger {36} -landed on website success
+511:00:06.884 [main] INFO  18ogger {36} -enter email success
+511:00:06.931 [main] INFO  20ogger {36} -enter password success
+511:00:27.328 [main] INFO  22ogger {36} -click on login button Success
+511:00:28.414 [main] INFO  74ogger {36} -browser close success
+511:01:08.024 [main] INFO  45ogger {36} -chrome browser open success
+511:01:10.665 [main] INFO  68ogger {36} -landed on website success
+511:01:13.322 [main] INFO  18ogger {36} -enter email success
+511:01:13.381 [main] INFO  20ogger {36} -enter password success
+511:01:15.669 [main] INFO  22ogger {36} -click on login button Success
+511:01:16.699 [main] INFO  30ogger {36} -user logged in success
+511:01:18.257 [main] INFO  35ogger {36} -click on shooping cart success
+511:01:28.522 [main] INFO  74ogger {36} -browser close success
+511:01:45.621 [main] INFO  45ogger {36} -chrome browser open success
+511:01:47.806 [main] INFO  68ogger {36} -landed on website success
+511:01:48.934 [main] INFO  18ogger {36} -enter email success
+511:01:48.981 [main] INFO  20ogger {36} -enter password success
+511:02:03.694 [main] INFO  22ogger {36} -click on login button Success
+511:02:04.777 [main] INFO  74ogger {36} -browser close success
+511:02:35.974 [main] INFO  45ogger {36} -chrome browser open success
+511:02:38.261 [main] INFO  68ogger {36} -landed on website success
+511:02:39.527 [main] INFO  18ogger {36} -enter email success
+511:02:39.578 [main] INFO  20ogger {36} -enter password success
+511:03:27.774 [main] INFO  22ogger {36} -click on login button Success
+511:03:28.864 [main] INFO  74ogger {36} -browser close success
+511:04:38.540 [main] INFO  45ogger {36} -chrome browser open success
+511:04:40.749 [main] INFO  68ogger {36} -landed on website success
+511:04:42.673 [main] INFO  18ogger {36} -enter email success
+511:04:42.728 [main] INFO  20ogger {36} -enter password success
+511:04:44.887 [main] INFO  22ogger {36} -click on login button Success
+511:04:45.918 [main] INFO  30ogger {36} -user logged in success
+511:04:47.420 [main] INFO  34ogger {36} -click on shooping cart success
+511:04:49.284 [main] INFO  41ogger {36} -checkout proceed success
+511:04:49.359 [main] INFO  44ogger {36} -place order success
+511:04:54.440 [main] INFO  47ogger {36} -type name success
+511:04:54.484 [main] INFO  50ogger {36} -type card number success
+511:04:54.611 [main] INFO  74ogger {36} -browser close success
+511:05:31.034 [main] INFO  45ogger {36} -chrome browser open success
+511:05:32.788 [main] INFO  68ogger {36} -landed on website success
+511:05:40.121 [main] INFO  18ogger {36} -enter email success
+511:05:40.180 [main] INFO  20ogger {36} -enter password success
+511:05:43.189 [main] INFO  22ogger {36} -click on login button Success
+511:05:44.232 [main] INFO  30ogger {36} -user logged in success
+511:05:45.457 [main] INFO  34ogger {36} -click on shooping cart success
+511:05:46.841 [main] INFO  41ogger {36} -checkout proceed success
+511:05:46.970 [main] INFO  44ogger {36} -place order success
+511:05:50.038 [main] INFO  47ogger {36} -type name success
+511:05:52.091 [main] INFO  51ogger {36} -type card number success
+511:05:52.218 [main] INFO  74ogger {36} -browser close success
+511:06:14.833 [main] INFO  45ogger {36} -chrome browser open success
+511:06:17.397 [main] INFO  68ogger {36} -landed on website success
+511:06:20.972 [main] INFO  18ogger {36} -enter email success
+511:06:21.029 [main] INFO  20ogger {36} -enter password success
+511:06:23.743 [main] INFO  22ogger {36} -click on login button Success
+511:06:24.777 [main] INFO  30ogger {36} -user logged in success
+511:06:27.678 [main] INFO  34ogger {36} -click on shooping cart success
+511:06:30.894 [main] INFO  41ogger {36} -checkout proceed success
+511:06:30.990 [main] INFO  44ogger {36} -place order success
+511:06:33.063 [main] INFO  47ogger {36} -type name success
+511:06:36.127 [main] INFO  51ogger {36} -type card number success
+511:06:36.312 [main] INFO  74ogger {36} -browser close success
+511:19:40.223 [main] INFO  45ogger {36} -chrome browser open success
+511:19:43.199 [main] INFO  68ogger {36} -landed on website success
+511:19:45.539 [main] INFO  74ogger {36} -browser close success
+511:20:17.791 [main] INFO  45ogger {36} -chrome browser open success
+511:20:20.010 [main] INFO  68ogger {36} -landed on website success
+511:20:21.718 [main] INFO  18ogger {36} -enter email success
+511:20:21.768 [main] INFO  20ogger {36} -enter password success
+511:20:23.623 [main] INFO  22ogger {36} -click on login button Success
+511:20:24.665 [main] INFO  30ogger {36} -user logged in success
+511:20:25.967 [main] INFO  34ogger {36} -click on shooping cart success
+511:20:27.561 [main] INFO  41ogger {36} -checkout proceed success
+511:20:27.670 [main] INFO  44ogger {36} -place order success
+511:20:30.618 [main] INFO  47ogger {36} -type name success
+511:20:30.666 [main] INFO  50ogger {36} -type card number success
+511:20:30.708 [main] INFO  53ogger {36} -cvs enter success
+511:20:30.747 [main] INFO  56ogger {36} -expiry-month enter success
+511:20:30.787 [main] INFO  59ogger {36} -expiry-year enter success
+511:20:32.991 [main] INFO  74ogger {36} -browser close success
+511:21:56.144 [main] INFO  45ogger {36} -chrome browser open success
+511:21:58.521 [main] INFO  68ogger {36} -landed on website success
+511:22:00.378 [main] INFO  18ogger {36} -enter email success
+511:22:00.428 [main] INFO  20ogger {36} -enter password success
+511:22:03.674 [main] INFO  22ogger {36} -click on login button Success
+511:22:04.712 [main] INFO  30ogger {36} -user logged in success
+511:22:06.328 [main] INFO  34ogger {36} -click on shooping cart success
+511:22:08.218 [main] INFO  41ogger {36} -checkout proceed success
+511:22:08.313 [main] INFO  44ogger {36} -place order success
+511:22:11.274 [main] INFO  47ogger {36} -type name success
+511:22:11.354 [main] INFO  50ogger {36} -type card number success
+511:22:11.398 [main] INFO  53ogger {36} -cvs enter success
+511:22:11.435 [main] INFO  56ogger {36} -expiry-month enter success
+511:22:11.475 [main] INFO  59ogger {36} -expiry-year enter success
+511:22:36.632 [main] INFO  74ogger {36} -browser close success
+511:23:04.235 [main] INFO  45ogger {36} -chrome browser open success
+511:23:09.090 [main] INFO  68ogger {36} -landed on website success
+511:23:10.874 [main] INFO  18ogger {36} -enter email success
+511:23:10.929 [main] INFO  20ogger {36} -enter password success
+511:23:13.207 [main] INFO  22ogger {36} -click on login button Success
+511:23:14.243 [main] INFO  30ogger {36} -user logged in success
+511:23:15.068 [main] INFO  34ogger {36} -click on shooping cart success
+511:23:25.277 [main] INFO  74ogger {36} -browser close success
+511:23:48.994 [main] INFO  45ogger {36} -chrome browser open success
+511:23:51.629 [main] INFO  68ogger {36} -landed on website success
+511:23:52.814 [main] INFO  18ogger {36} -enter email success
+511:23:52.861 [main] INFO  20ogger {36} -enter password success
+511:24:22.695 [main] INFO  22ogger {36} -click on login button Success
+511:24:23.824 [main] INFO  74ogger {36} -browser close success
+512:43:14.679 [main] INFO  45ogger {36} -chrome browser open success
+512:43:16.660 [main] INFO  68ogger {36} -landed on website success
+512:43:18.012 [main] INFO  18ogger {36} -enter email success
+512:43:18.169 [main] INFO  20ogger {36} -enter password success
+512:43:38.182 [main] INFO  74ogger {36} -browser close success
+512:44:05.587 [main] INFO  45ogger {36} -chrome browser open success
+512:44:07.936 [main] INFO  68ogger {36} -landed on website success
+512:44:10.259 [main] INFO  18ogger {36} -enter email success
+512:44:10.380 [main] INFO  20ogger {36} -enter password success
+512:44:12.348 [main] INFO  22ogger {36} -click on login button Success
+512:44:13.415 [main] INFO  30ogger {36} -user logged in success
+512:44:14.540 [main] INFO  34ogger {36} -click on shooping cart success
+512:44:21.201 [main] INFO  74ogger {36} -browser close success
+512:45:01.390 [main] INFO  45ogger {36} -chrome browser open success
+512:45:10.614 [main] INFO  68ogger {36} -landed on website success
+512:45:10.772 [main] INFO  17ogger {36} -click on view product success
+512:45:12.863 [main] INFO  20ogger {36} -click on add to cart  success
+512:45:13.390 [main] INFO  23ogger {36} -click on view cart  success
+512:45:13.564 [main] INFO  26ogger {36} -proceed to checkout
+512:45:14.910 [main] INFO  74ogger {36} -browser close success
+512:45:50.334 [main] INFO  45ogger {36} -chrome browser open success
+512:45:52.889 [main] INFO  68ogger {36} -landed on website success
+512:45:54.872 [main] INFO  18ogger {36} -enter email success
+512:45:55.000 [main] INFO  20ogger {36} -enter password success
+512:45:57.361 [main] INFO  22ogger {36} -click on login button Success
+512:45:58.433 [main] INFO  30ogger {36} -user logged in success
+512:45:59.373 [main] INFO  34ogger {36} -click on shooping cart success
+512:46:09.683 [main] INFO  74ogger {36} -browser close success
+510:46:44.499 [main] INFO  45ogger {36} -chrome browser open success
+510:46:46.396 [main] INFO  68ogger {36} -landed on website success
+510:46:48.263 [main] INFO  67ogger {36} -click on register success
+510:46:48.380 [main] INFO  70ogger {36} -enter name  success
+510:46:48.476 [main] INFO  73ogger {36} -enter email  success
+510:46:50.179 [main] INFO  76ogger {36} -error message displayed 
+510:46:50.253 [main] INFO  83ogger {36} -validate error success
+510:46:51.476 [main] INFO  74ogger {36} -browser close success
+512:05:39.927 [main] INFO  45ogger {36} -chrome browser open success
+512:05:43.592 [main] INFO  68ogger {36} -landed on website success
+512:05:43.737 [main] INFO  74ogger {36} -browser close success
+512:07:55.648 [main] INFO  45ogger {36} -chrome browser open success
+512:07:57.987 [main] INFO  68ogger {36} -landed on website success
+512:07:58.081 [main] INFO  18ogger {36} -click on product button success
+512:08:01.383 [main] INFO  74ogger {36} -browser close success
+512:08:42.057 [main] INFO  45ogger {36} -chrome browser open success
+512:08:45.195 [main] INFO  68ogger {36} -landed on website success
+512:08:45.280 [main] INFO  18ogger {36} -click on product button success
+512:08:48.081 [main] INFO  74ogger {36} -browser close success
+512:17:29.123 [main] INFO  45ogger {36} -chrome browser open success
+512:17:31.556 [main] INFO  68ogger {36} -landed on website success
+512:17:31.634 [main] INFO  18ogger {36} -click on product button success
+512:17:34.434 [main] INFO  74ogger {36} -browser close success
+512:18:17.266 [main] INFO  45ogger {36} -chrome browser open success
+512:18:19.795 [main] INFO  68ogger {36} -landed on website success
+512:18:19.875 [main] INFO  18ogger {36} -click on product button success
+512:18:24.050 [main] INFO  24ogger {36} -products visibilities validate
+512:18:24.197 [main] INFO  74ogger {36} -browser close success
+512:30:33.826 [main] INFO  45ogger {36} -chrome browser open success
+512:30:36.152 [main] INFO  68ogger {36} -landed on website success
+512:30:36.237 [main] INFO  18ogger {36} -click on product button success
+512:30:38.022 [main] INFO  24ogger {36} -products visibilities validate
+512:30:38.088 [main] INFO  26ogger {36} -type product name success
+512:30:39.531 [main] INFO  74ogger {36} -browser close success
+512:40:26.307 [main] INFO  45ogger {36} -chrome browser open success
+512:40:28.651 [main] INFO  68ogger {36} -landed on website success
+512:40:28.738 [main] INFO  18ogger {36} -click on product button success
+512:40:30.727 [main] INFO  24ogger {36} -products visibilities validate
+512:40:30.801 [main] INFO  26ogger {36} -type product name success
+512:40:31.990 [main] INFO  28ogger {36} -click on search button success
+512:40:32.068 [main] INFO  34ogger {36} -searched product displayed success
+512:40:32.255 [main] INFO  74ogger {36} -browser close success
+510:20:31.778 [main] INFO  48ogger {36} -firefox browser open success
+510:20:33.926 [main] INFO  68ogger {36} -landed on website success
+510:20:37.698 [main] INFO  20ogger {36} -click on product button success
+510:20:37.748 [main] INFO  26ogger {36} -products visibilities validate
+510:20:37.837 [main] INFO  28ogger {36} -type product name success
+510:20:39.288 [main] INFO  30ogger {36} -click on search button success
+510:20:39.378 [main] INFO  36ogger {36} -searched product displayed success
+510:20:40.294 [main] INFO  74ogger {36} -browser close success

@@ -17,7 +17,8 @@ public class SearchBarTest extends SetUp {
         boolean expectedPageWraperTitle=true;
         boolean actualPageWraperTitle=isVisible("#maincontent div h1 span");
         Assert.assertEquals(actualPageWraperTitle,expectedPageWraperTitle);
-             log.info("serach bar result success");
+        log.info("serach bar result success");
+
 
        }
 }

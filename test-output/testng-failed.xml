@@ -7,16 +7,16 @@
   <parameter name="envName" value="browserstack"/>
   <parameter name="browserName" value="chrome"/>
   <parameter name="osversion" value="11"/>
-  <parameter name="url" value="https://magento.softwaretestingboard.com/"/>
-  <test thread-count="5" name="purchase test(failed)">
+  <parameter name="url" value="https://automationexercise.com/"/>
+  <test thread-count="5" name="search bar test(failed)">
     <classes>
-      <class name="us.piit.luma.PurchaseItemTest">
+      <class name="us.piit.automation.SearchProducts">
         <methods>
           <include name="setup"/>
-          <include name="purchaseItem"/>
           <include name="teardown"/>
+          <include name="searchProduct"/>
         </methods>
-      </class> <!-- us.piit.luma.PurchaseItemTest -->
+      </class> <!-- us.piit.automation.SearchProducts -->
     </classes>
-  </test> <!-- purchase test(failed) -->
+  </test> <!-- search bar test(failed) -->
 </suite> <!-- Failed suite [Lumademo test] -->
