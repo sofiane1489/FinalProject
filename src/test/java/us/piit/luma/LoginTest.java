@@ -14,22 +14,22 @@ public class LoginTest extends CommonAPI {
     String validEmail="Betta@gmail.com";
     String validPassword="1234Abcd$";
 
-   LoginPage loginpage=new LoginPage();
+   LoginPage loginPage=new LoginPage();
    HomePage homePage=new HomePage();
 
     @Test
     public void validCred(){
         // website validation with luma logo
-        boolean actualTitle= loginpage.homaPageTitle();
+        boolean actualTitle= loginPage.homaPageTitleVisibility();
         Assert.assertTrue(actualTitle);
 
-        loginpage.clickOnSigninBtn();
+        loginPage.clickOnSigninBtn();
 
-         loginpage.enterEmail(validEmail);
+        loginPage.enterEmail(validEmail);
 
-         loginpage.enterPassword(validPassword);
+        loginPage.enterPassword(validPassword);
 
-          loginpage.clickOnLoginBtn();
+        loginPage.clickOnLoginBtn();
 
          //check user logged in
          String expectedWelcomeMess="Welcome, mike lee!";
@@ -39,40 +39,40 @@ public class LoginTest extends CommonAPI {
 
     @Test
     public void invalidEmail(){
-        boolean actualTitle= loginpage.homaPageTitle();
+        boolean actualTitle= loginPage.homaPageTitleVisibility();
         Assert.assertTrue(actualTitle);
 
-        loginpage.clickOnSigninBtn();
+        loginPage.clickOnSigninBtn();
 
-        loginpage.enterEmail("@gmail.com");
+        loginPage.enterEmail("@gmail.com");
 
-        loginpage.enterPassword(validPassword);
+        loginPage.enterPassword(validPassword);
 
-        loginpage.clickOnLoginBtn();
+        loginPage.clickOnLoginBtn();
 
         //validate error
         String expectedError="Please enter a valid email address (Ex: johndoe@domain.com).";
-        String actualError=loginpage.getErrorMessageInvalidEmail();
+        String actualError=loginPage.getErrorMessageInvalidEmail();
         Assert.assertEquals(actualError,expectedError);
 
     }
 
     @Test
     public void missingPassword(){
-        boolean actualTitle= loginpage.homaPageTitle();
+        boolean actualTitle= loginPage.homaPageTitleVisibility();
         Assert.assertTrue(actualTitle);
 
-        loginpage.clickOnSigninBtn();
+        loginPage.clickOnSigninBtn();
 
-        loginpage.enterEmail(validEmail);
+        loginPage.enterEmail(validEmail);
 
-        loginpage.enterPassword("");
+        loginPage.enterPassword("");
 
-        loginpage.clickOnLoginBtn();
+        loginPage.clickOnLoginBtn();
 
         //validate error
         String expectedError="This is a required field.";
-        String actualError=loginpage.getErrorMessageMissinPass();
+        String actualError=loginPage.getErrorMessageMissinPass();
         Assert.assertEquals(actualError,expectedError);
     }
 }
