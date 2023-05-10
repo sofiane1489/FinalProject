@@ -1,8 +1,7 @@
-package us.piit;
+package us.piit.base;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,7 +10,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
@@ -21,8 +19,8 @@ import java.time.Duration;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-public class SetUp {
-    Logger log= LogManager.getLogger(SetUp.class.getName());
+public class CommonAPI {
+    Logger log= LogManager.getLogger(CommonAPI.class.getName());
     WebDriver driver;
     public void getCloudDriver(String envName,String os,String osVersion,String browserName,String browserVersion,String username,String password) throws MalformedURLException, MalformedURLException {
         DesiredCapabilities cap=new DesiredCapabilities();

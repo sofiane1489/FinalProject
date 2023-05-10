@@ -4,9 +4,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import us.piit.SetUp;
+import us.piit.base.CommonAPI;
 
-public class SearchProducts extends SetUp {
+public class SearchProducts extends CommonAPI {
     Logger log= LogManager.getLogger(SearchProducts.class.getName());
     @Test
     public void SearchProduct(){

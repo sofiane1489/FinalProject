@@ -3,8 +3,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import us.piit.SetUp;
-public class PurchaseItemTest extends SetUp {
+import us.piit.base.CommonAPI;
+public class PurchaseItemTest extends CommonAPI {
     Logger log= LogManager.getLogger(PurchaseItemTest.class.getName());
 
     @Test
@@ -12,7 +12,7 @@ public class PurchaseItemTest extends SetUp {
         // website validation with luma logo
         boolean actualTitle=isVisible("//a[@aria-label='store logo']//img");
         Assert.assertTrue(actualTitle);
-        log.info("landed on luma home page success");
+        log.info("landed on luma login page success");
 
         //click on men section
         clickOn("#ui-id-5 > span:nth-child(2)");
@@ -45,7 +45,7 @@ public class PurchaseItemTest extends SetUp {
         // website validation with luma logo
         boolean actualTitle=isVisible("//a[@aria-label='store logo']//img");
         Assert.assertTrue(actualTitle);
-        log.info("landed on luma home page success");
+        log.info("landed on luma login page success");
 
         hoverOver("#ui-id-6");
             log.info("hover over Gear success");
@@ -116,7 +116,7 @@ public class PurchaseItemTest extends SetUp {
         // website validation with luma logo
         boolean actualTitle=isVisible("//a[@aria-label='store logo']//img");
         Assert.assertTrue(actualTitle);
-        log.info("landed on luma home page success");
+        log.info("landed on luma login page success");
 
         //click on Gear section
         clickOn("//a[@id='ui-id-6']");

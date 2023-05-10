@@ -5,10 +5,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import us.piit.SetUp;
-import us.piit.freecrm.signUp;
+import us.piit.base.CommonAPI;
 
-public class signUp extends SetUp {
+public class signUp extends CommonAPI {
     Logger log= LogManager.getLogger(signUp.class.getName());
 
     @Test

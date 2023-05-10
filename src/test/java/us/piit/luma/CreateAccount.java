@@ -3,16 +3,16 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import us.piit.SetUp;
+import us.piit.base.CommonAPI;
 
-public class CreateAccount extends SetUp {
+public class CreateAccount extends CommonAPI {
     Logger log= LogManager.getLogger(CreateAccount.class.getName());
 //    @Test
 //    public void createNewAccount(){
 //         // website validation with luma logo
 //           boolean actualTitle=isVisible("//a[@aria-label='store logo']//img");
 //           Assert.assertTrue(actualTitle);
-//           log.info("landed on luma home page success");
+//           log.info("landed on luma login page success");
 //
 //        clickOn("//div[@class='panel header']//a[normalize-space()='Create an Account']");
 //               log.info("click create account success");
@@ -46,7 +46,7 @@ public class CreateAccount extends SetUp {
         // website validation with luma logo
         boolean actualTitle=isVisible("//a[@aria-label='store logo']//img");
         Assert.assertTrue(actualTitle);
-        log.info("landed on luma home page success");
+        log.info("landed on luma login page success");
 
         clickOn("//div[@class='panel header']//a[normalize-space()='Create an Account']");
                log.info("click create account success");

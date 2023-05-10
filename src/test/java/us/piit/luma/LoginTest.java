@@ -4,85 +4,75 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import us.piit.SetUp;
+import us.piit.base.CommonAPI;
+import us.piit.lumaPages.HomePage;
+import us.piit.lumaPages.LoginPage;
 
-public class LoginTest extends SetUp {
+public class LoginTest extends CommonAPI {
     Logger log= LogManager.getLogger(LoginTest.class.getName());
+
+    String validEmail="Betta@gmail.com";
+    String validPassword="1234Abcd$";
+
+   LoginPage loginpage=new LoginPage();
+   HomePage homePage=new HomePage();
+
     @Test
     public void validCred(){
         // website validation with luma logo
-        boolean actualTitle=isVisible("//a[@aria-label='store logo']//img");
+        boolean actualTitle= loginpage.homaPageTitle();
         Assert.assertTrue(actualTitle);
-        log.info("landed on luma home page success");
 
-         clickOn("body > div.page-wrapper > header > div.panel.wrapper > div > ul > li.authorization-link > a");
-         log.info("click on sign in success");
+        loginpage.clickOnSigninBtn();
 
-         type("#email","Betta@gmail.com");
-         log.info("email enter success");
+         loginpage.enterEmail(validEmail);
 
-         type("#pass","1234Abcd$");
-          log.info("password enter success");
+         loginpage.enterPassword(validPassword);
 
-         clickOn("#send2");
-         log.info("click on sign in success");
+          loginpage.clickOnLoginBtn();
 
          //check user logged in
          String expectedWelcomeMess="Welcome, mike lee!";
-         String actualWelcomeMess=getElementText("//div[@class='panel header']//span[@class='logged-in'][normalize-space()='Welcome, mike lee!']");
+         String actualWelcomeMess=homePage.getWelcomeMessage();
          Assert.assertEquals(expectedWelcomeMess,actualWelcomeMess);
-         log.info("login success");
     }
 
     @Test
     public void invalidEmail(){
-        // website validation with luma logo
-        boolean actualTitle=isVisible("//a[@aria-label='store logo']//img");
+        boolean actualTitle= loginpage.homaPageTitle();
         Assert.assertTrue(actualTitle);
-        log.info("landed on luma home page success");
 
-        clickOn("body div.page-wrapper header div.panel.wrapper div ul li.authorization-link a");
-        log.info("click on sign in success");
+        loginpage.clickOnSigninBtn();
 
-        type("#email","@gmail.com");
-        log.info("email enter success");
+        loginpage.enterEmail("@gmail.com");
 
-        type("#pass","1234Abcd$");
-        log.info("password enter success");
+        loginpage.enterPassword(validPassword);
 
-        clickOn("#send2");
-        log.info("click on sign in success");
+        loginpage.clickOnLoginBtn();
 
         //validate error
         String expectedError="Please enter a valid email address (Ex: johndoe@domain.com).";
-        String actualError=getElementText("#email-error");
+        String actualError=loginpage.getErrorMessageInvalidEmail();
         Assert.assertEquals(actualError,expectedError);
-        log.info("validate error success");
+
     }
 
     @Test
     public void missingPassword(){
-        // website validation with luma logo
-        boolean actualTitle=isVisible("//a[@aria-label='store logo']//img");
+        boolean actualTitle= loginpage.homaPageTitle();
         Assert.assertTrue(actualTitle);
-        log.info("landed on luma home page success");
 
-        clickOn("body div.page-wrapper header div.panel.wrapper div ul li.authorization-link a");
-        log.info("click on sign in success");
+        loginpage.clickOnSigninBtn();
 
-        type("#email","Betta@gmail.com");
-        log.info("email enter success");
+        loginpage.enterEmail(validEmail);
 
-        type("#pass","");
-        log.info("password enter success");
+        loginpage.enterPassword("");
 
-        clickOn("#send2");
-        log.info("click on sign in success");
+        loginpage.clickOnLoginBtn();
 
         //validate error
         String expectedError="This is a required field.";
-        String actualError=getElementText("#pass-error");
+        String actualError=loginpage.getErrorMessageMissinPass();
         Assert.assertEquals(actualError,expectedError);
-        log.info("validate error success");
     }
 }
