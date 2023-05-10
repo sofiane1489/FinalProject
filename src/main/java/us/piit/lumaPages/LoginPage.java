@@ -15,7 +15,7 @@ public class LoginPage extends CommonAPI {
     String messageInvalidEmail="#email-error";
     String messageMissingPassword="#pass-error";
 
-    public boolean homaPageTitle(){
+    public boolean homaPageTitleVisibility(){
         boolean title= isVisible(actualTitle);
         log.info("landed on luma login page success");
         return title;
