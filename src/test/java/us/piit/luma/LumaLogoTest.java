@@ -4,16 +4,16 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import us.piit.SetUp;
+import us.piit.base.CommonAPI;
 
-public class LumaLogoTest extends SetUp{
+public class LumaLogoTest extends CommonAPI {
     Logger log= LogManager.getLogger(LumaLogoTest.class.getName());
     @Test
     public void lumaLogo(){
         // website validation with luma logo
         boolean actualTitle=isVisible("//a[@aria-label='store logo']//img");
         Assert.assertTrue(actualTitle);
-        log.info("landed on luma home page success");
+        log.info("landed on luma login page success");
 
         //check the intractability of luma logo
         boolean actualResult= isInteractable("//a[@class='logo']/img");

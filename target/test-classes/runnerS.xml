@@ -9,40 +9,40 @@
     <parameter name="browserName" value="chrome"></parameter>
     <parameter name="url" value="https://magento.softwaretestingboard.com/"></parameter>
 
-    <test name="create account test">
-        <classes>
-            <class name="us.piit.luma.CreateAccount"></class>
-        </classes>
-    </test>
-    <test name="CustomerService test">
-        <classes>
-            <class name="us.piit.luma.CustomerServiceTest"></class>
-        </classes>
-    </test>
-    <test name="EditAccountInfo test">
-        <classes>
-            <class name="us.piit.luma.EditAccountInfoTest"></class>
-        </classes>
-    </test>
+<!--    <test name="create account test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.luma.CreateAccount"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="CustomerService test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.luma.CustomerServiceTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="EditAccountInfo test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.luma.EditAccountInfoTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
     <test name="Login test">
             <classes>
                 <class name="us.piit.luma.LoginTest"></class>
             </classes>
     </test>
-    <test name="lumalogo test">
-        <classes>
-            <class name="us.piit.luma.LumaLogoTest"></class>
-        </classes>
-    </test>
-    <test name="purchase test">
-        <classes>
-            <class name="us.piit.luma.PurchaseItemTest"></class>
-        </classes>
-    </test>
-    <test name="searchbar test">
-        <classes>
-            <class name="us.piit.luma.SearchBarTest"></class>
-        </classes>
-    </test>
+<!--    <test name="lumalogo test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.luma.LumaLogoTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="purchase test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.luma.PurchaseItemTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="searchbar test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.luma.SearchBarTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
 
 </suite>

@@ -4,9 +4,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import us.piit.SetUp;
+import us.piit.base.CommonAPI;
 
-public class AddItemsToCart extends SetUp {
+public class AddItemsToCart extends CommonAPI {
     Logger log = LogManager.getLogger(AddItemsToCart.class.getName());
 
     @Test

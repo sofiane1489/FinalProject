@@ -4,9 +4,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import us.piit.SetUp;
+import us.piit.base.CommonAPI;
 
-public class CheckOutConfirme extends SetUp {
+public class CheckOutConfirme extends CommonAPI {
     Logger log = LogManager.getLogger(CheckOutConfirme.class.getName());
 
     @Test
