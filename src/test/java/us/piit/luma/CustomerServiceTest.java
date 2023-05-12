@@ -5,34 +5,47 @@ import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import us.piit.base.CommonAPI;
+import us.piit.lumaPages.ContactUsPage;
+import us.piit.lumaPages.HomePageBeforeLogin;
 
 public class CustomerServiceTest extends CommonAPI {
     Logger log= LogManager.getLogger(CustomerServiceTest.class.getName());
+
+    String fullName="mike lee";
+    String emailAddress="Betta@gmail.com";
+    String telephoneNumber="0123456789";
+    String message="order not received";
+
     @Test
     public void sendEmail(){
+        HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());
+        ContactUsPage contactUsPage=new ContactUsPage(getDriver());
+
+        // website validation with Title
+        String expextedTitle="Home Page";
+        String actualTitle=getCurrentTtile();
+        Assert.assertEquals(actualTitle,expextedTitle);
+
         // website validation with luma logo
-        boolean actualTitle=isVisible("//a[@aria-label='store logo']//img");
-        Assert.assertTrue(actualTitle);
-        log.info("landed on luma login page success");
+        Assert.assertTrue( homePageBeforeLogin.homePageLogoVisibility());
 
-        clickOn("//a[text()='Contact Us']");
-        log.info("click on contact us success");
+        homePageBeforeLogin.clickOnContactUsBnt();
 
-        type("#name","mike lee");
-        log.info("type Name success");
-        type("#email","Betta@gmail.com");
-        log.info("type Email address success");
-        type("#telephone","0123456789");
-        log.info("type telephone success");
-        type("#comment","order not received");
-        log.info("type text in the box success");
-        clickOn(".action.submit.primary");
-        log.info("click on submit success");
+        contactUsPage.enterNameInContactUs(fullName);
 
+       contactUsPage.enterEmailAddress(emailAddress);
+
+       contactUsPage.enterTelephoneNumber(telephoneNumber);
+
+         contactUsPage.enterYourTextMessage(message);
+
+        contactUsPage.clickOnSubmitBtn();
+
+
+        //send message validation
         String expectedMessage="Thanks for contacting us with your comments and questions. We'll respond to you very soon.";
-        String actualMessage=getElementText(".message-success.success.message");
+        String actualMessage=contactUsPage.getConfirmationMessage();
         Assert.assertEquals(actualMessage,expectedMessage);
-        log.info("Email sent success");
 
     }
 }

@@ -5,34 +5,38 @@ import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import us.piit.base.CommonAPI;
+import us.piit.lumaPages.HomePageBeforeLogin;
+import us.piit.lumaPages.WhatsNewCategoryPage;
 
 public class LumaLogoTest extends CommonAPI {
     Logger log= LogManager.getLogger(LumaLogoTest.class.getName());
     @Test
     public void lumaLogo(){
+        HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());
+        WhatsNewCategoryPage whatsNewCategoryPage=new WhatsNewCategoryPage(getDriver());
+
+        // website validation with Title
+        String expextedTitle="Home Page";
+        String actualTitle=getCurrentTtile();
+        Assert.assertEquals(actualTitle,expextedTitle);
+
+
         // website validation with luma logo
-        boolean actualTitle=isVisible("//a[@aria-label='store logo']//img");
-        Assert.assertTrue(actualTitle);
-        log.info("landed on luma login page success");
+        Assert.assertTrue( homePageBeforeLogin.homePageLogoVisibility());
 
         //check the intractability of luma logo
-        boolean actualResult= isInteractable("//a[@class='logo']/img");
-        Assert.assertTrue(actualResult);
-        log.info("luma logo is interactable");
+        Assert.assertTrue( homePageBeforeLogin.checkIntractabilityOfTheLogo());
 
-        clickOn("#ui-id-3 span");
-        log.info("click on what's new success");
+        homePageBeforeLogin.clickOnWhatsNewCategory();
 
-        clickOn("//ul[2]//li[2]//a[1]");
-        log.info("click on jackets in NEW in men's success");
+        whatsNewCategoryPage.clickOnJacketsINNewInMens();
 
-        clickOn("//a[@class='logo']/img");
-        log.info("click on luma logo success");
+
+        homePageBeforeLogin.clickOnLumaLogo();
 
         // home page validation
-        boolean actualHomePageImg=isVisible("//div[@class='blocks-promo']/a/img");
-        Assert.assertTrue(actualHomePageImg);
-        log.info("landed in home page success");
+        Assert.assertTrue(homePageBeforeLogin.checkPresenceOfHomePageImg());
+
 
     }
 

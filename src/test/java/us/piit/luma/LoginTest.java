@@ -5,7 +5,8 @@ import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import us.piit.base.CommonAPI;
-import us.piit.lumaPages.HomePage;
+import us.piit.lumaPages.HomePageAfterLogin;
+import us.piit.lumaPages.HomePageBeforeLogin;
 import us.piit.lumaPages.LoginPage;
 
 public class LoginTest extends CommonAPI {
@@ -13,17 +14,22 @@ public class LoginTest extends CommonAPI {
 
     String validEmail="Betta@gmail.com";
     String validPassword="1234Abcd$";
-
-   LoginPage loginPage=new LoginPage();
-   HomePage homePage=new HomePage();
+    String invalidEmail="@gmail.com";
 
     @Test
     public void validCred(){
-        // website validation with luma logo
-        boolean actualTitle= loginPage.homaPageTitleVisibility();
-        Assert.assertTrue(actualTitle);
+        LoginPage loginPage=new LoginPage(getDriver());
+        HomePageBeforeLogin homePageBefore=new HomePageBeforeLogin(getDriver());
+        HomePageAfterLogin homePageAfter=new HomePageAfterLogin(getDriver());
 
-        loginPage.clickOnSigninBtn();
+        // website validation with Title
+        String expextedTitle="Home Page";
+        String actualTitle=getCurrentTtile();
+        Assert.assertEquals(actualTitle,expextedTitle);
+        // website validation with luma logo
+        Assert.assertTrue(homePageBefore.homePageLogoVisibility());
+
+        homePageBefore.clickOnSigninBtn();
 
         loginPage.enterEmail(validEmail);
 
@@ -33,18 +39,26 @@ public class LoginTest extends CommonAPI {
 
          //check user logged in
          String expectedWelcomeMess="Welcome, mike lee!";
-         String actualWelcomeMess=homePage.getWelcomeMessage();
+         String actualWelcomeMess=homePageAfter.getWelcomeMessage();
          Assert.assertEquals(expectedWelcomeMess,actualWelcomeMess);
     }
 
     @Test
     public void invalidEmail(){
-        boolean actualTitle= loginPage.homaPageTitleVisibility();
-        Assert.assertTrue(actualTitle);
+        LoginPage loginPage=new LoginPage(getDriver());
+        HomePageBeforeLogin homePageBefore=new HomePageBeforeLogin(getDriver());
+        HomePageAfterLogin homePageAfter=new HomePageAfterLogin(getDriver());
 
-        loginPage.clickOnSigninBtn();
+        // website validation with Title
+        String expextedTitle="Home Page";
+        String actualTitle=getCurrentTtile();
+        Assert.assertEquals(actualTitle,expextedTitle);
+        // website validation with luma logo
+        Assert.assertTrue(homePageBefore.homePageLogoVisibility());
 
-        loginPage.enterEmail("@gmail.com");
+        homePageBefore.clickOnSigninBtn();
+
+        loginPage.enterEmail(invalidEmail);
 
         loginPage.enterPassword(validPassword);
 
@@ -59,10 +73,18 @@ public class LoginTest extends CommonAPI {
 
     @Test
     public void missingPassword(){
-        boolean actualTitle= loginPage.homaPageTitleVisibility();
-        Assert.assertTrue(actualTitle);
+        LoginPage loginPage=new LoginPage(getDriver());
+        HomePageBeforeLogin homePageBefore=new HomePageBeforeLogin(getDriver());
+        HomePageAfterLogin homePageAfter=new HomePageAfterLogin(getDriver());
 
-        loginPage.clickOnSigninBtn();
+        // website validation with Title
+        String expextedTitle="Home Page";
+        String actualTitle=getCurrentTtile();
+        Assert.assertEquals(actualTitle,expextedTitle);
+        // website validation with luma logo
+        Assert.assertTrue(homePageBefore.homePageLogoVisibility());
+
+        homePageBefore.clickOnSigninBtn();
 
         loginPage.enterEmail(validEmail);
 
