@@ -2,29 +2,34 @@ package us.piit.lumaPages;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import us.piit.base.CommonAPI;
 
 public class LoginPage extends CommonAPI {
     Logger log= LogManager.getLogger(LoginPage.class.getName());
 
-    String actualTitle="//a[@aria-label='store logo']//img";
-    String signinBtn="body div.page-wrapper header div.panel.wrapper div ul li.authorization-link a";
-    String emailField="#email";
-    String passwordField="#pass";
-    String loginBtn="#send2";
-    String messageInvalidEmail="#email-error";
-    String messageMissingPassword="#pass-error";
-
-    public boolean homaPageTitleVisibility(){
-        boolean title= isVisible(actualTitle);
-        log.info("landed on luma login page success");
-        return title;
+    public LoginPage(WebDriver driver){
+        PageFactory.initElements(driver,this);
     }
 
-    public void clickOnSigninBtn(){
-        clickOn(signinBtn);
-        log.info("click on sign in success");
-    }
+    @FindBy(css="#email")
+    WebElement emailField;
+
+    @FindBy(css="#pass")
+    WebElement passwordField;
+
+    @FindBy(css="#send2")
+    WebElement loginBtn;
+
+    @FindBy(css="#email-error")
+    WebElement messageInvalidEmail;
+
+    @FindBy(css="#pass-error")
+    WebElement messageMissingPassword;
+
     public void enterEmail(String email){
         type(emailField,email);
         log.info("email enter success");
@@ -47,5 +52,6 @@ public class LoginPage extends CommonAPI {
         log.info("validate missing password error success");
         return error;
     }
+
 
 }

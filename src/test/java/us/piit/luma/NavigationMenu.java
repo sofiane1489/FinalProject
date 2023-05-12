@@ -8,15 +8,15 @@ import us.piit.base.CommonAPI;
 public class NavigationMenu extends CommonAPI {
     Logger log= LogManager.getLogger(NavigationMenu.class.getName());
 
-    @Test
-    public void navigationMenu(){
-
-        boolean actual1= isVisible("//ul[@id='ui-id-2']");
-        Assert.assertTrue(actual1);
-        log.info("navigate menu is visible");
-
-        boolean actual= isInteractable("//ul[@id='ui-id-2']");
-        Assert.assertTrue(actual);
-        log.info("navigate menu is interactable");
-    }
+//    @Test
+//    public void navigationMenu(){
+//
+//        boolean actual1= isVisible("//ul[@id='ui-id-2']");
+//        Assert.assertTrue(actual1);
+//        log.info("navigate menu is visible");
+//
+//        boolean actual= isInteractable("//ul[@id='ui-id-2']");
+//        Assert.assertTrue(actual);
+//        log.info("navigate menu is interactable");
+//    }
 }

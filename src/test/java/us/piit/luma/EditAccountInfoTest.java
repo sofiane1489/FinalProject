@@ -5,64 +5,66 @@ import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import us.piit.base.CommonAPI;
+import us.piit.lumaPages.*;
 
 public class EditAccountInfoTest extends CommonAPI {
     Logger log= LogManager.getLogger(EditAccountInfoTest.class.getName());
+
+    String validEmail="Alphabetta@gmail.com";
+    String validPassword="1234Abcd$";
+    String newLastName="doe";
     @Test
     public void editAccountInfo(){
+        LoginPage loginPage=new LoginPage(getDriver());
+        HomePageBeforeLogin homePageBefore=new HomePageBeforeLogin(getDriver());
+        MyAccountPage myAccountPage=new MyAccountPage(getDriver());
+        EditAccountInformationPage editAccountInformationPage=new EditAccountInformationPage(getDriver());
+
+        // website validation with Title
+        String expextedTitle="Home Page";
+        String actualTitle=getCurrentTtile();
+        Assert.assertEquals(actualTitle,expextedTitle);
         // website validation with luma logo
-        boolean actualTitle=isVisible("//a[@aria-label='store logo']//img");
-        Assert.assertTrue(actualTitle);
-        log.info("landed on luma login page success");
+        Assert.assertTrue(homePageBefore.homePageLogoVisibility());
 
-        clickOn("body > div.page-wrapper > header > div.panel.wrapper > div > ul > li.authorization-link > a");
-        log.info("click on sign in success");
+        homePageBefore.clickOnSigninBtn();
 
-        type("#email","Alpha@gmail.com");
-        log.info("email enter success");
+        loginPage.enterEmail(validEmail);
 
-        type("#pass","abcd1234$");
-        log.info("password enter success");
+        loginPage.enterPassword(validPassword);
 
-        clickOn("#send2");
-        log.info("click on sign in success");
+        loginPage.clickOnLoginBtn();
 
         //validate user logged in
         //validate the dropdown visibility
-        boolean actualresultVisible=isVisible(".panel.header ul li:nth-child(2) span button");
-        Assert.assertTrue(actualresultVisible);
-        log.info("it is visible success");
+        Assert.assertTrue( homePageBefore.checkDropDownVisibility());
+
 
         //validate the dropdown interactivity
-        boolean actualResultInteractable=isInteractable(".panel.header ul li:nth-child(2) span button");
-        Assert.assertTrue(actualResultInteractable);
-        log.info("it is interactable success");
+        Assert.assertTrue( homePageBefore.checkDropDownInteractibility());
 
-        clickOn(".panel.header ul li:nth-child(2) span button");
-        log.info("click on drop down list success");
+       homePageBefore.clickOnDropDown();
 
-        clickOn("//div[@aria-hidden='false']//a[normalize-space()='My Account']");
-        log.info("click on My Account success");
+       homePageBefore.clickOnMyAccount();
 
-        clickOn("//a[@href='https://magento.softwaretestingboard.com/customer/account/edit/']//span[contains(text(),'Edit')]");
-        log.info("click on edit success");
+       myAccountPage.clickOnEdit();
 
-        doubleClick("//input[@id='lastname']");
-        log.info("double click on last name field success");
+       waitFor(3);
+       editAccountInformationPage.doubleClickOnLastName();
 
-        delete("//input[@id='lastname']");
-        log.info("delete element success");
+        waitFor(2);
+       editAccountInformationPage.deleteLastName();
 
-        type("//input[@id='lastname']","doe");
-        log.info("type last name success");
+       editAccountInformationPage.enterNewLastName(newLastName);
 
-        clickOn("button[title='Save'] span");
-        log.info("click on save button success");
 
+       editAccountInformationPage.clickOnSaveBtn();
+
+         //edit account information validation
         String expectedMess="You saved the account information.";
-        String actualMess=getElementText("div[data-bind='html: $parent.prepareMessageForHtml(message.text)']");
+        String actualMess=myAccountPage.getEditTextConfirmation();
         Assert.assertEquals(expectedMess,expectedMess);
-        log.info("account edit success");
+
     }
 
 }
