@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -112,15 +113,17 @@ public class CommonAPI {
     }
 
     public void delete(WebElement element){
-            element.sendKeys(Keys.DELETE);
+            element.clear();
     }
     public void hoverOver(WebElement element){
-        Actions action=new Actions(driver);
-            action.moveToElement(element).build().perform();
+        Actions actions = new Actions(driver);
+        actions.moveToElement(element).build().perform();
     }
-    public void doubleClickOn(WebElement element){
-        Actions action=new Actions(driver);
-            action.doubleClick(element).build().perform();
+
+
+    public void hoverOverAndClickOn(WebElement element){
+        Actions actions = new Actions(driver);
+        actions.moveToElement(element).click().build().perform();
     }
     public void waitFor(int seconds){
         try {

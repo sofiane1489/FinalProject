@@ -31,13 +31,10 @@ public class LumaLogoTest extends CommonAPI {
 
         whatsNewCategoryPage.clickOnJacketsINNewInMens();
 
-
         homePageBeforeLogin.clickOnLumaLogo();
 
         // home page validation
         Assert.assertTrue(homePageBeforeLogin.checkPresenceOfHomePageImg());
 
-
     }
-
 }

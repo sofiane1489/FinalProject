@@ -1,5 +1,4 @@
 package us.piit.lumaPages;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -21,12 +20,8 @@ public class EditAccountInformationPage extends CommonAPI {
 
     @FindBy(css = "button[title='Save'] span")
     WebElement saveBtn;
+    
 
-
-    public void doubleClickOnLastName(){
-        doubleClickOn(lastNameField);
-        log.info("double click on last name field success");
-    }
     public void deleteLastName(){
         delete(lastNameField);
         log.info("delete element success");
