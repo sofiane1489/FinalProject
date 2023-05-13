@@ -15,7 +15,7 @@ public class UserRegistration extends CommonAPI {
         type("//input[@name='name']","adam");
         log.info("enter name  success");
 
-        type("//body/section[@id='form']/div[1]/div[1]/div[3]/div[1]/form[1]/input[3]","adam20023@outlook.com");
+        type("//body/section[@id='form']/div[1]/div[1]/div[3]/div[1]/form[1]/input[3]","adam22023@outlook.com");
         log.info("enter email  success");
 
         clickOn("//button[contains(text(),'Signup')]");

@@ -6,8 +6,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import us.piit.base.CommonAPI;
 
-public class CheckOutConfirme extends CommonAPI {
-    Logger log = LogManager.getLogger(CheckOutConfirme.class.getName());
+public class Checkout extends CommonAPI {
+    Logger log = LogManager.getLogger(Checkout.class.getName());
 
     @Test
     public void checkout() {
