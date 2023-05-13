@@ -33,11 +33,11 @@ public class CustomerServiceTest extends CommonAPI {
 
         contactUsPage.enterNameInContactUs(fullName);
 
-       contactUsPage.enterEmailAddress(emailAddress);
+        contactUsPage.enterEmailAddress(emailAddress);
 
-       contactUsPage.enterTelephoneNumber(telephoneNumber);
+        contactUsPage.enterTelephoneNumber(telephoneNumber);
 
-         contactUsPage.enterYourTextMessage(message);
+        contactUsPage.enterYourTextMessage(message);
 
         contactUsPage.clickOnSubmitBtn();
 

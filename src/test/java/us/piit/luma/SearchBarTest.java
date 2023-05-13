@@ -23,16 +23,16 @@ public class SearchBarTest extends CommonAPI {
            String expextedTitle="Home Page";
            String actualTitle=getCurrentTtile();
            Assert.assertEquals(actualTitle,expextedTitle);
-           // website validation with luma logo
+
+           //website validation with luma logo
            Assert.assertTrue(homePageBefore.homePageLogoVisibility());
 
           homePageBefore.typeInSearchBarAndClickEnter(searchFor);
 
-        //search result validation
-        String expectedPageWraperTitle="Search results for: 'bag pack for man'";
-        String actualPageWraperTitle=searchResultPage.PageSearchTitle();
-        Assert.assertEquals(actualPageWraperTitle,expectedPageWraperTitle);
+          //search result validation
+          String expectedPageWraperTitle="Search results for: 'bag pack for man'";
+          String actualPageWraperTitle=searchResultPage.PageSearchTitle();
+          Assert.assertEquals(actualPageWraperTitle,expectedPageWraperTitle);
 
-       }
-
+   }
 }

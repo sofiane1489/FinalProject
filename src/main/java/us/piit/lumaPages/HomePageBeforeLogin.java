@@ -45,6 +45,22 @@ public class HomePageBeforeLogin extends CommonAPI {
     @FindBy(xpath = "//div[@aria-hidden='false']//a[normalize-space()='My Account']")
     WebElement myAccountLink;
 
+    @FindBy(css = "#ui-id-5 > span:nth-child(2)")
+    WebElement menCategory;
+
+    @FindBy(css = "#ui-id-6")
+    WebElement gearCategory;
+
+    @FindBy(css="span[data-bind=\"css: { empty: !!getCartParam('summary_count') == false && !isLoading() }, blockLoader: isLoading\"]")
+    WebElement shoppingCartIcon;
+
+
+    @FindBy(css = "#top-cart-btn-checkout")
+    WebElement proceedToCheckOutBtn;
+
+    @FindBy(xpath = "//span[text()='View and Edit Cart']")
+    WebElement viewAndEditLink;
+
 
     public boolean homePageLogoVisibility(){
         boolean title= isVisible(logoVisibility);
@@ -112,4 +128,31 @@ public class HomePageBeforeLogin extends CommonAPI {
         clickOn(myAccountLink);
         log.info("click on My Account success");
     }
+
+    public void clickOnMenCategory(){
+        clickOn(menCategory);
+        log.info("click on men category success");
+    }
+
+    public void clickOnGearcategory(){
+        clickOn(gearCategory);
+        log.info("click over Gear category success");
+    }
+
+
+    public void clickOnShoppingCartIcon(){
+        clickOn(shoppingCartIcon);
+        log.info("click on shopping cart success");
+    }
+
+    public void clickOnProceedToCheckOutBtn(){
+        clickOn(proceedToCheckOutBtn);
+        log.info("click on proceed to checkout  cart success");
+    }
+
+    public void clickOnviewAndEditLink(){
+        clickOn(viewAndEditLink);
+        log.info("click on view and edit success");
+    }
+
 }

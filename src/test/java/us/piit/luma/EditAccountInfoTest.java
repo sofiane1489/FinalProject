@@ -12,7 +12,7 @@ public class EditAccountInfoTest extends CommonAPI {
 
     String validEmail="Alphabetta@gmail.com";
     String validPassword="1234Abcd$";
-    String newLastName="doe";
+    String newLastName="DOE";
     @Test
     public void editAccountInfo(){
         LoginPage loginPage=new LoginPage(getDriver());
@@ -39,7 +39,6 @@ public class EditAccountInfoTest extends CommonAPI {
         //validate the dropdown visibility
         Assert.assertTrue( homePageBefore.checkDropDownVisibility());
 
-
         //validate the dropdown interactivity
         Assert.assertTrue( homePageBefore.checkDropDownInteractibility());
 
@@ -49,10 +48,6 @@ public class EditAccountInfoTest extends CommonAPI {
 
        myAccountPage.clickOnEdit();
 
-       waitFor(3);
-       editAccountInformationPage.doubleClickOnLastName();
-
-        waitFor(2);
        editAccountInformationPage.deleteLastName();
 
        editAccountInformationPage.enterNewLastName(newLastName);

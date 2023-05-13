@@ -19,11 +19,11 @@
 <!--            <class name="us.piit.luma.CustomerServiceTest"></class>-->
 <!--        </classes>-->
 <!--    </test>-->
-    <test name="EditAccountInfo test">
-        <classes>
-            <class name="us.piit.luma.EditAccountInfoTest"></class>
-        </classes>
-    </test>
+<!--    <test name="EditAccountInfo test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.luma.EditAccountInfoTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
 <!--    <test name="Login test">-->
 <!--            <classes>-->
 <!--                <class name="us.piit.luma.LoginTest"></class>-->
@@ -34,11 +34,11 @@
 <!--            <class name="us.piit.luma.LumaLogoTest"></class>-->
 <!--        </classes>-->
 <!--    </test>-->
-<!--    <test name="purchase test">-->
-<!--        <classes>-->
-<!--            <class name="us.piit.luma.PurchaseItemTest"></class>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="purchase test">
+        <classes>
+            <class name="us.piit.luma.PurchaseItemTest"></class>
+        </classes>
+    </test>
 <!--    <test name="searchbar test">-->
 <!--        <classes>-->
 <!--            <class name="us.piit.luma.SearchBarTest"></class>-->
