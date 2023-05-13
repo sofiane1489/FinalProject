@@ -5,9 +5,24 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import us.piit.base.CommonAPI;
 import us.piit.lumaPages.*;
+import us.piit.utility.Utility;
+
+import java.util.Properties;
 
 public class PurchaseItemTest extends CommonAPI {
     Logger log= LogManager.getLogger(PurchaseItemTest.class.getName());
+
+    Properties pro= Utility.loadProperties();
+
+    String emailUsed=Utility.decode(pro.getProperty("luma.email")) ;
+    String firstNameUsed=Utility.decode(pro.getProperty("luma.firstname")) ;
+    String lastNameUsed= Utility.decode(pro.getProperty("luma.lastname")) ;
+    String companyNameUsed=Utility.decode(pro.getProperty("luma.companyName"));
+    String addressUsed=Utility.decode(pro.getProperty("luma.address"));
+    String cityNameUsed=Utility.decode(pro.getProperty("luma.city"));
+    String stateused=Utility.decode(pro.getProperty("luma.state"));
+    String zipCodeUsede=Utility.decode(pro.getProperty("luma.zipcode"));
+    String phoneNumberUsed=Utility.decode(pro.getProperty("luma.telephoneNumber"));
 
     @Test
     public void addItemToCart(){
@@ -43,16 +58,6 @@ public class PurchaseItemTest extends CommonAPI {
         Assert.assertEquals(actualText,expextedText);
 
     }
-
-    String emailUsed="item@gmail.com";
-    String firstNameUsed="lu";
-    String lastNameUsed="ma";
-    String companyNameUsed="luma";
-    String addressUsed="1234 broad st";
-    String cityNameUsed="San Diego";
-    String stateused="California";
-    String zipCodeUsede="12345";
-    String phoneNumberUsed="0123456789";
 
     @Test
     public void buyProduct(){

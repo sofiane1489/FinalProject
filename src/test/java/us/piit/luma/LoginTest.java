@@ -8,13 +8,18 @@ import us.piit.base.CommonAPI;
 import us.piit.lumaPages.HomePageAfterLogin;
 import us.piit.lumaPages.HomePageBeforeLogin;
 import us.piit.lumaPages.LoginPage;
+import us.piit.utility.Utility;
+
+import java.util.Properties;
 
 public class LoginTest extends CommonAPI {
     Logger log= LogManager.getLogger(LoginTest.class.getName());
 
-    String validEmail="Betta@gmail.com";
-    String validPassword="1234Abcd$";
-    String invalidEmail="@gmail.com";
+    Properties pro= Utility.loadProperties();
+
+    String validEmail=Utility.decode(pro.getProperty("luma.email")) ;
+    String validPassword=Utility.decode(pro.getProperty("luma.password")) ;
+    String invalidEmail=Utility.decode(pro.getProperty("luma.invalidEmail")) ;
 
     @Test
     public void validCred(){

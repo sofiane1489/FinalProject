@@ -8,14 +8,19 @@ import us.piit.lumaPages.CreateAccountPage;
 import us.piit.lumaPages.HomePageAfterLogin;
 import us.piit.lumaPages.HomePageBeforeLogin;
 import us.piit.lumaPages.LoginPage;
+import us.piit.utility.Utility;
+
+import java.util.Properties;
 
 public class CreateAccountTest extends CommonAPI {
     Logger log= LogManager.getLogger(CreateAccountTest.class.getName());
 
-    String firstname="mike";
-    String lastname="lee";
-    String createEmail="Bettta@gmail.com";
-    String createPassword="1234Abcd$";
+    Properties pro= Utility.loadProperties();
+    String firstname=Utility.decode(pro.getProperty("luma.firstname")) ;
+    String lastname=Utility.decode(pro.getProperty("luma.lastname")) ;
+    String createEmail=Utility.decode(pro.getProperty("luma.newEmail")) ;
+    String password=Utility.decode(pro.getProperty("luma.password")) ;
+    String email=Utility.decode(pro.getProperty("luma.email")) ;
 
 //    @Test
 //    public void createNewAccount(){
@@ -39,7 +44,7 @@ public class CreateAccountTest extends CommonAPI {
 //
 //           createAccountPage.enterEmail(createEmail);
 //
-//           createAccountPage.enterPassword(createPassword);
+//           createAccountPage.enterPassword(password);
 //
 //           createAccountPage.enterConfirmationPassword(password);
 //
@@ -52,10 +57,6 @@ public class CreateAccountTest extends CommonAPI {
 //        Assert.assertEquals(expectedContInfor,actualContInfor);
 //}
 
-    String firstName="john";
-    String lastName="lost";
-    String email="Betta@gmail.com";
-    String password="1234Abcd$";
     @Test
     public void emailAlreadyTaken(){
         HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());
@@ -70,9 +71,9 @@ public class CreateAccountTest extends CommonAPI {
 
         homePageBeforeLogin.clickOnCreateAnAccountLink();
 
-        createAccountPage.enterFirstName(firstName);
+        createAccountPage.enterFirstName(firstname);
 
-        createAccountPage.enterLastName(lastName);
+        createAccountPage.enterLastName(lastname);
 
         createAccountPage.enterEmail(email);
 
