@@ -18,11 +18,23 @@ import org.testng.annotations.Parameters;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
+import java.util.Properties;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import us.piit.utility.Utility;
+
 public class CommonAPI {
     Logger log= LogManager.getLogger(CommonAPI.class.getName());
+    Properties pro= Utility.loadProperties();
+    String browserstackUsername=pro.getProperty("browserstack.username");
+    String browserstackPassword=pro.getProperty("browserstack.password");
+
+    String implicitWait=pro.getProperty("implicit.wait","10");
+    String browserMaximize=pro.getProperty("browser.maximize","true");
+    String takeScreenshots=pro.getProperty("take.screenshots","false");
+
+
     WebDriver driver;
     public void getCloudDriver(String envName,String os,String osVersion,String browserName,String browserVersion,String username,String password) throws MalformedURLException, MalformedURLException {
         DesiredCapabilities cap=new DesiredCapabilities();
@@ -56,13 +68,15 @@ public class CommonAPI {
                       @Optional("11") String osversion, @Optional("chrome") String browserName,
                       @Optional("111") String browservesion, @Optional("https://www.google.com/") String url) throws MalformedURLException {
         if(useCloudEnv.equalsIgnoreCase("true")){
-            getCloudDriver(envName,os,osversion,browserName,browservesion,"sofianesehad_ClW76g","2f3G7QUqgScR9c7bbahr");
+            getCloudDriver(envName,os,osversion,browserName,browservesion,browserstackUsername,browserstackPassword);
         } else if (useCloudEnv.equalsIgnoreCase("false")) {
             getLocalDriver(browserName);
         }
         //open the browser
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Long.parseLong(implicitWait)));
+        if(browserMaximize.equalsIgnoreCase("true")){
+            driver.manage().window().maximize();
+        }
         driver.get(url);
     }
     @AfterMethod

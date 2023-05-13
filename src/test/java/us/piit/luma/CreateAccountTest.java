@@ -8,54 +8,55 @@ import us.piit.lumaPages.CreateAccountPage;
 import us.piit.lumaPages.HomePageAfterLogin;
 import us.piit.lumaPages.HomePageBeforeLogin;
 import us.piit.lumaPages.LoginPage;
+import us.piit.utility.Utility;
+
+import java.util.Properties;
 
 public class CreateAccountTest extends CommonAPI {
     Logger log= LogManager.getLogger(CreateAccountTest.class.getName());
 
-    String firstname="mike";
-    String lastname="lee";
-    String createEmail="Bettta@gmail.com";
-    String createPassword="1234Abcd$";
+    Properties pro= Utility.loadProperties();
+    String firstname=Utility.decode(pro.getProperty("luma.firstname")) ;
+    String lastname=Utility.decode(pro.getProperty("luma.lastname")) ;
+    String createEmail=Utility.decode(pro.getProperty("luma.newEmail")) ;
+    String password=Utility.decode(pro.getProperty("luma.password")) ;
+    String email=Utility.decode(pro.getProperty("luma.email")) ;
 
-//    @Test
-//    public void createNewAccount(){
-//        HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());
-//        CreateAccountPage createAccountPage=new CreateAccountPage(getDriver());
-//        HomePageAfterLogin homePageAfterLogin=new HomePageAfterLogin(getDriver());
-//
-//              // website validation with Title
-//              String expextedTitle="Home Page";
-//              String actualTitle=getCurrentTtile();
-//              Assert.assertEquals(actualTitle,expextedTitle);
-//
-//         // website validation with luma logo
-//           Assert.assertTrue(homePageBeforeLogin.homePageLogoVisibility());
-//
-//           homePageBeforeLogin.clickOnCreateAnAccountLink();
-//
-//           createAccountPage.enterFirstName(firstname);
-//
-//           createAccountPage.enterLastName(lastname);
-//
-//           createAccountPage.enterEmail(createEmail);
-//
-//           createAccountPage.enterPassword(createPassword);
-//
-//           createAccountPage.enterConfirmationPassword(password);
-//
-//           createAccountPage.clickOnCreateAccountBtn();
-//
-//        //create account validation
-//        String expectedContInfor="mike lee\n" +
-//                "Bettta@gmail.com";
-//        String actualContInfor=homePageAfterLogin.getAccountMessageInfo();
-//        Assert.assertEquals(expectedContInfor,actualContInfor);
-//}
+   // @Test
+    public void createNewAccount(){
+        HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());
+        CreateAccountPage createAccountPage=new CreateAccountPage(getDriver());
+        HomePageAfterLogin homePageAfterLogin=new HomePageAfterLogin(getDriver());
 
-    String firstName="john";
-    String lastName="lost";
-    String email="Betta@gmail.com";
-    String password="1234Abcd$";
+              // website validation with Title
+              String expextedTitle="Home Page";
+              String actualTitle=getCurrentTtile();
+              Assert.assertEquals(actualTitle,expextedTitle);
+
+         // website validation with luma logo
+           Assert.assertTrue(homePageBeforeLogin.homePageLogoVisibility());
+
+           homePageBeforeLogin.clickOnCreateAnAccountLink();
+
+           createAccountPage.enterFirstName(firstname);
+
+           createAccountPage.enterLastName(lastname);
+
+           createAccountPage.enterEmail(createEmail);
+
+           createAccountPage.enterPassword(password);
+
+           createAccountPage.enterConfirmationPassword(password);
+
+           createAccountPage.clickOnCreateAccountBtn();
+
+        //create account validation
+        String expectedContInfor="mike lee\n" +
+                "Bettta@gmail.com";
+        String actualContInfor=homePageAfterLogin.getAccountMessageInfo();
+        Assert.assertEquals(expectedContInfor,actualContInfor);
+}
+
     @Test
     public void emailAlreadyTaken(){
         HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());
@@ -70,9 +71,9 @@ public class CreateAccountTest extends CommonAPI {
 
         homePageBeforeLogin.clickOnCreateAnAccountLink();
 
-        createAccountPage.enterFirstName(firstName);
+        createAccountPage.enterFirstName(firstname);
 
-        createAccountPage.enterLastName(lastName);
+        createAccountPage.enterLastName(lastname);
 
         createAccountPage.enterEmail(email);
 
