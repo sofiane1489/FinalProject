@@ -7,14 +7,19 @@ import org.testng.annotations.Test;
 import us.piit.base.CommonAPI;
 import us.piit.lumaPages.ContactUsPage;
 import us.piit.lumaPages.HomePageBeforeLogin;
+import us.piit.utility.Utility;
+
+import java.util.Properties;
 
 public class CustomerServiceTest extends CommonAPI {
     Logger log= LogManager.getLogger(CustomerServiceTest.class.getName());
 
-    String fullName="mike lee";
-    String emailAddress="Betta@gmail.com";
-    String telephoneNumber="0123456789";
-    String message="order not received";
+    Properties pro= Utility.loadProperties();
+
+    String fullName=Utility.decode(pro.getProperty("luma.fullName")) ;
+    String emailAddress=Utility.decode(pro.getProperty("luma.email")) ;
+    String telephoneNumber=Utility.decode(pro.getProperty("luma.telephoneNumber")) ;
+    String message=Utility.decode(pro.getProperty("luma.message")) ;
 
     @Test
     public void sendEmail(){
