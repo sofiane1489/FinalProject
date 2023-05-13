@@ -8,15 +8,11 @@ import us.piit.lumaPages.HomePageAfterLogin;
 import us.piit.lumaPages.HomePageBeforeLogin;
 import us.piit.lumaPages.LoginPage;
 import us.piit.lumaPages.SearchResultPage;
-import us.piit.utility.Utility;
-
-import java.util.Properties;
 
 public class SearchBarTest extends CommonAPI {
     Logger log= LogManager.getLogger(SearchBarTest.class.getName());
 
-    Properties pro= Utility.loadProperties();
-    String searchFor=Utility.decode(pro.getProperty("luma.searchText"));
+    String searchFor="bag pack for man";
 
        @Test
        public void searchTest(){

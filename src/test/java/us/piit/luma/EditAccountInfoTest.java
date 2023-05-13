@@ -1,25 +1,18 @@
 package us.piit.luma;
 
-import jdk.jshell.execution.Util;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import us.piit.base.CommonAPI;
 import us.piit.lumaPages.*;
-import us.piit.utility.Utility;
-
-import java.util.Properties;
 
 public class EditAccountInfoTest extends CommonAPI {
     Logger log= LogManager.getLogger(EditAccountInfoTest.class.getName());
 
-    Properties pro=Utility.loadProperties();
-
-    String email=Utility.decode(pro.getProperty("luma.otherEmail"));
-    String password= Utility.decode(pro.getProperty("luma.password"));
-    String newLastName=Utility.decode(pro.getProperty("luma.newLastName"));
-
+    String validEmail="Alphabetta@gmail.com";
+    String validPassword="1234Abcd$";
+    String newLastName="DOE";
     @Test
     public void editAccountInfo(){
         LoginPage loginPage=new LoginPage(getDriver());
@@ -36,9 +29,9 @@ public class EditAccountInfoTest extends CommonAPI {
 
         homePageBefore.clickOnSigninBtn();
 
-        loginPage.enterEmail(email);
+        loginPage.enterEmail(validEmail);
 
-        loginPage.enterPassword(password);
+        loginPage.enterPassword(validPassword);
 
         loginPage.clickOnLoginBtn();
 
@@ -58,6 +51,7 @@ public class EditAccountInfoTest extends CommonAPI {
        editAccountInformationPage.deleteLastName();
 
        editAccountInformationPage.enterNewLastName(newLastName);
+
 
        editAccountInformationPage.clickOnSaveBtn();
 
