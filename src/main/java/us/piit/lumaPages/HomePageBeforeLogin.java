@@ -54,15 +54,26 @@ public class HomePageBeforeLogin extends CommonAPI {
     @FindBy(css="span[data-bind=\"css: { empty: !!getCartParam('summary_count') == false && !isLoading() }, blockLoader: isLoading\"]")
     WebElement shoppingCartIcon;
 
-
     @FindBy(css = "#top-cart-btn-checkout")
     WebElement proceedToCheckOutBtn;
 
     @FindBy(xpath = "//span[text()='View and Edit Cart']")
     WebElement viewAndEditLink;
 
+    @FindBy(xpath = "//ul[@id='ui-id-2']")
+    WebElement navigaetMenuBar;
 
-    public boolean homePageLogoVisibility(){
+    @FindBy(css = "#ui-id-4")
+    WebElement womenCategory;
+
+    @FindBy(css = "#ui-id-7")
+    WebElement trainingCategory;
+
+    @FindBy(css = "#ui-id-8")
+    WebElement saleCategory;
+
+
+    public boolean checkHomePageLogoVisibility(){
         boolean title= isVisible(logoVisibility);
         log.info("landed on luma login page success");
         return title;
@@ -153,6 +164,31 @@ public class HomePageBeforeLogin extends CommonAPI {
     public void clickOnviewAndEditLink(){
         clickOn(viewAndEditLink);
         log.info("click on view and edit success");
+    }
+
+    public boolean checkNavigateMenuVisibility(){
+        boolean menu=isVisible(navigaetMenuBar);
+        log.info("navigate menu is visible");
+        return menu;
+    }
+
+    public boolean checkNavigateMenuInteractability(){
+        boolean interatable=isInteractable(navigaetMenuBar);
+        log.info("navigate menu is interactable");
+        return interatable;
+    }
+
+    public void clickOnWomenCategory(){
+        clickOn(womenCategory);
+        log.info("click on women category succcess");
+    }
+    public void clickOnTrainingCategory(){
+        clickOn(trainingCategory);
+        log.info("click on Training category succcess");
+    }
+    public void clickOnSaleCategory(){
+        clickOn(saleCategory);
+        log.info("click on sale category succcess");
     }
 
 }

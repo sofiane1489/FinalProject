@@ -32,7 +32,7 @@ public class EditAccountInfoTest extends CommonAPI {
         String actualTitle=getCurrentTtile();
         Assert.assertEquals(actualTitle,expextedTitle);
         // website validation with luma logo
-        Assert.assertTrue(homePageBefore.homePageLogoVisibility());
+        Assert.assertTrue(homePageBefore.checkHomePageLogoVisibility());
 
         homePageBefore.clickOnSigninBtn();
 

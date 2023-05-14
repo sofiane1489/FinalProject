@@ -27,7 +27,7 @@ public class PurchaseItemTest extends CommonAPI {
     @Test
     public void addItemToCart(){
         HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());
-        MenPage menPage=new MenPage(getDriver());
+        MenCategoryPage menPage=new MenCategoryPage(getDriver());
         TopsPage topsPage=new TopsPage(getDriver());
         CassiusSparringTankPage cassiusSparringTankPage=new CassiusSparringTankPage(getDriver());
 
@@ -36,7 +36,7 @@ public class PurchaseItemTest extends CommonAPI {
         String actualTitle=getCurrentTtile();
         Assert.assertEquals(actualTitle,expextedTitle);
         // website validation with luma logo
-        Assert.assertTrue(homePageBeforeLogin.homePageLogoVisibility());
+        Assert.assertTrue(homePageBeforeLogin.checkHomePageLogoVisibility());
 
         homePageBeforeLogin.clickOnMenCategory();
 
@@ -65,18 +65,18 @@ public class PurchaseItemTest extends CommonAPI {
         FitnessEquipmentPage fitnessEquipmentPage=new FitnessEquipmentPage(getDriver());
         QuestLumaflexBandPage questLumaflexBandPage=new QuestLumaflexBandPage(getDriver());
         ShippingAddressPage shippingAddressPage=new ShippingAddressPage(getDriver());
-        GearPage gearPage=new GearPage(getDriver());
+        GearCategoryPage gearCategoryPage =new GearCategoryPage(getDriver());
 
         // website validation with Title
         String expextedTitle="Home Page";
         String actualTitle=getCurrentTtile();
         Assert.assertEquals(actualTitle,expextedTitle);
         // website validation with luma logo
-        Assert.assertTrue(homePageBeforeLogin.homePageLogoVisibility());
+        Assert.assertTrue(homePageBeforeLogin.checkHomePageLogoVisibility());
 
         homePageBeforeLogin.clickOnGearcategory();
 
-        gearPage.clickOnFitnessEquipment();
+        gearCategoryPage.clickOnFitnessEquipment();
 
         fitnessEquipmentPage.clickOnQuestLumaflexBand();
 
@@ -127,7 +127,7 @@ public class PurchaseItemTest extends CommonAPI {
     @Test
     public void removeItemsFromTheCart(){
         HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());
-        GearPage gearPage=new GearPage(getDriver());
+        GearCategoryPage gearCategoryPage =new GearCategoryPage(getDriver());
         WatchesPage watchesPage=new WatchesPage(getDriver());
         DashDigitalWatchPage dashDigitalWatchPage=new DashDigitalWatchPage(getDriver());
         ShoppingCartClass shoppingCartClass=new ShoppingCartClass(getDriver());
@@ -137,12 +137,12 @@ public class PurchaseItemTest extends CommonAPI {
         String actualTitle=getCurrentTtile();
         Assert.assertEquals(actualTitle,expextedTitle);
         // website validation with luma logo
-        Assert.assertTrue(homePageBeforeLogin.homePageLogoVisibility());
+        Assert.assertTrue(homePageBeforeLogin.checkHomePageLogoVisibility());
 
         //click on Gear section
         homePageBeforeLogin.clickOnGearcategory();
 
-        gearPage.clickOnWatchesSection();
+        gearCategoryPage.clickOnWatchesSection();
 
         watchesPage.clickOnDashDigitalWatch();
 
