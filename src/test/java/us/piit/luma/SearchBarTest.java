@@ -29,7 +29,7 @@ public class SearchBarTest extends CommonAPI {
            Assert.assertEquals(actualTitle,expextedTitle);
 
            //website validation with luma logo
-           Assert.assertTrue(homePageBefore.homePageLogoVisibility());
+           Assert.assertTrue(homePageBefore.checkHomePageLogoVisibility());
 
           homePageBefore.typeInSearchBarAndClickEnter(searchFor);
 

@@ -29,26 +29,26 @@
 <!--                <class name="us.piit.luma.LoginTest"></class>-->
 <!--            </classes>-->
 <!--    </test>-->
-    <test name="lumalogo test">
-        <classes>
-            <class name="us.piit.luma.LumaLogoTest"></class>
-        </classes>
-    </test>
+<!--    <test name="lumalogo test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.luma.LumaLogoTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
 <!--    <test name="purchase test">-->
 <!--        <classes>-->
 <!--            <class name="us.piit.luma.PurchaseItemTest"></class>-->
 <!--        </classes>-->
 <!--    </test>-->
-    <test name="searchbar test">
-        <classes>
-            <class name="us.piit.luma.SearchBarTest"></class>
-        </classes>
-    </test>
-<!--    <test name="navigationMenu test">-->
+<!--    <test name="searchbar test">-->
 <!--        <classes>-->
-<!--            <class name="us.piit.luma.NavigationMenu"></class>-->
+<!--            <class name="us.piit.luma.SearchBarTest"></class>-->
 <!--        </classes>-->
 <!--    </test>-->
+    <test name="navigationMenu test">
+        <classes>
+            <class name="us.piit.luma.NavigationMenuTest"></class>
+        </classes>
+    </test>
 
 
 

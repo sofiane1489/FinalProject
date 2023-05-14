@@ -22,7 +22,7 @@ public class LumaLogoTest extends CommonAPI {
 
 
         // website validation with luma logo
-        Assert.assertTrue( homePageBeforeLogin.homePageLogoVisibility());
+        Assert.assertTrue( homePageBeforeLogin.checkHomePageLogoVisibility());
 
         //check the intractability of luma logo
         Assert.assertTrue( homePageBeforeLogin.checkIntractabilityOfTheLogo());

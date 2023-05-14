@@ -34,7 +34,7 @@ public class CreateAccountTest extends CommonAPI {
 //              Assert.assertEquals(actualTitle,expextedTitle);
 //
 //         // website validation with luma logo
-//           Assert.assertTrue(homePageBeforeLogin.homePageLogoVisibility());
+//           Assert.assertTrue(homePageBeforeLogin.checkHomePageLogoVisibility());
 //
 //           homePageBeforeLogin.clickOnCreateAnAccountLink();
 //
@@ -67,7 +67,7 @@ public class CreateAccountTest extends CommonAPI {
         String actualTitle=getCurrentTtile();
         Assert.assertEquals(actualTitle,expextedTitle);
         // website validation with luma logo
-        Assert.assertTrue(homePageBeforeLogin.homePageLogoVisibility());
+        Assert.assertTrue(homePageBeforeLogin.checkHomePageLogoVisibility());
 
         homePageBeforeLogin.clickOnCreateAnAccountLink();
 
