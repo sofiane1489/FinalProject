@@ -21,6 +21,40 @@ public class HomePageAfterLogin extends CommonAPI {
     @FindBy(css = "div[class='box box-information'] p")
     WebElement accountInfo;
 
+    @FindBy(css = ".panel.header ul li:nth-child(2) span button")
+    WebElement dropDownArrow;
+
+    @FindBy(xpath = "//div[@aria-hidden='false']//a[normalize-space()='My Account']")
+    WebElement myAccountLink;
+
+    @FindBy(css = "div[aria-hidden='false'] li[data-label='or'] a")
+    WebElement signOutLink;
+
+    @FindBy(css = ".base")
+    WebElement signOutConfirmationMess;
+
+
+    public boolean checkDropDownVisibility(){
+        boolean isDropDownVisible=isVisible(dropDownArrow);
+        log.info("drop down is visible success");
+        return isDropDownVisible;
+    }
+
+    public boolean checkDropDownInteractibility(){
+        boolean isDropDownInteratable=isInteractable(dropDownArrow);
+        log.info("drop down is interactable success");
+        return isDropDownInteratable;
+    }
+
+    public void clickOnDropDown(){
+        clickOn(dropDownArrow);
+        log.info("click on drop down list success");
+    }
+
+    public void clickOnMyAccount(){
+        clickOn(myAccountLink);
+        log.info("click on My Account success");
+    }
 
     public String getWelcomeMessage(){
         String message= getElementText(actualMessage);
@@ -32,5 +66,16 @@ public class HomePageAfterLogin extends CommonAPI {
         String accountTextInfo=getElementText(accountInfo);
         log.info("account create success");
         return accountTextInfo;
+    }
+
+    public void clickOnSignOutLink(){
+        clickOn(signOutLink);
+        log.info("click on sign out link success");
+    }
+
+    public String getSignOutConfirmationText(){
+        String text=getElementText(signOutConfirmationMess);
+        log.info("sign out success");
+        return text;
     }
 }

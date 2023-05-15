@@ -12,7 +12,6 @@ import us.piit.utility.Utility;
 import java.util.Properties;
 
 public class CustomerServiceTest extends CommonAPI {
-    Logger log= LogManager.getLogger(CustomerServiceTest.class.getName());
 
     Properties pro= Utility.loadProperties();
 

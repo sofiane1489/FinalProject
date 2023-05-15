@@ -10,7 +10,6 @@ import us.piit.utility.Utility;
 import java.util.Properties;
 
 public class PurchaseItemTest extends CommonAPI {
-    Logger log= LogManager.getLogger(PurchaseItemTest.class.getName());
 
     Properties pro= Utility.loadProperties();
 
@@ -130,7 +129,7 @@ public class PurchaseItemTest extends CommonAPI {
         GearCategoryPage gearCategoryPage =new GearCategoryPage(getDriver());
         WatchesPage watchesPage=new WatchesPage(getDriver());
         DashDigitalWatchPage dashDigitalWatchPage=new DashDigitalWatchPage(getDriver());
-        ShoppingCartClass shoppingCartClass=new ShoppingCartClass(getDriver());
+        ShoppingCartPage shoppingCartPage =new ShoppingCartPage(getDriver());
 
         // website validation with Title
         String expextedTitle="Home Page";
@@ -157,12 +156,11 @@ public class PurchaseItemTest extends CommonAPI {
 
         homePageBeforeLogin.clickOnviewAndEditLink();
 
-        shoppingCartClass.clickOnTrashCanIcon();
+        shoppingCartPage.clickOnTrashCanIcon();
 
         String expectedpageTitleWrapper="You have no items in your shopping cart.";
-        String actualpageTitleWrapper=shoppingCartClass.getRemoveConfirmationText();
+        String actualpageTitleWrapper= shoppingCartPage.getRemoveConfirmationText();
         Assert.assertEquals(actualpageTitleWrapper,expectedpageTitleWrapper);
-        log.info("item removed success");
 
     }
 }

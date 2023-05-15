@@ -39,12 +39,6 @@ public class HomePageBeforeLogin extends CommonAPI {
     @FindBy(xpath = "//a[text()='Contact Us']")
     WebElement contactUsBtn;
 
-    @FindBy(css = ".panel.header ul li:nth-child(2) span button")
-    WebElement dropDownArrow;
-
-    @FindBy(xpath = "//div[@aria-hidden='false']//a[normalize-space()='My Account']")
-    WebElement myAccountLink;
-
     @FindBy(css = "#ui-id-5 > span:nth-child(2)")
     WebElement menCategory;
 
@@ -71,6 +65,19 @@ public class HomePageBeforeLogin extends CommonAPI {
 
     @FindBy(css = "#ui-id-8")
     WebElement saleCategory;
+
+    @FindBy(css = "#newsletter")
+    WebElement subscribeField;
+
+    @FindBy(css = ".action.subscribe.primary")
+    WebElement subscribeBtn;
+
+    @FindBy(css = ".message-success.success.message")
+    WebElement subscribeConfirmationMessage;
+
+    @FindBy(css = " #newsletter-error")
+    WebElement subscribeErrorMessage;
+
 
 
     public boolean checkHomePageLogoVisibility(){
@@ -109,7 +116,7 @@ public class HomePageBeforeLogin extends CommonAPI {
 
     public boolean checkPresenceOfHomePageImg(){
         boolean img=isVisible(homePageImg);
-        log.info("home page image displayed"+img);
+        log.info("home page image displayed "+img);
         return img;
     }
     public void clickOnContactUsBnt(){
@@ -118,39 +125,14 @@ public class HomePageBeforeLogin extends CommonAPI {
 
     }
 
-    public boolean checkDropDownVisibility(){
-        boolean isDropDownVisible=isVisible(dropDownArrow);
-        log.info("drop down is visible success");
-        return isDropDownVisible;
-    }
-
-    public boolean checkDropDownInteractibility(){
-        boolean isDropDownInteratable=isInteractable(dropDownArrow);
-        log.info("drop down is interactable success");
-        return isDropDownInteratable;
-    }
-
-    public void clickOnDropDown(){
-        clickOn(dropDownArrow);
-        log.info("click on drop down list success");
-    }
-
-    public void clickOnMyAccount(){
-        clickOn(myAccountLink);
-        log.info("click on My Account success");
-    }
-
     public void clickOnMenCategory(){
         clickOn(menCategory);
         log.info("click on men category success");
     }
-
     public void clickOnGearcategory(){
         clickOn(gearCategory);
         log.info("click over Gear category success");
     }
-
-
     public void clickOnShoppingCartIcon(){
         clickOn(shoppingCartIcon);
         log.info("click on shopping cart success");
@@ -168,13 +150,13 @@ public class HomePageBeforeLogin extends CommonAPI {
 
     public boolean checkNavigateMenuVisibility(){
         boolean menu=isVisible(navigaetMenuBar);
-        log.info("navigate menu is visible");
+        log.info("navigate menu is visible "+menu);
         return menu;
     }
 
     public boolean checkNavigateMenuInteractability(){
         boolean interatable=isInteractable(navigaetMenuBar);
-        log.info("navigate menu is interactable");
+        log.info("navigate menu is interactable "+interatable);
         return interatable;
     }
 
@@ -190,5 +172,24 @@ public class HomePageBeforeLogin extends CommonAPI {
         clickOn(saleCategory);
         log.info("click on sale category succcess");
     }
+    public void enterEmailToSubscribe(String validEmail){
+        type(subscribeField,validEmail);
+        log.info("enter email success");
+    }
 
+    public void clickOnSubscribeBtn(){
+        clickOn(subscribeBtn);
+        log.info("click on subscribe Btn success");
+    }
+    public String getSubscribeConfirmationText(){
+        String confirmationText=getElementText(subscribeConfirmationMessage);
+        log.info("subscribe success");
+        return confirmationText;
+    }
+
+    public String getSubscribeErrorText(){
+        String errorText=getElementText(subscribeErrorMessage);
+        log.info("subscribe error message display success");
+        return errorText;
+    }
 }

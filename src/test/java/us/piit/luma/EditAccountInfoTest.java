@@ -12,7 +12,6 @@ import us.piit.utility.Utility;
 import java.util.Properties;
 
 public class EditAccountInfoTest extends CommonAPI {
-    Logger log= LogManager.getLogger(EditAccountInfoTest.class.getName());
 
     Properties pro=Utility.loadProperties();
 
@@ -26,6 +25,7 @@ public class EditAccountInfoTest extends CommonAPI {
         HomePageBeforeLogin homePageBefore=new HomePageBeforeLogin(getDriver());
         MyAccountPage myAccountPage=new MyAccountPage(getDriver());
         EditAccountInformationPage editAccountInformationPage=new EditAccountInformationPage(getDriver());
+       HomePageAfterLogin homePageAfterLogin=new HomePageAfterLogin(getDriver());
 
         // website validation with Title
         String expextedTitle="Home Page";
@@ -44,14 +44,14 @@ public class EditAccountInfoTest extends CommonAPI {
 
         //validate user logged in
         //validate the dropdown visibility
-        Assert.assertTrue( homePageBefore.checkDropDownVisibility());
+        Assert.assertTrue( homePageAfterLogin.checkDropDownVisibility());
 
         //validate the dropdown interactivity
-        Assert.assertTrue( homePageBefore.checkDropDownInteractibility());
+        Assert.assertTrue( homePageAfterLogin.checkDropDownInteractibility());
 
-        homePageBefore.clickOnDropDown();
+        homePageAfterLogin.clickOnDropDown();
 
-        homePageBefore.clickOnMyAccount();
+        homePageAfterLogin.clickOnMyAccount();
 
         myAccountPage.clickOnEdit();
 

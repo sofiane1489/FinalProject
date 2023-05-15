@@ -44,12 +44,26 @@
 <!--            <class name="us.piit.luma.SearchBarTest"></class>-->
 <!--        </classes>-->
 <!--    </test>-->
-    <test name="navigationMenu test">
-        <classes>
-            <class name="us.piit.luma.NavigationMenuTest"></class>
-        </classes>
-    </test>
-
+<!--    <test name="navigationMenu test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.luma.NavigationMenuTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Logout test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.luma.LogoutTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="lumaWebsite test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.luma.LumaWebsiteLunchTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Subscribe test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.luma.SubscribeTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
 
 
 </suite>
