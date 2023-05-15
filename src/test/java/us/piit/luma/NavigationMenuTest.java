@@ -7,7 +7,6 @@ import us.piit.base.CommonAPI;
 import us.piit.lumaPages.*;
 
 public class NavigationMenuTest extends CommonAPI {
-    Logger log= LogManager.getLogger(NavigationMenuTest.class.getName());
 
     @Test
     public void navigationMenu(){

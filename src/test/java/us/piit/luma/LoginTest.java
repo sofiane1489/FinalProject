@@ -13,7 +13,6 @@ import us.piit.utility.Utility;
 import java.util.Properties;
 
 public class LoginTest extends CommonAPI {
-    Logger log= LogManager.getLogger(LoginTest.class.getName());
 
     Properties pro= Utility.loadProperties();
 

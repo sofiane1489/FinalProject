@@ -8,10 +8,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import us.piit.base.CommonAPI;
 
-public class ShoppingCartClass extends CommonAPI {
-    Logger log= LogManager.getLogger(ShoppingCartClass.class.getName());
+public class ShoppingCartPage extends CommonAPI {
+    Logger log= LogManager.getLogger(ShoppingCartPage.class.getName());
 
-    public ShoppingCartClass(WebDriver driver){
+    public ShoppingCartPage(WebDriver driver){
         PageFactory.initElements(driver,this);
     }
 
@@ -29,7 +29,7 @@ public class ShoppingCartClass extends CommonAPI {
 
     public String getRemoveConfirmationText(){
         String text=getElementText(removeItemsConfirmationText);
-
+        log.info("item removed success");
         return text;
     }
 }

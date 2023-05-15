@@ -13,7 +13,6 @@ import us.piit.utility.Utility;
 import java.util.Properties;
 
 public class CreateAccountTest extends CommonAPI {
-    Logger log= LogManager.getLogger(CreateAccountTest.class.getName());
 
     Properties pro= Utility.loadProperties();
     String firstname=Utility.decode(pro.getProperty("luma.firstname")) ;

@@ -9,7 +9,6 @@ import us.piit.lumaPages.HomePageBeforeLogin;
 import us.piit.lumaPages.WhatsNewCategoryPage;
 
 public class LumaLogoTest extends CommonAPI {
-    Logger log= LogManager.getLogger(LumaLogoTest.class.getName());
     @Test
     public void lumaLogo(){
         HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());

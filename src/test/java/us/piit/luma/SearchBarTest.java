@@ -13,7 +13,6 @@ import us.piit.utility.Utility;
 import java.util.Properties;
 
 public class SearchBarTest extends CommonAPI {
-    Logger log= LogManager.getLogger(SearchBarTest.class.getName());
 
     Properties pro= Utility.loadProperties();
     String searchFor= Utility.decode(pro.getProperty("luma.searchText"));
