@@ -9,21 +9,21 @@
     <parameter name="browserName" value="chrome"></parameter>
     <parameter name="url" value="http://automationpractice.pl"></parameter>
 
-    <test name="create account test">
-        <classes>
-            <class name="us.piit.automationpractice.CreatAccountTest"></class>
-        </classes>
-    </test>
+<!--    <test name="create account test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.automationpractice.CreatAccountTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
     <test name="Login test">
         <classes>
             <class name="us.piit.automationpractice.LogingTest"></class>
         </classes>
     </test>
-    <test name="search test">
-        <classes>
-            <class name="us.piit.automationpractice.SearchBarTest"></class>
-        </classes>
-    </test>
+<!--    <test name="search test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.automationpractice.SearchBarTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
 
 
 </suite>

@@ -4,73 +4,73 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import us.piit.AutomationPracticePage.AutoLoginPage;
+import us.piit.AutomationPracticePage.CreateAccountAuthenticationPage;
 import us.piit.base.CommonAPI;
 
 public class CreatAccountTest extends CommonAPI {
     Logger log = LogManager.getLogger(CreatAccountTest.class.getName());
+    String validUseEmail ="Exemple@gmail.com";
+    String customerFirstName = "Jhon";
+    String customerLastName = "Claud";
+    String customerPassword ="abcd1234$";
+    String customerGender = "Mr";
+    int customerMonth = 5;
+    int customerDay = 4;
+    int customerYear = 1991;
+
 
     @Test
     public void validCred() {
+        AutoLoginPage loginPage = new AutoLoginPage(getDriver());
+        CreateAccountAuthenticationPage homePage = new CreateAccountAuthenticationPage(getDriver());
         String expectedTitle = "My Store";
-        String actualTitle = getCurrentTtile();
+        String actualTitle = getCurrentTitle();
         Assert.assertEquals(expectedTitle, actualTitle);
-        clickOn("//*[@id=\"header\"]/div[2]/div/div/nav/div[1]/a");
-        log.info("click on sign in success");
-        //enter  username, password, and click on login button
-        type("#email_create","jhonD@gmail.com");
-        log.info("enter email success");
+        //click on sign in, enter  username, password, and click on login button
+        loginPage.ClickOnSignInBtn();
+        loginPage.emailAccountCreation(validUseEmail);
+        loginPage.clickOnCreateAccountBtn();
+        homePage.selectGender();
+        homePage.enterFirstName(customerFirstName);
+        homePage.enterLasrName(customerLastName);
+        homePage.selectMonth();
+        homePage.selectDay();
+        homePage.selectYear();
+        homePage.enterPassword(customerPassword);
+        homePage.clickOnRegister();
 
-        clickOn("#SubmitCreate");
-        log.info("click on create an account success");
-
-        clickOn("#id_gender1");
-        log.info("enter gender success");
-
-        type("#customer_firstname", "Jhon");
-        log.info("enter first name success");
-
-        type("#customer_lastname","Claud");
-        log.info("enter last name success");
-
-        type("#email","Claud");
-        log.info("enter email success");
-
-        type("#passwd","abcd1234$");
-        log.info("enter password success");
-
-        selectByIn("//select[@id='days']",5);
-        log.info("select day success");
-
-        selectByIn("select[id='months']",4);
-        log.info("select month success");
-
-        selectByVal("select[id='years']","1991");
-        log.info("select year success");
-
-        clickOn("#submitAccount");
-        log.info("click on register button success");
         //check user is logged in
         String expectedAccountInformation = "Jhon Claud";
-        String actualAccountInformation = getElementText("//div[@class='header_user_info']//a[@class='account']/span");
+        String actualAccountInformation = homePage.getHeaderText();
         Assert.assertEquals(expectedAccountInformation, actualAccountInformation);
-        log.info("user logged in success");
+
 
 
     }
 
     @Test
     public void ExistingEmail() {
-        clickOn("#header  div.nav  div  div  nav  div.header_user_info > a");
+        AutoLoginPage loginPage = new AutoLoginPage(getDriver());
+        CreateAccountAuthenticationPage homePage = new CreateAccountAuthenticationPage(getDriver());
+        String expectedTitle = "My Store";
+        String actualTitle = getCurrentTitle();
+        Assert.assertEquals(expectedTitle, actualTitle);
+        //click on sign in, enter  username, password, and click on login button
+        loginPage.ClickOnSignInBtn();
+        loginPage.emailAccountCreation(validUseEmail);
+        loginPage.clickOnCreateAccountBtn();
         log.info("click on sign in success");
-        // enter existing email
-        type("#email_create","yaya@gmail.com");
+        // enter existing
+        loginPage.ClickOnSignInBtn();
+        loginPage.enterUsername(validUseEmail);
+        loginPage.clickOnCreateAccountBtn();
         log.info("enter email success");
-        clickOn("#SubmitCreate");
         log.info("click on create an account success");
         //error validation
-        String expectedError = "An account using this email address has already been registered. Please enter a valid password or request a new one.";
-        String actualError = getElementText("#create_account_error ol li");
-        Assert.assertEquals(actualError, expectedError);
-        log.info("error validation success");
+        String expectedErrorValidation = "An account using this email address has already been registered. Please enter a valid password or request a new one.";
+        String actualErrorValidation = homePage.getHeaderText();
+        Assert.assertEquals(actualErrorValidation, expectedErrorValidation);
+
     }
 }

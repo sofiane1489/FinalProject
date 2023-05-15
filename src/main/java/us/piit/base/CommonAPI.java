@@ -4,6 +4,7 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -73,97 +74,54 @@ public class CommonAPI {
 /*----------------------------------------------------------------------------------------------------------------*/
 /*                                         Selenium methods                                                       */
 /*----------------------------------------------------------------------------------------------------------------*/
-
-    public String getCurrentTtile(){
+    public WebDriver getDriver(){
+        return driver;
+    }
+    public String getCurrentTitle(){
         return driver.getTitle();
     }
-    public String getElementText(String locator){
-        try{
-            return driver.findElement(By.cssSelector(locator)).getText();
-        }catch (Exception e){
-            return  driver.findElement(By.xpath(locator)).getText();
-        }
+    public String getElementText(WebElement element){
+            return  element.getText();
+
     }
-    public void clickOn(String locator){
-        try{
-            driver.findElement(By.cssSelector(locator)).click();
-        }catch (Exception e){
-            driver.findElement(By.xpath(locator)).click();
-        }
+    public void clickOn(WebElement element){
+        element.click();
+
     }
-    public void type(String locator,String text){
-        try{
-            driver.findElement(By.cssSelector(locator)).sendKeys(text);
-        }catch (Exception e){
-            driver.findElement(By.xpath(locator)).sendKeys(text);
-        }
+    public void type(WebElement element,String text){
+        element.sendKeys(text);
     }
-    public void typeEnter(String locator,String text){
-        try{
-            driver.findElement(By.xpath(locator)).sendKeys(text,Keys.ENTER);
-        }catch(Exception e){
-            driver.findElement(By.cssSelector(locator)).sendKeys(text,Keys.ENTER);
-        }
+    public void typeEnter(WebElement element,String text){
+        element.sendKeys(text,Keys.ENTER);
     }
 
-    public void select(String locator){
-        try {
-            Select select = new Select(driver.findElement(By.cssSelector(locator)));
-        }catch(Exception e){
-            Select select = new Select(driver.findElement(By.xpath(locator)));
-        }
+    public void select(WebElement element){
+            Select select = new Select(element);
     }
-    public void selectBy(String locator,String value){
-        try {
-            Select select = new Select(driver.findElement(By.cssSelector(locator)));
+    public void selectBy(WebElement element,String value){
+            Select select = new Select(element);
             select.selectByVisibleText(value);
-        }catch(Exception e){
-            Select select = new Select(driver.findElement(By.xpath(locator)));
-            select.selectByVisibleText(value);
-        }
     }
-    public void selectByIn(String locator,int value){
-        try {
-            Select select = new Select(driver.findElement(By.cssSelector(locator)));
+    public void selectByIn(WebElement element,int value){
+            Select select = new Select(element);
             select.selectByIndex(value);
-        }catch(Exception e){
-            Select select = new Select(driver.findElement(By.xpath(locator)));
-            select.selectByIndex(value);
-        }
     }
-    public void selectByVal(String locator,String value){
-        try {
-            Select select = new Select(driver.findElement(By.cssSelector(locator)));
+    public void selectByVal(WebElement element,String value){
+            Select select = new Select(element);
             select.selectByValue(value);
-        }catch(Exception e){
-            Select select = new Select(driver.findElement(By.xpath(locator)));
-            select.selectByValue(value);
-        }
     }
 
 
-    public void delete(String locator){
-        try {
-            driver.findElement(By.cssSelector(locator)).sendKeys(Keys.DELETE);
-        }catch(Exception e){
-            driver.findElement(By.xpath(locator)).sendKeys(Keys.DELETE);
-        }
+    public void delete(WebElement element){
+        element.clear();
     }
-    public void hoverOver(String locator){
+    public void hoverOver(WebElement element){
         Actions action=new Actions(driver);
-        try{
-            action.moveToElement(driver.findElement(By.cssSelector(locator))).build().perform();
-        }catch (Exception e){
-            action.moveToElement(driver.findElement(By.xpath(locator))).build().perform();
-        }
+            action.moveToElement(element).build().perform();
     }
-    public void doubleClick(String locator){
+    public void doubleClick(WebElement element){
         Actions action=new Actions(driver);
-        try{
-            action.doubleClick(driver.findElement(By.cssSelector(locator))).build().perform();
-        }catch (Exception e){
-            action.doubleClick(driver.findElement(By.xpath(locator))).build().perform();
-        }
+        action.doubleClick(element).build().perform();
     }
     public void waitFor(int seconds){
         try {
@@ -172,26 +130,14 @@ public class CommonAPI {
             throw new RuntimeException(e);
         }
     }
-    public boolean isVisible(String locator){
-        try{
-            return driver.findElement(By.cssSelector(locator)).isDisplayed();
-        }catch (Exception e){
-            return driver.findElement(By.xpath(locator)).isDisplayed();
-        }
+    public boolean isVisible(WebElement element){
+        return element.isDisplayed();
     }
-    public boolean isInteractable(String locator){
-        try{
-            return driver.findElement(By.cssSelector(locator)).isEnabled();
-        }catch (Exception e){
-            return driver.findElement(By.xpath(locator)).isEnabled();
-        }
+    public boolean isInteractable(WebElement element){
+            return element.isEnabled();
     }
-    public boolean isChecked(String locator){
-        try{
-            return driver.findElement(By.cssSelector(locator)).isSelected();
-        }catch (Exception e){
-            return driver.findElement(By.xpath(locator)).isSelected();
-        }
+    public boolean isChecked(WebElement element){
+            return element.isSelected();
     }
 
 }
