@@ -46,12 +46,16 @@ public class SubscribeTest extends CommonAPI {
         String expextedTitle="Home Page";
         String actualTitle=getCurrentTtile();
         Assert.assertEquals(actualTitle,expextedTitle);
+        // website validation with luma logo
+        Assert.assertTrue(homePageBeforeLogin.checkHomePageLogoVisibility());
 
         homePageBeforeLogin.enterEmailToSubscribe(invalidEmail);
+        waitFor(1);
         homePageBeforeLogin.clickOnSubscribeBtn();
 
         //error validation
         String expectedErrorText="Please enter a valid email address (Ex: johndoe@domain.com).";
+
         String actualErrorText=homePageBeforeLogin.getSubscribeErrorText();
         Assert.assertEquals(actualErrorText,expectedErrorText);
 
