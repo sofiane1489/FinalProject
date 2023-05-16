@@ -18,7 +18,7 @@ public class WomenDressesPage extends CommonAPI {
     //locators
     @FindBy(css = "#layered_category_11")
     WebElement dressesCategories;
-    @FindBy(xpath = "//*[@id=\"center_column\"]/ul/li[1]/div/div/div[1]/div/a[1]")
+    @FindBy(xpath = "//*[@id=center_column]/ul/li[1]/div/div/div[1]/div/a[1]")
     WebElement productImage;
 
 

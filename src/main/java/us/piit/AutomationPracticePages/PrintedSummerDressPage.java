@@ -16,7 +16,7 @@ public class PrintedSummerDressPage extends CommonAPI {
     }
     @FindBy(css = "#group_1")
     WebElement sizeSelectionBox;
-    @FindBy(css = "#group_1 > option:nth-child(2)")
+    @FindBy(css = "#group_1  option:nth-child(2)")
     WebElement summerDressesSizeM;
     @FindBy(css = "#color_14")
     WebElement colorsChooses;
@@ -26,7 +26,7 @@ public class PrintedSummerDressPage extends CommonAPI {
     WebElement addToCartBtn;
 
 
-    public void clickOnSizeSelectioBox(){
+    public void clickOnSizeSelectionBox(){
         clickOn(sizeSelectionBox);
     }
     public void selectSizeM(){

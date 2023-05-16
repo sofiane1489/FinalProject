@@ -16,8 +16,7 @@ public class CreateAccountAuthenticationPage extends CommonAPI {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//*[@id=\"header\"]/div[2]/div/div/nav/div[1]/a")
-    WebElement mainHeader;
+
     @FindBy(css = "#email_create")
     WebElement createAccountField;
 
@@ -31,9 +30,9 @@ public class CreateAccountAuthenticationPage extends CommonAPI {
     WebElement emailField;
     @FindBy(css = "#passwd")
     WebElement validPasswordField;
-    @FindBy(css = "//*[@id=\"months\"]")
+    @FindBy(css = "//*[@id=months]")
     WebElement customerMonth;
-    @FindBy(xpath = "//*[@id=\"days\"]")
+    @FindBy(xpath = "//*[@id=days]")
     WebElement customerDay;
     @FindBy(css = "#years")
     WebElement customerYear;
@@ -48,11 +47,6 @@ public class CreateAccountAuthenticationPage extends CommonAPI {
         return text;
     }
 
-    public String getHeaderText() {
-        String text = getElementText(mainHeader);
-        log.info("click on sign in success");
-        return text;
-    }
 
 
     public void selectGender(){

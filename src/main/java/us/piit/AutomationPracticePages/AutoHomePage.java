@@ -14,20 +14,26 @@ public class AutoHomePage extends CommonAPI {
     public AutoHomePage(WebDriver driver){
         PageFactory.initElements(driver, this);
     }
-    @FindBy(xpath = "//*[@id=\"searchbox\"]/button")
+    @FindBy(css = "#searchbox button")
     WebElement searchBoxBtn;
     @FindBy(css = "#search_query_top")
     WebElement searchBarField;
-    @FindBy(xpath = "//*[@id=\"center_column\"]/h1/span[2]")
+    @FindBy(css = "#center_column h1 span.heading-counter")
     WebElement validSearchMessage;
-    @FindBy(xpath = "//*[@id=\"center_column\"]/h1/span[1]")
+    @FindBy(css = "#center_column > h1 > span.lighter")
     WebElement itemSearchConfirmation;
-    @FindBy(xpath = "//*[@id=\"block_top_menu\"]/ul/li[2]/a")
+    @FindBy(xpath = "//*[@id=block_top_menu]/ul/li[2]/a")
     WebElement dressesSection;
+
+    @FindBy(xpath = "//*[@id=header]/div[2]/div/div/nav/div[1]/a")
+    WebElement mainHeader;
+
+    @FindBy(css = "#header > div.nav > div > div > nav > div:nth-child(1) > a")
+    WebElement welcomeUser;
 
 
     public void searchQueryItem(String itemName){
-        type(searchBarField,"itemName");
+        type(searchBarField,itemName);
         log.info("enter item_name success");
     }
     public void clickOnSearchBarBtn(){
@@ -52,5 +58,15 @@ public class AutoHomePage extends CommonAPI {
         clickOn(dressesSection);
         log.info("click on dresses section success");
     }
+    public String getHeaderText() {
+        String text = getElementText(mainHeader);
+        log.info("click on sign in success");
+        return text;
+    }
 
+    public String getWelcomeMessage(){
+        String text=getElementText(welcomeUser);
+        log.info("get text success");
+        return text;
+    }
 }

@@ -49,11 +49,11 @@
 <!--            <class name="us.piit.luma.NavigationMenuTest"></class>-->
 <!--        </classes>-->
 <!--    </test>-->
-    <test name="Logout test">
-        <classes>
-            <class name="us.piit.luma.LogoutTest"></class>
-        </classes>
-    </test>
+<!--    <test name="Logout test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.luma.LogoutTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
 <!--    <test name="lumaWebsite test">-->
 <!--        <classes>-->
 <!--            <class name="us.piit.luma.LumaWebsiteLunchTest"></class>-->
