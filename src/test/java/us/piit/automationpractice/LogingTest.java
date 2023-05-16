@@ -1,82 +1,78 @@
-//package us.piit.automationpractice;
-//
-//import org.apache.logging.log4j.LogManager;
-//import org.apache.logging.log4j.Logger;
-//import org.testng.Assert;
-//import org.testng.annotations.Test;
-//import us.piit.base.CommonAPI;
-//
-//public class LogingTest extends CommonAPI {
-//    Logger log= LogManager.getLogger(LogingTest.class.getName());
+package us.piit.automationpractice;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import us.piit.AutomationPracticePages.AutoHomePage;
+import us.piit.AutomationPracticePages.AutoLoginPage;
+import us.piit.AutomationPracticePages.CreateAccountAuthenticationPage;
+import us.piit.base.CommonAPI;
+import us.piit.utility.Utility;
+
+import java.util.Properties;
+
+public class LogingTest extends CommonAPI {
+    Properties pro= Utility.loadProperties();
+
+    String validUsername=Utility.decode(pro.getProperty("automationpractice.email")) ;
+    String validPassword=Utility.decode(pro.getProperty("automationpractice.password")) ;
+    String invalidUsername=Utility.decode(pro.getProperty("automationpractice.invalidEmail")) ;
+
+
 //    @Test
 //    public void validCredential() {
+//        AutoLoginPage autoLoginPage = new AutoLoginPage(getDriver());
+//        AutoHomePage autoHomePage = new AutoHomePage(getDriver());
 //        String expectedTitle = "My Store";
 //        String actualTitle = getCurrentTtile();
 //        Assert.assertEquals(expectedTitle, actualTitle);
-//        //enter  username, password, and click on login button
-//        clickOn("#header > div.nav > div > div > nav > div.header_user_info > a");
-//        type("#email","yaya@gmail.com");
-//        log.info("enter email success.");
 //
-//        type("#passwd","abcd1234$");
-//        log.info("enter password success");
-//
-//        clickOn("#SubmitLogin");
-//        log.info("click on login button Success");
+//        //click on sign in, enter  username, password, and click on login button
+//        autoLoginPage.ClickOnSignInBtn();
+//        autoLoginPage.enterUsername(validUsername);
+//        autoLoginPage.enterPassword(validPassword);
+//        autoLoginPage.clickOnLoginBtn();
 //
 //        //check user is logged in
 //        String expectedAccountInformation = "Jhon Claud";
-//        String actualAccountInformation = getElementText("//div[@class='header_user_info']//a[@class='account']/span");
+//        String actualAccountInformation = autoHomePage.getWelcomeMessage();
 //        Assert.assertEquals(expectedAccountInformation, actualAccountInformation);
-//        log.info("user logged in success");
+//
 //    }
 //    @Test
-//    public void invalidEmail() {
+//    public void invalidUsername() {
+//        AutoLoginPage autoLoginPage = new AutoLoginPage(getDriver());
 //        String expectedTitle = "My Store";
 //        String actualTitle = getCurrentTtile();
 //        Assert.assertEquals(expectedTitle, actualTitle);
 //        //enter  username, password, and click on login button
-//        clickOn("#header > div.nav > div > div > nav > div.header_user_info > a");
-//        log.info("click on sign in success");
-//
-//        type("#email","yay@gmail.com");
-//        log.info("enter email success");
-//
-//        type("#passwd","abcd1234$");
-//        log.info("enter password success");
-//
-//        clickOn("#SubmitLogin");
-//        log.info("click on login button Success");
+//        autoLoginPage.ClickOnSignInBtn();
+//        autoLoginPage.enterUsername(invalidUsername);
+//        autoLoginPage.enterPassword(validPassword);
+//        autoLoginPage.clickOnLoginBtn();
 //
 //        //error validation
-//        boolean expectError = true;
-//        boolean actualError = isVisible("//div[@class='alert alert-danger']");
-//        Assert.assertEquals(actualError, expectError);
-//        log.info("validate error success");
+//
+//        Assert.assertTrue(autoLoginPage.checkErrorMessage());
 //    }
 //    @Test
 //    public void missingPassword() {
+//        AutoLoginPage autoLoginPage = new AutoLoginPage(getDriver());
+//
 //        String expectedTitle = "My Store";
 //        String actualTitle = getCurrentTtile();
 //        Assert.assertEquals(expectedTitle, actualTitle);
 //        //enter  username, password, and click on login button
-//        clickOn("#header > div.nav > div > div > nav > div.header_user_info > a");
-//        log.info("cilck on singn in success");
-//
-//        type("#email","yaya@gmail.com");
-//        log.info("enter email success");
-//
-//        type("#passwd","");
-//        log.info("enter password success");
-//
-//        clickOn("#SubmitLogin");
-//        log.info("click on login button Success");
+//        autoLoginPage.ClickOnSignInBtn();;
+//        autoLoginPage.enterUsername(validUsername);
+//        autoLoginPage.enterPassword("");
+//        autoLoginPage.clickOnLoginBtn();
 //
 //        //error validation
-//        boolean expectresult = true;
-//        boolean actualresult = isVisible("//div[@class='alert alert-danger']");
-//        Assert.assertEquals(actualresult, expectresult);
-//        log.info("validate error success");
-//    }
 //
-//}
+//        Assert.assertTrue(autoLoginPage.checkErrorMessage());
+//    }
+
+
+}
