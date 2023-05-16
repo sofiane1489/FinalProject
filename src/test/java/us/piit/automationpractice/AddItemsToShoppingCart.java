@@ -22,6 +22,7 @@ public class AddItemsToShoppingCart extends CommonAPI {
         AutoLoginPage autoLoginPage = new AutoLoginPage(getDriver());
         AutoHomePage autoHomePage = new AutoHomePage(getDriver());
         WomenDressesPage womenDressesPage=new WomenDressesPage(getDriver());
+        SummuryProductPage summuryProductPage = new SummuryProductPage(getDriver());
         PrintedSummerDressPage printedSummerDressPage = new PrintedSummerDressPage(getDriver());
         String expectedTitle = "My Store";
         String actualTitle = getCurrentTtile();
@@ -34,14 +35,20 @@ public class AddItemsToShoppingCart extends CommonAPI {
         autoHomePage.clickOnDressesSectionBtn();
         womenDressesPage.clickOnDressesCategories();
         womenDressesPage.clickOnProductImage();
+
         printedSummerDressPage.clickOnSizeSelectionBox();
+
         printedSummerDressPage.selectSizeM();
+
         printedSummerDressPage.clickOnColorsChooses();
+
         printedSummerDressPage.clickOnQuantityUpBtn();
+
         printedSummerDressPage.clickOnAddToCartBtn();
+        waitFor(2);
         //add to cart validation
-//        String expectedMessageAddConfirmation ="";
-//        String actualMessageAddConfirmation = printedSummerDressPage.getElementText();
+
+        Assert.assertTrue(summuryProductPage.productSuccessfullyAdded());
 
     }
 

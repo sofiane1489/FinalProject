@@ -22,7 +22,7 @@ public class AutoHomePage extends CommonAPI {
     WebElement validSearchMessage;
     @FindBy(css = "#center_column > h1 > span.lighter")
     WebElement itemSearchConfirmation;
-    @FindBy(xpath = "//*[@id=block_top_menu]/ul/li[2]/a")
+    @FindBy(xpath = "//*[@id=\"block_top_menu\"]/ul/li[2]/a")
     WebElement dressesSection;
 
     @FindBy(xpath = "//*[@id=header]/div[2]/div/div/nav/div[1]/a")

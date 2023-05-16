@@ -30,9 +30,9 @@ public class CreateAccountAuthenticationPage extends CommonAPI {
     WebElement emailField;
     @FindBy(css = "#passwd")
     WebElement validPasswordField;
-    @FindBy(css = "//*[@id=months]")
+    @FindBy(css = "#months")
     WebElement customerMonth;
-    @FindBy(xpath = "//*[@id=days]")
+    @FindBy(css = "#days")
     WebElement customerDay;
     @FindBy(css = "#years")
     WebElement customerYear;
@@ -54,31 +54,31 @@ public class CreateAccountAuthenticationPage extends CommonAPI {
         log.info("enter gender success");
     }
     public void enterFirstName(String firstname){
-        type(customerFirstNameField, "firstname");
+        type(customerFirstNameField, firstname);
         log.info("enter first name success");
     }
     public void enterLasrName(String lastname){
-        type(customerLastNameField, "lastname");
+        type(customerLastNameField, lastname);
         log.info("enter last name success");
     }
     public void enterEmail(String email){
-        type(emailField, "email");
+        type(emailField, email);
         log.info("enter email success");
     }
     public void enterPassword(String password){
-        type(validPasswordField, "password");
+        type(validPasswordField, password);
         log.info("enter password success");
     }
-    public void selectDay(){
-        clickOn(customerDay);
+    public void selectDay(int day){
+        selectByIn(customerDay,day);
         log.info("select day success");
     }
-    public void selectMonth(){
-        clickOn(customerMonth);
+    public void selectMonth(int month){
+        selectByIn(customerMonth,month);
         log.info("select month success");
     }
-    public void selectYear(){
-        clickOn(customerYear);
+    public void selectYear(String year){
+        selectByVal(customerYear,year);
         log.info("select year success");
     }
     public void clickOnRegister(){
