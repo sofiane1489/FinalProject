@@ -27,13 +27,13 @@ public class Utility {
         return new String(decodedBytes);
     }
 
-//    public static void main(String[] args) {
-//        String originalInput = "flag";
-//        String encodedString = Base64.getEncoder().encodeToString(originalInput.getBytes());
-//        System.out.println(encodedString);
+    public static void main(String[] args) {
+        String originalInput = "Sleeves Printed Top - White";
+        String encodedString = Base64.getEncoder().encodeToString(originalInput.getBytes());
+        System.out.println(encodedString);
 
 //        byte[] decodedBytes = Base64.getDecoder().decode("QGdtYWlsLmNvbQ==");
 //        String decodedString = new String(decodedBytes);
 //        System.out.println(decodedString);
- //   }
+   }
 }
