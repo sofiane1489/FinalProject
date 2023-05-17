@@ -16,7 +16,6 @@ public class UserLogin extends CommonAPI {
 
     Properties pop = Utility.loadProperties();
 
-    //String validEmail=Utility.decode(pro.getProperty("luma.email")) ;
 
     String validEmail = Utility.decode(pop.getProperty("automation.validEmail"));
     String validPassword =Utility.decode(pop.getProperty("automation.validPassword"));
@@ -61,16 +60,19 @@ public class UserLogin extends CommonAPI {
         String actualTitle = getCurrentTtile();
         Assert.assertEquals(expectedTitle, actualTitle);
 
-        // Clickon signin,enter  email, password, and click on login button loginPage.
+        // Click signing,enter  email, password, and click on login button loginPage.
         loginPage.clickonloginbutton();
+
         loginPage.enterEmail(invalidEmail);
+
         loginPage.enterPassword(validPassword);
+
         loginPage.clickonLoginBtn();
         waitFor(3);
 
         //validate the error message
         String expectedError = "Your email or password is incorrect!";
-        String actualError= loginPage.getErrorMessageInvalidEmail();
+        String actualError=loginPage.getErrorMessageInvalidEmail();
         Assert.assertEquals(expectedError, actualError);
 
     }
@@ -93,7 +95,7 @@ public class UserLogin extends CommonAPI {
 
         //validate the error message
         String expectedError = "Your email or password is incorrect!";
-        String actualError = loginPage.getErrorMessageInvalidPassword();
+        String actualError=loginPage.getErrorMessageInvalidPassword();
         Assert.assertEquals(expectedError, actualError);
 
     }
