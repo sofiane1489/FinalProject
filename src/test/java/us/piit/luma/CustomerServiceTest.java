@@ -33,6 +33,8 @@ public class CustomerServiceTest extends CommonAPI {
         // website validation with luma logo
         Assert.assertTrue( homePageBeforeLogin.checkHomePageLogoVisibility());
 
+        homePageBeforeLogin.scrollToContactUsBtn(getDriver());
+
         homePageBeforeLogin.clickOnContactUsBnt();
 
         contactUsPage.enterNameInContactUs(fullName);

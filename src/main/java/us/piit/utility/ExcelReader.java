@@ -91,7 +91,7 @@ public class ExcelReader {
     public static void main(String[] args)  {
         String path = "C:\\Users\\sehso\\eclipse-workspace\\FinalProject\\data\\testCases.xlsx";
         ExcelReader excelReader = new ExcelReader(path);
-        String name="Sheet1";
+        String name="data";
         String data=excelReader.getDataFromCell(name,2,2);
         System.out.println(data);
 //        System.out.println(excelReader.getValueForGivenHeaderAndKey("data","ID","101"));

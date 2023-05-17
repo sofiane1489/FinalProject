@@ -14,11 +14,11 @@
 <!--            <class name="us.piit.luma.CreateAccountTest"></class>-->
 <!--        </classes>-->
 <!--    </test>-->
-<!--    <test name="CustomerService test">-->
-<!--        <classes>-->
-<!--            <class name="us.piit.luma.CustomerServiceTest"></class>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="CustomerService test">
+        <classes>
+            <class name="us.piit.luma.CustomerServiceTest"></class>
+        </classes>
+    </test>
 <!--    <test name="EditAccountInfo test">-->
 <!--        <classes>-->
 <!--            <class name="us.piit.luma.EditAccountInfoTest"></class>-->
@@ -59,11 +59,11 @@
 <!--            <class name="us.piit.luma.LumaWebsiteLunchTest"></class>-->
 <!--        </classes>-->
 <!--    </test>-->
-    <test name="Subscribe test">
-        <classes>
-            <class name="us.piit.luma.SubscribeTest"></class>
-        </classes>
-    </test>
+<!--    <test name="Subscribe test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.luma.SubscribeTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
 
 
 </suite>
