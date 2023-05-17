@@ -1,12 +1,14 @@
 package us.piit.utility;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 public class ExcelReader {
@@ -88,16 +90,172 @@ public class ExcelReader {
         return value;
     }
 
-    public static void main(String[] args)  {
-        String path = "C:\\Users\\sehso\\eclipse-workspace\\FinalProject\\data\\testCases.xlsx";
+
+
+ //...............................................................................................//
+ //....................................................................................................//
+
+
+    public void getCellData(int rowIndex,int columnIndex) throws IOException {
+        FileInputStream inputStream = new FileInputStream(new File(path));
+
+        Workbook workbook = new XSSFWorkbook(inputStream);
+        Sheet sheet = workbook.getSheetAt(0); // Assuming you want to read from the first sheet
+
+        // Specify the row and column indices of the cell you want to read
+
+        Row row = sheet.getRow(rowIndex);
+        Cell cell = row.getCell(columnIndex);
+
+        // Retrieve the value from the cell based on its type
+        String cellValue = "";
+        if (cell.getCellType() == CellType.STRING) {
+            cellValue = cell.getStringCellValue();
+        } else if (cell.getCellType() == CellType.NUMERIC) {
+            cellValue = String.valueOf(cell.getNumericCellValue());
+        } else if (cell.getCellType() == CellType.BOOLEAN) {
+            cellValue = String.valueOf(cell.getBooleanCellValue());
+        }
+
+        System.out.println(cellValue);
+
+        workbook.close();
+        inputStream.close();
+    }
+
+    public void readEntireColomn(int columnIndex) throws IOException {
+        //String filePath = "path/to/excel/file.xlsx";
+        FileInputStream inputStream = new FileInputStream(new File(path));
+
+        Workbook workbook = new XSSFWorkbook(inputStream);
+        Sheet sheet = workbook.getSheetAt(0); // Assuming you want to read from the first sheet
+
+        // Iterate over each row in the column
+        for (Row row : sheet) {
+            Cell cell = row.getCell(columnIndex);
+
+            // Retrieve the value from the cell based on its type
+            String cellValue = "";
+            if (cell != null) {
+                if (cell.getCellType() == CellType.STRING) {
+                    cellValue = cell.getStringCellValue();
+                } else if (cell.getCellType() == CellType.NUMERIC) {
+                    cellValue = String.valueOf(cell.getNumericCellValue());
+                } else if (cell.getCellType() == CellType.BOOLEAN) {
+                    cellValue = String.valueOf(cell.getBooleanCellValue());
+                }
+            }
+
+            System.out.println(cellValue);
+        }
+
+        workbook.close();
+        inputStream.close();
+    }
+
+    public void rearEntireColomnForGivenHeader(String headerName,int rowStart) throws IOException {
+
+        FileInputStream inputStream = new FileInputStream(new File(path));
+
+        Workbook workbook = new XSSFWorkbook(inputStream);
+        Sheet sheet = workbook.getSheetAt(0); // Assuming you want to read from the first sheet
+
+        // Find the column index based on the header name
+        int columnIndex = -1;
+        Row headerRow = sheet.getRow(rowStart);
+        for (Cell cell : headerRow) {
+            String cellValue = cell.getStringCellValue();
+            if (cellValue.equalsIgnoreCase(headerName)) {
+                columnIndex = cell.getColumnIndex();
+                break;
+            }
+        }
+
+        if (columnIndex != -1) {
+            // Iterate over each row in the column
+            for (int rowIndex = 1; rowIndex <= sheet.getLastRowNum(); rowIndex++) {
+                Row row = sheet.getRow(rowIndex);
+                Cell cell = row.getCell(columnIndex);
+
+                // Retrieve the value from the cell based on its type
+                String cellValue = "";
+                if (cell != null) {
+                    if (cell.getCellType() == CellType.STRING) {
+                        cellValue = cell.getStringCellValue();
+                    } else if (cell.getCellType() == CellType.NUMERIC) {
+                        cellValue = String.valueOf(cell.getNumericCellValue());
+                    } else if (cell.getCellType() == CellType.BOOLEAN) {
+                        cellValue = String.valueOf(cell.getBooleanCellValue());
+                    }
+                }
+
+                System.out.println(cellValue);
+            }
+        } else {
+            System.out.println("Header not found.");
+        }
+
+        workbook.close();
+        inputStream.close();
+    }
+
+
+    public void readEntireFile() throws IOException {
+        FileInputStream inputStream = new FileInputStream(new File(path));
+
+        Workbook workbook = new XSSFWorkbook(inputStream);
+
+        // Iterate over each sheet in the workbook
+        for (Sheet sheet : workbook) {
+            System.out.println("Sheet Name: " + sheet.getSheetName());
+            System.out.println("----------------------------");
+
+            // Iterate over each row in the sheet
+            for (Row row : sheet) {
+                // Iterate over each cell in the row
+                for (Cell cell : row) {
+                    // Retrieve the value from the cell based on its type
+                    String cellValue = "";
+                    if (cell != null) {
+                        if (cell.getCellType() == CellType.STRING) {
+                            cellValue = cell.getStringCellValue();
+                        } else if (cell.getCellType() == CellType.NUMERIC) {
+                            cellValue = String.valueOf(cell.getNumericCellValue());
+                        } else if (cell.getCellType() == CellType.BOOLEAN) {
+                            cellValue = String.valueOf(cell.getBooleanCellValue());
+                        }
+                    }
+
+                    System.out.println(cellValue);
+                }
+                System.out.println();
+            }
+            System.out.println();
+        }
+
+        workbook.close();
+        inputStream.close();
+    }
+
+
+
+    public static void main(String[] args) throws IOException {
+        String path = "C:\\Users\\sehso\\eclipse-workspace\\FinalProject\\data\\lumaData\\LumaTestCases.xlsx";
         ExcelReader excelReader = new ExcelReader(path);
         String name="data";
-        String data=excelReader.getDataFromCell(name,2,2);
+        String data=excelReader.getDataFromCell(name,2,1);
         System.out.println(data);
-//        System.out.println(excelReader.getValueForGivenHeaderAndKey("data","ID","101"));
-//          List<String> items = excelReader.getEntireColumnForGivenHeader("data", "");
-//         String items = excelReader.getValueForGivenHeaderAndKey("Sheet1", "id", "id004");
+ //         List<String> items = excelReader.getEntireColumnForGivenHeader("data", "Project Name");
+      //   String items = excelReader.getValueForGivenHeaderAndKey("data", "Project Name", "Created by");
 //           List<String> items = excelReader.getEntireColumnData("data", 4,4);
 //           System.out.println(items);
+
+//.......................................................................................................
+//.......................................................................................................
+
+//         excelReader.getCellData(1,1);
+//         excelReader.readEntireColomn(2);
+//         excelReader.rearEntireColomnForGivenHeader("Test Steps",6);
+//         excelReader.readEntireFile();
     }
 }

@@ -48,6 +48,7 @@ public class SubscribeTest extends CommonAPI {
         Assert.assertEquals(actualTitle,expextedTitle);
 
         homePageBeforeLogin.enterEmailToSubscribe(invalidEmail);
+        waitFor(1);
         homePageBeforeLogin.clickOnSubscribeBtn();
 
         //error validation

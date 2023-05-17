@@ -1,4 +1,4 @@
-package us.piit.AutomationPracticePages;
+package us.piit.automationPracticePages;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
