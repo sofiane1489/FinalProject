@@ -11,6 +11,9 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
+import static us.piit.utility.Utility.currentDir;
+
 public class ExcelReader {
     private final Logger LOG = LogManager.getLogger(ExcelReader.class.getName());
 
@@ -91,11 +94,15 @@ public class ExcelReader {
     }
 
     public static void main(String[] args) throws IOException {
-        String path = "C:\\Users\\sehso\\eclipse-workspace\\FinalProject\\data\\lumaData\\LumaTestCases.xlsx";
+        String currentDir = System.getProperty("user.dir");
+       // String path = currentDir +"/data/lumadata/LumaTestCases.xlsx";
+
+        String path = currentDir + File.separator + "data" + File.separator + "lumadata" + File.separator + "LumaTestCases.xlsx";
         ExcelReader excelReader = new ExcelReader(path);
+
         String name="Sheet1";
-       // String data=excelReader.getDataFromCell(name,2,1);
-       // System.out.println(data);
+        String data=excelReader.getDataFromCell(name,1,1);
+        System.out.println(data);
  //         List<String> items = excelReader.getEntireColumnForGivenHeader("Sheet1", "Project Name");
       //   String items = excelReader.getValueForGivenHeaderAndKey("Sheet1", "Project Name", "Created by");
 //           List<String> items = excelReader.getEntireColumnData("Sheet1", 4,4);
