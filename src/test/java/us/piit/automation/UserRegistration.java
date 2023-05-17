@@ -1,90 +1,80 @@
-//package us.piit.automation;
-//import org.apache.logging.log4j.LogManager;
-//import org.apache.logging.log4j.Logger;
-//import org.testng.Assert;
-//import org.testng.annotations.Test;
-//import us.piit.base.CommonAPI;
-//
-//public class UserRegistration extends CommonAPI {
-//    Logger log= LogManager.getLogger(UserRegistration.class.getName());
-//    @Test
-//    public void registration (){
-//        clickOn("//header/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[4]/a[1]");
-//        log.info("click on register success");
-//
-//        type("//input[@name='name']","adam");
-//        log.info("enter name  success");
-//
-//        type("//body/section[@id='form']/div[1]/div[1]/div[3]/div[1]/form[1]/input[3]","adam20023@outlook.com");
-//        log.info("enter email  success");
-//
-//        clickOn("//button[contains(text(),'Signup')]");
-//        log.info("click first signup button success");
-//
-//        clickOn("//input[@id='id_gender1']");
-//        log.info("enter gender success");
-//        waitFor(4);
-//
-//        type("#password","Adana2023#");
-//        log.info("enter password success");
-//
-//        type("#first_name","adam");
-//        log.info("enter firstname success");
-//
-//        type("#last_name","izem");
-//        log.info("enter lastname success");
-//
-//        type("#company","Izem-inc");
-//        log.info("enter company success");
-//
-//        type("#address1","1001 ouad souf blvd");
-//        log.info("enter address success");
-//
-//        clickOn("#country");
-//        log.info("enter country success");
-//
-//        type("#state","ALG");
-//        log.info("enter state success");
-//
-//        type("#city","ouad souf");
-//        log.info("enter city success");
-//
-//        type("#zipcode","14534");
-//        log.info("enter zipcode success");
-//
-//        type("#mobile_number","0566478382");
-//        log.info("enter phone number success");
-//
-//        clickOn("//button[contains(text(),'Create Account')]");
-//        log.info("click on create account success");
-//        waitFor(4);
-//    }
-//    // user register with existing email
-//    @Test
-//    public void existingEmail(){
-//        // Enter Email, password then clickon login button
-//        clickOn("//header/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[4]/a[1]");
-//        log.info("click on register success");
-//
-//        type("//input[@name='name']","adam");
-//        log.info("enter name  success");
-//
-//        type("//body/section[@id='form']/div[1]/div[1]/div[3]/div[1]/form[1]/input[3]","adam2023@outlook.com");
-//        log.info("enter email  success");
-//
-//        clickOn("//button[contains(text(),'Signup')]");
-//        log.info("error message displayed ");
-//
-//        // validate error
-//        String expectedText="Email Address already exist!";
-//        String actualText=getElementText("//p[contains(text(),'Email Address already exist!')]");
-//        Assert.assertEquals(expectedText,actualText);
-//        log.info("validate error success");
-//
-//
-//    }
-//
-//
-//
-//
-//}
+package us.piit.automation;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import us.piit.automationPages.HomePage;
+import us.piit.automationPages.RegistrationPage;
+import us.piit.base.CommonAPI;
+import us.piit.utility.Utility;
+
+import java.util.Properties;
+
+public class UserRegistration extends CommonAPI {
+    Logger log= LogManager.getLogger(UserRegistration.class.getName());
+    Properties pop= Utility.loadProperties();
+    String name= Utility.decode(pop.getProperty("automation.name"));
+    String emailAddress = Utility.decode(pop.getProperty("automation.emailAdress"));
+    String password1=Utility.decode(pop.getProperty("automation.password1"));
+    String firstName= Utility.decode(pop.getProperty("automation.firstName"));
+    String lastName=Utility.decode(pop.getProperty("automation.lastName"));
+    String company=Utility.decode(pop.getProperty("automation.company"));
+    String address=Utility.decode(pop.getProperty("automation.address"));
+    String country=Utility.decode(pop.getProperty("automation.country"));
+    String state=Utility.decode(pop.getProperty("automation.state"));
+    String city=Utility.decode(pop.getProperty("automation.city"));
+    String zipCode=Utility.decode(pop.getProperty("automation.zipCode"));
+    String mobileNumber=Utility.decode(pop.getProperty("automation.mobileNumber"));
+
+    //registration to an account validation
+//    String expected welcomingmessage="Congratulations! Your new account has been successfully created!";
+//    String actual welcomingmessage=
+
+    @Test
+    public void registration (){
+        RegistrationPage registrationPage=new RegistrationPage(getDriver());
+        HomePage homePage=new HomePage(getDriver());
+
+        registrationPage.clickonsignupbutton();
+        registrationPage.enterName(name);
+        registrationPage.enterEmail(emailAddress);
+        registrationPage.clickonsignupbtn();
+        registrationPage.enterPassword(password1);
+        registrationPage.enterfirstName(firstName);
+        registrationPage.enterLastName(lastName);
+        registrationPage.entercompany(company);
+        registrationPage.enteraddress(address);
+        registrationPage.entercountry(country);
+        registrationPage.enterState(state);
+        registrationPage.entercity(city);
+        registrationPage.enterzipcode(zipCode);
+        registrationPage.entermobilenumber(mobileNumber);
+        registrationPage.clickonregisterbtn();
+
+
+    }
+
+    //user register with existing email
+    @Test
+    public void existingEmail(){
+        RegistrationPage registrationPage=new RegistrationPage(getDriver());
+        HomePage homePage=new HomePage(getDriver());
+        // Enter Email, password then clickon login button
+
+        registrationPage.clickonsignupbutton();
+        registrationPage.enterName(name);
+        registrationPage.enterEmail(emailAddress);
+        registrationPage.clickonsignupbtn();
+        log.info("error message displayed ");
+
+        // validate error
+        String expectederrormessage="Email Address already exist!";
+        String actualerrormessage=registrationPage.getErrorMessage();
+        Assert.assertEquals(expectederrormessage,actualerrormessage);
+
+
+
+    }
+
+
+}
