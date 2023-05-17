@@ -16,7 +16,7 @@ public class GearCategoryPage extends CommonAPI {
         PageFactory.initElements(driver,this);
     }
 
-    @FindBy(css = "div[class='block filter'] li:nth-child(2) a:nth-child(1)")
+    @FindBy(css = "a[id='ui-id-26'] span")
     WebElement fitnessEquipmentSection;
 
     @FindBy(xpath = "//ol[@class='items']//a[normalize-space()='Watches']")

@@ -79,6 +79,10 @@ public class HomePageBeforeLogin extends CommonAPI {
     WebElement subscribeErrorMessage;
 
 
+    @FindBy(css = ".footer.content")
+    WebElement bottom;
+
+
 
     public boolean checkHomePageLogoVisibility(){
         boolean title= isVisible(logoVisibility);
@@ -132,6 +136,10 @@ public class HomePageBeforeLogin extends CommonAPI {
     public void clickOnGearcategory(){
         clickOn(gearCategory);
         log.info("click over Gear category success");
+    }
+    public void hoverOverGearCategory(WebDriver driver){
+        hoverOver(driver,gearCategory);
+        log.info("hover over Gear category success");
     }
     public void clickOnShoppingCartIcon(){
         clickOn(shoppingCartIcon);
@@ -191,5 +199,14 @@ public class HomePageBeforeLogin extends CommonAPI {
         String errorText=getElementText(subscribeErrorMessage);
         log.info("subscribe error message display success");
         return errorText;
+    }
+
+    public void scrollDown(WebDriver driver){
+        scrollToElement(driver,bottom);
+        log.info("scroll success");
+    }
+
+    public void scrollToContactUsBtn(WebDriver driver){
+        scrollToElement(driver,contactUsBtn);
     }
 }

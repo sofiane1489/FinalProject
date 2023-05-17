@@ -47,6 +47,8 @@ public class SubscribeTest extends CommonAPI {
         String actualTitle=getCurrentTtile();
         Assert.assertEquals(actualTitle,expextedTitle);
 
+       homePageBeforeLogin.scrollDown(getDriver());
+
         homePageBeforeLogin.enterEmailToSubscribe(invalidEmail);
         waitFor(1);
         homePageBeforeLogin.clickOnSubscribeBtn();
