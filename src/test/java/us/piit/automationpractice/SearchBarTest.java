@@ -1,8 +1,8 @@
 package us.piit.automationpractice;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import us.piit.AutomationPracticePages.AutoHomePage;
-import us.piit.AutomationPracticePages.AutoLoginPage;
+import us.piit.automationPracticePages.AutoHomePage;
+import us.piit.automationPracticePages.AutoLoginPage;
 import us.piit.base.CommonAPI;
 import us.piit.utility.Utility;
 

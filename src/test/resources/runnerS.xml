@@ -29,11 +29,11 @@
 <!--                <class name="us.piit.luma.LoginTest"></class>-->
 <!--            </classes>-->
 <!--    </test>-->
-<!--    <test name="lumalogo test">-->
-<!--        <classes>-->
-<!--            <class name="us.piit.luma.LumaLogoTest"></class>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="lumalogo test">
+        <classes>
+            <class name="us.piit.luma.LumaLogoTest"></class>
+        </classes>
+    </test>
 <!--    <test name="purchase test">-->
 <!--        <classes>-->
 <!--            <class name="us.piit.luma.PurchaseItemTest"></class>-->
@@ -59,11 +59,11 @@
 <!--            <class name="us.piit.luma.LumaWebsiteLunchTest"></class>-->
 <!--        </classes>-->
 <!--    </test>-->
-    <test name="Subscribe test">
-        <classes>
-            <class name="us.piit.luma.SubscribeTest"></class>
-        </classes>
-    </test>
+<!--    <test name="Subscribe test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.luma.SubscribeTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
 
 
 </suite>
