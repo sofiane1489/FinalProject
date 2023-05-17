@@ -90,7 +90,6 @@ public class ExcelReader {
         return value;
     }
 
-
     public static void main(String[] args) throws IOException {
         String path = "C:\\Users\\sehso\\eclipse-workspace\\FinalProject\\data\\lumaData\\LumaTestCases.xlsx";
         ExcelReader excelReader = new ExcelReader(path);
@@ -101,7 +100,6 @@ public class ExcelReader {
       //   String items = excelReader.getValueForGivenHeaderAndKey("Sheet1", "Project Name", "Created by");
 //           List<String> items = excelReader.getEntireColumnData("Sheet1", 4,4);
 //           System.out.println(items);
-
 
     }
 }
