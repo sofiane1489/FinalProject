@@ -23,7 +23,7 @@ public class PurchaseItemTest extends CommonAPI {
     String zipCodeUsede=Utility.decode(pro.getProperty("luma.zipcode"));
     String phoneNumberUsed=Utility.decode(pro.getProperty("luma.telephoneNumber"));
 
-    @Test
+    @Test(priority=1)
     public void addItemToCart(){
         HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());
         MenCategoryPage menPage=new MenCategoryPage(getDriver());
@@ -58,7 +58,7 @@ public class PurchaseItemTest extends CommonAPI {
 
     }
 
-    @Test
+    @Test(priority=2)
     public void buyProduct(){
         HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());
         FitnessEquipmentPage fitnessEquipmentPage=new FitnessEquipmentPage(getDriver());
@@ -123,7 +123,7 @@ public class PurchaseItemTest extends CommonAPI {
         Assert.assertEquals(actualMessage,expectedMessage);
 
     }
-    @Test
+    @Test(priority=3)
     public void removeItemsFromTheCart(){
         HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());
         GearCategoryPage gearCategoryPage =new GearCategoryPage(getDriver());

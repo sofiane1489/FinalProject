@@ -2,6 +2,7 @@ package us.piit.luma;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.core.net.Priority;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import us.piit.base.CommonAPI;
@@ -47,7 +48,7 @@ public class LoginTest extends CommonAPI {
          Assert.assertEquals(expectedWelcomeMess,actualWelcomeMess);
     }
 
-    @Test
+    @Test(dependsOnMethods = "validCred")
     public void invalidEmail(){
         LoginPage loginPage=new LoginPage(getDriver());
         HomePageBeforeLogin homePageBefore=new HomePageBeforeLogin(getDriver());
@@ -75,7 +76,7 @@ public class LoginTest extends CommonAPI {
 
     }
 
-    @Test
+    @Test(dependsOnMethods = "invalidEmail")
     public void missingPassword(){
         LoginPage loginPage=new LoginPage(getDriver());
         HomePageBeforeLogin homePageBefore=new HomePageBeforeLogin(getDriver());

@@ -34,6 +34,7 @@ import us.piit.reporting.ExtentManager;
 import us.piit.reporting.ExtentTestManager;
 import us.piit.utility.Utility;
 
+import com.github.javafaker.Faker;
 public class CommonAPI {
     Logger log= LogManager.getLogger(CommonAPI.class.getName());
     Properties pro= Utility.loadProperties();
@@ -45,6 +46,7 @@ public class CommonAPI {
     String takeScreenshots=pro.getProperty("take.screenshots","false");
 
     WebDriver driver;
+    Faker faker = new Faker();
 
     //report setup from line 48 to 105
     public static com.relevantcodes.extentreports.ExtentReports extent;
@@ -229,7 +231,10 @@ public class CommonAPI {
             return element.isSelected();
         }
     }
-
+    public String useFakeEmail(){
+        String email = faker.internet().emailAddress();
+        return email;
+    }
     public void clickWithJavascript(WebElement element){
         JavascriptExecutor js = (JavascriptExecutor)driver;
         js.executeScript("arguments[0].click();", element);
