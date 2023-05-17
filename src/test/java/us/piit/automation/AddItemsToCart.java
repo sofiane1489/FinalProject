@@ -4,33 +4,34 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import us.piit.automationPages.HomePage;
+import us.piit.automationPages.ProductsPage;
 import us.piit.base.CommonAPI;
+import us.piit.utility.Utility;
+
+import java.util.Properties;
 
 public class AddItemsToCart extends CommonAPI {
-    Logger log = LogManager.getLogger(AddItemsToCart.class.getName());
+    Logger log=LogManager.getLogger(AddItemsToCart.class.getName());
+    Properties pop= Utility.loadProperties();
 
-//    @Test
-//    public void menTisherts() {
-//
-//        // click on view item, add to cart then proceed to checkout
-//        clickOn("//body/section[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[1]/a[1]");
-//        log.info("click on view product success");
-//
-//        clickOn("//body/section[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/span[1]/button[1]");
-//        log.info("click on add to cart  success");
-//
-//        clickOn("//u[contains(text(),'View Cart')]");
-//        log.info("click on view cart  success");
-//
-//        clickOn("//a[contains(text(),'Proceed To Checkout')]");
-//        log.info("proceed to checkout");
-//        waitFor(1);
-//
-//        // validate text
-//        String expectedTitle = "Automation Exercise - Checkout";
-//        String actualTitle = getCurrentTtile();
+    @Test
+    public void menTisherts() {
+
+        ProductsPage productsPage = new ProductsPage(getDriver());
+        HomePage homePage = new HomePage(getDriver());
+
+        //verify the title of the homepage
+//       String expectedTitle = "Automation Exercise";
+//       String actualTitle= homePage.getCurrentTtile();;
 //        Assert.assertEquals(expectedTitle, actualTitle);
-//
-//
-//    }
+
+        // click on product,click on view item, add to cart then proceed to checkout
+        productsPage.viewProduct();
+        productsPage.addToCart();
+        productsPage.viewCart();
+        waitFor(2);
+
+
+    }
 }
