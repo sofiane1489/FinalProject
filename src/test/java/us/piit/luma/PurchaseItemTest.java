@@ -73,7 +73,7 @@ public class PurchaseItemTest extends CommonAPI {
         // website validation with luma logo
         Assert.assertTrue(homePageBeforeLogin.checkHomePageLogoVisibility());
 
-        homePageBeforeLogin.clickOnGearcategory();
+        homePageBeforeLogin.hoverOverGearCategory(getDriver());
 
         gearCategoryPage.clickOnFitnessEquipment();
 
