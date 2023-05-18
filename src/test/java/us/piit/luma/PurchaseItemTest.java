@@ -11,19 +11,8 @@ import java.util.Properties;
 
 public class PurchaseItemTest extends CommonAPI {
 
-    Properties pro= Utility.loadProperties();
 
-    String emailUsed=Utility.decode(pro.getProperty("luma.email")) ;
-    String firstNameUsed=Utility.decode(pro.getProperty("luma.firstname")) ;
-    String lastNameUsed= Utility.decode(pro.getProperty("luma.lastname")) ;
-    String companyNameUsed=Utility.decode(pro.getProperty("luma.companyName"));
-    String addressUsed=Utility.decode(pro.getProperty("luma.address"));
-    String cityNameUsed=Utility.decode(pro.getProperty("luma.city"));
-    String stateused=Utility.decode(pro.getProperty("luma.state"));
-    String zipCodeUsede=Utility.decode(pro.getProperty("luma.zipcode"));
-    String phoneNumberUsed=Utility.decode(pro.getProperty("luma.telephoneNumber"));
-
-    @Test
+    @Test(priority=1)
     public void addItemToCart(){
         HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());
         MenCategoryPage menPage=new MenCategoryPage(getDriver());
@@ -58,7 +47,7 @@ public class PurchaseItemTest extends CommonAPI {
 
     }
 
-    @Test
+    @Test(priority=2)
     public void buyProduct(){
         HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());
         FitnessEquipmentPage fitnessEquipmentPage=new FitnessEquipmentPage(getDriver());
@@ -73,7 +62,7 @@ public class PurchaseItemTest extends CommonAPI {
         // website validation with luma logo
         Assert.assertTrue(homePageBeforeLogin.checkHomePageLogoVisibility());
 
-        homePageBeforeLogin.clickOnGearcategory();
+        homePageBeforeLogin.hoverOverGearCategory(getDriver());
 
         gearCategoryPage.clickOnFitnessEquipment();
 
@@ -92,23 +81,23 @@ public class PurchaseItemTest extends CommonAPI {
 
         homePageBeforeLogin.clickOnProceedToCheckOutBtn();
 
-        shippingAddressPage.enterEmailAddress(emailUsed);
+        shippingAddressPage.enterEmailAddress(useFakeEmail());
 
-        shippingAddressPage.enterFirstName(firstNameUsed);
+        shippingAddressPage.enterFirstName(useFakeFirstName());
 
-        shippingAddressPage.enterlastName(lastNameUsed);
+        shippingAddressPage.enterlastName(useFakeLastName());
 
-        shippingAddressPage.entercompanyName(companyNameUsed);
+        shippingAddressPage.entercompanyName(useFakeCompany());
 
-        shippingAddressPage.enterStreetAddress(addressUsed);
+        shippingAddressPage.enterStreetAddress(useFakeAddress());
 
-        shippingAddressPage.enterCityName(cityNameUsed);
+        shippingAddressPage.enterCityName(useFakeCity());
 
-        shippingAddressPage.selectState(stateused);
+        shippingAddressPage.selectState(useFakeState());
 
-        shippingAddressPage.enterZipCode(zipCodeUsede);
+        shippingAddressPage.enterZipCode(useFakeZipcode());
 
-        shippingAddressPage.enterPhoneNumber(phoneNumberUsed);
+        shippingAddressPage.enterPhoneNumber(useFakePhoneNumber());
 
         shippingAddressPage.selectShippingMethod();
 
@@ -123,7 +112,7 @@ public class PurchaseItemTest extends CommonAPI {
         Assert.assertEquals(actualMessage,expectedMessage);
 
     }
-    @Test
+    @Test(priority=3)
     public void removeItemsFromTheCart(){
         HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());
         GearCategoryPage gearCategoryPage =new GearCategoryPage(getDriver());

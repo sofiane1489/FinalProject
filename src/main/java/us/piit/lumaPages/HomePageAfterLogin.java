@@ -18,8 +18,8 @@ public class HomePageAfterLogin extends CommonAPI {
     @FindBy(xpath = "//div[@class='panel header']//span[@class='logged-in'][normalize-space()='Welcome, mike lee!']")
     WebElement actualMessage;
 
-    @FindBy(css = "div[class='box box-information'] p")
-    WebElement accountInfo;
+    @FindBy(css = ".message-success.success.message")
+    WebElement thanksMessage;
 
     @FindBy(css = ".panel.header ul li:nth-child(2) span button")
     WebElement dropDownArrow;
@@ -62,8 +62,8 @@ public class HomePageAfterLogin extends CommonAPI {
         return message;
     }
 
-    public String getAccountMessageInfo(){
-        String accountTextInfo=getElementText(accountInfo);
+    public String getThanksMessage(){
+        String accountTextInfo=getElementText(thanksMessage);
         log.info("account create success");
         return accountTextInfo;
     }

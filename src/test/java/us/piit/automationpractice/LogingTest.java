@@ -1,12 +1,5 @@
 package us.piit.automationpractice;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.testng.Assert;
-import org.testng.annotations.Test;
-import us.piit.AutomationPracticePages.AutoHomePage;
-import us.piit.AutomationPracticePages.AutoLoginPage;
-import us.piit.AutomationPracticePages.CreateAccountAuthenticationPage;
 import us.piit.base.CommonAPI;
 import us.piit.utility.Utility;
 
