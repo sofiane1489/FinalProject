@@ -269,7 +269,6 @@ public class CommonAPI {
         return faker.lorem().paragraph();
     }
 
-
 //javascript methods
 
     public void clickWithJavascript(WebElement element){
