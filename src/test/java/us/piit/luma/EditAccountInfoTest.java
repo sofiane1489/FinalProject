@@ -15,9 +15,8 @@ public class EditAccountInfoTest extends CommonAPI {
 
     Properties pro=Utility.loadProperties();
 
-    String email=Utility.decode(pro.getProperty("luma.otherEmail"));
+    String email=Utility.decode(pro.getProperty("luma.email"));
     String password= Utility.decode(pro.getProperty("luma.password"));
-    String newLastName=Utility.decode(pro.getProperty("luma.newLastName"));
 
     @Test
     public void editAccountInfo(){
@@ -57,7 +56,7 @@ public class EditAccountInfoTest extends CommonAPI {
 
         editAccountInformationPage.deleteLastName();
 
-        editAccountInformationPage.enterNewLastName(newLastName);
+        editAccountInformationPage.enterNewLastName(useFakeLastName());
 
         editAccountInformationPage.clickOnSaveBtn();
 

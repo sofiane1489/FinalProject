@@ -224,17 +224,54 @@ public class CommonAPI {
     public boolean isInteractable(WebElement element){
             return element.isEnabled();
     }
+
     public boolean isChecked(WebElement element){
-        try{
             return element.isSelected();
-        }catch (Exception e){
-            return element.isSelected();
-        }
     }
+
+  //methods for fake credentials
+
     public String useFakeEmail(){
-        String email = faker.internet().emailAddress();
-        return email;
+        return faker.internet().emailAddress();
     }
+    public String useFakeAddress(){
+        return faker.address().streetAddress();
+    }
+    public String useFakeCity(){
+        return  faker.address().city();
+    }
+    public String useFakeState(){
+        return faker.address().state();
+    }
+    public String useFakeFirstName(){
+        return faker.name().firstName();
+    }
+
+    public String useFakeLastName(){
+        return faker.name().lastName();
+    }
+    public String useFakeZipcode(){
+        return faker.address().zipCode();
+    }
+    public String useFakePhoneNumber(){
+        return faker.phoneNumber().phoneNumber();
+    }
+    public String useFakeCompany(){
+        return faker.company().name();
+    }
+    public String useFakePaaword(){
+        return faker.internet().password();
+    }
+    public String useFakeFullName(){
+        return faker.name().fullName();
+    }
+    public String useFakeParagraph(){
+        return faker.lorem().paragraph();
+    }
+
+
+//javascript methods
+
     public void clickWithJavascript(WebElement element){
         JavascriptExecutor js = (JavascriptExecutor)driver;
         js.executeScript("arguments[0].click();", element);
