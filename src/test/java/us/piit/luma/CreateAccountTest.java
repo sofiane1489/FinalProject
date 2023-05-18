@@ -15,12 +15,10 @@ import java.util.Properties;
 public class CreateAccountTest extends CommonAPI {
 
     Properties pro= Utility.loadProperties();
-    String firstname=Utility.decode(pro.getProperty("luma.firstname")) ;
-    String lastname=Utility.decode(pro.getProperty("luma.lastname")) ;
     String password=Utility.decode(pro.getProperty("luma.password")) ;
     String email=Utility.decode(pro.getProperty("luma.email")) ;
 
-    @Test
+    @Test(priority =1)
     public void createNewAccount(){
         HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());
         CreateAccountPage createAccountPage=new CreateAccountPage(getDriver());
@@ -36,9 +34,9 @@ public class CreateAccountTest extends CommonAPI {
 
            homePageBeforeLogin.clickOnCreateAnAccountLink();
 
-           createAccountPage.enterFirstName(firstname);
+           createAccountPage.enterFirstName(useFakeFirstName());
 
-           createAccountPage.enterLastName(lastname);
+           createAccountPage.enterLastName(useFakeLastName());
 
            createAccountPage.enterEmail(useFakeEmail());
 
@@ -54,7 +52,7 @@ public class CreateAccountTest extends CommonAPI {
         Assert.assertEquals(expectedContInfor,actualContInfor);
 }
 
-    @Test
+    @Test(priority = 2)
     public void emailAlreadyTaken(){
         HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());
         CreateAccountPage createAccountPage=new CreateAccountPage(getDriver());
@@ -68,9 +66,9 @@ public class CreateAccountTest extends CommonAPI {
 
         homePageBeforeLogin.clickOnCreateAnAccountLink();
 
-        createAccountPage.enterFirstName(firstname);
+        createAccountPage.enterFirstName(useFakeFirstName());
 
-        createAccountPage.enterLastName(lastname);
+        createAccountPage.enterLastName(useFakeLastName());
 
         createAccountPage.enterEmail(email);
 

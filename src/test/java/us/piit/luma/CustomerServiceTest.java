@@ -13,13 +13,6 @@ import java.util.Properties;
 
 public class CustomerServiceTest extends CommonAPI {
 
-    Properties pro= Utility.loadProperties();
-
-    String fullName=Utility.decode(pro.getProperty("luma.fullName")) ;
-    String emailAddress=Utility.decode(pro.getProperty("luma.email")) ;
-    String telephoneNumber=Utility.decode(pro.getProperty("luma.telephoneNumber")) ;
-    String message=Utility.decode(pro.getProperty("luma.message")) ;
-
     @Test
     public void sendEmail(){
         HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());
@@ -33,17 +26,18 @@ public class CustomerServiceTest extends CommonAPI {
         // website validation with luma logo
         Assert.assertTrue( homePageBeforeLogin.checkHomePageLogoVisibility());
 
+        //scrolling  down To element
         homePageBeforeLogin.scrollToContactUsBtn(getDriver());
 
         homePageBeforeLogin.clickOnContactUsBnt();
 
-        contactUsPage.enterNameInContactUs(fullName);
+        contactUsPage.enterNameInContactUs(useFakeFullName());
 
-        contactUsPage.enterEmailAddress(emailAddress);
+        contactUsPage.enterEmailAddress(useFakeEmail());
 
-        contactUsPage.enterTelephoneNumber(telephoneNumber);
+        contactUsPage.enterTelephoneNumber(useFakePhoneNumber());
 
-        contactUsPage.enterYourTextMessage(message);
+        contactUsPage.enterYourTextMessage(useFakeParagraph());
 
         contactUsPage.clickOnSubmitBtn();
 
