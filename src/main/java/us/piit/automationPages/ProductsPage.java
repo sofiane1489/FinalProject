@@ -18,14 +18,11 @@ public class ProductsPage extends CommonAPI {
     WebElement clickonproductbtn;
     @FindBy(xpath = "//body/section[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[1]/a[1]")
     WebElement clickonviewproduct;
-    @FindBy(xpath = "//body/section[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/a[1]")
+    @FindBy(xpath = "//body/section[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/span[1]/button[1]")
     WebElement clickonaddtocart;
     @FindBy(xpath = "//u[contains(text(),'View Cart')]")
     WebElement clickonviewcart;
-    @FindBy(xpath = "//a[contains(text(),'Proceed To Checkout')]")
-    WebElement proceedtocheckout;
-    @FindBy(xpath = "")
-    WebElement validText;
+
     @FindBy(xpath = "//input[@id='search_product']")
     WebElement entervalidproduct;
     @FindBy(xpath = "//button[@id='submit_search']")
