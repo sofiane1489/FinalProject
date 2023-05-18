@@ -25,6 +25,17 @@ public class HomePage extends CommonAPI {
     WebElement productsvisibility;
     @FindBy(xpath = "//h2[contains(text(),'Searched Products')]")
     WebElement searchedproductvisible;
+    @FindBy(xpath = "//p[contains(text(),'Category: Men > Tshirts')]")
+    WebElement productTextvisible;
+    @FindBy(xpath = "//h2[contains(text(),'All Products')]")
+    WebElement allProducts;
+    @FindBy(xpath = "//h2[contains(text(),'Get In Touch')]")
+    WebElement supportheaderpage;
+    @FindBy(xpath = "//h2[contains(text(),'Subscription')]")
+    WebElement subscritionText;
+    @FindBy(xpath = "//button[@id='subscribe']")
+    WebElement arrowButton;
+
 
 
 
@@ -56,6 +67,31 @@ public class HomePage extends CommonAPI {
         boolean pageheadertitle=isVisible(searchedproductvisible);
         log.info("searched product displayed success");
         return pageheadertitle;
+   // }
+//    public String productDetails(){
+//        String title=getElementText(productTextvisible);
+//        log.info("product details displayed succesfully");
+//        return title;
+    }
+    public boolean allproducts(){
+        boolean title=isVisible(allProducts);
+        log.info("all products displayed success");
+        return title;
+    }
+    public boolean headerpagevisibility(){
+        boolean supportpageheader=isVisible(supportheaderpage);
+        log.info("validate the headerpage title success");
+        return supportpageheader;
+
+    }
+    public boolean getSubscribeText(){
+        boolean text=isVisible(subscritionText);
+        log.info("subscrition text is visible success");
+        return  text;
+    }
+    public void clickonArrowButton(){
+        clickOn(arrowButton);
+        log.info("click on submit button success");
     }
 
 }

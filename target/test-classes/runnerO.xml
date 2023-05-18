@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Lumademo test">
+<suite name="Automationdemo test">
     <parameter name="useCloudEnv" value="false"></parameter>
     <parameter name="envName" value="browserstack"></parameter>
     <parameter name="os" value="windows"></parameter>
@@ -9,11 +9,11 @@
     <parameter name="browserName" value="chrome"></parameter>
     <parameter name="url" value="https://automationexercise.com/"></parameter>
 
-    <!--            <test name="user registration test">-->
-    <!--                <classes>-->
-    <!--                    <class name="us.piit.automation.UserRegistration"></class>-->
-    <!--                </classes>-->
-    <!--            </test>-->
+<!--                <test name="user registration test">-->
+<!--                    <classes>-->
+<!--                        <class name="us.piit.automation.UserRegistration"></class>-->
+<!--                    </classes>-->
+<!--                </test>-->
 <!--        <test name="UserLogin test">-->
 <!--            <classes>-->
 <!--                <class name="us.piit.automation.UserLogin"></class>-->
@@ -24,16 +24,16 @@
 <!--                        <class name="us.piit.automation.AddItemsToCart"></class>-->
 <!--                    </classes>-->
 <!--                </test>-->
-    <!--        <test name="checkout confirme">-->
-    <!--            <classes>-->
-    <!--                <class name="us.piit.automation.CheckOutConfirme"></class>-->
-    <!--            </classes>-->
-    <!--        </test>-->
-                <test name="search bar test">
-                    <classes>
-                        <class name="us.piit.automation.SearchProducts"></class>
-                    </classes>
-                </test>
+<!--            <test name="checkout test">-->
+<!--                <classes>-->
+<!--                    <class name="us.piit.automation.CheckOut"></class>-->
+<!--                </classes>-->
+<!--            </test>-->
+<!--                <test name="search bar test">-->
+<!--                    <classes>-->
+<!--                        <class name="us.piit.automation.SearchProducts"></class>-->
+<!--                    </classes>-->
+<!--                </test>-->
     <!--    <test name="verification quantity test">-->
     <!--        <classes>-->
     <!--            <class name="us.piit.automation.UpdateCart"></class>-->
@@ -54,6 +54,31 @@
 <!--            <class name="us.piit.automation.UserLogout"></class>-->
 <!--        </classes>-->
 <!--    </test>-->
+<!--    <test name=" update quantity test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.automation.UpdateQuantityInCart"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name=" write review test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.automation.WriteReviewTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name=" contact support test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.automation.Contactsupport"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="subscribe in home page test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.automation.SubscribeInHomePage"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <test name="subscribe in cart page test">
+        <classes>
+            <class name="us.piit.automation.SubscribeInCartPage"></class>
+        </classes>
+    </test>
 
 
 </suite>

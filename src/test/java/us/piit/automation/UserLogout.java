@@ -34,7 +34,7 @@ public class UserLogout extends CommonAPI {
         loginPage.enterEmail(validEmail);
         loginPage.enterPassword(validPassword);
         loginPage.clickonLoginBtn();
-        waitFor(5);
+        waitFor(2);
 
         // Check if user is logged in
         String expectedHomePageHeader = "Full-Fledged practice website for Automation Engineers";

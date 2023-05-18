@@ -10,11 +10,11 @@ import us.piit.utility.Utility;
 
 import java.util.Properties;
 
-public class CheckOutConfirme extends CommonAPI {
-    Logger log = LogManager.getLogger(CheckOutConfirme.class.getName());
+public class CheckOut extends CommonAPI {
+    Logger log=LogManager.getLogger(CheckOut.class.getName());
     Properties pop= Utility.loadProperties();
     String validEmail =Utility.decode(pop.getProperty("automation.validEmail"));
-    String validPassword = Utility.decode(pop.getProperty("automation.validPassword"));
+    String validPassword =Utility.decode(pop.getProperty("automation.validPassword"));
     String name= Utility.decode(pop.getProperty("automation.name"));
     String cardNumber=Utility.decode(pop.getProperty("automation.cardNumber"));
     String cvcNumber= Utility.decode(pop.getProperty("automation.cvcNumber"));
@@ -27,7 +27,6 @@ public class CheckOutConfirme extends CommonAPI {
         //Enter Email, password, and click on login button
         LoginPage loginPage = new LoginPage(getDriver());
         HomePage homePage = new HomePage(getDriver());
-        ViewcartPage viewcartPage=new ViewcartPage(getDriver());
         ProductsPage productsPage=new ProductsPage(getDriver());
         CheckOutPage checkoutPage=new CheckOutPage(getDriver());
         PaymentPage paymentPage=new PaymentPage(getDriver());
@@ -36,14 +35,20 @@ public class CheckOutConfirme extends CommonAPI {
         String expectedTitle = "Automation Exercise";
         String actualTitle = getCurrentTtile();
         Assert.assertEquals(expectedTitle, actualTitle);
-        waitFor(5);
+
 
         // Enter Email, password, and click on login button
+
         loginPage.clickonloginbutton();
+
         loginPage.enterEmail(validEmail);
+
         loginPage.enterPassword(validPassword);
+
         loginPage.clickonLoginBtn();
-        waitFor(5);
+
+
+
 
         // Check if user is logged in
         String expectedHomePageHeader = "Full-Fledged practice website for Automation Engineers";
@@ -52,9 +57,13 @@ public class CheckOutConfirme extends CommonAPI {
 
         //click on cart,proceed to checkout,place order and confirm
         productsPage.viewProduct();
+
         productsPage.addToCart();
+
         productsPage.viewCart();
+
         checkoutPage.clickCheckOut();
+
         paymentPage.clickonPlaceOrder();
 
         paymentPage.enterName(name);

@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import us.piit.automationPages.HomePage;
 import us.piit.automationPages.LoginPage;
 import us.piit.automationPages.ProductsPage;
-import us.piit.automationPages.ViewcartPage;
+import us.piit.automationPages.ViewCartPage;
 import us.piit.base.CommonAPI;
 import us.piit.utility.Utility;
 
@@ -25,7 +25,7 @@ public class RemoveItem extends CommonAPI {
     public void removeitemfromcart(){
         LoginPage loginPage = new LoginPage(getDriver());
         HomePage homePage = new HomePage(getDriver());
-        ViewcartPage viewcartPage=new ViewcartPage(getDriver());
+        ViewCartPage viewcartPage=new ViewCartPage(getDriver());
         ProductsPage productsPage=new ProductsPage(getDriver());
 
         // verify the title of the homepage
@@ -38,7 +38,7 @@ public class RemoveItem extends CommonAPI {
         loginPage.enterEmail(validEmail);
         loginPage.enterPassword(validPassword);
         loginPage.clickonLoginBtn();
-        waitFor(5);
+
 
         // Check if user is logged in
         String expectedHomePageHeader = "Full-Fledged practice website for Automation Engineers";
@@ -48,9 +48,13 @@ public class RemoveItem extends CommonAPI {
         productsPage.addToCart();
 
         productsPage.viewCart();
+
         viewcartPage.shoopingCart();
 
         viewcartPage.deleteItem();
+
+
+
 
         // validate that product is deleted
         String expectedText="";

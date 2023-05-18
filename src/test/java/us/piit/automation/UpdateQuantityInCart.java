@@ -11,26 +11,31 @@ import us.piit.utility.Utility;
 
 import java.util.Properties;
 
-public class AddItemsToCart extends CommonAPI {
-    Logger log=LogManager.getLogger(AddItemsToCart.class.getName());
-    Properties pop= Utility.loadProperties();
+public class UpdateQuantityInCart extends CommonAPI {
+    Logger log = LogManager.getLogger(UpdateQuantityInCart.class.getName());
+    Properties pop = Utility.loadProperties();
 
     @Test
-    public void menTisherts() {
+    public void updateQuantity() {
 
         ProductsPage productsPage = new ProductsPage(getDriver());
         HomePage homePage = new HomePage(getDriver());
 
 
-        //verify the title of the homepage
+        // Verify the title of the page
         String expectedTitle = "Automation Exercise";
-        String actualTitle=getCurrentTtile();
+        String actualTitle = getCurrentTtile();
         Assert.assertEquals(expectedTitle, actualTitle);
 
-        // click on product,click on view item, add to cart then proceed to checkout
         productsPage.viewProduct();
+
+        productsPage.updateQuantity();
+
         productsPage.addToCart();
-        productsPage.viewCart();
+
+       productsPage.viewCart();
+
+
 
 
     }

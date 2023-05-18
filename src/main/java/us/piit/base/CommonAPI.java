@@ -205,6 +205,7 @@ public class CommonAPI {
     }
 
 
+
     public void hoverOverAndClickOn(WebElement element){
         Actions actions = new Actions(driver);
         actions.moveToElement(element).click().build().perform();
@@ -246,18 +247,20 @@ public class CommonAPI {
             e.printStackTrace();
         }
     }
-    public void takeScreenshot(String screenshotName){
+    public void takeScreenshot(String screenshotName) {
         DateFormat df = new SimpleDateFormat("MMddyyyyHHmma");
         Date date = new Date();
         df.format(date);
 
-        File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         try {
-            FileUtils.copyFile(file, new File(Utility.currentDir+ File.separator +"screenshots"+ File.separator + screenshotName+" "+df.format(date)+".jpeg"));
+            FileUtils.copyFile(file, new File(Utility.currentDir + File.separator + "screenshots" + File.separator + screenshotName + " " + df.format(date) + ".jpeg"));
             System.out.println("Screenshot captured");
         } catch (Exception e) {
-            System.out.println("Exception while taking screenshot "+e.getMessage());
+            System.out.println("Exception while taking screenshot " + e.getMessage());
         }
-    }
 
-}
+
+        }
+
+    }

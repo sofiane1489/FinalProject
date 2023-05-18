@@ -34,7 +34,7 @@ public class UserLogin extends CommonAPI {
         String actualTitle = getCurrentTtile();
         Assert.assertEquals(expectedTitle, actualTitle);
 
-        waitFor(5);
+        waitFor(2);
 
         // Enter Email, password, and click on login button
         loginPage.clickonloginbutton();
@@ -91,7 +91,7 @@ public class UserLogin extends CommonAPI {
         loginPage.enterEmail(validEmail);
         loginPage.enterPassword(invalidPassword);
         loginPage.clickonLoginBtn();
-        waitFor(5);
+
 
         //validate the error message
         String expectedError = "Your email or password is incorrect!";
