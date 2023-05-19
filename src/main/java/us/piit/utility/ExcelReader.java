@@ -89,10 +89,10 @@ public class ExcelReader {
     }
 
     public static void main(String[] args)  {
-        String path = "C:\\Users\\sehso\\eclipse-workspace\\FinalProject\\data\\testCases.xlsx";
+        String path = "C:\\Users\\ouelhadj\\eclipse-workspace\\FinalProject\\data\\automationData\\automationTestCases.xlsx";
         ExcelReader excelReader = new ExcelReader(path);
-        String name="data";
-        String data=excelReader.getDataFromCell(name,2,2);
+        String name="Sheet1";
+        String data=excelReader.getDataFromCell(name,7,1);
         System.out.println(data);
 //        System.out.println(excelReader.getValueForGivenHeaderAndKey("data","ID","101"));
 //          List<String> items = excelReader.getEntireColumnForGivenHeader("data", "");

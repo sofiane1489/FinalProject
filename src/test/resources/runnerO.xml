@@ -74,9 +74,19 @@
 <!--            <class name="us.piit.automation.SubscribeInHomePage"></class>-->
 <!--        </classes>-->
 <!--    </test>-->
-    <test name="subscribe in cart page test">
+<!--    <test name="subscribe in cart page test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.automation.SubscribeInCartPage"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="subscribe in youtube channel test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.automation.VideoTuturialsSubscribe"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <test name="category product test">
         <classes>
-            <class name="us.piit.automation.SubscribeInCartPage"></class>
+            <class name="us.piit.automation.CategoryProducts"></class>
         </classes>
     </test>
 

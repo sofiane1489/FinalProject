@@ -26,7 +26,7 @@ public class HomePage extends CommonAPI {
     @FindBy(xpath = "//h2[contains(text(),'Searched Products')]")
     WebElement searchedproductvisible;
     @FindBy(xpath = "//p[contains(text(),'Category: Men > Tshirts')]")
-    WebElement productTextvisible;
+    WebElement producttextvisible;
     @FindBy(xpath = "//h2[contains(text(),'All Products')]")
     WebElement allProducts;
     @FindBy(xpath = "//h2[contains(text(),'Get In Touch')]")
@@ -35,14 +35,20 @@ public class HomePage extends CommonAPI {
     WebElement subscritionText;
     @FindBy(xpath = "//button[@id='subscribe']")
     WebElement arrowButton;
+    @FindBy(xpath = "//header/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[7]/a[1]")
+    WebElement videoTutorials;
+    @FindBy(xpath = "//h2[contains(text(),'Category')]")
+    WebElement category;
+    @FindBy(xpath = "//body/section[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/h4[1]/a[1]")
+    WebElement womenCategory;
 
 
 
 
     public String getHeaderText() {
         log.info("user logged in success");
-        String text=getElementText(mainHeader);
-        return text;
+        String Text=getElementText(mainHeader);
+        return Text;
     }
     public void clickonlogout(){
         clickOn(logoutbtn);
@@ -92,6 +98,19 @@ public class HomePage extends CommonAPI {
     public void clickonArrowButton(){
         clickOn(arrowButton);
         log.info("click on submit button success");
+    }
+    public void clickonVideoTutorials(){
+        clickOn(videoTutorials);
+        log.info("click on videoTutorials success");
+    }
+    public boolean categorynamevisibility(){
+        boolean title=isVisible(category);
+        log.info("category visible success");
+        return title;
+
+    }
+    public void clickonWomenCategory(){
+        clickOn(womenCategory);
     }
 
 }
