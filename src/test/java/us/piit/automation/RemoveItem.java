@@ -1,6 +1,5 @@
 
 
-
 package us.piit.automation;
 
 import org.apache.logging.log4j.LogManager;
@@ -17,13 +16,13 @@ import us.piit.utility.Utility;
 import java.util.Properties;
 
 public class RemoveItem extends CommonAPI {
-    Logger log = LogManager.getLogger(RemoveItem.class.getName());
+   Logger log = LogManager.getLogger(RemoveItem.class.getName());
     Properties pop= Utility.loadProperties();
     String validEmail =Utility.decode( pop.getProperty("automation.validEmail"));
-    String validPassword = pop.getProperty("automation.validPassword");
+    String validPassword =Utility.decode(pop.getProperty("automation.validPassword"));
 
     @Test
-    public void removeItem(){
+    public void removeitemfromcart(){
         LoginPage loginPage = new LoginPage(getDriver());
         HomePage homePage = new HomePage(getDriver());
         ViewcartPage viewcartPage=new ViewcartPage(getDriver());
@@ -54,20 +53,9 @@ public class RemoveItem extends CommonAPI {
         viewcartPage.deleteItem();
 
         // validate that product is deleted
-        String expectedText="Cart is empty!";
+        String expectedText="";
         String actualText=homePage.emtyCart();
-        Assert.assertEquals(expectedText,actualText);
-
-
-
-
-
-
-
-
-
-
+       Assert.assertEquals(expectedText,actualText);
 
     }
 }
-

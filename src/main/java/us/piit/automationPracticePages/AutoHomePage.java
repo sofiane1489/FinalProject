@@ -30,7 +30,31 @@ public class AutoHomePage extends CommonAPI {
 
     @FindBy(css = "#header > div.nav > div > div > nav > div:nth-child(1) > a")
     WebElement welcomeUser;
+    @FindBy(css = "#contact-link")
+    WebElement contactBtn;
+    @FindBy(css = "#center_column > div > div > ul > li:nth-child(1) > a")
+    WebElement addFirstAddressBtn;
+    @FindBy(css = "#block_top_menu > ul > li:nth-child(4) > a")
+    WebElement blogBtn;
+    @FindBy(css = "#header > div.nav > div > div > nav > div:nth-child(2)")
+    WebElement logoutBtn;
+    public void clickOnLogoutBtn(){
+        clickOn(logoutBtn);
+        log.info("click on logout button success");
+    }
+    public void clickOnBlogBtn(){
+        clickOn(blogBtn);
+        log.info("click on blog button success");
+    }
+    public void clickOnAddFirstAddressBtn(){
+        clickOn(addFirstAddressBtn);
+        log.info("click on add first address button success");
+    }
 
+    public void clickOnContactBtn(){
+        clickOn(contactBtn);
+        log.info("click on contact button success");
+    }
 
     public void searchQueryItem(String itemName){
         type(searchBarField,itemName);
