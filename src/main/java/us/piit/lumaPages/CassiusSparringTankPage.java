@@ -28,6 +28,12 @@ public class CassiusSparringTankPage extends CommonAPI {
     @FindBy(xpath=" //main[@id='maincontent']/div/div[2]/div/div/div")
     WebElement confirmationText;
 
+    @FindBy(css=".base")
+    WebElement itemTitle;
+
+    @FindBy(css = "body > div:nth-child(4) > main:nth-child(4) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(4) > form:nth-child(1) > div:nth-child(6) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(5)")
+    WebElement addToCartErrorMessage;
+
 
     public void clickOnSizeLabel(){
         clickOn(sizeSLabel);
@@ -48,5 +54,15 @@ public class CassiusSparringTankPage extends CommonAPI {
          log.info("Add to cart item success");
         return text;
      }
+     public String getErrorMessage(){
+        String text=getElementText(addToCartErrorMessage);
+        log.info("error meessage display success");
+        return text;
+     }
+
+     public void scrollToAddToCartBtn(WebDriver driver){
+        scrollToElement(driver,itemTitle);
+     }
+
 
 }

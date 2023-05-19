@@ -17,12 +17,15 @@ public class FitnessEquipmentPage extends CommonAPI {
     }
 
     @FindBy(css=".item.product.product-item:nth-child(6) div a span span")
-    WebElement QuestLumaflexBand;
+    WebElement questLumaflexBand;
 
 
     public void clickOnQuestLumaflexBand(){
-        clickOn(QuestLumaflexBand);
+        clickOn(questLumaflexBand);
         log.info("click on Quest Lumaflex™ Band success");
     }
 
+    public void ScrollToItem(WebDriver driver){
+        scrollToElement(driver,questLumaflexBand);
+    }
 }

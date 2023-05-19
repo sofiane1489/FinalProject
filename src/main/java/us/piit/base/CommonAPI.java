@@ -140,7 +140,7 @@ public class CommonAPI {
                       @Optional("11") String osversion, @Optional("chrome") String browserName,
                       @Optional("111") String browservesion, @Optional("https://www.google.com/") String url) throws MalformedURLException {
         if(useCloudEnv.equalsIgnoreCase("true")){
-            getCloudDriver(envName,os,osversion,browserName,browservesion,"browserstackUsername","browserstackPassword");
+            getCloudDriver(envName,os,osversion,browserName,browservesion,browserstackUsername,browserstackPassword);
         } else if (useCloudEnv.equalsIgnoreCase("false")) {
             getLocalDriver(browserName);
         }
@@ -184,6 +184,7 @@ public class CommonAPI {
 
     public void select(WebElement element){
             Select select = new Select(element);
+            select.getAllSelectedOptions();
     }
     public void selectBy(WebElement element,String value){
             Select select = new Select(element);
@@ -207,10 +208,16 @@ public class CommonAPI {
     }
 
 
-    public void hoverOverAndClickOn(WebElement element){
+    public void hoverOverAndClickOn(WebDriver driver,WebElement element){
         Actions actions = new Actions(driver);
         actions.moveToElement(element).click().build().perform();
     }
+    public void doubleClick(WebDriver driver,WebElement element){
+        Actions actions = new Actions(driver);
+        actions.moveToElement(element).doubleClick().build().perform();
+    }
+
+
     public void waitFor(int seconds){
         try {
             Thread.sleep(seconds*1000);
@@ -268,10 +275,14 @@ public class CommonAPI {
     public String useFakeParagraph(){
         return faker.lorem().paragraph();
     }
+    public String useFakeSentence(){
+        return faker.lorem().sentence();
+    }
+
 
 //javascript methods
 
-    public void clickWithJavascript(WebElement element){
+    public void clickWithJavascript(WebDriver driver,WebElement element){
         JavascriptExecutor js = (JavascriptExecutor)driver;
         js.executeScript("arguments[0].click();", element);
     }
