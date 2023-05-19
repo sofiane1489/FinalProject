@@ -1,14 +1,18 @@
 package us.piit.utility;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
+import static us.piit.utility.Utility.currentDir;
 
 public class ExcelReader {
     private final Logger LOG = LogManager.getLogger(ExcelReader.class.getName());
@@ -89,18 +93,17 @@ public class ExcelReader {
         return value;
     }
 
-
     public static void main(String[] args) throws IOException {
         String currentDir = System.getProperty("user.dir");
+        // String path = currentDir +"/data/lumadata/LumaTestCases.xlsx";
 
-        String path = currentDir + File.separator + "data" + File.separator + "lumadata" + File.separator + "testcases.xlsx";
+        String path = currentDir + File.separator + "data" + File.separator + "lumadata" + File.separator + "LumaTestCases.xlsx";
         ExcelReader excelReader = new ExcelReader(path);
-        String name="luma";
-
+        String name="Sheet1";
         String data=excelReader.getDataFromCell(name,1,1);
         System.out.println(data);
- //         List<String> items = excelReader.getEntireColumnForGivenHeader("Sheet1", "Project Name");
-      //   String items = excelReader.getValueForGivenHeaderAndKey("Sheet1", "Project Name", "Created by");
+        //         List<String> items = excelReader.getEntireColumnForGivenHeader("Sheet1", "Project Name");
+        //   String items = excelReader.getValueForGivenHeaderAndKey("Sheet1", "Project Name", "Created by");
 //           List<String> items = excelReader.getEntireColumnData("Sheet1", 4,4);
 //           System.out.println(items);
 
