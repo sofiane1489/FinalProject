@@ -9,11 +9,11 @@
     <parameter name="browserName" value="chrome"></parameter>
     <parameter name="url" value="https://magento.softwaretestingboard.com/"></parameter>
 
-    <test name="create account test">
-        <classes>
-            <class name="us.piit.luma.CreateAccountTest"></class>
-        </classes>
-    </test>
+<!--    <test name="create account test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.luma.CreateAccountTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
 <!--    <test name="CustomerService test">-->
 <!--        <classes>-->
 <!--            <class name="us.piit.luma.CustomerServiceTest"></class>-->
@@ -64,6 +64,11 @@
 <!--            <class name="us.piit.luma.SubscribeTest"></class>-->
 <!--        </classes>-->
 <!--    </test>-->
+    <test name="addreview test">
+        <classes>
+            <class name="us.piit.luma.AddReview"></class>
+        </classes>
+    </test>
 
 
 </suite>

@@ -13,6 +13,33 @@ public class PurchaseItemTest extends CommonAPI {
 
 
     @Test(priority=1)
+    public void unableToAddToCartWithNoSelectedAttribute(){
+        HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());
+        MenCategoryPage menPage=new MenCategoryPage(getDriver());
+        TopsPage topsPage=new TopsPage(getDriver());
+        CassiusSparringTankPage cassiusSparringTankPage=new CassiusSparringTankPage(getDriver());
+
+        // website validation with Title
+        String expextedTitle="Home Page";
+        String actualTitle=getCurrentTtile();
+        Assert.assertEquals(actualTitle,expextedTitle);
+        // website validation with luma logo
+        Assert.assertTrue(homePageBeforeLogin.checkHomePageLogoVisibility());
+
+        homePageBeforeLogin.clickOnMenCategory();
+
+        menPage.clickOnTops48InMenCategory();
+
+        topsPage.clickOnCassiusSparringTank();
+
+        cassiusSparringTankPage.clickOnAddToCartBtn();
+
+        String expectedErrorText="This is a required field.";
+        Assert.assertEquals(expectedErrorText,cassiusSparringTankPage.getErrorMessage());
+
+    }
+
+    @Test(priority=3)
     public void addItemToCart(){
         HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());
         MenCategoryPage menPage=new MenCategoryPage(getDriver());
@@ -32,11 +59,11 @@ public class PurchaseItemTest extends CommonAPI {
 
         topsPage.clickOnCassiusSparringTank();
 
-
         cassiusSparringTankPage.clickOnSizeLabel();
 
         cassiusSparringTankPage.clickOnBlueColor();
 
+        cassiusSparringTankPage.scrollToAddToCartBtn(getDriver());
 
         cassiusSparringTankPage.clickOnAddToCartBtn();
 
@@ -66,6 +93,8 @@ public class PurchaseItemTest extends CommonAPI {
 
         gearCategoryPage.clickOnFitnessEquipment();
 
+        fitnessEquipmentPage.ScrollToItem(getDriver());
+
         fitnessEquipmentPage.clickOnQuestLumaflexBand();
 
        questLumaflexBandPage.clickOnAddToCartBtn();
@@ -78,7 +107,7 @@ public class PurchaseItemTest extends CommonAPI {
 
         //navigate to cart
         homePageBeforeLogin.clickOnShoppingCartIcon();
-
+        waitFor(1);
         homePageBeforeLogin.clickOnProceedToCheckOutBtn();
 
         shippingAddressPage.enterEmailAddress(useFakeEmail());
@@ -110,9 +139,10 @@ public class PurchaseItemTest extends CommonAPI {
         String expectedMessage="Thank you for your purchase!";
         String actualMessage= shippingAddressPage.getPurchaseConfirmationText();
         Assert.assertEquals(actualMessage,expectedMessage);
+        captureScreenshot();
 
     }
-    @Test(priority=3)
+    @Test(priority=4)
     public void removeItemsFromTheCart(){
         HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());
         GearCategoryPage gearCategoryPage =new GearCategoryPage(getDriver());

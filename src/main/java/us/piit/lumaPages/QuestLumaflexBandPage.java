@@ -22,6 +22,31 @@ public class QuestLumaflexBandPage extends CommonAPI {
     @FindBy(css="div[role='alert']")
     WebElement textConfirmation;
 
+    @FindBy(css=" a[href='https://magento.softwaretestingboard.com/quest-lumaflex-trade-band.html#review-form']")
+    WebElement addReviewLink;
+
+    @FindBy(css="#Rating_5_label")
+    WebElement ratingField;
+
+    @FindBy(css="#nickname_field")
+    WebElement nicknameField;
+
+    @FindBy(css=" #summary_field")
+    WebElement summaryField;
+
+    @FindBy(css="#review_field")
+    WebElement reviewField;
+
+    @FindBy(css="button[class='action submit primary']")
+    WebElement submitReviewBtn;
+
+    @FindBy(css=".message-success.success.message")
+    WebElement submitReviewConfirmationText;
+
+    @FindBy(xpath="//div[@id='ratings[4]-error']")
+    WebElement errorText;
+
+
 
     public void clickOnAddToCartBtn(){
         clickOn(addToCartBtn);
@@ -33,5 +58,44 @@ public class QuestLumaflexBandPage extends CommonAPI {
         log.info("item added to cart success");
         return text;
     }
+    public void clickOnAddReviewLink(){
+        clickOn(addReviewLink);
+        log.info("click on review success");
+    }
 
+
+    public void selectRating(WebDriver driver){
+        doubleClick(driver,ratingField);
+        log.info("hover over rating success");
+    }
+
+    public void enterNickname(String text){
+        type(nicknameField,text);
+        log.info("enter nick name success");
+    }
+
+    public void enterSummary(String summary){
+        type(summaryField,summary);
+        log.info("enter summary success");
+    }
+    public void enterReviewText(String review){
+        type(reviewField,review);
+        log.info("enter review success");
+
+    }
+    public String getSubmitTextConfirmation(){
+        String text=getElementText(submitReviewConfirmationText);
+        log.info("submit review success");
+        return text;
+    }
+
+    public void clickOnSubmit(WebDriver driver){
+        clickWithJavascript(driver,submitReviewBtn);
+    }
+
+    public String getErrorMessage(){
+        String text=getElementText(errorText);
+        log.info("review not submitted success");
+        return text;
+    }
 }

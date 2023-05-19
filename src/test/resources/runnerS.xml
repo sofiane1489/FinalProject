@@ -64,6 +64,11 @@
 <!--            <class name="us.piit.luma.SubscribeTest"></class>-->
 <!--        </classes>-->
 <!--    </test>-->
+    <test name="addreview test">
+        <classes>
+            <class name="us.piit.luma.AddReview"></class>
+        </classes>
+    </test>
 
 
 </suite>
