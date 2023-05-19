@@ -31,7 +31,7 @@ public class AutoLoginPage extends CommonAPI {
     WebElement alertErrorMessage;
     @FindBy(css = "#create_account_error")
     WebElement errorMessage;
-    @FindBy(xpath = "#SubmitCreate")
+    @FindBy(css = "#SubmitCreate")
     WebElement CreateAccountBtn;
 
     //reusable methods

@@ -1,5 +1,9 @@
 package us.piit.automationpractice;
 
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import us.piit.automationPracticePages.AutoHomePage;
+import us.piit.automationPracticePages.AutoLoginPage;
 import us.piit.base.CommonAPI;
 import us.piit.utility.Utility;
 
@@ -13,59 +17,59 @@ public class LogingTest extends CommonAPI {
     String invalidUsername=Utility.decode(pro.getProperty("automationpractice.invalidEmail")) ;
 
 
-//    @Test
-//    public void validCredential() {
-//        AutoLoginPage autoLoginPage = new AutoLoginPage(getDriver());
-//        AutoHomePage autoHomePage = new AutoHomePage(getDriver());
-//        String expectedTitle = "My Store";
-//        String actualTitle = getCurrentTtile();
-//        Assert.assertEquals(expectedTitle, actualTitle);
-//
-//        //click on sign in, enter  username, password, and click on login button
-//        autoLoginPage.ClickOnSignInBtn();
-//        autoLoginPage.enterUsername(validUsername);
-//        autoLoginPage.enterPassword(validPassword);
-//        autoLoginPage.clickOnLoginBtn();
-//
-//        //check user is logged in
-//        String expectedAccountInformation = "Jhon Claud";
-//        String actualAccountInformation = autoHomePage.getWelcomeMessage();
-//        Assert.assertEquals(expectedAccountInformation, actualAccountInformation);
-//
-//    }
-//    @Test
-//    public void invalidUsername() {
-//        AutoLoginPage autoLoginPage = new AutoLoginPage(getDriver());
-//        String expectedTitle = "My Store";
-//        String actualTitle = getCurrentTtile();
-//        Assert.assertEquals(expectedTitle, actualTitle);
-//        //enter  username, password, and click on login button
-//        autoLoginPage.ClickOnSignInBtn();
-//        autoLoginPage.enterUsername(invalidUsername);
-//        autoLoginPage.enterPassword(validPassword);
-//        autoLoginPage.clickOnLoginBtn();
-//
-//        //error validation
-//
-//        Assert.assertTrue(autoLoginPage.checkErrorMessage());
-//    }
-//    @Test
-//    public void missingPassword() {
-//        AutoLoginPage autoLoginPage = new AutoLoginPage(getDriver());
-//
-//        String expectedTitle = "My Store";
-//        String actualTitle = getCurrentTtile();
-//        Assert.assertEquals(expectedTitle, actualTitle);
-//        //enter  username, password, and click on login button
-//        autoLoginPage.ClickOnSignInBtn();;
-//        autoLoginPage.enterUsername(validUsername);
-//        autoLoginPage.enterPassword("");
-//        autoLoginPage.clickOnLoginBtn();
-//
-//        //error validation
-//
-//        Assert.assertTrue(autoLoginPage.checkErrorMessage());
-//    }
+    @Test
+    public void validCredential() {
+        AutoLoginPage autoLoginPage = new AutoLoginPage(getDriver());
+        AutoHomePage autoHomePage = new AutoHomePage(getDriver());
+        String expectedTitle = "My Store";
+        String actualTitle = getCurrentTtile();
+        Assert.assertEquals(expectedTitle, actualTitle);
+
+        //click on sign in, enter  username, password, and click on login button
+        autoLoginPage.ClickOnSignInBtn();
+        autoLoginPage.enterUsername(validUsername);
+        autoLoginPage.enterPassword(validPassword);
+        autoLoginPage.clickOnLoginBtn();
+
+        //check user is logged in
+        String expectedAccountInformation = "Jhon Claud";
+        String actualAccountInformation = autoHomePage.getWelcomeMessage();
+        Assert.assertEquals(expectedAccountInformation, actualAccountInformation);
+
+    }
+    @Test
+    public void invalidUsername() {
+        AutoLoginPage autoLoginPage = new AutoLoginPage(getDriver());
+        String expectedTitle = "My Store";
+        String actualTitle = getCurrentTtile();
+        Assert.assertEquals(expectedTitle, actualTitle);
+        //enter  username, password, and click on login button
+        autoLoginPage.ClickOnSignInBtn();
+        autoLoginPage.enterUsername(invalidUsername);
+        autoLoginPage.enterPassword(validPassword);
+        autoLoginPage.clickOnLoginBtn();
+
+        //error validation
+
+        Assert.assertTrue(autoLoginPage.checkErrorMessage());
+    }
+    @Test
+    public void missingPassword() {
+        AutoLoginPage autoLoginPage = new AutoLoginPage(getDriver());
+
+        String expectedTitle = "My Store";
+        String actualTitle = getCurrentTtile();
+        Assert.assertEquals(expectedTitle, actualTitle);
+        //enter  username, password, and click on login button
+        autoLoginPage.ClickOnSignInBtn();;
+        autoLoginPage.enterUsername(validUsername);
+        autoLoginPage.enterPassword("");
+        autoLoginPage.clickOnLoginBtn();
+
+        //error validation
+
+        Assert.assertTrue(autoLoginPage.checkErrorMessage());
+    }
 
 
 }
