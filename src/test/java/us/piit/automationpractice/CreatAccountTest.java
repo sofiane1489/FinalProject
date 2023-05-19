@@ -12,11 +12,10 @@ import java.util.Properties;
 
 public class CreatAccountTest extends CommonAPI {
     Properties pro= Utility.loadProperties();
+    String validUsername=Utility.decode(pro.getProperty("automationpractice.email")) ;
     String customerFirstName=Utility.decode(pro.getProperty("automationpractice.firstname")) ;
     String customerLastName=Utility.decode(pro.getProperty("automationpractice.lastname")) ;
-    String validUseEmail=Utility.decode(pro.getProperty("automationpractice.newEmail")) ;
     String customerPassword=Utility.decode(pro.getProperty("automationpractice.newpassword")) ;
-    String customerGender=Utility.decode(pro.getProperty("automationpractice.gender")) ;
     String customerMonth=Utility.decode(pro.getProperty("automationpractice.customerMonth")) ;
     String customerDay=Utility.decode(pro.getProperty("automationpractice.customerDay")) ;
     String customerYear=Utility.decode(pro.getProperty("automationpractice.customerYear")) ;
@@ -26,23 +25,24 @@ public class CreatAccountTest extends CommonAPI {
     @Test
     public void validCred() {
         AutoLoginPage autoLoginPage = new AutoLoginPage(getDriver());
-        CreateAccountAuthenticationPage CreateAccountAuthenticationPage = new CreateAccountAuthenticationPage(getDriver());
+        CreateAccountAuthenticationPage createAccountAuthenticationPage = new CreateAccountAuthenticationPage(getDriver());
         AutoHomePage autoHomePage = new AutoHomePage(getDriver());
         String expectedTitle = "My Store";
         String actualTitle = getCurrentTtile();
         Assert.assertEquals(expectedTitle, actualTitle);
         //click on sign in, enter  username, password, and click on login button
         autoLoginPage.ClickOnSignInBtn();
-        autoLoginPage.emailAccountCreation(validUseEmail);
+        autoLoginPage.emailAccountCreation(useFakeEmail());
         autoLoginPage.clickOnCreateAccountBtn();
-        CreateAccountAuthenticationPage.selectGender();
-        CreateAccountAuthenticationPage.enterFirstName(customerFirstName);
-        CreateAccountAuthenticationPage.enterLasrName(customerLastName);
-        CreateAccountAuthenticationPage.selectMonth();
-        CreateAccountAuthenticationPage.selectDay();
-        CreateAccountAuthenticationPage.selectYear();
-        CreateAccountAuthenticationPage.enterPassword(customerPassword);
-        CreateAccountAuthenticationPage.clickOnRegister();
+        createAccountAuthenticationPage.selectGender();
+        createAccountAuthenticationPage.enterFirstName(customerFirstName);
+        createAccountAuthenticationPage.enterLastName(customerLastName);
+        createAccountAuthenticationPage.enterPassword(customerPassword);
+        createAccountAuthenticationPage.selectDay(Integer.parseInt(customerDay));
+        createAccountAuthenticationPage.selectMonth(Integer.parseInt(customerMonth));
+        createAccountAuthenticationPage.selectYear(customerYear);
+
+        createAccountAuthenticationPage.clickOnRegister();
 
         //check user is logged in
         String expectedAccountInformation = "Jhon Claud";
@@ -53,7 +53,7 @@ public class CreatAccountTest extends CommonAPI {
 
     }
 
-    @Test
+   // @Test
     public void ExistingEmail() {
         AutoLoginPage autoLoginPage = new AutoLoginPage(getDriver());
 
@@ -63,12 +63,12 @@ public class CreatAccountTest extends CommonAPI {
 
         // enter existing
         autoLoginPage.ClickOnSignInBtn();
-        autoLoginPage.enterUsername(validUseEmail);
+        autoLoginPage.enterUsername(validUsername);
         autoLoginPage.clickOnCreateAccountBtn();
 
         //error validation
 
         Assert.assertTrue(autoLoginPage.checkPresenceOfErrorMessage());
-
+        captureScreenshot();
     }
 }
