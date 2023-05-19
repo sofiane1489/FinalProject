@@ -21,17 +21,20 @@ public class AddItemsToCart extends CommonAPI {
         ProductsPage productsPage = new ProductsPage(getDriver());
         HomePage homePage = new HomePage(getDriver());
 
-        //verify the title of the homepage
-//       String expectedTitle = "Automation Exercise";
-//       String actualTitle= homePage.getCurrentTtile();;
-//        Assert.assertEquals(expectedTitle, actualTitle);
+
 
         // click on product,click on view item, add to cart then proceed to checkout
         productsPage.viewProduct();
         productsPage.addToCart();
         productsPage.viewCart();
-        waitFor(2);
 
+
+
+
+        //verify the title of the homepage
+//       String expectedTitle = "Automation Exercise";
+//       String actualTitle= homePage.getCurrentTtile();;
+//        Assert.assertEquals(expectedTitle, actualTitle);
 
     }
 }

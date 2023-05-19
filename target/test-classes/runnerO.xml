@@ -14,46 +14,46 @@
     <!--                    <class name="us.piit.automation.UserRegistration"></class>-->
     <!--                </classes>-->
     <!--            </test>-->
-    <!--    <test name="UserLogin test">-->
-    <!--        <classes>-->
-    <!--            <class name="us.piit.automation.UserLogin"></class>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-    <!--            <test name="Add items to cart test">-->
-    <!--                <classes>-->
-    <!--                    <class name="us.piit.automation.AddItemsToCart"></class>-->
-    <!--                </classes>-->
-    <!--            </test>-->
+<!--        <test name="UserLogin test">-->
+<!--            <classes>-->
+<!--                <class name="us.piit.automation.UserLogin"></class>-->
+<!--            </classes>-->
+<!--        </test>-->
+<!--                <test name="Add items to cart test">-->
+<!--                    <classes>-->
+<!--                        <class name="us.piit.automation.AddItemsToCart"></class>-->
+<!--                    </classes>-->
+<!--                </test>-->
     <!--        <test name="checkout confirme">-->
     <!--            <classes>-->
     <!--                <class name="us.piit.automation.CheckOutConfirme"></class>-->
     <!--            </classes>-->
     <!--        </test>-->
-    <!--            <test name="search bar test">-->
-    <!--                <classes>-->
-    <!--                    <class name="us.piit.automation.SearchProducts"></class>-->
-    <!--                </classes>-->
-    <!--            </test>-->
+                <test name="search bar test">
+                    <classes>
+                        <class name="us.piit.automation.SearchProducts"></class>
+                    </classes>
+                </test>
     <!--    <test name="verification quantity test">-->
     <!--        <classes>-->
     <!--            <class name="us.piit.automation.UpdateCart"></class>-->
     <!--        </classes>-->
     <!--    </test>-->
-    <!--        <test name="remove item test">-->
-    <!--            <classes>-->
-    <!--                <class name="us.piit.automation.RemoveItem"></class>-->
-    <!--            </classes>-->
-    <!--        </test>-->
+<!--            <test name="remove item test">-->
+<!--                <classes>-->
+<!--                    <class name="us.piit.automation.RemoveItem"></class>-->
+<!--                </classes>-->
+<!--            </test>-->
     <!--    <test name="view category product test">-->
     <!--        <classes>-->
     <!--            <class name="us.piit.automation.ViewCategoryProducts"></class>-->
     <!--        </classes>-->
     <!--    </test>-->
-    <test name="log out test">
-        <classes>
-            <class name="us.piit.automation.UserLogout"></class>
-        </classes>
-    </test>
+<!--    <test name="log out test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.automation.UserLogout"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
 
 
 </suite>

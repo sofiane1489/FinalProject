@@ -99,7 +99,6 @@ public class ExcelReader {
 
         String path = currentDir + File.separator + "data" + File.separator + "lumadata" + File.separator + "LumaTestCases.xlsx";
         ExcelReader excelReader = new ExcelReader(path);
-
         String name="Sheet1";
         String data=excelReader.getDataFromCell(name,1,1);
         System.out.println(data);

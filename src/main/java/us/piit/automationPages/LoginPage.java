@@ -21,13 +21,13 @@ public class LoginPage extends CommonAPI {
     WebElement loginbutton;
     @FindBy(xpath = "//input[@type='email']")
     WebElement emailField;
-    @FindBy(xpath = "//input[contains(@name,'password')]")
+    @FindBy(xpath = "//body/section[@id='form']/div[1]/div[1]/div[1]/div[1]/form[1]/input[3]")
     WebElement passwordField;
     @FindBy(xpath = "//button[contains(text(),'Login')]")
     WebElement loginBtn;
-    @FindBy(css = "div.container div.row div.col-sm-12 div.carousel.slide div.carousel-inner div.item.active:nth-child(1) div.col-sm-6:nth-child(1) > h2:nth-child(2)")
+    @FindBy(xpath = "//p[contains(text(),'Your email or password is incorrect!')]")
     WebElement messageInvalidEmail;
-    @FindBy(css = "div.container div.row div.col-sm-12 div.carousel.slide div.carousel-inner div.item.active:nth-child(1) div.col-sm-6:nth-child(1) > h2:nth-child(2)")
+    @FindBy(xpath = "//p[contains(text(),'Your email or password is incorrect!')]")
     WebElement messageInvalidPassword;
     @FindBy(xpath = "//h2[contains(text(),'Login to your account')]")
     WebElement loginPageHeader;
