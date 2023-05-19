@@ -65,8 +65,9 @@ public class QuestLumaflexBandPage extends CommonAPI {
 
 
     public void selectRating(WebDriver driver){
-        doubleClick(driver,ratingField);
-        log.info("hover over rating success");
+       WebElement area= findElement(driver,ratingField);
+        clickWithJavascript(driver,area);
+        log.info("click on rating success");
     }
 
     public void enterNickname(String text){
