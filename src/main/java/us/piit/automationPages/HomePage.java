@@ -10,10 +10,12 @@ import us.piit.base.CommonAPI;
 
 public class HomePage extends CommonAPI {
     Logger log = LogManager.getLogger(HomePage.class.getName());
+
     public HomePage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
-    @FindBy(css ="div.container div.row div.col-sm-12 div.carousel.slide div.carousel-inner div.item.active:nth-child(1) div.col-sm-6:nth-child(1) > h2:nth-child(2)")
+
+    @FindBy(css = "div.container div.row div.col-sm-12 div.carousel.slide div.carousel-inner div.item.active:nth-child(1) div.col-sm-6:nth-child(1) > h2:nth-child(2)")
     WebElement mainHeader;
     @FindBy(xpath = "//p[contains(text(),'Congratulations! Your order has been confirmed!')]")
     WebElement welcomeMessage;
@@ -37,70 +39,84 @@ public class HomePage extends CommonAPI {
     WebElement arrowButton;
     @FindBy(xpath = "//header/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[5]/a[1]")
     WebElement deleteAccount;
-
-
+    @FindBy(xpath = "//a[normalize-space()='Video Tutorials']")
+    WebElement videoTutorials;
 
 
     public String getHeaderText() {
         log.info("user logged in success");
-        String text=getElementText(mainHeader);
+        String text = getElementText(mainHeader);
         return text;
     }
-    public void clickonlogout(){
+
+    public void clickonlogout() {
         clickOn(logoutbtn);
         log.info("click on logout success");
     }
-    public String welcomingMessage(){
-        String text=getElementText(welcomeMessage);
+
+    public String welcomingMessage() {
+        String text = getElementText(welcomeMessage);
         log.info("order pay and confirm success");
         return text;
     }
-    public String emtyCart(){
-        String text=getElementText(emptyCart);
+
+    public String emtyCart() {
+        String text = getElementText(emptyCart);
         log.info("product is deleted success");
         return text;
     }
-    public boolean visibility(){
-        boolean wraperTitle=isVisible(productsvisibility);
+
+    public boolean visibility() {
+        boolean wraperTitle = isVisible(productsvisibility);
         log.info("products visibilities validate");
         return wraperTitle;
     }
-    public boolean searchProduct(){
-        boolean pageheadertitle=isVisible(searchedproductvisible);
+
+    public boolean searchProduct() {
+        boolean pageheadertitle = isVisible(searchedproductvisible);
         log.info("searched product displayed success");
         return pageheadertitle;
-   // }
+        // }
 //    public String productDetails(){
 //        String title=getElementText(productTextvisible);
 //        log.info("product details displayed succesfully");
 //        return title;
     }
-    public boolean allproducts(){
-        boolean title=isVisible(allProducts);
+
+    public boolean allproducts() {
+        boolean title = isVisible(allProducts);
         log.info("all products displayed success");
         return title;
     }
-    public boolean headerpagevisibility(){
-        boolean supportpageheader=isVisible(supportheaderpage);
+
+    public boolean headerpagevisibility() {
+        boolean supportpageheader = isVisible(supportheaderpage);
         log.info("validate the headerpage title success");
         return supportpageheader;
 
     }
-    public boolean getSubscribeText(){
-        boolean text=isVisible(subscritionText);
+
+    public boolean getSubscribeText() {
+        boolean text = isVisible(subscritionText);
         log.info("subscrition text is visible success");
-        return  text;
+        return text;
     }
-    public void clickonArrowButton(){
+
+    public void clickonArrowButton() {
         clickOn(arrowButton);
         log.info("click on submit button success");
     }
-    public void clickondeleteaccount(){
+
+    public void clickondeleteaccount() {
         clickOn(deleteAccount);
         log.info("clickon delete account success");
 
     }
 
+    public void clickonvideotutorials() {
+        clickOn(videoTutorials);
+        log.info("clickon videotutorials success");
+
+    }
+
 }
-
-

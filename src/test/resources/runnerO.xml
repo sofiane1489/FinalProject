@@ -84,16 +84,21 @@
 <!--            <class name="us.piit.automation.DeleteAccountTest"></class>-->
 <!--        </classes>-->
 <!--    </test>-->
-    <test name="view category product test">
-        <classes>
-            <class name="us.piit.automation.ViewCategoryProduct"></class>
-        </classes>
-    </test>
+<!--    <test name="view category product test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.automation.ViewCategoryProduct"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
 <!--    <test name="view brand product test">-->
 <!--        <classes>-->
 <!--            <class name="us.piit.automation.BrandProduct"></class>-->
 <!--        </classes>-->
 <!--    </test>-->
+    <test name="video tutorials  test">
+        <classes>
+            <class name="us.piit.automation.VideoTutorialsTest"></class>
+        </classes>
+    </test>
 
 
 </suite>
