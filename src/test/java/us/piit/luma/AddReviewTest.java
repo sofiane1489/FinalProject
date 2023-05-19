@@ -5,9 +5,7 @@ import org.testng.annotations.Test;
 import us.piit.base.CommonAPI;
 import us.piit.lumaPages.*;
 
-public class AddReview extends CommonAPI {
-
-
+public class AddReviewTest extends CommonAPI {
 
     @Test
     public void addCustomerReview() {
@@ -36,10 +34,7 @@ public class AddReview extends CommonAPI {
 
         questLumaflexBandPage.selectRating(getDriver());
 
-         waitFor(2);
-
         questLumaflexBandPage.enterNickname(useFakeFullName());
-        waitFor(3);
 
         questLumaflexBandPage.enterSummary(useFakeSentence());
 
@@ -89,4 +84,5 @@ public class AddReview extends CommonAPI {
         Assert.assertEquals(expectedConfirmationText,questLumaflexBandPage.getErrorMessage());
 
     }
+
 }
