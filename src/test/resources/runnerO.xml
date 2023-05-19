@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Lumademo test">
+<suite name="Automationdemo test">
     <parameter name="useCloudEnv" value="false"></parameter>
     <parameter name="envName" value="browserstack"></parameter>
     <parameter name="os" value="windows"></parameter>
@@ -10,48 +10,88 @@
     <parameter name="url" value="https://automationexercise.com/"></parameter>
 
     <!--            <test name="user registration test">-->
-    <!--                <classes>-->
-    <!--                    <class name="us.piit.automation.UserRegistration"></class>-->
-    <!--                </classes>-->
-    <!--            </test>-->
-<!--        <test name="UserLogin test">-->
-<!--            <classes>-->
-<!--                <class name="us.piit.automation.UserLogin"></class>-->
-<!--            </classes>-->
-<!--        </test>-->
-<!--                <test name="Add items to cart test">-->
-<!--                    <classes>-->
-<!--                        <class name="us.piit.automation.AddItemsToCart"></class>-->
-<!--                    </classes>-->
-<!--                </test>-->
-    <!--        <test name="checkout confirme">-->
+    <!--                    <classes>-->
+    <!--                        <class name="us.piit.automation.UserRegistrationTest"></class>-->
+    <!--                    </classes>-->
+    <!--                </test>-->
+    <!--        <test name="UserLogin test">-->
     <!--            <classes>-->
-    <!--                <class name="us.piit.automation.CheckOutConfirme"></class>-->
+    <!--                <class name="us.piit.automation.UserLoginTest"></class>-->
     <!--            </classes>-->
     <!--        </test>-->
-                <test name="search bar test">
-                    <classes>
-                        <class name="us.piit.automation.SearchProducts"></class>
-                    </classes>
-                </test>
+    <!--                <test name="Add items to cart test">-->
+    <!--                    <classes>-->
+    <!--                        <class name="us.piit.automation.AddItemsToCartTest"></class>-->
+    <!--                    </classes>-->
+    <!--                </test>-->
+    <!--            <test name="checkout test">-->
+    <!--                <classes>-->
+    <!--                    <class name="us.piit.automation.CheckOutTest"></class>-->
+    <!--                </classes>-->
+    <!--            </test>-->
+    <!--                <test name="search bar test">-->
+    <!--                    <classes>-->
+    <!--                        <class name="us.piit.automation.SearchProductsTest"></class>-->
+    <!--                    </classes>-->
+    <!--                </test>-->
     <!--    <test name="verification quantity test">-->
     <!--        <classes>-->
     <!--            <class name="us.piit.automation.UpdateCart"></class>-->
     <!--        </classes>-->
     <!--    </test>-->
-<!--            <test name="remove item test">-->
-<!--                <classes>-->
-<!--                    <class name="us.piit.automation.RemoveItem"></class>-->
-<!--                </classes>-->
-<!--            </test>-->
+    <!--            <test name="remove item test">-->
+    <!--                <classes>-->
+    <!--                    <class name="us.piit.automation.RemoveItemTest"></class>-->
+    <!--                </classes>-->
+    <!--            </test>-->
     <!--    <test name="view category product test">-->
     <!--        <classes>-->
     <!--            <class name="us.piit.automation.ViewCategoryProducts"></class>-->
     <!--        </classes>-->
     <!--    </test>-->
-<!--    <test name="log out test">-->
+    <!--    <test name="log out test">-->
+    <!--        <classes>-->
+    <!--            <class name="us.piit.automation.UserLogoutTest"></class>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test name=" update quantity test">-->
+    <!--        <classes>-->
+    <!--            <class name="us.piit.automation.UpdateQuantityInCart"></class>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test name=" write review test">-->
+    <!--        <classes>-->
+    <!--            <class name="us.piit.automation.WriteReviewTest"></class>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test name=" contact support test">-->
+    <!--        <classes>-->
+    <!--            <class name="us.piit.automation.ContactsupportTest"></class>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test name="subscribe in home page test">-->
+    <!--        <classes>-->
+    <!--            <class name="us.piit.automation.SubscribeInHomePage"></class>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+<!--    <test name="subscribe in cart page test">-->
 <!--        <classes>-->
-<!--            <class name="us.piit.automation.UserLogout"></class>-->
+<!--            <class name="us.piit.automation.SubscribeInCartPage"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="delete account test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.automation.DeleteAccountTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <test name="view category product test">
+        <classes>
+            <class name="us.piit.automation.ViewCategoryProduct"></class>
+        </classes>
+    </test>
+<!--    <test name="view brand product test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.automation.BrandProduct"></class>-->
 <!--        </classes>-->
 <!--    </test>-->
 

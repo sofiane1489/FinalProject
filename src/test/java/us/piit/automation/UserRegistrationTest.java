@@ -10,8 +10,8 @@ import us.piit.utility.Utility;
 
 import java.util.Properties;
 
-public class UserRegistration extends CommonAPI {
-    Logger log= LogManager.getLogger(UserRegistration.class.getName());
+public class UserRegistrationTest extends CommonAPI {
+    Logger log= LogManager.getLogger(UserRegistrationTest.class.getName());
     Properties pop= Utility.loadProperties();
     String name= Utility.decode(pop.getProperty("automation.name"));
     String emailAddress = Utility.decode(pop.getProperty("automation.emailAdress"));
