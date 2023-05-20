@@ -171,6 +171,7 @@ public class CommonAPI {
     public String getCurrentTtile(){
         return driver.getTitle();
     }
+
     
     public String getElementText(WebElement element){
             return element.getText();
