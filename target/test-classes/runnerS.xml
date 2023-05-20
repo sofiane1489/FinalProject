@@ -65,8 +65,14 @@
 <!--        </classes>-->
 <!--    </test>-->
     <test name="addreview test">
+        <groups>
+            <run>
+                <include name="sanity"/>
+                <exclude name="regression"/>
+            </run>
+        </groups>
         <classes>
-            <class name="us.piit.luma.AddReview"></class>
+            <class name="us.piit.luma.AddReviewTest"></class>
         </classes>
     </test>
 
