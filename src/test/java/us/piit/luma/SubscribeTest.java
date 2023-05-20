@@ -12,7 +12,7 @@ public class SubscribeTest extends CommonAPI {
     Properties pro= Utility.loadProperties();
     String invalidEmail=Utility.decode(pro.getProperty("luma.invalidEmail"));
 
-    @Test
+    @Test(dependsOnMethods = "subscribeWithInvalidEmail")
     public void subscribeWithValidEmail(){
         HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());
 
