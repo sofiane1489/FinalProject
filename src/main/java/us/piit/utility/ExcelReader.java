@@ -93,32 +93,21 @@ public class ExcelReader {
         return value;
     }
 
-//    public static void main(String[] args) throws IOException {
-//        String currentDir = System.getProperty("user.dir");
-//       // String path = currentDir +"/data/lumadata/LumaTestCases.xlsx";
-//
-//        String path = currentDir + File.separator + "data" + File.separator + "lumadata" + File.separator + "LumaTestCases.xlsx";
-//        ExcelReader excelReader = new ExcelReader(path);
-//        String name="Sheet1";
-//        String data=excelReader.getDataFromCell(name,1,1);
-//        System.out.println(data);
-// //         List<String> items = excelReader.getEntireColumnForGivenHeader("Sheet1", "Project Name");
-//      //   String items = excelReader.getValueForGivenHeaderAndKey("Sheet1", "Project Name", "Created by");
-////           List<String> items = excelReader.getEntireColumnData("Sheet1", 4,4);
-////           System.out.println(items);
-//
-//    }
-//}
-public static void main(String[] args)  {
-    String path = "C:\\Users\\ouelhadj\\eclipse-workspace\\FinalProject\\data\\automationData\\automation Test Cases.xlsx";
-    ExcelReader excelReader = new ExcelReader(path);
-    String name="Sheet1";
-    String data=excelReader.getDataFromCell(name,8,4);
-    System.out.println(data);
-    //System.out.println(excelReader.getValueForGivenHeaderAndKey("data","ID","101"));
-         // List<String> items = excelReader.getEntireColumnForGivenHeader("data", "");
-//         String items = excelReader.getValueForGivenHeaderAndKey("Sheet1", "id", "id004");
-//           List<String> items = excelReader.getEntireColumnData("data", 4,4);
-//           System.out.println(items);
+    public static void main(String[] args) throws IOException {
+        String currentDir = System.getProperty("user.dir");
+
+        String path = currentDir + File.separator + "data" + File.separator + "lumaData" + File.separator + "testcases.xlsx";
+        ExcelReader excelReader = new ExcelReader(path);
+        String name="luma";
+        String data=excelReader.getDataFromCell(name,1,1);
+        System.out.println(data);
+
+//          List<String> items = excelReader.getEntireColumnForGivenHeader("Sheet1", "Project Name");
+//          String items = excelReader.getValueForGivenHeaderAndKey("Sheet1", "Project Name", "Created by");
+//          List<String> items = excelReader.getEntireColumnData("Sheet1", 4,4);
+//          System.out.println(items);
+
+    }
 }
-}
+
+

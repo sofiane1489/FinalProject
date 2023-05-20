@@ -8,7 +8,7 @@ import us.piit.lumaPages.*;
 public class AddReviewTest extends CommonAPI {
 
     //use testNG ordering
-    @Test(dependsOnMethods = "unableToCustomerReviewWithunselectedRating")
+    @Test(priority = 2)
     public void addCustomerReview() {
         HomePageBeforeLogin homePageBeforeLogin = new HomePageBeforeLogin(getDriver());
         FitnessEquipmentPage fitnessEquipmentPage = new FitnessEquipmentPage(getDriver());
@@ -49,7 +49,7 @@ public class AddReviewTest extends CommonAPI {
     }
 
 
-       @Test
+       @Test(priority = 1)
        public void unableToCustomerReviewWithunselectedRating() {
         HomePageBeforeLogin homePageBeforeLogin = new HomePageBeforeLogin(getDriver());
         FitnessEquipmentPage fitnessEquipmentPage = new FitnessEquipmentPage(getDriver());
