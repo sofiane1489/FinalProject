@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Lumademo test">
     <parameter name="useCloudEnv" value="false"></parameter>
     <parameter name="envName" value="browserstack"></parameter>
@@ -64,11 +64,25 @@
 <!--            <class name="us.piit.luma.SubscribeTest"></class>-->
 <!--        </classes>-->
 <!--    </test>-->
-    <test name="addreview test">
+<!--    <test name="Addreview Test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.luma.AddReviewTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="Group Tests">
+        <groups>
+            <run>
+                <include name="sanity" />
+                <include name="regression" />
+            </run>
+        </groups>
         <classes>
-            <class name="us.piit.luma.AddReviewTest"></class>
+            <class name="us.piit.luma.AddReviewTest" />
         </classes>
     </test>
 
-
 </suite>
+
+
+

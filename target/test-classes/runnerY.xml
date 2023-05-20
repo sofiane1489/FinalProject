@@ -14,11 +14,11 @@
 <!--                <class name="us.piit.automationpractice.CreatAccountTest"></class>-->
 <!--            </classes>-->
 <!--        </test>-->
-    <!--    <test name="Login test">-->
-    <!--        <classes>-->
-    <!--            <class name="us.piit.automationpractice.LogingTest"></class>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+        <test name="Login test">
+            <classes>
+                <class name="us.piit.automationpractice.LogingTest"></class>
+            </classes>
+        </test>
     <!--    <test name="searchBar test">-->
     <!--        <classes>-->
     <!--            <class name="us.piit.automationpractice.SearchBarTest"></class>-->
@@ -34,11 +34,11 @@
 <!--                <class name="us.piit.automationpractice.LogoutTest"></class>-->
 <!--            </classes>-->
 <!--        </test>-->
-    <test name="add address test">
-        <classes>
-            <class name="us.piit.automationpractice.AddAddressTest"></class>
-        </classes>
-    </test>
+<!--    <test name="add address test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.automationpractice.AddAddressTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
     <!--    <test name="blog test">-->
     <!--        <classes>-->
     <!--            <class name="us.piit.automationpractice.BlogTest"></class>-->
