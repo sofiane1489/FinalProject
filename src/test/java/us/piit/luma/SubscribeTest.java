@@ -1,7 +1,4 @@
 package us.piit.luma;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import us.piit.base.CommonAPI;
@@ -15,7 +12,7 @@ public class SubscribeTest extends CommonAPI {
     Properties pro= Utility.loadProperties();
     String invalidEmail=Utility.decode(pro.getProperty("luma.invalidEmail"));
 
-    @Test(priority = 1)
+    @Test
     public void subscribeWithValidEmail(){
         HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());
 
@@ -37,7 +34,7 @@ public class SubscribeTest extends CommonAPI {
 
     }
 
-    @Test(priority = 2)
+    @Test
     public void subscribeWithInvalidEmail(){
         HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());
 
