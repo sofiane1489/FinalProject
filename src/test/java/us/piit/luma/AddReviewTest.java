@@ -55,7 +55,7 @@ public class AddReviewTest extends CommonAPI {
         ShippingAddressPage shippingAddressPage = new ShippingAddressPage(getDriver());
         GearCategoryPage gearCategoryPage = new GearCategoryPage(getDriver());
 
-        // website validation with Title
+        // website validation with Title:
         String expextedTitle = "Home Page";
         String actualTitle = getCurrentTtile();
         Assert.assertEquals(actualTitle, expextedTitle);
