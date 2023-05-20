@@ -7,7 +7,7 @@ import us.piit.lumaPages.*;
 
 public class AddReviewTest extends CommonAPI {
 
-    @Test(groups = "sanity")
+    @Test
     public void addCustomerReview() {
         HomePageBeforeLogin homePageBeforeLogin = new HomePageBeforeLogin(getDriver());
         FitnessEquipmentPage fitnessEquipmentPage = new FitnessEquipmentPage(getDriver());
@@ -47,7 +47,7 @@ public class AddReviewTest extends CommonAPI {
 
     }
 
-    @Test(groups = "regression")
+    @Test
        public void unableToCustomerReviewWithunselectedRating() {
         HomePageBeforeLogin homePageBeforeLogin = new HomePageBeforeLogin(getDriver());
         FitnessEquipmentPage fitnessEquipmentPage = new FitnessEquipmentPage(getDriver());
