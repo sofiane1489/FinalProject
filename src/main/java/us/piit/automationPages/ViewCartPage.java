@@ -9,14 +9,14 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import us.piit.base.CommonAPI;
 
-public class ViewcartPage extends CommonAPI {
-    Logger log= LogManager.getLogger(ViewcartPage.class.getName());
-    public ViewcartPage(WebDriver driver){
+public class ViewCartPage extends CommonAPI {
+    Logger log= LogManager.getLogger(ViewCartPage.class.getName());
+    public ViewCartPage(WebDriver driver){
         PageFactory.initElements(driver,this);
     }
     @FindBy(xpath = "//a[contains(text(),' Cart')]")
     WebElement clickonShoopingCart;
-    @FindBy(xpath = "//tbody/tr[@id='product-1']/td[6]/a[1]")
+    @FindBy(xpath = "//tbody/tr[@id='product-5']/td[6]/a[1]/i[1]")
     WebElement clickondeleteItem;
 
     public void shoopingCart (){
