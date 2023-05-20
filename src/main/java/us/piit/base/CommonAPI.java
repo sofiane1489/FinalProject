@@ -11,13 +11,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
-
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -31,11 +28,9 @@ import java.time.Duration;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Properties;
-
 import us.piit.reporting.ExtentManager;
 import us.piit.reporting.ExtentTestManager;
 import us.piit.utility.Utility;
-
 import com.github.javafaker.Faker;
 public class CommonAPI {
     Logger log= LogManager.getLogger(CommonAPI.class.getName());
@@ -240,8 +235,7 @@ public class CommonAPI {
     }
 
     public WebElement findElement(WebDriver driver,WebElement element){
-        WebElement textareaElement = element;
-        return textareaElement;
+        return element;
     }
 
   //methods for fake credentials

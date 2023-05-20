@@ -7,7 +7,8 @@ import us.piit.lumaPages.*;
 
 public class AddReviewTest extends CommonAPI {
 
-    @Test
+    //use testNG ordering
+    @Test(dependsOnMethods = "unableToCustomerReviewWithunselectedRating")
     public void addCustomerReview() {
         HomePageBeforeLogin homePageBeforeLogin = new HomePageBeforeLogin(getDriver());
         FitnessEquipmentPage fitnessEquipmentPage = new FitnessEquipmentPage(getDriver());
@@ -42,12 +43,13 @@ public class AddReviewTest extends CommonAPI {
 
         questLumaflexBandPage.clickOnSubmit(getDriver());
 
+        //submit review validation
         String expectedConfirmationText="You submitted your review for moderation.";
         Assert.assertEquals(expectedConfirmationText,questLumaflexBandPage.getSubmitTextConfirmation());
-
     }
 
-    @Test
+
+       @Test
        public void unableToCustomerReviewWithunselectedRating() {
         HomePageBeforeLogin homePageBeforeLogin = new HomePageBeforeLogin(getDriver());
         FitnessEquipmentPage fitnessEquipmentPage = new FitnessEquipmentPage(getDriver());
@@ -80,6 +82,7 @@ public class AddReviewTest extends CommonAPI {
 
         questLumaflexBandPage.clickOnSubmit(getDriver());
 
+        //error validation
         String expectedConfirmationText="Please select one of each of the ratings above.";
         Assert.assertEquals(expectedConfirmationText,questLumaflexBandPage.getErrorMessage());
 
