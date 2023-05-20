@@ -113,10 +113,10 @@ public static void main(String[] args)  {
     String path = "C:\\Users\\ouelhadj\\eclipse-workspace\\FinalProject\\data\\automationData\\automation Test Cases.xlsx";
     ExcelReader excelReader = new ExcelReader(path);
     String name="Sheet1";
-    String data=excelReader.getDataFromCell(name,7,2);
+    String data=excelReader.getDataFromCell(name,8,4);
     System.out.println(data);
-//        System.out.println(excelReader.getValueForGivenHeaderAndKey("data","ID","101"));
-//          List<String> items = excelReader.getEntireColumnForGivenHeader("data", "");
+    //System.out.println(excelReader.getValueForGivenHeaderAndKey("data","ID","101"));
+         // List<String> items = excelReader.getEntireColumnForGivenHeader("data", "");
 //         String items = excelReader.getValueForGivenHeaderAndKey("Sheet1", "id", "id004");
 //           List<String> items = excelReader.getEntireColumnData("data", 4,4);
 //           System.out.println(items);
