@@ -149,6 +149,5 @@ public class ConnectDB {
             System.out.println(emails.get(i));
         }
 
-
     }
 }
