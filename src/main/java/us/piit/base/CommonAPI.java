@@ -292,6 +292,12 @@ public class CommonAPI {
         JavascriptExecutor js = (JavascriptExecutor)driver;
         js.executeScript("arguments[0].scrollIntoView();",element);
     }
+    public void scrollToBottom(){
+        JavascriptExecutor js = (JavascriptExecutor)driver;
+        js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+    }
+
+
     public void captureScreenshot() {
         File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         try {
