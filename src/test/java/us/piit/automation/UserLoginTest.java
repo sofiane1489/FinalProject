@@ -1,7 +1,6 @@
 package us.piit.automation;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import us.piit.automationPages.HomePage;
@@ -11,8 +10,8 @@ import us.piit.utility.Utility;
 
 import java.util.Properties;
 
-public class UserLogin extends CommonAPI {
-    Logger log = LogManager.getLogger(UserLogin.class.getName());
+public class UserLoginTest extends CommonAPI {
+    Logger log = LogManager.getLogger(UserLoginTest.class.getName());
 
     Properties pop = Utility.loadProperties();
 
@@ -34,7 +33,7 @@ public class UserLogin extends CommonAPI {
         String actualTitle = getCurrentTtile();
         Assert.assertEquals(expectedTitle, actualTitle);
 
-        waitFor(5);
+        waitFor(2);
 
         // Enter Email, password, and click on login button
         loginPage.clickonloginbutton();
@@ -91,7 +90,7 @@ public class UserLogin extends CommonAPI {
         loginPage.enterEmail(validEmail);
         loginPage.enterPassword(invalidPassword);
         loginPage.clickonLoginBtn();
-        waitFor(5);
+
 
         //validate the error message
         String expectedError = "Your email or password is incorrect!";

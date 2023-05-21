@@ -10,8 +10,8 @@ import us.piit.utility.Utility;
 
 import java.util.Properties;
 
-public class UserLogout extends CommonAPI {
-    Logger log = LogManager.getLogger(UserLogout.class.getName());
+public class UserLogoutTest extends CommonAPI {
+    Logger log = LogManager.getLogger(UserLogoutTest.class.getName());
 
     Properties pop = Utility.loadProperties();
     String validEmail = Utility.decode(pop.getProperty("automation.validEmail"));
@@ -34,7 +34,7 @@ public class UserLogout extends CommonAPI {
         loginPage.enterEmail(validEmail);
         loginPage.enterPassword(validPassword);
         loginPage.clickonLoginBtn();
-        waitFor(5);
+        waitFor(2);
 
         // Check if user is logged in
         String expectedHomePageHeader = "Full-Fledged practice website for Automation Engineers";

@@ -28,7 +28,8 @@ public class Utility {
     }
 
     public static void main(String[] args) {
-        String originalInput = "Iphone";
+        String originalInput = "2f3G7QUqgScR9c7bbahr";
+
         String encodedString = Base64.getEncoder().encodeToString(originalInput.getBytes());
         System.out.println(encodedString);
 

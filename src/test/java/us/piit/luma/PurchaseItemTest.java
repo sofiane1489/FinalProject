@@ -67,7 +67,7 @@ public class PurchaseItemTest extends CommonAPI {
 
         cassiusSparringTankPage.clickOnAddToCartBtn();
 
-        //add to car validation
+        //add to cart validation
         String expextedText="You added Cassius Sparring Tank to your shopping cart.";
         String actualText= cassiusSparringTankPage.getConfirmationText();
         Assert.assertEquals(actualText,expextedText);
@@ -97,11 +97,11 @@ public class PurchaseItemTest extends CommonAPI {
 
         fitnessEquipmentPage.clickOnQuestLumaflexBand();
 
-       questLumaflexBandPage.clickOnAddToCartBtn();
+        questLumaflexBandPage.clickOnAddToCartBtn();
 
        //add to cart validation
-       String expextedText="You added Quest Lumaflex™ Band to your shopping cart.";
-       String actualText= questLumaflexBandPage.getTextConfirmation();
+        String expextedText="You added Quest Lumaflex™ Band to your shopping cart.";
+        String actualText= questLumaflexBandPage.getTextConfirmation();
         Assert.assertEquals(actualText,expextedText);
 
 
@@ -177,6 +177,7 @@ public class PurchaseItemTest extends CommonAPI {
 
         shoppingCartPage.clickOnTrashCanIcon();
 
+        //remove item validation
         String expectedpageTitleWrapper="You have no items in your shopping cart.";
         String actualpageTitleWrapper= shoppingCartPage.getRemoveConfirmationText();
         Assert.assertEquals(actualpageTitleWrapper,expectedpageTitleWrapper);

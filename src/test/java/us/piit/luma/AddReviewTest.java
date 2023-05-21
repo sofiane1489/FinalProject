@@ -5,11 +5,10 @@ import org.testng.annotations.Test;
 import us.piit.base.CommonAPI;
 import us.piit.lumaPages.*;
 
-public class AddReview extends CommonAPI {
+public class AddReviewTest extends CommonAPI {
 
-
-
-    @Test
+    //use testNG ordering
+    @Test(priority = 2)
     public void addCustomerReview() {
         HomePageBeforeLogin homePageBeforeLogin = new HomePageBeforeLogin(getDriver());
         FitnessEquipmentPage fitnessEquipmentPage = new FitnessEquipmentPage(getDriver());
@@ -36,10 +35,7 @@ public class AddReview extends CommonAPI {
 
         questLumaflexBandPage.selectRating(getDriver());
 
-         waitFor(2);
-
         questLumaflexBandPage.enterNickname(useFakeFullName());
-        waitFor(3);
 
         questLumaflexBandPage.enterSummary(useFakeSentence());
 
@@ -47,12 +43,13 @@ public class AddReview extends CommonAPI {
 
         questLumaflexBandPage.clickOnSubmit(getDriver());
 
+        //submit review validation
         String expectedConfirmationText="You submitted your review for moderation.";
         Assert.assertEquals(expectedConfirmationText,questLumaflexBandPage.getSubmitTextConfirmation());
-
     }
 
-    @Test
+
+       @Test(priority = 1)
        public void unableToCustomerReviewWithunselectedRating() {
         HomePageBeforeLogin homePageBeforeLogin = new HomePageBeforeLogin(getDriver());
         FitnessEquipmentPage fitnessEquipmentPage = new FitnessEquipmentPage(getDriver());
@@ -60,7 +57,7 @@ public class AddReview extends CommonAPI {
         ShippingAddressPage shippingAddressPage = new ShippingAddressPage(getDriver());
         GearCategoryPage gearCategoryPage = new GearCategoryPage(getDriver());
 
-        // website validation with Title
+        // website validation with Title:
         String expextedTitle = "Home Page";
         String actualTitle = getCurrentTtile();
         Assert.assertEquals(actualTitle, expextedTitle);
@@ -85,8 +82,10 @@ public class AddReview extends CommonAPI {
 
         questLumaflexBandPage.clickOnSubmit(getDriver());
 
+        //error validation
         String expectedConfirmationText="Please select one of each of the ratings above.";
         Assert.assertEquals(expectedConfirmationText,questLumaflexBandPage.getErrorMessage());
 
     }
+
 }
