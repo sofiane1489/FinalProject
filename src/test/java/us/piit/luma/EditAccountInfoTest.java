@@ -15,7 +15,7 @@ public class EditAccountInfoTest extends CommonAPI {
 
     Properties pro=Utility.loadProperties();
 
-    String email=Utility.decode(pro.getProperty("luma.email"));
+    String email=Utility.decode(pro.getProperty("luma.otherEmail"));
     String password= Utility.decode(pro.getProperty("luma.password"));
 
     @Test

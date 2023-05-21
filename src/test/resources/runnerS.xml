@@ -29,11 +29,11 @@
 <!--                <class name="us.piit.luma.LoginTest"></class>-->
 <!--            </classes>-->
 <!--    </test>-->
-<!--    <test name="lumalogo test">-->
-<!--        <classes>-->
-<!--            <class name="us.piit.luma.LumaLogoTest"></class>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="HomePage test">
+        <classes>
+            <class name="us.piit.luma.HomePageTest"></class>
+        </classes>
+    </test>
 <!--    <test name="purchase test">-->
 <!--        <classes>-->
 <!--            <class name="us.piit.luma.PurchaseItemTest"></class>-->
@@ -64,12 +64,16 @@
 <!--            <class name="us.piit.luma.SubscribeTest"></class>-->
 <!--        </classes>-->
 <!--    </test>-->
-    <test name="Addreview Test">
-        <classes>
-            <class name="us.piit.luma.AddReviewTest"></class>
-        </classes>
-    </test>
-
+<!--    <test name="Addreview Test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.luma.AddReviewTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="TrackingOrder Test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.luma.OrderTrackingTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
 
 </suite>
 
