@@ -7,46 +7,46 @@
     <parameter name="osversion" value="11"></parameter>
     <parameter name="browservesion" value="111"></parameter>
     <parameter name="browserName" value="chrome"></parameter>
-    <parameter name="url" value="http://automationpractice.pl"></parameter>
+    <parameter name="url" value="https://tutorialsninja.com/demo/index.php?route=account/login"></parameter>
 
 <!--        <test name="create account test">-->
 <!--            <classes>-->
-<!--                <class name="us.piit.automationpractice.CreatAccountTest"></class>-->
+<!--                <class name="us.piit.tutorialsninja.RegistrationTest"></class>-->
+<!--            </classes>-->
+<!--&lt;!&ndash;        </test>&ndash;&gt;-->
+<!--        <test name="Login test">-->
+<!--            <classes>-->
+<!--                <class name="us.piit.tutorialsninja.LogingTest"></class>-->
 <!--            </classes>-->
 <!--        </test>-->
-        <test name="Login test">
-            <classes>
-                <class name="us.piit.automationpractice.LogingTest"></class>
-            </classes>
-        </test>
     <!--    <test name="searchBar test">-->
     <!--        <classes>-->
-    <!--            <class name="us.piit.automationpractice.SearchBarTest"></class>-->
+    <!--            <class name="us.piit.tutorialsninja.SearchBarTest"></class>-->
     <!--        </classes>-->
     <!--    </test>-->
-    <!--    <test name="add to cart test">-->
-    <!--        <classes>-->
-    <!--            <class name="us.piit.automationpractice.AddItemsToShoppingCart"></class>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+        <test name="add to cart test">
+            <classes>
+                <class name="us.piit.tutorialsninja.AddItemsToShoppingCart"></class>
+            </classes>
+        </test>
 <!--        <test name="logout test">-->
 <!--            <classes>-->
-<!--                <class name="us.piit.automationpractice.LogoutTest"></class>-->
+<!--                <class name="us.piit.tutorialsninja.LogoutTest"></class>-->
 <!--            </classes>-->
 <!--        </test>-->
 <!--    <test name="add address test">-->
 <!--        <classes>-->
-<!--            <class name="us.piit.automationpractice.AddAddressTest"></class>-->
+<!--            <class name="us.piit.tutorialsninja.AddAddressTest"></class>-->
 <!--        </classes>-->
 <!--    </test>-->
     <!--    <test name="blog test">-->
     <!--        <classes>-->
-    <!--            <class name="us.piit.automationpractice.BlogTest"></class>-->
+    <!--            <class name="us.piit.tutorialsninja.BlogTest"></class>-->
     <!--        </classes>-->
     <!--    </test>-->
     <!--    <test name="contact service test">-->
     <!--        <classes>-->
-    <!--            <class name="us.piit.automationpractice.ContactServiceProvidedTest"></class>-->
+    <!--            <class name="us.piit.tutorialsninja.ContactServiceProvidedTest"></class>-->
     <!--        </classes>-->
     <!--    </test>-->
 
