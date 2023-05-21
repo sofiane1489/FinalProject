@@ -99,7 +99,8 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>2.12.4</version>
         <configuration>
-          <suiteXmlFiles>src/test/resources/runnerS.xml</suiteXmlFiles>
+<!--          <suiteXmlFiles>src/test/resources/runnerS.xml</suiteXmlFiles>-->
+          <suiteXmlFiles>src/test/resources/runnerY.xml</suiteXmlFiles>
         </configuration>
       </plugin>
     </plugins>

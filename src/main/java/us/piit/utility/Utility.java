@@ -28,7 +28,7 @@ public class Utility {
     }
 
     public static void main(String[] args) {
-        String originalInput = "20";
+        String originalInput = "Iphone";
         String encodedString = Base64.getEncoder().encodeToString(originalInput.getBytes());
         System.out.println(encodedString);
 

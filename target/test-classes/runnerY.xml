@@ -13,32 +13,32 @@
 <!--            <classes>-->
 <!--                <class name="us.piit.automationpractice.CreatAccountTest"></class>-->
 <!--            </classes>-->
+<!--&lt;!&ndash;        </test>&ndash;&gt;-->
+<!--        <test name="Login test">-->
+<!--            <classes>-->
+<!--                <class name="us.piit.automationpractice.LogingTest"></class>-->
+<!--            </classes>-->
 <!--        </test>-->
-    <!--    <test name="Login test">-->
-    <!--        <classes>-->
-    <!--            <class name="us.piit.automationpractice.LogingTest"></class>-->
-    <!--        </classes>-->
-    <!--    </test>-->
     <!--    <test name="searchBar test">-->
     <!--        <classes>-->
     <!--            <class name="us.piit.automationpractice.SearchBarTest"></class>-->
     <!--        </classes>-->
     <!--    </test>-->
-    <!--    <test name="add to cart test">-->
-    <!--        <classes>-->
-    <!--            <class name="us.piit.automationpractice.AddItemsToShoppingCart"></class>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+        <test name="add to cart test">
+            <classes>
+                <class name="us.piit.automationpractice.AddItemsToShoppingCart"></class>
+            </classes>
+        </test>
 <!--        <test name="logout test">-->
 <!--            <classes>-->
 <!--                <class name="us.piit.automationpractice.LogoutTest"></class>-->
 <!--            </classes>-->
 <!--        </test>-->
-    <test name="add address test">
-        <classes>
-            <class name="us.piit.automationpractice.AddAddressTest"></class>
-        </classes>
-    </test>
+<!--    <test name="add address test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.automationpractice.AddAddressTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
     <!--    <test name="blog test">-->
     <!--        <classes>-->
     <!--            <class name="us.piit.automationpractice.BlogTest"></class>-->
