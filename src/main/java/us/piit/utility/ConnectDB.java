@@ -120,7 +120,8 @@ public class ConnectDB {
     public static void main(String[] args) throws SQLException {
 
         //data insertion
-        List<Object> values = new ArrayList<>();
+
+          List<Object> values = new ArrayList<>();
 //        values.add(" ");
 //        values.add(" ");
 //        values.add("3.Enter the URL and click search");

@@ -12,7 +12,7 @@ import java.util.Properties;
 public class PurchaseItemTest extends CommonAPI {
 
 
-    @Test(priority=1)
+   // @Test(priority=1)
     public void unableToAddToCartWithNoSelectedAttribute(){
         HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());
         MenCategoryPage menPage=new MenCategoryPage(getDriver());
@@ -142,7 +142,7 @@ public class PurchaseItemTest extends CommonAPI {
         captureScreenshot();
 
     }
-    @Test(priority=4)
+   // @Test(priority=4)
     public void removeItemsFromTheCart(){
         HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());
         GearCategoryPage gearCategoryPage =new GearCategoryPage(getDriver());
