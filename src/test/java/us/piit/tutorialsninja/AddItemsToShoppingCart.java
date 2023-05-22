@@ -16,24 +16,28 @@ public class AddItemsToShoppingCart extends CommonAPI {
 
 
     @Test
-    public void validCredential() {
+    public void addToCartTest() {
+        WelcomePage welcomePage = new WelcomePage(getDriver());
         LoginPage loginPage = new LoginPage(getDriver());
         HomePage homePage = new HomePage(getDriver());
         PhonesAndPDAsPage phonesAndPDAsPage = new PhonesAndPDAsPage(getDriver());
         AddToShoppingCartPage addToShoppingCartPage = new AddToShoppingCartPage(getDriver());
         CheckoutPage checkoutPage = new CheckoutPage(getDriver());
-        String expectedTitle = "tutorialsninja.com";
+        String expectedTitle = "Your Store.com";
         String actualTitle = getCurrentTtile();
         Assert.assertEquals(expectedTitle, actualTitle);
         // enter  username, password, and click on login button
+        welcomePage.clickOnMyAccountBtn();
+        welcomePage.hoverOverAndClickOnHeaderLoginBtn();
         loginPage.enterValidEmail(validEmail);
         loginPage.enterValidPassword(userPassword);
         loginPage.clickOnLoginBtn();
         homePage.clickOnPhonesAndPDAsSectionBtn();
         phonesAndPDAsPage.hoverOverAndClickOnProductImg();
         addToShoppingCartPage.clickOnAddToCartBtn();
+
         homePage.clickOnShowItemsAddedBtn();
-        homePage.hoverOverclickOnCheckoutBtn();
+        homePage.hoverOverAndClickOnCheckoutBtn();
         //add to cart validation
         Assert.assertTrue(checkoutPage.checkPresenceOfUserProcedureCheckout());
         captureScreenshot();

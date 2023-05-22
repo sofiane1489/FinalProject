@@ -15,8 +15,15 @@ public class PhonesAndPDAsPage extends CommonAPI {
     }
     @FindBy(css = "#content div:nth-child(3) div:nth-child(1) div div.image a img")
     WebElement productImg;
+    @FindBy(xpath = "//h2[text()='Phones & PDAs']")
+    WebElement sectionMessageValidation;
     public void hoverOverAndClickOnProductImg(){
         clickOn(productImg);
         log.info("click on product image success");
+    }
+    public String getValidationMessage(){
+        String text = getElementText(sectionMessageValidation);
+        log.info("get message success");
+        return text;
     }
 }

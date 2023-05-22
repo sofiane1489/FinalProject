@@ -28,22 +28,18 @@ public class HomePage extends CommonAPI {
     WebElement shoppingCartField;
     @FindBy(css = "#cart ul li:nth-child(2) div p a:nth-child(2)")
     WebElement checkoutBtn;
-//
-//    @FindBy(xpath = "//*[@id=header]/div[2]/div/div/nav/div[1]/a")
-//    WebElement mainHeader;
-//    @FindBy(xpath = "//span[text()='Jhon Claud']")
-//    WebElement UserInfo;
-//
-//    @FindBy(xpath = "//p[text()='Welcome to your account. Here you can manage all of your personal information and orders.']")
-//    WebElement welcomeUser;
-//    @FindBy(css = "#contact-link")
-//    WebElement contactBtn;
-//    @FindBy(css = "#center_column div div ul li:nth-child(1) a")
-//    WebElement addFirstAddressBtn;
-//    @FindBy(css = "#block_top_menu ul li:nth-child(4) a")
-//    WebElement blogBtn;
-//    @FindBy(css = "#header div.nav div div nav div:nth-child(2)")
-//    WebElement logoutBtn;
+    @FindBy(css = "#column-right div a:nth-child(13)")
+    WebElement logoutBtn;
+    @FindBy(css = "#column-right div a:nth-child(2)")
+    WebElement editAccountBtn;
+    @FindBy(xpath = "//*[@id=\"account-account\"]/div[1]/text()")
+    WebElement editMessageConfirmation;
+    @FindBy(css = "#menu div.collapse.navbar-collapse.navbar-ex1-collapse ul li:nth-child(5) a")
+    WebElement softwareBtn;
+    @FindBy(css = "#menu div.collapse.navbar-collapse.navbar-ex1-collapse ul li:nth-child(4) a")
+    WebElement tabletsBtn;
+    @FindBy(css = "#menu div.collapse.navbar-collapse.navbar-ex1-collapse ul li:nth-child(6) a")
+    WebElement phonesAndPDAsBtn;
 
     public boolean checkPresenceOfUserTableOfContent(){
         boolean tableContentIsDisplayed =  isVisible(userTableOfContentField);
@@ -72,32 +68,35 @@ public class HomePage extends CommonAPI {
         clickOn(shoppingCartField);
         log.info("click on item added button success");
     }
-    public void hoverOverclickOnCheckoutBtn(){
-        clickOn(searchBarField);
+    public void hoverOverAndClickOnCheckoutBtn(){
+        clickOn(checkoutBtn);
         log.info("click on checkout button success");
     }
-//    public void clickOnSearchBoxBtn(){
-//        clickOn(searchBoxBtn);
-//        log.info("click on search box success");
-//    }
-//    public String getValidSearchMessage(){
-//        String text = getElementText(validSearchMessage);
-//        log.info("search message validation success");
-//        return text;
-//    }
-//    public String getItemSearchConfirmation(){
-//        String text = getElementText(itemSearchConfirmation);
-//        log.info("search validation success");
-//        return text;
-//    }
-//    public void clickOnDressesSectionBtn(){
-//        clickOn(dressesSection);
-//        log.info("click on dresses section success");
-//    }
-//    public String getHeaderText() {
-//        String text = getElementText(mainHeader);
-//        log.info("click on sign in success");
-//        return text;
+    public void clickOnLogoutBtn(){
+        clickOn(logoutBtn);
+        log.info("click on logout button success");
     }
+    public void clickOnEditAccountBtn(){
+        clickOn(editAccountBtn);
+        log.info("click on logout button success");
+    }
+    public String getEditAccountConfirmationMessage(){
+        String text = getElementText(editMessageConfirmation);
+        log.info("get text success");
+        return  text;
+    }
+    public void clickOnSoftwareSectionBtn(){
+        clickOn(softwareBtn);
+        log.info("click software section button success");
+    }
+    public void clickOnTabletsSectionBtn(){
+        clickOn(tabletsBtn);
+        log.info("click stablets section button success");
+    }
+    public void clickOnPhonesAndPDAsBtn(){
+        clickOn(phonesAndPDAsBtn);
+        log.info("click phones and PDAs section button success");
+    }
+}
 
 
