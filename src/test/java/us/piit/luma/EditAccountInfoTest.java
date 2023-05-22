@@ -19,12 +19,12 @@ public class EditAccountInfoTest extends CommonAPI {
     String password= Utility.decode(pro.getProperty("luma.password"));
 
     @Test
-    public void editAccountInfo(){
+    public void editLastName(){
         LoginPage loginPage=new LoginPage(getDriver());
         HomePageBeforeLogin homePageBefore=new HomePageBeforeLogin(getDriver());
         MyAccountPage myAccountPage=new MyAccountPage(getDriver());
         EditAccountInformationPage editAccountInformationPage=new EditAccountInformationPage(getDriver());
-       HomePageAfterLogin homePageAfterLogin=new HomePageAfterLogin(getDriver());
+        HomePageAfterLogin homePageAfterLogin=new HomePageAfterLogin(getDriver());
 
         // website validation with Title
         String expextedTitle="Home Page";
@@ -62,8 +62,63 @@ public class EditAccountInfoTest extends CommonAPI {
 
         //edit account information validation
         String expectedMess="You saved the account information.";
-        String actualMess=myAccountPage.getEditTextConfirmation();
-        Assert.assertEquals(expectedMess,expectedMess);
+        Assert.assertEquals(expectedMess,myAccountPage.getSaveEditTextConfirmation());
+
+    }
+
+    @Test(dependsOnMethods = "editLastName")
+    public void editBillingAddress() {
+        LoginPage loginPage=new LoginPage(getDriver());
+        HomePageBeforeLogin homePageBefore=new HomePageBeforeLogin(getDriver());
+        MyAccountPage myAccountPage=new MyAccountPage(getDriver());
+        EditAccountInformationPage editAccountInformationPage=new EditAccountInformationPage(getDriver());
+        HomePageAfterLogin homePageAfterLogin=new HomePageAfterLogin(getDriver());
+
+        // website validation with Title
+        String expextedTitle="Home Page";
+        String actualTitle=getCurrentTtile();
+        Assert.assertEquals(actualTitle,expextedTitle);
+        // website validation with luma logo
+        Assert.assertTrue(homePageBefore.checkHomePageLogoVisibility());
+
+        homePageBefore.clickOnSigninBtn();
+
+        loginPage.enterEmail(email);
+
+        loginPage.enterPassword(password);
+
+        loginPage.clickOnLoginBtn();
+
+        //validate user logged in
+        //validate the dropdown visibility
+        Assert.assertTrue( homePageAfterLogin.checkDropDownVisibility());
+
+        //validate the dropdown interactivity
+        Assert.assertTrue( homePageAfterLogin.checkDropDownInteractibility());
+
+        homePageAfterLogin.clickOnDropDown();
+
+        homePageAfterLogin.clickOnMyAccount();
+
+        myAccountPage.clickOnEditAddressLink();
+
+        myAccountPage.enterNewAddress(useFakeAddress());
+
+        myAccountPage.enterNewcity(useFakeCity());
+
+       myAccountPage.selectState(useFakeState());
+
+        myAccountPage.enterNewZipcode(useFakeZipcode());
+
+        myAccountPage.enterTelephoneNumber(useFakePhoneNumber());
+
+        myAccountPage.clickOnSaveAddressBtn();
+
+        //edit address validation
+        String expectedMessage="You saved the address.";
+       Assert.assertEquals(myAccountPage.getSaveEditTextConfirmation(),expectedMessage);
+
+
 
     }
 

@@ -142,7 +142,7 @@ public class PurchaseItemTest extends CommonAPI {
         captureScreenshot();
 
     }
-   // @Test(priority=4)
+    @Test(priority=4)
     public void removeItemsFromTheCart(){
         HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());
         GearCategoryPage gearCategoryPage =new GearCategoryPage(getDriver());

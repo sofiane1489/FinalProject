@@ -11,7 +11,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
@@ -167,7 +169,6 @@ public class CommonAPI {
         return driver.getTitle();
     }
 
-    
     public String getElementText(WebElement element){
             return element.getText();
     }
@@ -319,5 +320,6 @@ public class CommonAPI {
             System.out.println("Exception while taking screenshot "+e.getMessage());
         }
     }
+
 
 }
