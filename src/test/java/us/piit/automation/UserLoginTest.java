@@ -24,7 +24,7 @@ public class UserLoginTest extends CommonAPI {
 
 
 
-    @Test
+    @Test(priority = 3)
     public void validCredentials() {
         LoginPage loginPage = new LoginPage(getDriver());
         HomePage homePage = new HomePage(getDriver());
@@ -41,15 +41,17 @@ public class UserLoginTest extends CommonAPI {
         loginPage.enterPassword(validPassword);
         loginPage.clickonLoginBtn();
 
+
         // Check if user is logged in
         String expectedHomePageHeader = "Full-Fledged practice website for Automation Engineers";
         String actualHomePageHeader = homePage.getHeaderText();
         Assert.assertEquals(expectedHomePageHeader, actualHomePageHeader);
+        takeScreenshot("user loged in succesfully");
 
 
     }
 
-    @Test
+    @Test(priority = 4)
     public void invalidEmail() {
         LoginPage loginPage = new LoginPage(getDriver());
         HomePage homePage = new HomePage(getDriver());
@@ -75,7 +77,7 @@ public class UserLoginTest extends CommonAPI {
         Assert.assertEquals(expectedError, actualError);
 
     }
-    @Test
+    @Test(priority = 5)
     public void invalidPassword (){
         LoginPage loginPage = new LoginPage(getDriver());
         HomePage homePage = new HomePage(getDriver());

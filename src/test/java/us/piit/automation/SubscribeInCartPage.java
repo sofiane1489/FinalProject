@@ -17,7 +17,7 @@ public class SubscribeInCartPage extends CommonAPI {
     Logger log = LogManager.getLogger(SubscribeInHomePage.class.getName());
     Properties pop = Utility.loadProperties();
     String validEmail = Utility.decode(pop.getProperty("automation.validEmail"));
-@Test
+   @Test
         public void subscription1() {
 
     HomePage homePage = new HomePage(getDriver());

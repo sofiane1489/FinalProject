@@ -17,7 +17,7 @@ public class DeleteAccountTest extends CommonAPI {
     String validEmail = Utility.decode(pop.getProperty("automation.validEmail"));
     String validPassword =Utility.decode(pop.getProperty("automation.validPassword"));
 
-    @Test
+    @Test(priority = 20)
     public void deleteAcoount(){
         LoginPage loginPage = new LoginPage(getDriver());
         HomePage homePage=new HomePage(getDriver());
