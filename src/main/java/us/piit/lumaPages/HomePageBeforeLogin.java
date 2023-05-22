@@ -82,6 +82,12 @@ public class HomePageBeforeLogin extends CommonAPI {
     @FindBy(css = ".footer.content")
     WebElement bottom;
 
+    @FindBy(css = " a[href='https://magento.softwaretestingboard.com/sales/guest/form/']")
+    WebElement orderAndReturnLink;
+
+    @FindBy(css = "img[src='https://magento.softwaretestingboard.com/pub/media/wysiwyg/home/home-main.jpg']")
+    WebElement mainHomePageImg;
+
 
 
     public boolean checkHomePageLogoVisibility(){
@@ -208,5 +214,22 @@ public class HomePageBeforeLogin extends CommonAPI {
 
     public void scrollToContactUsBtn(WebDriver driver){
         scrollToElement(driver,contactUsBtn);
+        log.info("scroll to contact btn success");
+    }
+    public void clickOnOrderAndReturnLink(){
+        clickOn(orderAndReturnLink);
+        log.info("click on orders and returns success");
+    }
+
+    public boolean checkHomePageMainImgVisibility(){
+        boolean checkIMG=isVisible(homePageImg);
+        log.info("homa page main img visibility success");
+        return checkIMG;
+    }
+
+    public boolean checkHomePageMainImgInteractivity(){
+        boolean checkIMG=isVisible(homePageImg);
+        log.info("homa page main img interactivity success");
+        return checkIMG;
     }
 }

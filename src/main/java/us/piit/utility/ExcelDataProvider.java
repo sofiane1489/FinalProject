@@ -8,6 +8,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
@@ -96,21 +97,6 @@ public class ExcelDataProvider {
             return testData.iterator();
         }
 
-//         String getCellValueAsString(Cell cell) {
-//            if (cell == null) {
-//                return "";
-//            }
-//            if (cell.getCellType() == CellType.STRING) {
-//                return cell.getStringCellValue();
-//            } else if (cell.getCellType() == CellType.NUMERIC) {
-//                return String.valueOf(cell.getNumericCellValue());
-//            } else if (cell.getCellType() == CellType.BOOLEAN) {
-//                return String.valueOf(cell.getBooleanCellValue());
-//            } else {
-//                return "";
-//            }
-//        }
-
         @Test(dataProvider = "columnData")
         public void testColumnData(String columnData) {
             System.out.println("Column Data: " + columnData);
@@ -154,15 +140,16 @@ public class ExcelDataProvider {
 
     public static void main(String[] args) {
 
-        String filePath = "C:\\Users\\ouelhadj\\eclipse-workspace\\FinalProject\\data\\automationData\\automation Test Cases.xlsx";
+        String filePath = "C:\Users\sehso\eclipse-workspace\FinalProject\data\lumaData\testcases.xlsx";
         ExcelDataProvider provider = new ExcelDataProvider(filePath);
-        String sheetName = "Sheet1"; // Assuming the sheet name is "Sheet1"
+
+        String sheetName = "luma";
 
         //get data from cell
-        //provider.testCellData(provider.getExcelData(sheetName,8,1));
+        provider.testCellData(provider.getExcelData(sheetName,5,3));
 
         //get the entire column data
-        Iterator<Object[]> iterator = provider.getColumnData(filePath,sheetName,0);
+        Iterator<Object[]> iterator = provider.getColumnData(filePath,sheetName,3);
          while (iterator.hasNext()) {
             Object[] data = iterator.next();
             System.out.println("Column Sheet1: " + data[0]);

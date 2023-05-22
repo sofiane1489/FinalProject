@@ -29,9 +29,9 @@
 <!--                <class name="us.piit.luma.LoginTest"></class>-->
 <!--            </classes>-->
 <!--    </test>-->
-<!--    <test name="lumalogo test">-->
+<!--    <test name="HomePage test">-->
 <!--        <classes>-->
-<!--            <class name="us.piit.luma.LumaLogoTest"></class>-->
+<!--            <class name="us.piit.luma.HomePageTest"></class>-->
 <!--        </classes>-->
 <!--    </test>-->
 <!--    <test name="purchase test">-->
@@ -59,17 +59,26 @@
 <!--            <class name="us.piit.luma.LumaWebsiteLunchTest"></class>-->
 <!--        </classes>-->
 <!--    </test>-->
-<!--    <test name="Subscribe test">-->
-<!--        <classes>-->
-<!--            <class name="us.piit.luma.SubscribeTest"></class>-->
-<!--        </classes>-->
-<!--    </test>-->
-    <test name="Addreview Test">
+    <test name="Subscribe test">
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="group1" />-->
+<!--            </run>-->
+<!--        </groups>-->
         <classes>
-            <class name="us.piit.luma.AddReviewTest"></class>
+            <class name="us.piit.luma.SubscribeTest"></class>
         </classes>
     </test>
-
+<!--    <test name="Addreview Test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.luma.AddReviewTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="TrackingOrder Test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.luma.OrderTrackingTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
 
 </suite>
 

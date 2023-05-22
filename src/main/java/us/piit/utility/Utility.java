@@ -28,11 +28,13 @@ public class Utility {
     }
 
     public static void main(String[] args) {
-        String originalInput = "2f3G7QUqgScR9c7bbahr";
+
+        String originalInput = "000008236";
+
         String encodedString = Base64.getEncoder().encodeToString(originalInput.getBytes());
         System.out.println(encodedString);
-
-//        byte[] decodedBytes = Base64.getDecoder().decode("NQ==");
+//
+//        byte[] decodedBytes = Base64.getDecoder().decode("MTIzNEFiY2Qk");
 //        String decodedString = new String(decodedBytes);
 //        System.out.println(decodedString);
     }
