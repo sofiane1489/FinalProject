@@ -24,7 +24,7 @@ public class HomePageAfterLogin extends CommonAPI {
     @FindBy(css = ".panel.header ul li:nth-child(2) span button")
     WebElement dropDownArrow;
 
-    @FindBy(xpath = "//div[@aria-hidden='false']//a[normalize-space()='My Account']")
+    @FindBy(css = "div[class='panel wrapper'] li:nth-child(1) a:nth-child(1)")
     WebElement myAccountLink;
 
     @FindBy(css = "div[aria-hidden='false'] li[data-label='or'] a")
@@ -78,4 +78,6 @@ public class HomePageAfterLogin extends CommonAPI {
         log.info("sign out success");
         return text;
     }
+
+
 }

@@ -49,6 +49,7 @@ public class HomePageTest extends CommonAPI {
         Assert.assertTrue(homePageBeforeLogin.checkHomePageLogoVisibility());
 
 
+        //home page main image Visibility and Interactivity validation
         Assert.assertTrue(homePageBeforeLogin.checkHomePageMainImgVisibility());
         Assert.assertTrue(homePageBeforeLogin.checkHomePageMainImgInteractivity());
 
