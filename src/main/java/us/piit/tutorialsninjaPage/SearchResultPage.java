@@ -20,9 +20,11 @@ public class SearchResultPage extends CommonAPI {
     WebElement imgField;
     public String getSearchValidationMessage(){
         String text = getElementText(itemResultField);
+        log.info("get message success");
         return text;
     }
     public void scrollToItemImg(WebDriver driver){
         scrollToElement(driver,imgField);
+        log.info("scroll down success");
     }
 }

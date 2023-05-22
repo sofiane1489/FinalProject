@@ -27,6 +27,10 @@ public class LoginPage extends CommonAPI {
     WebElement loginBtn;
     @FindBy(xpath = "//*[@id=\"account-login\"]/div[1]/text()")
     WebElement errorMessage;
+    @FindBy(css = "#content div div:nth-child(2) div form div:nth-child(2) a")
+    WebElement forgottenPassword;
+    @FindBy(xpath = "//*[@id=\"account-login\"]/div[1]/text()")
+    WebElement confirmationMessage;
 
     public void clickOnContinueBtn() {
         clickOn(newCustomerField);
@@ -50,5 +54,13 @@ public class LoginPage extends CommonAPI {
         log.info("get error message success");
         return  text;
     }
-
+    public void clickOnForgottenPasswordLink(){
+        clickOn(forgottenPassword);
+        log.info("click on forgotten password link success");
+    }
+    public String getTextMessage(){
+        String text = getElementText(confirmationMessage);
+        log.info("get text success");
+        return text;
+    }
 }
