@@ -28,12 +28,10 @@ public class UpdateQuantityInCart extends CommonAPI {
         Assert.assertEquals(expectedTitle, actualTitle);
 
         productsPage.viewProduct();
-
         productsPage.updateQuantity();
-
         productsPage.addToCart();
+        productsPage.viewCart();
 
-       productsPage.viewCart();
 
 
 

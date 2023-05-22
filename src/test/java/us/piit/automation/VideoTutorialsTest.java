@@ -22,7 +22,7 @@ public class VideoTutorialsTest extends CommonAPI {
     String validEmail = Utility.decode(pop.getProperty("automation.validEmail"));
     String validPassword = Utility.decode(pop.getProperty("automation.validPassword"));
 
-    @Test
+    @Test(priority = 15)
     public void subscribeToChannel() {
         LoginPage loginPage = new LoginPage(getDriver());
         HomePage homePage = new HomePage(getDriver());
@@ -46,6 +46,7 @@ public class VideoTutorialsTest extends CommonAPI {
 
 
 
+
         // Check if user is logged in
         String expectedHomePageHeader = "Full-Fledged practice website for Automation Engineers";
 
@@ -61,6 +62,7 @@ public class VideoTutorialsTest extends CommonAPI {
         videoTutorialsPage.clickonSubscribe();
 
         waitFor(2);
+        takeScreenshot("user subscribe success");
 
         // verify user subscribe succesfully
 //        String expectedtext="Subscription added";

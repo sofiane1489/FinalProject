@@ -16,7 +16,7 @@ public class ViewCartPage extends CommonAPI {
     }
     @FindBy(xpath = "//a[contains(text(),' Cart')]")
     WebElement clickonShoopingCart;
-    @FindBy(xpath = "//tbody/tr[@id='product-5']/td[6]/a[1]/i[1]")
+    @FindBy(xpath = "//i[@class='fa fa-times']")
     WebElement clickondeleteItem;
 
     public void shoopingCart (){

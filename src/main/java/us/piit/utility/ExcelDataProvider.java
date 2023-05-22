@@ -154,18 +154,18 @@ public class ExcelDataProvider {
 
     public static void main(String[] args) {
 
-        String filePath = "C:\\Users\\sehso\\eclipse-workspace\\FinalProject\\data\\lumaData\\testcases.xlsx";
+        String filePath = "C:\\Users\\ouelhadj\\eclipse-workspace\\FinalProject\\data\\automationData\\automation Test Cases.xlsx";
         ExcelDataProvider provider = new ExcelDataProvider(filePath);
-        String sheetName = "luma"; // Assuming the sheet name is "Sheet1"
+        String sheetName = "Sheet1"; // Assuming the sheet name is "Sheet1"
 
         //get data from cell
-        provider.testCellData(provider.getExcelData(sheetName,5,1));
+        //provider.testCellData(provider.getExcelData(sheetName,8,1));
 
         //get the entire column data
-        Iterator<Object[]> iterator = provider.getColumnData(filePath,sheetName,3);
+        Iterator<Object[]> iterator = provider.getColumnData(filePath,sheetName,0);
          while (iterator.hasNext()) {
             Object[] data = iterator.next();
-            System.out.println("Column Data: " + data[0]);
+            System.out.println("Column Sheet1: " + data[0]);
         }
 
          //read the entire file

@@ -19,7 +19,7 @@ public class WriteReviewTest extends CommonAPI {
     String name2= Utility.decode(pop.getProperty("automation.name2"));
     String email2 = Utility.decode(pop.getProperty("automation.emailAdress"));
 
-    @Test
+    @Test(priority = 16)
     public void writereview(){
 
         ProductsPage productsPage = new ProductsPage(getDriver());
@@ -28,6 +28,7 @@ public class WriteReviewTest extends CommonAPI {
 
         // click on product button, click on view product, write a review then click submit
         productsPage.productButton();
+
 
         boolean expectedTitle=true;
         boolean actualTitle=homePage.allproducts();
@@ -38,6 +39,8 @@ public class WriteReviewTest extends CommonAPI {
         productsPage.email2(email2);
         productsPage.review();
         productsPage.submitreview();
+
+        takeScreenshot("review submited success");
 
 
 
