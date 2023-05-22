@@ -17,6 +17,8 @@ public class WelcomePage extends CommonAPI {
     WebElement mainHeader;
     @FindBy(css = "#top-links ul li.dropdown.open ul li:nth-child(2) a")
     WebElement headerLoginBtn;
+    @FindBy(css = "#logo h1 a")
+    WebElement logoField;
     public void clickOnMyAccountBtn(){
         clickOn(mainHeader);
         log.info("click on my account button success");
@@ -24,5 +26,10 @@ public class WelcomePage extends CommonAPI {
     public void hoverOverAndClickOnHeaderLoginBtn(){
         clickOn(headerLoginBtn);
         log.info("click on header login button success");
+    }
+    public boolean checkPresenceOfTutorialsninjaWebsiteLogo(){
+        boolean websiteLogoIsDisplayed = isVisible(logoField);
+        log.info("website logo is visible");
+        return websiteLogoIsDisplayed;
     }
 }
