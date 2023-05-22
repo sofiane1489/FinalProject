@@ -24,30 +24,41 @@
     <!--            <class name="us.piit.tutorialsninja.SearchBarTest"></class>-->
     <!--        </classes>-->
     <!--    </test>-->
-        <test name="add to cart test">
-            <classes>
-                <class name="us.piit.tutorialsninja.AddItemsToShoppingCart"></class>
-            </classes>
-        </test>
+<!--        <test name="add to cart test">-->
+<!--            <classes>-->
+<!--                <class name="us.piit.tutorialsninja.AddItemsToShoppingCart"></class>-->
+<!--            </classes>-->
+<!--        </test>-->
 <!--        <test name="logout test">-->
 <!--            <classes>-->
 <!--                <class name="us.piit.tutorialsninja.LogoutTest"></class>-->
 <!--            </classes>-->
 <!--        </test>-->
-<!--    <test name="add address test">-->
+<!--    <test name="tablets section test">-->
 <!--        <classes>-->
-<!--            <class name="us.piit.tutorialsninja.AddAddressTest"></class>-->
+<!--            <class name="us.piit.tutorialsninja.TabletsSectionTest"></class>-->
 <!--        </classes>-->
 <!--    </test>-->
-    <!--    <test name="blog test">-->
-    <!--        <classes>-->
-    <!--            <class name="us.piit.tutorialsninja.BlogTest"></class>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-    <!--    <test name="contact service test">-->
-    <!--        <classes>-->
-    <!--            <class name="us.piit.tutorialsninja.ContactServiceProvidedTest"></class>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+<!--    <test name="software section test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.tutorialsninja.SoftwareSectionTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="phones and PDAs test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.tutorialsninja.PhonesAndPDAsTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="edit account test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.tutorialsninja.EditAccountTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="checkout test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.tutorialsninja.CheckoutTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
 
 </suite>
