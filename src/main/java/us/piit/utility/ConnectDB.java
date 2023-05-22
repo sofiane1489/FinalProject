@@ -56,8 +56,99 @@ public class ConnectDB {
         return list;
     }
 
+    //..........................................................
+
+    public static void insertData(String tableName, List<Object> values) {
+        try {
+            connect = connectToSqlDatabase();
+            StringBuilder query = new StringBuilder("INSERT INTO " + tableName + " VALUES (");
+            int numValues = values.size();
+            for (int i = 0; i < numValues; i++) {
+                query.append("?");
+                if (i < numValues - 1) {
+                    query.append(",");
+                }
+            }
+            query.append(")");
+
+            ps = connect.prepareStatement(query.toString());
+
+            for (int i = 0; i < numValues; i++) {
+                Object value = values.get(i);
+                if (value instanceof Integer) {
+                    ps.setInt(i + 1, (Integer) value);
+                } else {
+                    ps.setString(i + 1, value.toString());
+                }
+            }
+
+            ps.executeUpdate();
+
+            System.out.println("Data inserted successfully.");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } finally {
+            closeConnections();
+        }
+    }
+
+
+    //.......................................................
+
+    public static void closeConnections() {
+        try {
+            if (resultSet != null) {
+                resultSet.close();
+            }
+            if (statement != null) {
+                statement.close();
+            }
+            if (ps != null) {
+                ps.close();
+            }
+            if (connect != null) {
+                connect.close();
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
+//.................................................................................
+
     public static void main(String[] args) throws SQLException {
-        List<String> emails = getTableColumnData("select * from  accounts;","TOTAL_CONNECTIONS");
-        System.out.println(emails.get(0));
+
+        //data insertion
+
+          List<Object> values = new ArrayList<>();
+//        values.add(" ");
+//        values.add(" ");
+//        values.add("3.Enter the URL and click search");
+//        values.add("\"user lands to luma home page \n" + " title\"\"Home Page\"\"\"");
+//        values.add("passed");
+//        values.add(" ");
+//        values.add("Sofiane Sehad/Sofiane Sehad");
+//        values.add(" ");
+//        values.add(" ");
+//        String tableName = "lumaTestCases";
+
+//        values.add(3);
+//        values.add("Jack");
+//        values.add("Arranda");
+//        values.add("JackArranda@tester.com");
+//        values.add(1966503348);
+//         String tableName = "Testers";
+//        insertData(tableName, values);
+
+
+
+
+        //reading data
+        List<String> emails = getTableColumnData("select * from Testers;","Email");
+        for(int i=0;i<=1;i++) {
+            System.out.println(emails.get(i));
+        }
+
     }
 }

@@ -3,19 +3,20 @@ import com.relevantcodes.extentreports.LogStatus;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.apache.poi.ss.format.CellElapsedFormatter;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
-
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -29,18 +30,16 @@ import java.time.Duration;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Properties;
-
 import us.piit.reporting.ExtentManager;
 import us.piit.reporting.ExtentTestManager;
 import us.piit.utility.Utility;
-
 import com.github.javafaker.Faker;
 public class CommonAPI {
     Logger log= LogManager.getLogger(CommonAPI.class.getName());
     Properties pro= Utility.loadProperties();
 
-    String browserstackUsername=pro.getProperty("browserstack.username");
-    String browserstackPassword=pro.getProperty("browserstack.password");
+    String browserstackUsername=Utility.decode(pro.getProperty("browserstack.username"));
+    String browserstackPassword=Utility.decode(pro.getProperty("browserstack.password"));
     String implicitWait=pro.getProperty("implicit.wait","10");
     String browserMaximize=pro.getProperty("browser.maximize","true");
     String takeScreenshots=pro.getProperty("take.screenshots","false");
@@ -169,6 +168,7 @@ public class CommonAPI {
     public String getCurrentTtile(){
         return driver.getTitle();
     }
+
     public String getElementText(WebElement element){
             return element.getText();
     }
@@ -217,7 +217,6 @@ public class CommonAPI {
         actions.moveToElement(element).doubleClick().build().perform();
     }
 
-
     public void waitFor(int seconds){
         try {
             Thread.sleep(seconds*1000);
@@ -234,6 +233,10 @@ public class CommonAPI {
 
     public boolean isChecked(WebElement element){
             return element.isSelected();
+    }
+
+    public WebElement findElement(WebDriver driver,WebElement element){
+        return element;
     }
 
   //methods for fake credentials
@@ -290,6 +293,12 @@ public class CommonAPI {
         JavascriptExecutor js = (JavascriptExecutor)driver;
         js.executeScript("arguments[0].scrollIntoView();",element);
     }
+    public void scrollToBottom(){
+        JavascriptExecutor js = (JavascriptExecutor)driver;
+        js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+    }
+
+
     public void captureScreenshot() {
         File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         try {
@@ -311,5 +320,6 @@ public class CommonAPI {
             System.out.println("Exception while taking screenshot "+e.getMessage());
         }
     }
+
 
 }

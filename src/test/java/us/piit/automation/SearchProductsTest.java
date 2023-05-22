@@ -12,8 +12,8 @@ import us.piit.utility.Utility;
 
 import java.util.Properties;
 
-public class SearchProducts extends CommonAPI {
-    Logger log= LogManager.getLogger(SearchProducts.class.getName());
+public class SearchProductsTest extends CommonAPI {
+    Logger log= LogManager.getLogger(SearchProductsTest.class.getName());
 
     Properties pop = Utility.loadProperties();
     String productName= Utility.decode(pop.getProperty("automation.searchText"));
