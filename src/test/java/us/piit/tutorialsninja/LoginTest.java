@@ -32,7 +32,7 @@ public class LoginTest extends CommonAPI {
 
         //check user is logged in
         boolean expectedUserTableOfContent = true;
-        boolean actualUserTableOfContent = homePage.checkPresenceOfUserTableOfContent()
+        boolean actualUserTableOfContent = homePage.checkPresenceOfUserTableOfContent();
         Assert.assertEquals(expectedUserTableOfContent, actualUserTableOfContent);
 
         String expectedResult = "My Account";
