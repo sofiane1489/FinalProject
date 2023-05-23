@@ -30,6 +30,7 @@ public class SearchProductsTest extends CommonAPI {
 
         // Type name of product then click on search button
         productsPage.productButton();
+        waitFor(2);
 
 
         // Verify user is navigated to ALL PRODUCTS page successfully

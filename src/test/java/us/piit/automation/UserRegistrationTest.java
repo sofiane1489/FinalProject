@@ -30,14 +30,14 @@ public class UserRegistrationTest extends CommonAPI {
 //    String expected welcomingmessage="Congratulations! Your new account has been successfully created!";
 //    String actual welcomingmessage=
 
-    @Test
+    @Test(priority = 1)
     public void registration (){
         RegistrationPage registrationPage=new RegistrationPage(getDriver());
         HomePage homePage=new HomePage(getDriver());
 
         registrationPage.clickonsignupbutton();
         registrationPage.enterName(name);
-        registrationPage.enterEmail(emailAddress);
+        registrationPage.enterEmail(useFakeEmail());
         registrationPage.clickonsignupbtn();
         registrationPage.enterPassword(password1);
         registrationPage.enterfirstName(firstName);
@@ -50,12 +50,13 @@ public class UserRegistrationTest extends CommonAPI {
         registrationPage.enterzipcode(zipCode);
         registrationPage.entermobilenumber(mobileNumber);
         registrationPage.clickonregisterbtn();
+        takeScreenshot("user register succesfully");
 
 
     }
 
     //user register with existing email
-    @Test
+    @Test(priority = 2)
     public void existingEmail(){
         RegistrationPage registrationPage=new RegistrationPage(getDriver());
         HomePage homePage=new HomePage(getDriver());

@@ -8,20 +8,14 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import us.piit.base.CommonAPI;
 
-public class AddToShoppingCartPage extends CommonAPI {
-    Logger log= LogManager.getLogger(AddToShoppingCartPage.class.getName());
-    public AddToShoppingCartPage(WebDriver driver){
+public class SoftwarePage extends CommonAPI {
+    Logger log= LogManager.getLogger(SoftwarePage.class.getName());
+    public SoftwarePage(WebDriver driver){
         PageFactory.initElements(driver, this);
     }
-    @FindBy(css = "#button-cart")
-    WebElement addToCartBtn;
-    @FindBy(css = "#product-product div.alert.alert-success.alert-dismissible")
+    @FindBy(xpath = "//h2[text()='Software']")
     WebElement validMessage;
-    public void clickOnAddToCartBtn(){
-        clickOn(addToCartBtn);
-        log.info("click on add to cart button success");
-    }
-    public String getConfirmAddMessage(){
+    public String GetMessage(){
         String text = getElementText(validMessage);
         log.info("get message success");
         return text;

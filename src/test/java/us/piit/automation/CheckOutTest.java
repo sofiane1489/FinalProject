@@ -50,6 +50,7 @@ public class CheckOutTest extends CommonAPI {
 
 
 
+
         // Check if user is logged in
         String expectedHomePageHeader = "Full-Fledged practice website for Automation Engineers";
         String actualHomePageHeader = homePage.getHeaderText();
@@ -57,13 +58,10 @@ public class CheckOutTest extends CommonAPI {
 
         //click on cart,proceed to checkout,place order and confirm
         productsPage.viewProduct();
-
         productsPage.addToCart();
-
+        waitFor(2);
         productsPage.viewCart();
-
         checkoutPage.clickCheckOut();
-
         paymentPage.clickonPlaceOrder();
 
         paymentPage.enterName(name);
@@ -77,6 +75,7 @@ public class CheckOutTest extends CommonAPI {
         String expectedtext="Congratulations! Your order has been confirmed!";
         String actualtext=homePage.welcomingMessage();
         Assert.assertEquals(expectedtext,actualtext);
+        takeScreenshot("order payed succesfully");
 
 
     }

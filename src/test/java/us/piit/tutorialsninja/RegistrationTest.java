@@ -2,11 +2,8 @@ package us.piit.tutorialsninja;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import us.piit.tutorialsninjaPage.AffirmationAccountCreationPage;
-import us.piit.tutorialsninjaPage.HomePage;
-import us.piit.tutorialsninjaPage.LoginPage;
+import us.piit.tutorialsninjaPage.*;
 import us.piit.base.CommonAPI;
-import us.piit.tutorialsninjaPage.RegistrationPage;
 import us.piit.utility.Utility;
 
 import java.util.Properties;
@@ -23,15 +20,18 @@ public class RegistrationTest extends CommonAPI {
 
     @Test
     public void validCred() {
+        WelcomePage welcomePage = new WelcomePage(getDriver());
         LoginPage loginPage = new LoginPage(getDriver());
         RegistrationPage registrationPage = new RegistrationPage(getDriver());
         AffirmationAccountCreationPage affirmationAccountCreationPage = new AffirmationAccountCreationPage(getDriver());
         HomePage homePage = new HomePage(getDriver());
-        String expectedTitle = "tutorialsninja.com";
+        String expectedTitle = "Your Store.com";
         String actualTitle = getCurrentTtile();
         Assert.assertEquals(expectedTitle, actualTitle);
 
         //click on sign in, enter  username, password, and click on login button
+        welcomePage.clickOnMyAccountBtn();
+        welcomePage.hoverOverAndClickOnHeaderLoginBtn();
         loginPage.clickOnContinueBtn();
         registrationPage.enterFirstName(userFirstName);
         registrationPage.enterLastName(userLastName);
@@ -50,16 +50,18 @@ public class RegistrationTest extends CommonAPI {
         captureScreenshot();
     }
 
-   // @Test
+    @Test
     public void ExistingCred() {
+        WelcomePage welcomePage = new WelcomePage(getDriver());
         LoginPage loginPage = new LoginPage(getDriver());
         RegistrationPage registrationPage = new RegistrationPage(getDriver());
-        String expectedTitle = "tutorialsninja.com";
+        String expectedTitle = "Your Store.com";
         String actualTitle = getCurrentTtile();
         Assert.assertEquals(expectedTitle, actualTitle);
 
         //click on sign in, enter  username, password, and click on login button
-
+        welcomePage.clickOnMyAccountBtn();
+        welcomePage.hoverOverAndClickOnHeaderLoginBtn();
         loginPage.clickOnContinueBtn();
         registrationPage.enterFirstName(userFirstName);
         registrationPage.enterLastName(userLastName);
