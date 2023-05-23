@@ -23,7 +23,7 @@ public class LoginPage extends CommonAPI {
     WebElement emailField;
     @FindBy(xpath = "//body/section[@id='form']/div[1]/div[1]/div[1]/div[1]/form[1]/input[3]")
     WebElement passwordField;
-    @FindBy(xpath = "//button[contains(text(),'Login')]")
+    @FindBy(xpath ="//button[contains(text(),'Login')]")
     WebElement loginBtn;
     @FindBy(xpath = "//p[contains(text(),'Your email or password is incorrect!')]")
     WebElement messageInvalidEmail;
