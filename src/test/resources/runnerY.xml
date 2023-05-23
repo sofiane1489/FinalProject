@@ -13,10 +13,10 @@
 <!--            <classes>-->
 <!--                <class name="us.piit.tutorialsninja.RegistrationTest"></class>-->
 <!--            </classes>-->
-<!--&lt;!&ndash;        </test>&ndash;&gt;-->
+
 <!--        <test name="Login test">-->
 <!--            <classes>-->
-<!--                <class name="us.piit.tutorialsninja.LogingTest"></class>-->
+<!--                <class name="us.piit.tutorialsninja.LoginTest"></class>-->
 <!--            </classes>-->
 <!--        </test>-->
     <!--    <test name="searchBar test">-->
@@ -24,11 +24,11 @@
     <!--            <class name="us.piit.tutorialsninja.SearchBarTest"></class>-->
     <!--        </classes>-->
     <!--    </test>-->
-<!--        <test name="add to cart test">-->
-<!--            <classes>-->
-<!--                <class name="us.piit.tutorialsninja.AddItemsToShoppingCart"></class>-->
-<!--            </classes>-->
-<!--        </test>-->
+        <test name="add to cart test">
+            <classes>
+                <class name="us.piit.tutorialsninja.AddItemsToShoppingCartTest"></class>
+            </classes>
+        </test>
 <!--        <test name="logout test">-->
 <!--            <classes>-->
 <!--                <class name="us.piit.tutorialsninja.LogoutTest"></class>-->
