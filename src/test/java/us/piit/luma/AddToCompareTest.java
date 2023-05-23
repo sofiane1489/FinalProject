@@ -8,7 +8,7 @@ import us.piit.lumaPages.*;
 public class AddToCompareTest extends CommonAPI {
 
     @Test
-    public void unableToAddToWishList() {
+    public void addToCompareFeature() {
         HomePageBeforeLogin homePageBeforeLogin = new HomePageBeforeLogin(getDriver());
         MenCategoryPage menPage = new MenCategoryPage(getDriver());
         TopsPage topsPage = new TopsPage(getDriver());

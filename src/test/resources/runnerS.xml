@@ -79,11 +79,11 @@
 <!--            <class name="us.piit.luma.OrderTrackingTest"></class>-->
 <!--        </classes>-->
 <!--    </test>-->
-<!--    <test name="AddToWishLIst Test">-->
-<!--        <classes>-->
-<!--            <class name="us.piit.luma.AddToWishListTest"></class>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="AddToWishLIst Test">
+        <classes>
+            <class name="us.piit.luma.AddToWishListTest"></class>
+        </classes>
+    </test>
 
     <test name="AddToCompare Test">
         <classes>
