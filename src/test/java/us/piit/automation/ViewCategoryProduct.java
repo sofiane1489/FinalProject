@@ -17,7 +17,7 @@ public class ViewCategoryProduct extends CommonAPI {
 
     Properties pop = Utility.loadProperties();
 
-    @Test
+    @Test(priority = 11)
     public void checkvisibility(){
         HomePage homePage=new HomePage(getDriver());
         WomensProductPage womensProductPage=new WomensProductPage(getDriver());

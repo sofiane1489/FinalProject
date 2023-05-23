@@ -40,18 +40,19 @@ public class RemoveItemTest extends CommonAPI {
         loginPage.clickonLoginBtn();
 
 
+
         // Check if user is logged in
         String expectedHomePageHeader = "Full-Fledged practice website for Automation Engineers";
         String actualHomePageHeader = homePage.getHeaderText();
         Assert.assertEquals(expectedHomePageHeader, actualHomePageHeader);
 
+        productsPage.viewProduct();
         productsPage.addToCart();
-
         productsPage.viewCart();
-
-        viewcartPage.shoopingCart();
-
         viewcartPage.deleteItem();
+
+
+
 
 
 
@@ -59,7 +60,8 @@ public class RemoveItemTest extends CommonAPI {
         // validate that product is deleted
         String expectedText="";
         String actualText=homePage.emtyCart();
-       Assert.assertEquals(expectedText,actualText);
+        Assert.assertEquals(expectedText,actualText);
+
 
     }
 }

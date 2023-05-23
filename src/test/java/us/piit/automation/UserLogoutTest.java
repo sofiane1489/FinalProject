@@ -17,7 +17,7 @@ public class UserLogoutTest extends CommonAPI {
     String validEmail = Utility.decode(pop.getProperty("automation.validEmail"));
     String validPassword = Utility.decode(pop.getProperty("automation.validPassword"));
 
-    @Test
+    @Test(priority = 19)
     public void logout() {
         LoginPage loginPage = new LoginPage(getDriver());
         HomePage homePage = new HomePage(getDriver());
@@ -31,14 +31,19 @@ public class UserLogoutTest extends CommonAPI {
 
         // Enter Email, password, and click on login button
         loginPage.clickonloginbutton();
+
         loginPage.enterEmail(validEmail);
+
         loginPage.enterPassword(validPassword);
+
         loginPage.clickonLoginBtn();
-        waitFor(2);
+
 
         // Check if user is logged in
         String expectedHomePageHeader = "Full-Fledged practice website for Automation Engineers";
-        String actualHomePageHeader = homePage.getHeaderText();
+
+        String actualHomePageHeader=homePage.getHeaderText();
+
         Assert.assertEquals(expectedHomePageHeader, actualHomePageHeader);
 
         // click on logout button

@@ -24,7 +24,7 @@ public class ProductsPage extends CommonAPI {
     @FindBy(xpath = "//input[@id='quantity']")
     WebElement typeenterquantity;
 
-    @FindBy(xpath = "//body/section[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/span[1]/button[1]/i[1]")
+    @FindBy(xpath = "//body/section[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/span[1]/button[1]")
     WebElement clickonaddtocart;
     @FindBy(xpath = "//u[contains(text(),'View Cart')]")
     WebElement clickonviewcart;

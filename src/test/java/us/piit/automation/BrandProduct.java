@@ -34,6 +34,7 @@ public class BrandProduct extends CommonAPI {
         poloBrandPage.clickonPoloBrand();
 
 
+
         //Verify that user is navigated to brand page and polo brand products are displayed
         String expectedPagehaederText="BRAND - POLO PRODUCTS";
         String actualPagehaederText=poloBrandPage.getPageHeaderTitle();

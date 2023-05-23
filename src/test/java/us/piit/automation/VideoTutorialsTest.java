@@ -22,14 +22,14 @@ public class VideoTutorialsTest extends CommonAPI {
     String validEmail = Utility.decode(pop.getProperty("automation.validEmail"));
     String validPassword = Utility.decode(pop.getProperty("automation.validPassword"));
 
-    @Test
+    @Test(priority = 15)
     public void subscribeToChannel() {
         LoginPage loginPage = new LoginPage(getDriver());
         HomePage homePage = new HomePage(getDriver());
         VideoTutorialsPage videoTutorialsPage=new VideoTutorialsPage(getDriver());
 
         // Verify the title of the page
-        String expectedTitle = "Automation Exercise";
+        String expectedTitle = "automationexercise.com";
         String actualTitle = getCurrentTtile();
         Assert.assertEquals(expectedTitle, actualTitle);
 
@@ -43,6 +43,7 @@ public class VideoTutorialsTest extends CommonAPI {
         loginPage.enterPassword(validPassword);
 
         loginPage.clickonLoginBtn();
+
 
 
 
@@ -61,6 +62,7 @@ public class VideoTutorialsTest extends CommonAPI {
         videoTutorialsPage.clickonSubscribe();
 
         waitFor(2);
+        takeScreenshot("user subscribe success");
 
         // verify user subscribe succesfully
 //        String expectedtext="Subscription added";

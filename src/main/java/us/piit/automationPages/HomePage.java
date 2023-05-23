@@ -41,6 +41,10 @@ public class HomePage extends CommonAPI {
     WebElement deleteAccount;
     @FindBy(xpath = "//a[normalize-space()='Video Tutorials']")
     WebElement videoTutorials;
+    @FindBy(xpath = "//a[normalize-space()='API Testing']")
+    WebElement APITesting;
+    @FindBy(xpath = "//img[@alt='Website for automation practice']")
+    WebElement logotest;
 
 
     public String getHeaderText() {
@@ -118,5 +122,15 @@ public class HomePage extends CommonAPI {
         log.info("clickon videotutorials success");
 
     }
+    public void clickonAPITesting(){
+        clickOn(APITesting);
+        log.info("click on api testing success");
+    }
+    public boolean getLogoText(){
+      boolean text = isVisible(logotest);
+      log.info("logotext visible success");
+      return text;
+    }
+
 
 }
