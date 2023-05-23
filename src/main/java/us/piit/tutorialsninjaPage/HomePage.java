@@ -16,7 +16,7 @@ public class HomePage extends CommonAPI {
     }
     @FindBy(css = "#content")
     WebElement userTableOfContentField;
-    @FindBy(css = "#content h2:nth-child(1)")
+    @FindBy(xpath = "//h2[text()='My Account']")
     WebElement userAccountField;
     @FindBy(css = "#search input")
     WebElement searchBarField;
@@ -24,7 +24,7 @@ public class HomePage extends CommonAPI {
     WebElement searchBtn;
     @FindBy(css = "#menu div.collapse.navbar-collapse.navbar-ex1-collapse ul li:nth-child(6) a")
     WebElement phonesAndPDAsSection;
-    @FindBy(xpath = "//*[@id=cart]")
+    @FindBy(css = "#cart button")
     WebElement shoppingCartField;
     @FindBy(css = "#cart ul li:nth-child(2) div p a:nth-child(2)")
     WebElement checkoutBtn;
@@ -40,6 +40,12 @@ public class HomePage extends CommonAPI {
     WebElement tabletsBtn;
     @FindBy(css = "#menu div.collapse.navbar-collapse.navbar-ex1-collapse ul li:nth-child(6) a")
     WebElement phonesAndPDAsBtn;
+    @FindBy(css = "#menu div.collapse.navbar-collapse.navbar-ex1-collapse ul li:nth-child(3) a")
+    WebElement componentsSection;
+    @FindBy(css = "#menu div.collapse.navbar-collapse.navbar-ex1-collapse ul li.dropdown.open div a")
+    WebElement showAllComponentsBtn;
+    @FindBy(css = "#content ul:nth-child(4) li:nth-child(1) a")
+    WebElement myOrderField;
 
     public boolean checkPresenceOfUserTableOfContent(){
         boolean tableContentIsDisplayed =  isVisible(userTableOfContentField);
@@ -91,12 +97,20 @@ public class HomePage extends CommonAPI {
     }
     public void clickOnTabletsSectionBtn(){
         clickOn(tabletsBtn);
-        log.info("click stablets section button success");
+        log.info("click tablets section button success");
     }
-    public void clickOnPhonesAndPDAsBtn(){
+   public void hoverOverAndClickOnComponentsSection(){
+        clickOn(componentsSection);
+        log.info("hover over and click on components section success");
+   }
+   public void clickOnShowAllComponentsBtn(){
+        clickOn(showAllComponentsBtn);
+        log.info("click on show all components button success");
+   }
+   public void clickOnViewYourOrderHistory(){
         clickOn(phonesAndPDAsBtn);
-        log.info("click phones and PDAs section button success");
-    }
+        log.info("click on view order history success");
+   }
 }
 
 

@@ -15,8 +15,15 @@ public class AddToShoppingCartPage extends CommonAPI {
     }
     @FindBy(css = "#button-cart")
     WebElement addToCartBtn;
+    @FindBy(css = "#product-product div.alert.alert-success.alert-dismissible")
+    WebElement validMessage;
     public void clickOnAddToCartBtn(){
         clickOn(addToCartBtn);
         log.info("click on add to cart button success");
+    }
+    public String getConfirmAddMessage(){
+        String text = getElementText(validMessage);
+        log.info("get message success");
+        return text;
     }
 }

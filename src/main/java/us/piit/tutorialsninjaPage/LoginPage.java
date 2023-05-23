@@ -23,9 +23,9 @@ public class LoginPage extends CommonAPI {
     WebElement emailField;
     @FindBy(css = "#input-password")
     WebElement passwordField;
-    @FindBy(css = "#content div div:nth-child(2) div form input")
+    @FindBy(css = "#content div div:nth-child(2) div form input.btn.btn-primary")
     WebElement loginBtn;
-    @FindBy(xpath = "//*[@id=\"account-login\"]/div[1]/text()")
+    @FindBy(css = "#account-login div.alert.alert-danger.alert-dismissible")
     WebElement errorMessage;
     @FindBy(css = "#content div div:nth-child(2) div form div:nth-child(2) a")
     WebElement forgottenPassword;
@@ -49,10 +49,10 @@ public class LoginPage extends CommonAPI {
         clickOn(loginBtn);
         log.info("click on login button success");
     }
-    public String getErrorMessage(){
-        String text = getElementText(errorMessage);
+    public boolean checkPresenceOfErrorMessage(){
+        boolean errorMessageIsDisplayed = isVisible(errorMessage);
         log.info("get error message success");
-        return  text;
+        return  errorMessageIsDisplayed;
     }
     public void clickOnForgottenPasswordLink(){
         clickOn(forgottenPassword);
