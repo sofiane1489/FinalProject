@@ -59,16 +59,16 @@
 <!--            <class name="us.piit.luma.LumaWebsiteLunchTest"></class>-->
 <!--        </classes>-->
 <!--    </test>-->
-    <test name="Subscribe test">
-<!--        <groups>-->
-<!--            <run>-->
-<!--                <include name="group1" />-->
-<!--            </run>-->
-<!--        </groups>-->
-        <classes>
-            <class name="us.piit.luma.SubscribeTest"></class>
-        </classes>
-    </test>
+<!--    <test name="Subscribe test">-->
+<!--&lt;!&ndash;        <groups>&ndash;&gt;-->
+<!--&lt;!&ndash;            <run>&ndash;&gt;-->
+<!--&lt;!&ndash;                <include name="group1" />&ndash;&gt;-->
+<!--&lt;!&ndash;            </run>&ndash;&gt;-->
+<!--&lt;!&ndash;        </groups>&ndash;&gt;-->
+<!--        <classes>-->
+<!--            <class name="us.piit.luma.SubscribeTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
 <!--    <test name="Addreview Test">-->
 <!--        <classes>-->
 <!--            <class name="us.piit.luma.AddReviewTest"></class>-->
@@ -79,6 +79,12 @@
 <!--            <class name="us.piit.luma.OrderTrackingTest"></class>-->
 <!--        </classes>-->
 <!--    </test>-->
+
+    <test name="AddToWishLIst Test">
+        <classes>
+            <class name="us.piit.luma.AddToWishListTest"></class>
+        </classes>
+    </test>
 
 </suite>
 
