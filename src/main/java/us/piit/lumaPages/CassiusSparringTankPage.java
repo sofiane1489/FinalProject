@@ -25,7 +25,7 @@ public class CassiusSparringTankPage extends CommonAPI {
     @FindBy(xpath="//button[@id='product-addtocart-button']")
     WebElement addToCartBtn;
 
-    @FindBy(xpath=" //main[@id='maincontent']/div/div[2]/div/div/div")
+    @FindBy(css=" .message-success.success.message")
     WebElement confirmationText;
 
     @FindBy(css=".base")
@@ -38,6 +38,9 @@ public class CassiusSparringTankPage extends CommonAPI {
     WebElement addToWishListLink;
 
 
+
+    @FindBy(css="div[class='product-addto-links'] a[class='action tocompare']")
+    WebElement addToCompareLink;
 
     public void clickOnSizeLabel(){
         clickOn(sizeSLabel);
@@ -73,6 +76,10 @@ public class CassiusSparringTankPage extends CommonAPI {
      public void clickOnAddToWishLIstLink(){
         clickOn(addToWishListLink);
         log.info("click on add to wish list success");
-
      }
+
+    public void clickOnAddToCompareLink(){
+        clickOn(addToCompareLink);
+        log.info("click on add to compare success");
+    }
 }
