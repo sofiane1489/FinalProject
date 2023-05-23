@@ -104,7 +104,7 @@ public class ExcelReader {
 
 //         List<String> items = excelReader.getEntireColumnForGivenHeader("luma", "     Test Case Summary");
 //          String items = excelReader.getValueForGivenHeaderAndKey("luma", "TC ID", "TS2-TC002");
-//          List<String> items = excelReader.getEntireColumnData("luma", 4,3);
+//          List<String> items = excelReader.getEntireColumnData("luma", 0,3);
 //          System.out.println(items);
 
     }

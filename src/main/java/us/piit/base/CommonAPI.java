@@ -121,7 +121,7 @@ public class CommonAPI {
             driver=new RemoteWebDriver(new URL("http://"+username+":"+password+"@ondemand.saucelabs.com:80/wd/hub"),cap);
         }
     }
-
+    @Parameters("browserName")
     public void getLocalDriver(String browserName){
         if(browserName.equalsIgnoreCase("chrome")) {
             driver = new ChromeDriver();
@@ -135,7 +135,7 @@ public class CommonAPI {
         }
     }
     @Parameters({"useCloudEnv","envName","os","osversion","browserName","browservesion","url"})
-    @BeforeMethod
+    @BeforeMethod(groups = {"sanity"})
     public void setup(@Optional("false") String useCloudEnv, @Optional("browserstack") String envName, @Optional("windows")  String os,
                       @Optional("11") String osversion, @Optional("chrome") String browserName,
                       @Optional("111") String browservesion, @Optional("https://www.google.com/") String url) throws MalformedURLException {
@@ -151,7 +151,7 @@ public class CommonAPI {
         }
         driver.get(url);
     }
-    @AfterMethod
+    @AfterMethod(groups = {"sanity"})
     public void teardown(){
         //close browser
         driver.quit();

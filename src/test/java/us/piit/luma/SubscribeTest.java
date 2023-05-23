@@ -1,5 +1,6 @@
 package us.piit.luma;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import us.piit.base.CommonAPI;
 import us.piit.lumaPages.HomePageBeforeLogin;
@@ -13,7 +14,7 @@ public class SubscribeTest extends CommonAPI {
     String invalidEmail=Utility.decode(pro.getProperty("luma.invalidEmail"));
 
 
-    @Test(groups = "group2")
+    @Test(priority = 1)
     public void subscribeWithValidEmail(){
         HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());
 
@@ -34,8 +35,7 @@ public class SubscribeTest extends CommonAPI {
         Assert.assertEquals(actualConfirmationText,expectedConfirmationText);
 
     }
-
-    @Test(groups = "group1")
+    @Test(priority = 2)
     public void subscribeWithInvalidEmail(){
         HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());
 
