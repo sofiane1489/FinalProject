@@ -9,7 +9,7 @@ import us.piit.utility.Utility;
 
 import java.util.Properties;
 
-public class AddItemsToShoppingCart extends CommonAPI {
+public class AddItemsToShoppingCartTest extends CommonAPI {
     Properties pro= Utility.loadProperties();
     String validEmail= Utility.decode(pro.getProperty("tutorialsninja.email")) ;
     String userPassword=Utility.decode(pro.getProperty("tutorialsninja.password")) ;
@@ -23,7 +23,7 @@ public class AddItemsToShoppingCart extends CommonAPI {
         PhonesAndPDAsPage phonesAndPDAsPage = new PhonesAndPDAsPage(getDriver());
         AddToShoppingCartPage addToShoppingCartPage = new AddToShoppingCartPage(getDriver());
         CheckoutPage checkoutPage = new CheckoutPage(getDriver());
-        String expectedTitle = "Your Store.com";
+        String expectedTitle = "Your Store";
         String actualTitle = getCurrentTtile();
         Assert.assertEquals(expectedTitle, actualTitle);
         // enter  username, password, and click on login button
@@ -36,11 +36,11 @@ public class AddItemsToShoppingCart extends CommonAPI {
         phonesAndPDAsPage.hoverOverAndClickOnProductImg();
         addToShoppingCartPage.clickOnAddToCartBtn();
 
-        homePage.clickOnShowItemsAddedBtn();
-        homePage.hoverOverAndClickOnCheckoutBtn();
         //add to cart validation
-        Assert.assertTrue(checkoutPage.checkPresenceOfUserProcedureCheckout());
-        captureScreenshot();
+       String expectedConfirmMessage = "Success: You have added HTC Touch HD to your shopping cart!\n" +
+               "×";
+       String actualConfirmMessage = addToShoppingCartPage.getConfirmAddMessage();
+       Assert.assertEquals( actualConfirmMessage,expectedConfirmMessage);
     }
 
 }
