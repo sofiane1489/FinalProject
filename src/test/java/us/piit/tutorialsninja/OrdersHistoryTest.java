@@ -38,9 +38,10 @@ public class OrdersHistoryTest extends CommonAPI {
         //view order history
         homePage.clickOnViewYourOrderHistory();
         orderHistoryPage.clickOnViewOrderBtn();
-        orderHistoryPage.scrollToReturnBtn(getDriver());
 
         //view order history validation
-        
+        String expectedResult = "Order Details";
+        String actualResult = orderHistoryPage.getOrderDetailsText();
+        Assert.assertEquals(expectedResult, actualResult);
     }
 }

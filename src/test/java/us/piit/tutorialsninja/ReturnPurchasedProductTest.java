@@ -5,25 +5,24 @@ import org.testng.annotations.Test;
 import us.piit.base.CommonAPI;
 import us.piit.tutorialsninjaPage.HomePage;
 import us.piit.tutorialsninjaPage.LoginPage;
-import us.piit.tutorialsninjaPage.LogoutAffirmationPage;
+import us.piit.tutorialsninjaPage.ProductReturnPage;
 import us.piit.tutorialsninjaPage.WelcomePage;
 import us.piit.utility.Utility;
 
 import java.util.Properties;
 
-public class LogoutTest extends CommonAPI {
+public class ReturnPurchasedProductTest extends CommonAPI {
     Properties pro = Utility.loadProperties();
 
     String validEmail = Utility.decode(pro.getProperty("tutorialsninja.email"));
     String userPassword = Utility.decode(pro.getProperty("tutorialsninja.password"));
 
-
     @Test
-    public void logoutTest() {
+    public void returnItemTest() {
         WelcomePage welcomePage = new WelcomePage(getDriver());
         LoginPage loginPage = new LoginPage(getDriver());
         HomePage homePage = new HomePage(getDriver());
-        LogoutAffirmationPage logoutAffirmationPage = new LogoutAffirmationPage(getDriver());
+        ProductReturnPage productReturnPage = new ProductReturnPage(getDriver());
         String expectedTitle = "Your Store";
         String actualTitle = getCurrentTtile();
         Assert.assertEquals(expectedTitle, actualTitle);
@@ -34,11 +33,18 @@ public class LogoutTest extends CommonAPI {
         loginPage.enterValidEmail(validEmail);
         loginPage.enterValidPassword(userPassword);
         loginPage.clickOnLoginBtn();
-        homePage.clickOnLogoutBtn();
 
-        //check first user is logged in
-        String expectedMessage = "You have been logged off your account. It is now safe to leave the computer.";
-        String actualMessage = logoutAffirmationPage.getValidationLogoutMessage();
-        Assert.assertEquals(expectedMessage, actualMessage);
+        //return product
+        productReturnPage.clickOnViewOrderHistory();
+        productReturnPage.clickOnViewOrderBtn();
+        productReturnPage.ClickOnReturnBtn();
+        productReturnPage.clickOnReceivedWrongItem();
+        productReturnPage.clickOnOpenedProductStatus();
+        productReturnPage.clickOnSubmitBtn();
+
+        //request confirmation
+        String expectedRequestConfirmationMessage = "You will be notified via e-mail as to the status of your request.";
+        String actualRequestConfirmationMessage = productReturnPage.getRequestConfirmationSubmission();
+        Assert.assertEquals(expectedRequestConfirmationMessage, actualRequestConfirmationMessage);
     }
 }

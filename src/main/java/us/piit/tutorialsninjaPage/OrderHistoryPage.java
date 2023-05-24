@@ -15,14 +15,15 @@ public class OrderHistoryPage extends CommonAPI {
     }
     @FindBy(css = "#content div.table-responsive table tbody tr:nth-child(1) td:nth-child(7) a")
     WebElement viewBtn;
-    @FindBy(css = "#content div.table-responsive table tbody tr td:nth-child(6)")
-    WebElement returnBtn;
+    @FindBy(css = "#content table:nth-child(2) thead tr td")
+    WebElement orderDetails;
     public void clickOnViewOrderBtn(){
         clickOn(viewBtn);
         log.info("click on view order button success");
     }
-    public void scrollToReturnBtn(WebDriver driver){
-        scrollToElement(driver,returnBtn);
-        log.info("scroll to return button success");
+    public String getOrderDetailsText(){
+        String text = getElementText(orderDetails);
+        log.info("get text success");
+        return text;
     }
 }

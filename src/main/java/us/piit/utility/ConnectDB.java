@@ -133,11 +133,11 @@ public class ConnectDB {
 //        values.add(" ");
 //        String tableName = "lumaTestCases";
 
-//        values.add(3);
-//        values.add("Jack");
-//        values.add("Arranda");
-//        values.add("JackArranda@tester.com");
-//        values.add(1966503348);
+//        values.add(2);
+//        values.add("mike");
+//        values.add("duglass");
+//        values.add("mikeduglass@tester.com");
+//        values.add(1966503878);
 //         String tableName = "Testers";
 
 //        //data insertion

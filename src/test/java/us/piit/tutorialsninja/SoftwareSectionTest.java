@@ -18,7 +18,7 @@ public class SoftwareSectionTest extends CommonAPI {
     String userPassword = Utility.decode(pro.getProperty("tutorialsninja.password"));
 
     @Test
-    public void softwareProductSection() {
+    public void softwareProductSectionTest() {
         WelcomePage welcomePage = new WelcomePage(getDriver());
         LoginPage loginPage = new LoginPage(getDriver());
         HomePage homePage = new HomePage(getDriver());

@@ -27,7 +27,7 @@ public class RegistrationPage extends CommonAPI {
     WebElement passwordField;
     @FindBy(css = "#input-confirm")
     WebElement confirmPasswordField;
-    @FindBy(css = "##content form div div input[type=checkbox]:nth-child(2)")
+    @FindBy(css = "#content form div div input[type=checkbox]:nth-child(2)")
     WebElement agreementCheckBox;
     @FindBy(css = "#content form div div input.btn.btn-primary")
     WebElement registrationField;
