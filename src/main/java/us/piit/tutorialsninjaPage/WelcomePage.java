@@ -17,8 +17,14 @@ public class WelcomePage extends CommonAPI {
     WebElement mainHeader;
     @FindBy(css = "#top-links ul li.dropdown.open ul li:nth-child(2) a")
     WebElement headerLoginBtn;
+    @FindBy(css = "#top-links ul li.dropdown.open ul li:nth-child(1) a")
+    WebElement headerRegisterBtn;
     @FindBy(css = "#logo h1 a")
     WebElement logoField;
+    public void hoverOverAndClickOnHeaderRegisterBtn(){
+        clickOn(headerRegisterBtn);
+        log.info("click on header register button success");
+    }
     public void clickOnMyAccountBtn(){
         clickOn(mainHeader);
         log.info("click on my account button success");

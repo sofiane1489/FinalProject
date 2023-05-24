@@ -50,13 +50,13 @@ public class CommonAPI {
     //report setup from line 48 to 105
     public static com.relevantcodes.extentreports.ExtentReports extent;
 
-    @BeforeSuite
+    @BeforeSuite(groups="group1")
     public void extentSetup(ITestContext context) {
         ExtentManager.setOutputDirectory(context);
         extent = ExtentManager.getInstance();
     }
 
-    @BeforeMethod
+    @BeforeMethod(groups="group1")
     public void startExtent(Method method) {
         String className = method.getDeclaringClass().getSimpleName();
         String methodName = method.getName().toLowerCase();
@@ -70,7 +70,7 @@ public class CommonAPI {
         return sw.toString();
     }
 
-    @AfterMethod
+    @AfterMethod(groups="group1")
     public void afterEachTestMethod(ITestResult result) {
         ExtentTestManager.getTest().getTest().setStartedTime(getTime(result.getStartMillis()));
         ExtentTestManager.getTest().getTest().setEndedTime(getTime(result.getEndMillis()));
@@ -95,7 +95,7 @@ public class CommonAPI {
         }
         driver.quit();
     }
-    @AfterSuite
+    @AfterSuite(groups="group1")
     public void generateReport() {
         extent.close();
     }
@@ -105,7 +105,6 @@ public class CommonAPI {
         calendar.setTimeInMillis(millis);
         return calendar.getTime();
     }
-
 
     public void getCloudDriver(String envName,String os,String osVersion,String browserName,String browserVersion,String username,String password) throws MalformedURLException, MalformedURLException {
         DesiredCapabilities cap=new DesiredCapabilities();
@@ -121,6 +120,7 @@ public class CommonAPI {
         }
     }
 
+    @Parameters("browserName")
     public void getLocalDriver(String browserName){
         if(browserName.equalsIgnoreCase("chrome")) {
             driver = new ChromeDriver();
@@ -134,7 +134,7 @@ public class CommonAPI {
         }
     }
     @Parameters({"useCloudEnv","envName","os","osversion","browserName","browservesion","url"})
-    @BeforeMethod
+    @BeforeMethod(groups="group1")
     public void setup(@Optional("false") String useCloudEnv, @Optional("browserstack") String envName, @Optional("windows")  String os,
                       @Optional("11") String osversion, @Optional("chrome") String browserName,
                       @Optional("111") String browservesion, @Optional("https://www.google.com/") String url) throws MalformedURLException {
@@ -150,7 +150,7 @@ public class CommonAPI {
         }
         driver.get(url);
     }
-    @AfterMethod
+    @AfterMethod(groups="group1")
     public void teardown(){
         //close browser
         driver.quit();

@@ -17,8 +17,7 @@ public class LoginPage extends CommonAPI {
     }
 
     //locators
-    @FindBy(css = "#content div div:nth-child(1) div a")
-    WebElement newCustomerField;
+
     @FindBy(css = "#input-email")
     WebElement emailField;
     @FindBy(css = "#input-password")
@@ -32,10 +31,6 @@ public class LoginPage extends CommonAPI {
     @FindBy(css = "#account-login div.alert.alert-success.alert-dismissible")
     WebElement confirmationMessage;
 
-    public void clickOnContinueBtn() {
-        clickOn(newCustomerField);
-        log.info("click on continue button success");
-    }
 
     public void enterValidEmail(String email) {
         type(emailField, email);

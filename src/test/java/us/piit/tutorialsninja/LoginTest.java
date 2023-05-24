@@ -18,7 +18,7 @@ public class LoginTest extends CommonAPI {
 
 
 
-   // @Test
+    @Test(groups = "group1")
     public void validCredential() {
         WelcomePage welcomePage = new WelcomePage(getDriver());
         LoginPage loginPage = new LoginPage(getDriver());
@@ -45,7 +45,7 @@ public class LoginTest extends CommonAPI {
         Assert.assertEquals(expectedResult, actualResult);
         captureScreenshot();
     }
-    //@Test
+    @Test(groups = "group2")
     public void invalidEmail() {
         WelcomePage welcomePage = new WelcomePage(getDriver());
         LoginPage loginPage = new LoginPage(getDriver());
@@ -67,7 +67,7 @@ public class LoginTest extends CommonAPI {
         Assert.assertEquals(expectedErrorMessage,actualErrorMessage );
 
     }
-    @Test
+    @Test(groups={"group1","group2"})
     public void missingPassword() {
         WelcomePage welcomePage = new WelcomePage(getDriver());
         LoginPage loginPage = new LoginPage(getDriver());
