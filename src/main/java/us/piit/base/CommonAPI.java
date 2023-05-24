@@ -51,13 +51,13 @@ public class CommonAPI {
     //extent report setup from line 48 to 105
     public static com.relevantcodes.extentreports.ExtentReports extent;
 
-    @BeforeSuite
+    @BeforeSuite(groups="sanity")
     public void extentSetup(ITestContext context) {
         ExtentManager.setOutputDirectory(context);
         extent = ExtentManager.getInstance();
     }
 
-    @BeforeMethod
+    @BeforeMethod(groups="sanity")
     public void startExtent(Method method) {
         String className = method.getDeclaringClass().getSimpleName();
         String methodName = method.getName().toLowerCase();
@@ -71,7 +71,7 @@ public class CommonAPI {
         return sw.toString();
     }
 
-    @AfterMethod
+    @AfterMethod(groups="sanity")
     public void afterEachTestMethod(ITestResult result) {
         ExtentTestManager.getTest().getTest().setStartedTime(getTime(result.getStartMillis()));
         ExtentTestManager.getTest().getTest().setEndedTime(getTime(result.getEndMillis()));
@@ -96,7 +96,7 @@ public class CommonAPI {
         }
         driver.quit();
     }
-    @AfterSuite
+    @AfterSuite(groups="sanity")
     public void generateReport() {
         extent.close();
     }
