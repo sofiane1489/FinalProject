@@ -32,11 +32,11 @@ public class HomePage extends CommonAPI {
     WebElement logoutBtn;
     @FindBy(css = "#column-right div a:nth-child(2)")
     WebElement editAccountBtn;
-    @FindBy(xpath = "//*[@id=\"account-account\"]/div[1]/text()")
+    @FindBy(css = "#account-account div.alert.alert-success.alert-dismissible")
     WebElement editMessageConfirmation;
-    @FindBy(css = "#menu div.collapse.navbar-collapse.navbar-ex1-collapse ul li:nth-child(5) a")
+    @FindBy(css = "#menu > div.collapse.navbar-collapse.navbar-ex1-collapse > ul > li:nth-child(5) > a")
     WebElement softwareBtn;
-    @FindBy(css = "#menu div.collapse.navbar-collapse.navbar-ex1-collapse ul li:nth-child(4) a")
+    @FindBy(css = "#menu > div.collapse.navbar-collapse.navbar-ex1-collapse > ul > li:nth-child(4) > a")
     WebElement tabletsBtn;
     @FindBy(css = "#menu div.collapse.navbar-collapse.navbar-ex1-collapse ul li:nth-child(6) a")
     WebElement phonesAndPDAsBtn;
@@ -44,8 +44,17 @@ public class HomePage extends CommonAPI {
     WebElement componentsSection;
     @FindBy(css = "#menu div.collapse.navbar-collapse.navbar-ex1-collapse ul li.dropdown.open div a")
     WebElement showAllComponentsBtn;
-    @FindBy(css = "#content ul:nth-child(4) li:nth-child(1) a")
-    WebElement myOrderField;
+    @FindBy(css = "#menu div.collapse.navbar-collapse.navbar-ex1-collapse ul li:nth-child(7) a")
+    WebElement camerasSection;
+    @FindBy(css = "#wishlist-total span")
+    WebElement mainHeader;
+    @FindBy(css = "#content ul:nth-child(8) li a")
+    WebElement newsLetter;
+    @FindBy(css = "#account-account div.alert.alert-success.alert-dismissible")
+    WebElement subscriptionValidation;
+
+//    @FindBy(css = "#content ul:nth-child(4) li:nth-child(1) a")
+//    WebElement myOrderField;
 
     public boolean checkPresenceOfUserTableOfContent(){
         boolean tableContentIsDisplayed =  isVisible(userTableOfContentField);
@@ -89,6 +98,7 @@ public class HomePage extends CommonAPI {
     public String getEditAccountConfirmationMessage(){
         String text = getElementText(editMessageConfirmation);
         log.info("get text success");
+        log.info(text);
         return  text;
     }
     public void clickOnSoftwareSectionBtn(){
@@ -110,6 +120,25 @@ public class HomePage extends CommonAPI {
    public void clickOnViewYourOrderHistory(){
         clickOn(phonesAndPDAsBtn);
         log.info("click on view order history success");
+   }
+
+   public void clickOnCamerasSectionBtn(){
+        clickOn(camerasSection);
+        log.info("click on cameras section button success");
+   }
+   public boolean checkPresenceOfNumberOfItemInWishList(){
+        boolean NumberOfItemInWishListIsDisplayed = isVisible(mainHeader);
+        log.info("number of items added to wish list is visible");
+        return NumberOfItemInWishListIsDisplayed;
+   }
+   public void clickOnSubscribeOrUnsubscribe(){
+        clickOn(newsLetter);
+        log.info("click on subscribe or unsubscribe success");
+   }
+   public String getSubscriptionConfirmationMessage(){
+        String text = getElementText(subscriptionValidation);
+        log.info("get text message success");
+        return text;
    }
 }
 

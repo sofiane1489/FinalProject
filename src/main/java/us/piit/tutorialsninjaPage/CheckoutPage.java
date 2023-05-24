@@ -23,15 +23,15 @@ public class CheckoutPage extends CommonAPI {
     WebElement addressField;
     @FindBy(css = "#input-payment-city")
     WebElement cityField;
-    @FindBy(css = "input-payment-country")
+    @FindBy(css = "#input-payment-country")
     WebElement countryField;
     @FindBy(css = "#input-payment-postcode")
     WebElement zipCodFiled;
     @FindBy(css = "#input-payment-zone")
     WebElement statField;
-    @FindBy(css = "#input-payment-zone option:nth-child(52)")
+    @FindBy(css = "#input-payment-zone option:nth-child(5)")
     WebElement statChoose;
-    @FindBy(css = "#input-payment-country option:nth-child(240)")
+    @FindBy(css = "#input-payment-country option:nth-child(239)")
     WebElement countryChoose;
     @FindBy(css = "#button-payment-address")
     WebElement continueBtn;
@@ -45,6 +45,8 @@ public class CheckoutPage extends CommonAPI {
     WebElement checkBox;
     @FindBy(css = "#button-confirm")
     WebElement confirmBtn;
+    @FindBy(css = "#collapse-payment-address div form div:nth-child(3) label input[type=radio]")
+    WebElement newAddressBtn;
     public boolean checkPresenceOfUserProcedureCheckout(){
         boolean userProcedureCheckoutIsDisplayed = isVisible(checkoutField);
         log.info("user procedure checkout is displayed");
@@ -66,9 +68,9 @@ public class CheckoutPage extends CommonAPI {
         type(cityField, city);
         log.info("enter address success");
     }
-    public void selectCountry(int country){
-        selectByIn(countryChoose, country);
-        log.info("select");
+    public void hoverOverAndClickOnCountryName(){
+        clickOn(countryChoose);
+        log.info("select country success");
     }
     public void enterZipCode(String zip){
         type(zipCodFiled, zip);
@@ -82,8 +84,8 @@ public class CheckoutPage extends CommonAPI {
         clickOn(statField);
         log.info("click on country field success");
     }
-    public void selectStat(String stat){
-        selectByVal(statChoose, stat);
+    public void hoverOverAndClickOnStatName(){
+        clickOn(statChoose);
         log.info("select stat success");
     }
     public void clickOnAddressContinueBtn(){
@@ -110,4 +112,9 @@ public class CheckoutPage extends CommonAPI {
         clickOn(confirmBtn);
         log.info("click on continue button success");
     }
+    public void clickOnNewAddressBtn(){
+        clickOn(newAddressBtn);
+        log.info("click add new address button success");
+    }
+
 }

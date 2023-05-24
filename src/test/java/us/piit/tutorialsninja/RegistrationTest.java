@@ -15,17 +15,49 @@ public class RegistrationTest extends CommonAPI {
     String userLastName=Utility.decode(pro.getProperty("tutorialsninja.lastname")) ;
     String userPassword=Utility.decode(pro.getProperty("tutorialsninja.password")) ;
     String userPhoneNumber=Utility.decode(pro.getProperty("tutorialsninja.phonenumber")) ;
-    String invalidEmail=Utility.decode(pro.getProperty("tutorialsninja.invalidemail")) ;
+    String newEmail=Utility.decode(pro.getProperty("tutorialsninja.newEmail")) ;
+
 
 
     @Test
-    public void validCred() {
+    public void userRegitrationTest() {
         WelcomePage welcomePage = new WelcomePage(getDriver());
         LoginPage loginPage = new LoginPage(getDriver());
         RegistrationPage registrationPage = new RegistrationPage(getDriver());
         AffirmationAccountCreationPage affirmationAccountCreationPage = new AffirmationAccountCreationPage(getDriver());
         HomePage homePage = new HomePage(getDriver());
-        String expectedTitle = "Your Store.com";
+        String expectedTitle = "Your Store";
+        String actualTitle = getCurrentTtile();
+        Assert.assertEquals(expectedTitle, actualTitle);
+
+        //click on sign in, enter  username, password, and click on login button
+        welcomePage.clickOnMyAccountBtn();
+        welcomePage.hoverOverAndClickOnHeaderLoginBtn();
+        loginPage.clickOnContinueBtn();
+        registrationPage.enterFirstName(userFirstName);
+        registrationPage.enterLastName(userLastName);
+        registrationPage.enterEmail(newEmail);
+        registrationPage.enterPhoneNumber(userPhoneNumber);
+        registrationPage.enterPassword(userPassword);
+        registrationPage.confirmPassword(userPassword);
+        registrationPage.clickOnAgreementCheckBox();
+        registrationPage.clickOnContinueBtn();
+
+
+
+        //registration confirmation
+        String expectedMessage = "Congratulations! Your new account has been successfully created!";
+        String actualMessage = affirmationAccountCreationPage.getConfirmationMessage();
+        Assert.assertEquals(expectedMessage, actualMessage);
+        captureScreenshot();
+    }
+
+   // @Test
+    public void ExistingCred() {
+        WelcomePage welcomePage = new WelcomePage(getDriver());
+        LoginPage loginPage = new LoginPage(getDriver());
+        RegistrationPage registrationPage = new RegistrationPage(getDriver());
+        String expectedTitle = "Your Store";
         String actualTitle = getCurrentTtile();
         Assert.assertEquals(expectedTitle, actualTitle);
 
@@ -36,36 +68,6 @@ public class RegistrationTest extends CommonAPI {
         registrationPage.enterFirstName(userFirstName);
         registrationPage.enterLastName(userLastName);
         registrationPage.enterEmail(validEmail);
-        registrationPage.enterPhoneNumber(userPhoneNumber);
-        registrationPage.enterPassword(userPassword);
-        registrationPage.confirmPassword(userPassword);
-        registrationPage.clickOnAgreementCheckBox();
-        registrationPage.clickOnContinueBtn();
-
-
-        //registration confirmation
-        String expectedMessage = "Your Account Has Been Created!";
-        String actualMessage = affirmationAccountCreationPage.getConfirmationMessage();
-        Assert.assertEquals(expectedMessage, actualMessage);
-        captureScreenshot();
-    }
-
-    @Test
-    public void ExistingCred() {
-        WelcomePage welcomePage = new WelcomePage(getDriver());
-        LoginPage loginPage = new LoginPage(getDriver());
-        RegistrationPage registrationPage = new RegistrationPage(getDriver());
-        String expectedTitle = "Your Store.com";
-        String actualTitle = getCurrentTtile();
-        Assert.assertEquals(expectedTitle, actualTitle);
-
-        //click on sign in, enter  username, password, and click on login button
-        welcomePage.clickOnMyAccountBtn();
-        welcomePage.hoverOverAndClickOnHeaderLoginBtn();
-        loginPage.clickOnContinueBtn();
-        registrationPage.enterFirstName(userFirstName);
-        registrationPage.enterLastName(userLastName);
-        registrationPage.enterEmail(invalidEmail);
         registrationPage.enterPhoneNumber(userPhoneNumber);
         registrationPage.enterPassword(userPassword);
         registrationPage.confirmPassword(userPassword);

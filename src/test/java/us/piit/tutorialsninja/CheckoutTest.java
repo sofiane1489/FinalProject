@@ -17,8 +17,6 @@ public class CheckoutTest extends CommonAPI {
     String userAddress=Utility.decode(pro.getProperty("tutorialsninja.address")) ;
     String userCity=Utility.decode(pro.getProperty("tutorialsninja.city")) ;
     String userZipCode=Utility.decode(pro.getProperty("tutorialsninja.zipcode")) ;
-    String userCountry=Utility.decode(pro.getProperty("tutorialsninja.country")) ;
-    String userStat=Utility.decode(pro.getProperty("tutorialsninja.stat")) ;
     @Test
     public void ProceedToCheckoutTest() {
         WelcomePage welcomePage = new WelcomePage(getDriver());
@@ -28,7 +26,7 @@ public class CheckoutTest extends CommonAPI {
         AddToShoppingCartPage addToShoppingCartPage = new AddToShoppingCartPage(getDriver());
         CheckoutPage checkoutPage = new CheckoutPage(getDriver());
         OrderConfirmationPage orderConfirmationPage = new OrderConfirmationPage(getDriver());
-        String expectedTitle = "Your Store.com";
+        String expectedTitle = "Your Store";
         String actualTitle = getCurrentTtile();
         Assert.assertEquals(expectedTitle, actualTitle);
 
@@ -47,20 +45,21 @@ public class CheckoutTest extends CommonAPI {
         homePage.hoverOverAndClickOnCheckoutBtn();
 
         //proceed to checkout
+        checkoutPage.clickOnNewAddressBtn();
         checkoutPage.enterFirstName(userFirstName);
         checkoutPage.enterLastName(userLastName);
         checkoutPage.enterAddress(userAddress);
         checkoutPage.enterCity(userCity);
         checkoutPage.enterZipCode(userZipCode);
         checkoutPage.clickOnCountryBox();
-        checkoutPage.selectCountry(Integer.parseInt(userCountry));
+        checkoutPage.hoverOverAndClickOnCountryName();
         checkoutPage.clickOnStatBox();
-        checkoutPage.selectStat(userStat);
+        checkoutPage.hoverOverAndClickOnStatName();
         checkoutPage.clickOnAddressContinueBtn();
         checkoutPage.clickOnShippingDetailsBtn();
         checkoutPage.clickOnShippingMethodBtn();
-        checkoutPage.clickOnShippingPaymentMethodBtn();
         checkoutPage.checkAgreementBoxBtn();
+        checkoutPage.clickOnShippingPaymentMethodBtn();
         checkoutPage.clickOnConfirmOrderBtn();
 
         //order validation

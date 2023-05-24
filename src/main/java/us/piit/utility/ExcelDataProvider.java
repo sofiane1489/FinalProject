@@ -140,7 +140,8 @@ public class ExcelDataProvider {
 
     public static void main(String[] args) {
 
-        String filePath = "C:\Users\sehso\eclipse-workspace\FinalProject\data\lumaData\testcases.xlsx";
+        String currentDir=System.getProperty("user.dir");
+        String filePath = currentDir+File.separator+"data"+File.separator+"tutorialsninjaData"+File.separator+"tutorialsninjaDataTestCases";
         ExcelDataProvider provider = new ExcelDataProvider(filePath);
 
         String sheetName = "luma";

@@ -133,11 +133,11 @@ public class ConnectDB {
 //        values.add(" ");
 //        String tableName = "lumaTestCases";
 
-//        values.add(3);
-//        values.add("Jack");
-//        values.add("Arranda");
-//        values.add("JackArranda@tester.com");
-//        values.add(1966503348);
+//        values.add(2);
+//        values.add("mike");
+//        values.add("duglass");
+//        values.add("mikeduglass@tester.com");
+//        values.add(1966503878);
 //         String tableName = "Testers";
 //        insertData(tableName, values);
 
@@ -146,7 +146,7 @@ public class ConnectDB {
 
         //reading data
         List<String> emails = getTableColumnData("select * from Testers;","Email");
-        for(int i=0;i<=1;i++) {
+        for(int i=0;i<=0;i++) {
             System.out.println(emails.get(i));
         }
 
