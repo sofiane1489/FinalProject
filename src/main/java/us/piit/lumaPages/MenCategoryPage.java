@@ -15,13 +15,13 @@ public class MenCategoryPage extends CommonAPI {
         PageFactory.initElements(driver,this);
     }
 
-    @FindBy(css="#narrow-by-list2 > dd > ol > li:nth-child(1) > a")
+    @FindBy(css="#narrow-by-list2 dd ol li:nth-child(1) a")
     WebElement tops48;
 
     @FindBy(css=".sidebar.sidebar-main")
     WebElement menSideBarMenu;
 
-    @FindBy(css=" img[src='https://magento.softwaretestingboard.com/pub/media/wysiwyg/mens/mens-main.jpg']")
+    @FindBy(css="img[src='https://magento.softwaretestingboard.com/pub/media/wysiwyg/mens/mens-main.jpg']")
     WebElement menBackgroungImg;
 
 

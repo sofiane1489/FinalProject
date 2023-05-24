@@ -3,14 +3,14 @@ package us.piit.freecrm;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import us.piit.automationPages.LoginPage;
 import us.piit.base.CommonAPI;
 import us.piit.freecrmPages.Homepage;
-import us.piit.freecrmPages.loginPage;
 import us.piit.utility.Utility;
 
 import java.util.Properties;
 
-public class loginTest extends CommonAPI {
+public class LoginTest extends CommonAPI {
 
     Properties pro= Utility.loadProperties();
 
@@ -18,23 +18,23 @@ public class loginTest extends CommonAPI {
     String userPassword=Utility.decode(pro.getProperty("freecrm.password")) ;
 
 
-    public loginTest(WebDriver driver) {
+    public LoginTest(WebDriver driver) {
 
     }
 
 
     @Test
     public void validCredential() {
-        loginTest loginPage = new loginTest(getDriver());
+        LoginPage loginPage = new LoginPage(getDriver());
            Homepage homePage = new Homepage(getDriver());
         String expectedTitle = "freecrm.com";
         String actualTitle = getCurrentTtile();
         Assert.assertEquals(expectedTitle, actualTitle);
 
         //enter  email, password and click on login button
-        loginPage.enterValidEmail(validEmail);
-        loginPage.enterValidPassword(userPassword);
-        loginPage.clickOnLoginBtn();
+        loginPage.enterEmail(validEmail);
+        loginPage.enterPassword(userPassword);
+        loginPage.clickonLoginBtn();
 
         String expectedResult = "Cogmento";
         String StringMyAccountText = null;
@@ -56,7 +56,7 @@ public class loginTest extends CommonAPI {
 
     @Test
     public void invalidEmail() {
-        loginPage loginPage = new loginPage();
+        LoginPage loginPage = new LoginPage(getDriver());
         String expectedTitle = "freecrm.com";
         String actualTitle = getCurrentTtile();
         Assert.assertEquals(expectedTitle, actualTitle);
@@ -64,14 +64,14 @@ public class loginTest extends CommonAPI {
         //enter  email, password, and click on login button
 
         useFakeEmail();
-        loginPage.enterValidPassword(userPassword);
-        loginPage.clickOnLoginBtn();
+        loginPage.enterPassword(userPassword);
+        loginPage.clickonLoginBtn();
 
         //error validation
 
         String expectedErrorMessage = "Something went wrong...\n" +
                 "Invalid login";
-        String actualErrorMessage = loginPage.getErrorMessage();
+        String actualErrorMessage = loginPage.getErrorMessageInvalidEmail();
         Assert.assertEquals(expectedErrorMessage,actualErrorMessage );
     }
 
