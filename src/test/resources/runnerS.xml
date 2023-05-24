@@ -40,7 +40,7 @@
                 <include name="sanity"></include>
 <!--                <include name="regression"></include>-->
                 <include name="smoke"></include>
-                <exclude name="unit"></exclude>
+                <include name="unit"></include>
             </run>
         </groups>
         <classes>
