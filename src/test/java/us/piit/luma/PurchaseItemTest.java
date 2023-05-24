@@ -12,7 +12,7 @@ import java.util.Properties;
 public class PurchaseItemTest extends CommonAPI {
 
 
-   // @Test(priority=1)
+    @Test(groups = "sanity")
     public void unableToAddToCartWithNoSelectedAttribute(){
         HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());
         MenCategoryPage menPage=new MenCategoryPage(getDriver());
@@ -39,7 +39,7 @@ public class PurchaseItemTest extends CommonAPI {
 
     }
 
-    @Test(priority=3)
+    @Test(groups = {"sanity","regression"})
     public void addItemToCart(){
         HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());
         MenCategoryPage menPage=new MenCategoryPage(getDriver());
@@ -74,7 +74,7 @@ public class PurchaseItemTest extends CommonAPI {
 
     }
 
-    @Test(priority=2)
+    @Test(groups = {"unit"})
     public void buyProduct(){
         HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());
         FitnessEquipmentPage fitnessEquipmentPage=new FitnessEquipmentPage(getDriver());
@@ -142,7 +142,7 @@ public class PurchaseItemTest extends CommonAPI {
         captureScreenshot();
 
     }
-    @Test(priority=4)
+    @Test(groups = {"smoke"})
     public void removeItemsFromTheCart(){
         HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());
         GearCategoryPage gearCategoryPage =new GearCategoryPage(getDriver());

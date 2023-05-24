@@ -40,14 +40,15 @@ public class CommonAPI {
 
     String browserstackUsername=Utility.decode(pro.getProperty("browserstack.username"));
     String browserstackPassword=Utility.decode(pro.getProperty("browserstack.password"));
-    String implicitWait=pro.getProperty("implicit.wait","10");
+    String implicitWait=pro.getProperty("implicit.wait","5");
     String browserMaximize=pro.getProperty("browser.maximize","true");
     String takeScreenshots=pro.getProperty("take.screenshots","false");
 
     WebDriver driver;
     Faker faker = new Faker();
 
-    //report setup from line 48 to 105
+
+    //extent report setup from line 48 to 105
     public static com.relevantcodes.extentreports.ExtentReports extent;
 
     @BeforeSuite
@@ -120,7 +121,7 @@ public class CommonAPI {
             driver=new RemoteWebDriver(new URL("http://"+username+":"+password+"@ondemand.saucelabs.com:80/wd/hub"),cap);
         }
     }
-
+  
     public void getLocalDriver(String browserName){
         if(browserName.equalsIgnoreCase("chrome")) {
             driver = new ChromeDriver();

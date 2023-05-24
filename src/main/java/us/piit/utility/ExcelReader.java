@@ -102,9 +102,9 @@ public class ExcelReader {
         String data=excelReader.getDataFromCell(name,1,1);
         System.out.println(data);
 
-//          List<String> items = excelReader.getEntireColumnForGivenHeader("Sheet1", "Project Name");
-//          String items = excelReader.getValueForGivenHeaderAndKey("Sheet1", "Project Name", "Created by");
-//          List<String> items = excelReader.getEntireColumnData("Sheet1", 4,4);
+//         List<String> items = excelReader.getEntireColumnForGivenHeader("luma", "     Test Case Summary");
+//          String items = excelReader.getValueForGivenHeaderAndKey("luma", "TC ID", "TS2-TC002");
+//          List<String> items = excelReader.getEntireColumnData("luma", 0,3);
 //          System.out.println(items);
 
     }

@@ -15,7 +15,7 @@ public class TopsPage extends CommonAPI {
         PageFactory.initElements(driver,this);
     }
 
-   @FindBy(xpath="//a[@class='product photo product-item-photo']//img[@alt='Cassius Sparring Tank']")
+   @FindBy(css="img[alt='Cassius Sparring Tank']")
     WebElement cassiusSparringTankLink;
 
     public void clickOnCassiusSparringTank(){

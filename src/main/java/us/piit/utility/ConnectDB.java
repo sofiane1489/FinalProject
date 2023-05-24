@@ -56,7 +56,7 @@ public class ConnectDB {
         return list;
     }
 
-    //..........................................................
+    //............................data insertion..............................
 
     public static void insertData(String tableName, List<Object> values) {
         try {
@@ -119,9 +119,9 @@ public class ConnectDB {
 
     public static void main(String[] args) throws SQLException {
 
-        //data insertion
 
-          List<Object> values = new ArrayList<>();
+        //ArrayList called values that can hold objects of type Object.
+        List<Object> values = new ArrayList<>();
 //        values.add(" ");
 //        values.add(" ");
 //        values.add("3.Enter the URL and click search");
@@ -139,14 +139,16 @@ public class ConnectDB {
 //        values.add("mikeduglass@tester.com");
 //        values.add(1966503878);
 //         String tableName = "Testers";
+
+//        //data insertion
 //        insertData(tableName, values);
 
 
 
 
         //reading data
-        List<String> emails = getTableColumnData("select * from Testers;","Email");
-        for(int i=0;i<=0;i++) {
+         List<String> emails = getTableColumnData("select * from Testers;","Email");
+         for(int i=0;i<=1;i++) {
             System.out.println(emails.get(i));
         }
 
