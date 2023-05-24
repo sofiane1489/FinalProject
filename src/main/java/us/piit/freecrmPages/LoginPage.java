@@ -9,12 +9,12 @@ import us.piit.base.CommonAPI;
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
-public class loginPage extends CommonAPI {
-    Logger log = LogManager.getLogManager().getLogger(loginPage.class.getName());
-    private String email;
+public class LoginPage extends CommonAPI {
+    Logger log = LogManager.getLogManager().getLogger(LoginPage.class.getName());
 
     public void LoginPage(WebDriver driver) {
-        PageFactory.initElements(driver, this);}
+        PageFactory.initElements(driver, this);
+    }
 
 
         @FindBy(xpath = "//*[@id=\"ui\"]/div/div/form/div/div[1]/div/input")
@@ -27,18 +27,19 @@ public class loginPage extends CommonAPI {
         WebElement messageWrongEmail;
         @FindBy(xpath = "//h2[contains(text(),'Login to your account')]")
         WebElement loginPageHeader;
-        public String clickonloginbutton() {
+        public void clickonloginbutton() {
             clickonloginbutton();
             log.info("click on login button Success");
-            public void enterEmail(String "bestfred00@gmail.com"){
-                type(String.valueOf(emailField), email);
-                log.info("enter email success");
             }
+    public void enterEmail(String email){
+        type(emailField,email);
+        log.info("enter email success");
+    }
 
-            public void enterPassword(String Object password;
-            password);
+    public void enterPassword(String  password){
+            type(passwordField,password);
                 log.info("enter password success");
-            }
+        }
 
             public void clickonLoginBtn() {
                 clickOn(String.valueOf(loginBtn));
@@ -53,7 +54,7 @@ public class loginPage extends CommonAPI {
 
 
             public boolean checkPresenceOfLoginPageHeader() {
-                boolean loginPageHeaderIsDisplayed = isVisible(String.valueOf(loginPageHeader));
+                boolean loginPageHeaderIsDisplayed = isVisible(loginPageHeader);
                 log.info("login page header presence " + loginPageHeaderIsDisplayed);
                 return loginPageHeaderIsDisplayed;
             }
@@ -80,19 +81,13 @@ public class loginPage extends CommonAPI {
 //            public String getErrorMessage() {
 //                return null;
 //            }
-        }
+//        }
 
     private void type(String valueOf, String password1) {
     }
 
     private void clickOn(String valueOf) {
 
-    }
-
-    public void enterEmail(String validEmail) {
-    }
-
-    public void enterPassword(String validPassword) {
     }
 
     public void clickOnLoginBtn() {

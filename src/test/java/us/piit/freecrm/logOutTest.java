@@ -6,7 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import us.piit.base.CommonAPI;
 import us.piit.freecrmPages.Homepage;
-import us.piit.freecrmPages.loginPage;
+import us.piit.freecrmPages.LoginPage;
 
 import java.util.logging.Logger;
 
@@ -19,7 +19,7 @@ public class logOutTest extends CommonAPI {
 
     @Test
     public void logout() throws InterruptedException {
-        loginPage loginPage = new loginPage();loginPage(getDriver());
+        LoginPage loginPage=new LoginPage();
         Homepage HomePage = new Homepage((WebDriver) getDriver());
         //enter  username, password, and click on login button
         loginPage.enterEmail(validEmail);
