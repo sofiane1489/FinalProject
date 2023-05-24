@@ -3,9 +3,9 @@
 <suite name="Lumademo test">
     <parameter name="useCloudEnv" value="false"></parameter>
     <parameter name="envName" value="browserstack"></parameter>
-    <parameter name="os" value="os x"></parameter>
-    <parameter name="osversion" value="Big sur"></parameter>
-    <parameter name="browservesion" value="98"></parameter>
+    <parameter name="os" value="windows"></parameter>
+    <parameter name="osversion" value="10"></parameter>
+    <parameter name="browservesion" value="110"></parameter>
     <parameter name="browserName" value="chrome"></parameter>
     <parameter name="url" value="https://magento.softwaretestingboard.com/"></parameter>
 
