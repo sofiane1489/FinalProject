@@ -11,7 +11,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
@@ -38,14 +40,15 @@ public class CommonAPI {
 
     String browserstackUsername=Utility.decode(pro.getProperty("browserstack.username"));
     String browserstackPassword=Utility.decode(pro.getProperty("browserstack.password"));
-    String implicitWait=pro.getProperty("implicit.wait","10");
+    String implicitWait=pro.getProperty("implicit.wait","5");
     String browserMaximize=pro.getProperty("browser.maximize","true");
     String takeScreenshots=pro.getProperty("take.screenshots","false");
 
     WebDriver driver;
     Faker faker = new Faker();
 
-    //report setup from line 48 to 105
+
+    //extent report setup from line 48 to 105
     public static com.relevantcodes.extentreports.ExtentReports extent;
 
     @BeforeSuite
@@ -118,7 +121,7 @@ public class CommonAPI {
             driver=new RemoteWebDriver(new URL("http://"+username+":"+password+"@ondemand.saucelabs.com:80/wd/hub"),cap);
         }
     }
-
+  
     public void getLocalDriver(String browserName){
         if(browserName.equalsIgnoreCase("chrome")) {
             driver = new ChromeDriver();
@@ -167,7 +170,6 @@ public class CommonAPI {
         return driver.getTitle();
     }
 
-    
     public String getElementText(WebElement element){
             return element.getText();
     }
@@ -292,6 +294,12 @@ public class CommonAPI {
         JavascriptExecutor js = (JavascriptExecutor)driver;
         js.executeScript("arguments[0].scrollIntoView();",element);
     }
+    public void scrollToBottom(){
+        JavascriptExecutor js = (JavascriptExecutor)driver;
+        js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+    }
+
+
     public void captureScreenshot() {
         File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         try {
@@ -313,5 +321,6 @@ public class CommonAPI {
             System.out.println("Exception while taking screenshot "+e.getMessage());
         }
     }
+
 
 }

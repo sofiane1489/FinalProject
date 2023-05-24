@@ -24,7 +24,6 @@ public class ExcelDataProvider {
 
     @DataProvider(name = "excelData")
     public Object[][] getExcelData(String sheetName,int rowNumber,int cellNumber) {
-        // Path to your Excel file
         Object[][] testData = null;
 
         try (FileInputStream fis = new FileInputStream(new File(filePath));
@@ -96,21 +95,6 @@ public class ExcelDataProvider {
             return testData.iterator();
         }
 
-//         String getCellValueAsString(Cell cell) {
-//            if (cell == null) {
-//                return "";
-//            }
-//            if (cell.getCellType() == CellType.STRING) {
-//                return cell.getStringCellValue();
-//            } else if (cell.getCellType() == CellType.NUMERIC) {
-//                return String.valueOf(cell.getNumericCellValue());
-//            } else if (cell.getCellType() == CellType.BOOLEAN) {
-//                return String.valueOf(cell.getBooleanCellValue());
-//            } else {
-//                return "";
-//            }
-//        }
-
         @Test(dataProvider = "columnData")
         public void testColumnData(String columnData) {
             System.out.println("Column Data: " + columnData);
@@ -154,15 +138,18 @@ public class ExcelDataProvider {
 
     public static void main(String[] args) {
 
-        String filePath = "C:\\Users\\ouelhadj\\eclipse-workspace\\FinalProject\\data\\automationData\\automation Test Cases.xlsx";
-        ExcelDataProvider provider = new ExcelDataProvider(filePath);
-        String sheetName = "Sheet1"; // Assuming the sheet name is "Sheet1"
+        String currentDir = System.getProperty("user.dir");
+        String filePath = currentDir + File.separator + "data" + File.separator + "lumaData" + File.separator + "testcases.xlsx";
 
-        //get data from cell
-        //provider.testCellData(provider.getExcelData(sheetName,8,1));
+        ExcelDataProvider provider = new ExcelDataProvider(filePath);
+
+        String sheetName = "luma";
+
+       // get data from cell
+        provider.testCellData(provider.getExcelData(sheetName,5,3));
 
         //get the entire column data
-        Iterator<Object[]> iterator = provider.getColumnData(filePath,sheetName,0);
+        Iterator<Object[]> iterator = provider.getColumnData(filePath,sheetName,3);
          while (iterator.hasNext()) {
             Object[] data = iterator.next();
             System.out.println("Column Sheet1: " + data[0]);
@@ -170,7 +157,7 @@ public class ExcelDataProvider {
 
          //read the entire file
         Iterator<Object[]> iterator1 = provider.getFileData(sheetName);
-         while (iterator.hasNext()) {
+         while (iterator1.hasNext()) {
             Object[] rowData = iterator1.next();
             for (Object cellData : rowData) {
                 System.out.print(cellData + "\t");

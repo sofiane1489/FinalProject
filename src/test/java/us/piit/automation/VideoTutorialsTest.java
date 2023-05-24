@@ -29,7 +29,7 @@ public class VideoTutorialsTest extends CommonAPI {
         VideoTutorialsPage videoTutorialsPage=new VideoTutorialsPage(getDriver());
 
         // Verify the title of the page
-        String expectedTitle = "Automation Exercise";
+        String expectedTitle = "automationexercise.com";
         String actualTitle = getCurrentTtile();
         Assert.assertEquals(expectedTitle, actualTitle);
 

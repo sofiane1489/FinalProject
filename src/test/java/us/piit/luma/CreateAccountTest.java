@@ -45,8 +45,7 @@ public class CreateAccountTest extends CommonAPI {
 
         //create account validation
         String expectedContInfor="Thank you for registering with Main Website Store.";
-        String actualContInfor=homePageAfterLogin.getThanksMessage();
-        Assert.assertEquals(expectedContInfor,actualContInfor);
+        Assert.assertEquals(homePageAfterLogin.getThanksMessage(),expectedContInfor);
 }
 
     @Test(priority = 2)
@@ -77,8 +76,7 @@ public class CreateAccountTest extends CommonAPI {
 
         //error validation
         String expectedErrorMessage="There is already an account with this email address. If you are sure that it is your email address, click here to get your password and access your account.";
-        String actualErrorMessage = createAccountPage.getErrorMessage();
-        Assert.assertEquals(actualErrorMessage,expectedErrorMessage);
+        Assert.assertEquals(createAccountPage.getErrorMessage(),expectedErrorMessage);
 
     }
 }
