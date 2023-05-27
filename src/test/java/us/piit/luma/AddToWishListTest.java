@@ -133,7 +133,7 @@ public class AddToWishListTest extends CommonAPI {
 
         menPage.scrollToElement(getDriver());
 
-        menPage.clickOnCrossIconToRemoveProduct();
+        menPage.clickOnCrossIconToRemoveProduct(getDriver());
 
         // remove from wish list validation
         String expectedRemoveConfirmationText="Cassius Sparring Tank has been removed from your Wish List.";

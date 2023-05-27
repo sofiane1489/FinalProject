@@ -58,8 +58,8 @@ public class MenCategoryPage extends CommonAPI {
         log.info("scrolled to element success");
     }
 
-    public void clickOnCrossIconToRemoveProduct(){
-        clickOn(crossIcon);
+    public void clickOnCrossIconToRemoveProduct(WebDriver driver){
+        clickWithJavascript(driver,crossIcon);
         log.info("click on remove success");
     }
 
