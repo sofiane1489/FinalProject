@@ -25,6 +25,17 @@ public class MenCategoryPage extends CommonAPI {
     WebElement menBackgroungImg;
 
 
+    @FindBy(css="div[class='block block-wishlist'] strong[role='heading']")
+    WebElement wishList;
+
+
+    @FindBy(xpath="//li[1]//div[1]//div[1]//div[2]//div[2]//a[1]")
+    WebElement crossIcon;
+
+
+    @FindBy(css = ".message-success.success.message")
+    WebElement removeConfirmationText;
+
     public void clickOnTops48InMenCategory(){
         clickOn(tops48);
         log.info("click on Top48 success");
@@ -42,4 +53,19 @@ public class MenCategoryPage extends CommonAPI {
         return imgVisibility;
     }
 
+    public void scrollToElement(WebDriver driver){
+        scrollToElement(driver,wishList);
+        log.info("scrolled to element success");
+    }
+
+    public void clickOnCrossIconToRemoveProduct(){
+        clickOn(crossIcon);
+        log.info("click on remove success");
+    }
+
+    public String getRemoveFromWishListConfirmationText(){
+        String text=getElementText(removeConfirmationText);
+        log.info("product removed success");
+        return text;
+    }
 }
