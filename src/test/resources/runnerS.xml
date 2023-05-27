@@ -84,17 +84,17 @@
 <!--        </classes>-->
 <!--    </test>-->
 
-    <test name="AddToWishLIst Test">
-        <classes>
-            <class name="us.piit.luma.AddToWishListTest"></class>
-        </classes>
-    </test>
-
-<!--    <test name="AddToCompare Test">-->
+<!--    <test name="AddToWishLIst Test">-->
 <!--        <classes>-->
-<!--            <class name="us.piit.luma.AddToCompareTest"></class>-->
+<!--            <class name="us.piit.luma.AddToWishListTest"></class>-->
 <!--        </classes>-->
 <!--    </test>-->
+
+    <test name="AddToCompare Test">
+        <classes>
+            <class name="us.piit.luma.AddToCompareTest"></class>
+        </classes>
+    </test>
 
 <!--    <test name="OrdersHistory Test">-->
 <!--        <classes>-->
