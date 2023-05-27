@@ -29,7 +29,7 @@ public class MenCategoryPage extends CommonAPI {
     WebElement wishList;
 
 
-    @FindBy(xpath="//li[1]//div[1]//div[1]//div[2]//div[2]//a[1]")
+    @FindBy(xpath="//a[@class='btn-remove action delete']")
     WebElement crossIcon;
 
 
