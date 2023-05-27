@@ -133,6 +133,7 @@ public class AddToWishListTest extends CommonAPI {
 
         menPage.scrollToElement(getDriver());
 
+
         menPage.clickOnCrossIconToRemoveProduct(getDriver());
 
         // remove from wish list validation
