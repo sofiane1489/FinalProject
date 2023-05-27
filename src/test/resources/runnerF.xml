@@ -9,20 +9,20 @@
     <parameter name="browserName" value="chrome"></parameter>
     <parameter name="url" value="https://freecrm.com/"></parameter>
 
-    <test name="login test">
-        <classes>
-            <class name="us.piit.freecrm.LoginTest"></class>
-        </classes>
-    </test>
+                <test name="login test">
+                    <classes>
+                        <class name="us.piit.freecrm.LoginTest"></class>
+                    </classes>
+                </test>
 
-    <test name="Log out test">
-        <classes>
-            <class name="us.piit.freecrm.logOutTest"></class>
-        </classes>
-    </test>
-    <test name="sign up test">
-        <classes>
-            <class name="us.piit.freecrm.signUp"></class>
-        </classes>
-    </test>
+            <test name="Log out test">
+                <classes>
+                    <class name="us.piit.freecrm.logOutTest"></class>
+                </classes>
+            </test>
+            <test name="sign up test">
+                <classes>
+                   <class name="us.piit.freecrm.signUpTest"></class>
+                 </classes>
+               </test>
 </suite>
