@@ -33,7 +33,7 @@ public class CheckOutTest extends CommonAPI {
 
         // Verify the title of the page
         String expectedTitle = "Automation Exercise";
-        String actualTitle = getCurrentTtile();
+        String actualTitle= getCurrentTtile();
         Assert.assertEquals(expectedTitle, actualTitle);
 
 
@@ -46,9 +46,6 @@ public class CheckOutTest extends CommonAPI {
         loginPage.enterPassword(validPassword);
 
         loginPage.clickonLoginBtn();
-
-
-
 
 
         // Check if user is logged in

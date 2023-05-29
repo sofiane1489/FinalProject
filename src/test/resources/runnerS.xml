@@ -35,6 +35,14 @@
 <!--        </classes>-->
 <!--    </test>-->
 <!--    <test name="purchase test">-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="sanity"></include>-->
+<!--&lt;!&ndash;                <include name="regression"></include>&ndash;&gt;-->
+<!--                <include name="smoke"></include>-->
+<!--                <include name="unit"></include>-->
+<!--            </run>-->
+<!--        </groups>-->
 <!--        <classes>-->
 <!--            <class name="us.piit.luma.PurchaseItemTest"></class>-->
 <!--        </classes>-->
@@ -59,26 +67,53 @@
 <!--            <class name="us.piit.luma.LumaWebsiteLunchTest"></class>-->
 <!--        </classes>-->
 <!--    </test>-->
-    <test name="Subscribe test">
-<!--        <groups>-->
-<!--            <run>-->
-<!--                <include name="group1" />-->
-<!--            </run>-->
-<!--        </groups>-->
-        <classes>
-            <class name="us.piit.luma.SubscribeTest"></class>
-        </classes>
-    </test>
+<!--    <test name="Subscribe test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.luma.SubscribeTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
 <!--    <test name="Addreview Test">-->
 <!--        <classes>-->
 <!--            <class name="us.piit.luma.AddReviewTest"></class>-->
 <!--        </classes>-->
 <!--    </test>-->
+
 <!--    <test name="TrackingOrder Test">-->
 <!--        <classes>-->
 <!--            <class name="us.piit.luma.OrderTrackingTest"></class>-->
 <!--        </classes>-->
 <!--    </test>-->
+
+    <test name="AddToWishLIst Test">
+        <classes>
+            <class name="us.piit.luma.AddToWishListTest"></class>
+        </classes>
+    </test>
+
+<!--    <test name="AddToCompare Test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.luma.AddToCompareTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="OrdersHistory Test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.luma.OrdersHistoryTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="ListView Test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.luma.ListViewTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="SortingProduct Test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.luma.SortingProductTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
 
 </suite>
 

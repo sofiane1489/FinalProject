@@ -40,14 +40,15 @@ public class CommonAPI {
 
     String browserstackUsername=Utility.decode(pro.getProperty("browserstack.username"));
     String browserstackPassword=Utility.decode(pro.getProperty("browserstack.password"));
-    String implicitWait=pro.getProperty("implicit.wait","10");
+    String implicitWait=pro.getProperty("implicit.wait","5");
     String browserMaximize=pro.getProperty("browser.maximize","true");
     String takeScreenshots=pro.getProperty("take.screenshots","false");
 
     WebDriver driver;
     Faker faker = new Faker();
 
-    //report setup from line 48 to 105
+
+    //extent report setup from line 48 to 105
     public static com.relevantcodes.extentreports.ExtentReports extent;
 
     @BeforeSuite(groups="group1")
@@ -120,6 +121,7 @@ public class CommonAPI {
         }
     }
 
+
     @Parameters("browserName")
     public void getLocalDriver(String browserName){
         if(browserName.equalsIgnoreCase("chrome")) {
@@ -157,9 +159,9 @@ public class CommonAPI {
         log.info("browser close success");
     }
 
-/*----------------------------------------------------------------------------------------------------------------*/
-/*                                         Selenium methods                                                       */
-/*----------------------------------------------------------------------------------------------------------------*/
+    /*----------------------------------------------------------------------------------------------------------------*/
+    /*                                         Selenium methods                                                       */
+    /*----------------------------------------------------------------------------------------------------------------*/
 
     public WebDriver getDriver() {
         return driver;
@@ -170,37 +172,37 @@ public class CommonAPI {
     }
 
     public String getElementText(WebElement element){
-            return element.getText();
+        return element.getText();
     }
     public void clickOn(WebElement element){
-            element.click();
+        element.click();
     }
     public void type(WebElement element, String text){
-          element.sendKeys(text);
+        element.sendKeys(text);
     }
     public void typeEnter(WebElement element,String text){
-            element.sendKeys(text,Keys.ENTER);
+        element.sendKeys(text,Keys.ENTER);
     }
 
     public void select(WebElement element){
-            Select select = new Select(element);
-            select.getAllSelectedOptions();
+        Select select = new Select(element);
+        select.getAllSelectedOptions();
     }
     public void selectBy(WebElement element,String value){
-            Select select = new Select(element);
-            select.selectByVisibleText(value);
+        Select select = new Select(element);
+        select.selectByVisibleText(value);
     }
     public void selectByIn(WebElement element,int value){
-            Select select = new Select(element);
-            select.selectByIndex(value);
+        Select select = new Select(element);
+        select.selectByIndex(value);
     }
     public void selectByVal(WebElement element,String value){
-            Select select = new Select(element);
-            select.selectByValue(value);
+        Select select = new Select(element);
+        select.selectByValue(value);
     }
 
     public void delete(WebElement element){
-            element.clear();
+        element.clear();
     }
     public void hoverOver(WebDriver driver,WebElement element){
         Actions actions = new Actions(driver);
@@ -225,21 +227,21 @@ public class CommonAPI {
         }
     }
     public boolean isVisible(WebElement element){
-            return element.isDisplayed();
+        return element.isDisplayed();
     }
     public boolean isInteractable(WebElement element){
-            return element.isEnabled();
+        return element.isEnabled();
     }
 
     public boolean isChecked(WebElement element){
-            return element.isSelected();
+        return element.isSelected();
     }
 
     public WebElement findElement(WebDriver driver,WebElement element){
         return element;
     }
 
-  //methods for fake credentials
+    //methods for fake credentials
 
     public String useFakeEmail(){
         return faker.internet().emailAddress();
