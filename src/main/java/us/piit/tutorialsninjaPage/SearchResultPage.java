@@ -14,7 +14,7 @@ public class SearchResultPage extends CommonAPI {
         PageFactory.initElements(driver, this);
 
     }
-    @FindBy(xpath = "//h2[text()='Products meeting the search criteria']")
+    @FindBy(css = "#content h2")
     WebElement itemResultField;
     @FindBy(css = "#content div:nth-child(8) div div div.image")
     WebElement imgField;

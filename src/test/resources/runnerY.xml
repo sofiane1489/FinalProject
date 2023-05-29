@@ -14,8 +14,14 @@
 <!--                    <class name="us.piit.tutorialsninja.TutorialsninjaWebsiteLaunchTest"></class>-->
 <!--                </classes>-->
 <!--            </test>-->
-
 <!--        <test name="Login test">-->
+<!--            <groups>-->
+<!--                <run>-->
+<!--                    <include name="group1"></include>-->
+<!--                    <include name="group2"></include>-->
+<!--                </run>-->
+<!--            </groups>-->
+
 <!--            <classes>-->
 <!--                <class name="us.piit.tutorialsninja.LoginTest"></class>-->
 <!--            </classes>-->
@@ -25,11 +31,11 @@
 <!--                <class name="us.piit.tutorialsninja.SearchBarTest"></class>-->
 <!--            </classes>-->
 <!--        </test>-->
-<!--        <test name="add to cart test">-->
-<!--            <classes>-->
-<!--                <class name="us.piit.tutorialsninja.AddItemsToShoppingCartTest"></class>-->
-<!--            </classes>-->
-<!--        </test>-->
+        <test name="add to cart test">
+            <classes>
+                <class name="us.piit.tutorialsninja.AddItemsToShoppingCartTest"></class>
+            </classes>
+        </test>
 <!--        <test name="logout test">-->
 <!--            <classes>-->
 <!--                <class name="us.piit.tutorialsninja.LogoutTest"></class>-->
@@ -80,11 +86,33 @@
 <!--            <class name="us.piit.tutorialsninja.WishListTest"></class>-->
 <!--        </classes>-->
 <!--    </test>-->
-    <test name="newsLetter test">
-        <classes>
-            <class name="us.piit.tutorialsninja.NewsLetterTest"></class>
-        </classes>
-    </test>
+<!--    <test name="newsLetter test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.tutorialsninja.NewsLetterTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="orderHistory test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.tutorialsninja.OrdersHistoryTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="component test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.tutorialsninja.ComponentsSectionTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="customer service test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.tutorialsninja.CustomerServiceTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="laptops and notebooks functionality test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.tutorialsninja.LaptopsAndNotebooksFunctionalityTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
 
 
 </suite>
