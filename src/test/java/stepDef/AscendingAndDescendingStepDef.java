@@ -5,11 +5,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
-public class AscendingAndDescendingDef {
+public class AscendingAndDescendingStepDef {
 
     SetUp setUp;
 
-    public AscendingAndDescendingDef(SetUp setUp){
+    public AscendingAndDescendingStepDef(SetUp setUp){
         this.setUp=setUp;
     }
 

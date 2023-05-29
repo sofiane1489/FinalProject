@@ -5,7 +5,7 @@ Feature: search bar feature
 
   @smoke
   Scenario: Searching for a product
-    When user navigates to luma url "https://magento.softwaretestingboard.com/"
+    Given user navigates to luma url "https://magento.softwaretestingboard.com/"
     Then user should see title "Home Page" and luma logo should be present
 
     And i type  product name "bag for men" in the search bar
