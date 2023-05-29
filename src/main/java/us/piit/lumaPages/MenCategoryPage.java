@@ -29,7 +29,7 @@ public class MenCategoryPage extends CommonAPI {
     WebElement wishList;
 
 
-    @FindBy(xpath="//a[@class='btn-remove action delete']")
+    @FindBy(css=".btn-remove.action.delete")
     WebElement crossIcon;
 
 
@@ -59,7 +59,8 @@ public class MenCategoryPage extends CommonAPI {
     }
 
     public void clickOnCrossIconToRemoveProduct(WebDriver driver){
-        clickWithJavascript(driver,crossIcon);
+        waitFor(1);
+        hoverOverAndClickOn(driver,crossIcon);
         log.info("click on remove success");
     }
 

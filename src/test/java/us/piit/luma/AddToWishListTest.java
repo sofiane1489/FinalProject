@@ -67,7 +67,7 @@ public class AddToWishListTest extends CommonAPI {
 
     }
 
-    //@Test(dependsOnMethods = "removeproductsFromWishList")
+    @Test(dependsOnMethods = "removeProductsFromWishList")
     public void unableToAddToWishList() {
         HomePageBeforeLogin homePageBeforeLogin = new HomePageBeforeLogin(getDriver());
         MenCategoryPage menPage = new MenCategoryPage(getDriver());
@@ -103,7 +103,7 @@ public class AddToWishListTest extends CommonAPI {
     }
 
     @Test(dependsOnMethods = "addToWishListFeature")
-    public void removeproductsFromWishList() {
+    public void removeProductsFromWishList() {
         HomePageBeforeLogin homePageBeforeLogin = new HomePageBeforeLogin(getDriver());
         MenCategoryPage menPage = new MenCategoryPage(getDriver());
         LoginPage loginPage = new LoginPage(getDriver());

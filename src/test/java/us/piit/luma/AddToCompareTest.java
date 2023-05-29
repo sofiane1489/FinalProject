@@ -65,7 +65,7 @@ public class AddToCompareTest extends CommonAPI {
 
     }
 
-    @Test(dependsOnMethods = "addToCompareFeature")
+    @Test(dependsOnMethods = "addToCompareList")
     public void removeFromCompareList() {
         HomePageBeforeLogin homePageBeforeLogin = new HomePageBeforeLogin(getDriver());
         MenCategoryPage menPage = new MenCategoryPage(getDriver());
