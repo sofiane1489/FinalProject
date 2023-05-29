@@ -16,7 +16,7 @@ public class AddItemsToShoppingCartTest extends CommonAPI {
     String quantity = Utility.decode(pro.getProperty("tutorialsninja.number"));
 
 
-    @Test
+    @Test(priority = 1)
     public void addToCartTest() {
         WelcomePage welcomePage = new WelcomePage(getDriver());
         LoginPage loginPage = new LoginPage(getDriver());
@@ -44,7 +44,7 @@ public class AddItemsToShoppingCartTest extends CommonAPI {
         Assert.assertEquals(actualConfirmMessage, expectedConfirmMessage);
     }
 
-    @Test
+    @Test(priority = 2)
     public void addMultipleItemsTest() {
         WelcomePage welcomePage = new WelcomePage(getDriver());
         LoginPage loginPage = new LoginPage(getDriver());
@@ -76,7 +76,7 @@ public class AddItemsToShoppingCartTest extends CommonAPI {
         Assert.assertTrue(homePage.checkCountOfItemsAddedToCart());
     }
 
-    @Test
+    @Test(priority = 3)
     public void quantityAdderTest() {
         WelcomePage welcomePage = new WelcomePage(getDriver());
         LoginPage loginPage = new LoginPage(getDriver());
@@ -107,7 +107,7 @@ public class AddItemsToShoppingCartTest extends CommonAPI {
 
     }
 
-    @Test
+    @Test(priority = 4)
     public void removeItem() {
         WelcomePage welcomePage = new WelcomePage(getDriver());
         LoginPage loginPage = new LoginPage(getDriver());
@@ -140,7 +140,7 @@ public class AddItemsToShoppingCartTest extends CommonAPI {
         Assert.assertEquals(expectedMessage, actualMessage);
     }
 
-    @Test
+    @Test(dependsOnMethods = "removeItem")
     public void updateShoppingCart() {
         WelcomePage welcomePage = new WelcomePage(getDriver());
         LoginPage loginPage = new LoginPage(getDriver());
