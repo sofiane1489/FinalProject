@@ -13,7 +13,7 @@ public class OrderHistoryPage extends CommonAPI {
     public OrderHistoryPage(WebDriver driver){
         PageFactory.initElements(driver, this);
     }
-    @FindBy(css = "#content div.table-responsive table tbody tr:nth-child(1) td:nth-child(7) a")
+    @FindBy(css = "#content > div.table-responsive > table > tbody > tr:nth-child(1) > td:nth-child(7) > a")
     WebElement viewBtn;
     @FindBy(css = "#content table:nth-child(2) thead tr td")
     WebElement orderDetails;

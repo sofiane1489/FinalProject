@@ -25,7 +25,7 @@ public class HomePage extends CommonAPI {
     @FindBy(css = "#menu div.collapse.navbar-collapse.navbar-ex1-collapse ul li:nth-child(6) a")
     WebElement phonesAndPDAsSection;
     @FindBy(css = "#cart button")
-    WebElement shoppingCartField;
+    WebElement itemCartCount;
     @FindBy(css = "#cart ul li:nth-child(2) div p a:nth-child(2)")
     WebElement checkoutBtn;
     @FindBy(css = "#column-right div a:nth-child(13)")
@@ -38,8 +38,6 @@ public class HomePage extends CommonAPI {
     WebElement softwareBtn;
     @FindBy(css = "#menu > div.collapse.navbar-collapse.navbar-ex1-collapse > ul > li:nth-child(4) > a")
     WebElement tabletsBtn;
-    @FindBy(css = "#menu div.collapse.navbar-collapse.navbar-ex1-collapse ul li:nth-child(6) a")
-    WebElement phonesAndPDAsBtn;
     @FindBy(css = "#menu div.collapse.navbar-collapse.navbar-ex1-collapse ul li:nth-child(3) a")
     WebElement componentsSection;
     @FindBy(css = "#menu div.collapse.navbar-collapse.navbar-ex1-collapse ul li.dropdown.open div a")
@@ -53,8 +51,16 @@ public class HomePage extends CommonAPI {
     @FindBy(css = "#account-account div.alert.alert-success.alert-dismissible")
     WebElement subscriptionValidation;
 
-//    @FindBy(css = "#content ul:nth-child(4) li:nth-child(1) a")
-//    WebElement myOrderField;
+    @FindBy(css = "#content ul:nth-child(4) li:nth-child(1) a")
+    WebElement myOrderField;
+    @FindBy(css = "body footer div div div:nth-child(2) ul li:nth-child(1) a")
+    WebElement contactUsBtn;
+    @FindBy(xpath = "//*[@id=\"menu\"]/div[2]/ul/li[2]/a")
+    WebElement laptopsAndNotebooksBtn;
+    @FindBy(xpath = "//*[@id=\"menu\"]/div[2]/ul/li[2]/div/a")
+    WebElement laptopsAndNotebooksSection;
+    @FindBy(css = "#cart ul li:nth-child(2) div p a:nth-child(1)")
+    WebElement viewCartBtn;
 
     public boolean checkPresenceOfUserTableOfContent(){
         boolean tableContentIsDisplayed =  isVisible(userTableOfContentField);
@@ -79,8 +85,8 @@ public class HomePage extends CommonAPI {
         log.info("click on phones section button success");
     }
 
-    public void clickOnShowItemsAddedBtn(){
-        clickOn(shoppingCartField);
+    public void clickOnSItemCartCount(){
+        clickOn(itemCartCount);
         log.info("click on item added button success");
     }
     public void hoverOverAndClickOnCheckoutBtn(){
@@ -118,7 +124,7 @@ public class HomePage extends CommonAPI {
         log.info("click on show all components button success");
    }
    public void clickOnViewYourOrderHistory(){
-        clickOn(phonesAndPDAsBtn);
+        clickOn(myOrderField);
         log.info("click on view order history success");
    }
 
@@ -140,6 +146,34 @@ public class HomePage extends CommonAPI {
         log.info("get text message success");
         return text;
    }
+    public void scrollToContactUsBtn(WebDriver driver){
+        scrollToElement(driver,contactUsBtn);
+        contactUsBtn.click();
+        log.info("scroll down success");
+    }
+    public void hoverOverAndclickOnLaptopsAndNotebooksBtn(){
+        clickOn(laptopsAndNotebooksBtn);
+        log.info("click on laptops&notebooks success");
+    }
+    public void clickOnShowAllLaptopsAndNotebooks(){
+        clickOn(laptopsAndNotebooksSection);
+        log.info("click on show all laptops&notebooks success");
+    }
+
+    public boolean checkCountOfItemsAddedToCart(){
+        boolean countOfItemsAddedToCartIsDisplayed = isVisible(itemCartCount);
+        log.info("count of items added to cart is visible");
+        return countOfItemsAddedToCartIsDisplayed;
+    }
+    public boolean checkQuantityOfItemsAddedToCart(){
+        boolean quantityOfItemsAddedToCartIsDisplayed = isVisible(itemCartCount);
+        log.info("quantity of item added to cart is visible");
+        return quantityOfItemsAddedToCartIsDisplayed;
+    }
+    public void clickOnViewCartBtn(){
+        clickOn(viewCartBtn);
+        log.info("click on view cart button success");
+    }
 }
 
 
