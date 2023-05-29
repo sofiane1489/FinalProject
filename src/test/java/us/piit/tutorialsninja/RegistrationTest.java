@@ -10,34 +10,25 @@ import java.util.Properties;
 
 public class RegistrationTest extends CommonAPI {
     Properties pro= Utility.loadProperties();
-    String validEmail=Utility.decode(pro.getProperty("tutorialsninja.email")) ;
-    String userFirstName=Utility.decode(pro.getProperty("tutorialsninja.firstname")) ;
-    String userLastName=Utility.decode(pro.getProperty("tutorialsninja.lastname")) ;
     String userPassword=Utility.decode(pro.getProperty("tutorialsninja.password")) ;
-    String userPhoneNumber=Utility.decode(pro.getProperty("tutorialsninja.phonenumber")) ;
-    String newEmail=Utility.decode(pro.getProperty("tutorialsninja.newEmail")) ;
+    String existingEmail=Utility.decode(pro.getProperty("tutorialsninja.email"));
 
-
-
-    @Test
-    public void userRegitrationTest() {
+    @Test(priority = 1)
+    public void userRegistrationTest() {
         WelcomePage welcomePage = new WelcomePage(getDriver());
-        LoginPage loginPage = new LoginPage(getDriver());
         RegistrationPage registrationPage = new RegistrationPage(getDriver());
         AffirmationAccountCreationPage affirmationAccountCreationPage = new AffirmationAccountCreationPage(getDriver());
-        HomePage homePage = new HomePage(getDriver());
         String expectedTitle = "Your Store";
         String actualTitle = getCurrentTtile();
         Assert.assertEquals(expectedTitle, actualTitle);
 
         //click on sign in, enter  username, password, and click on login button
         welcomePage.clickOnMyAccountBtn();
-        welcomePage.hoverOverAndClickOnHeaderLoginBtn();
-        loginPage.clickOnContinueBtn();
-        registrationPage.enterFirstName(userFirstName);
-        registrationPage.enterLastName(userLastName);
-        registrationPage.enterEmail(newEmail);
-        registrationPage.enterPhoneNumber(userPhoneNumber);
+        welcomePage.hoverOverAndClickOnHeaderRegisterBtn();
+        registrationPage.enterFirstName(useFakeFirstName());
+        registrationPage.enterLastName(useFakeLastName());
+        registrationPage.enterEmail(useFakeEmail());
+        registrationPage.enterPhoneNumber(useFakePhoneNumber());
         registrationPage.enterPassword(userPassword);
         registrationPage.confirmPassword(userPassword);
         registrationPage.clickOnAgreementCheckBox();
@@ -52,10 +43,9 @@ public class RegistrationTest extends CommonAPI {
         captureScreenshot();
     }
 
-   // @Test
+    @Test(priority = 2)
     public void ExistingCred() {
         WelcomePage welcomePage = new WelcomePage(getDriver());
-        LoginPage loginPage = new LoginPage(getDriver());
         RegistrationPage registrationPage = new RegistrationPage(getDriver());
         String expectedTitle = "Your Store";
         String actualTitle = getCurrentTtile();
@@ -63,12 +53,11 @@ public class RegistrationTest extends CommonAPI {
 
         //click on sign in, enter  username, password, and click on login button
         welcomePage.clickOnMyAccountBtn();
-        welcomePage.hoverOverAndClickOnHeaderLoginBtn();
-        loginPage.clickOnContinueBtn();
-        registrationPage.enterFirstName(userFirstName);
-        registrationPage.enterLastName(userLastName);
-        registrationPage.enterEmail(validEmail);
-        registrationPage.enterPhoneNumber(userPhoneNumber);
+        welcomePage.hoverOverAndClickOnHeaderRegisterBtn();
+        registrationPage.enterFirstName(useFakeFirstName());
+        registrationPage.enterLastName(useFakeLastName());
+        registrationPage.enterEmail(existingEmail);
+        registrationPage.enterPhoneNumber(useFakePhoneNumber());
         registrationPage.enterPassword(userPassword);
         registrationPage.confirmPassword(userPassword);
         registrationPage.clickOnAgreementCheckBox();
@@ -76,8 +65,8 @@ public class RegistrationTest extends CommonAPI {
 
         //error validation
 
-        boolean expectedErrorMessage = true;
+
         boolean actualErrorMessage = registrationPage.checkPresenceOfErrorMessage();
-        Assert.assertEquals(expectedErrorMessage, actualErrorMessage);
+        Assert.assertTrue(actualErrorMessage);
     }
 }
