@@ -47,6 +47,11 @@ public class MyAccountPage extends CommonAPI {
     @FindBy(css = ".message-success.success.message")
     WebElement savedConfirmationText;
 
+    @FindBy(css = ".message-error.error.message")
+    WebElement errorMessage;
+
+
+
     public void clickOnEdit(){
         clickOn(editLink);
         log.info("click on edit success");
@@ -87,11 +92,16 @@ public class MyAccountPage extends CommonAPI {
    public void selectState(String state){
         selectBy(stateField,state);
    }
-//    public String getSaveEditedAddressConfirmationText(){
-//        String textConfirmation=getElementText(savedConfirmationText);
-//        log.info("address edit success");
-//        return textConfirmation;
-//    }
 
+    public String getAddToWishListTextConfirmation(){
+        String textConfirmation=getElementText(savedConfirmationText);
+        log.info("product added to wish list success");
+        return textConfirmation;
+    }
 
+    public String getErrorMessage(){
+        String textConfirmation=getElementText(errorMessage);
+        log.info("product not added to wish list success");
+        return textConfirmation;
+    }
 }

@@ -8,7 +8,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
@@ -25,7 +24,6 @@ public class ExcelDataProvider {
 
     @DataProvider(name = "excelData")
     public Object[][] getExcelData(String sheetName,int rowNumber,int cellNumber) {
-        // Path to your Excel file
         Object[][] testData = null;
 
         try (FileInputStream fis = new FileInputStream(new File(filePath));
@@ -142,12 +140,13 @@ public class ExcelDataProvider {
 
         String currentDir = System.getProperty("user.dir");
 
-        String filePath = currentDir + File.separator + "data" + File.separator + "tutorialsninjaData" + File.separator + "tutorialsninjaTestCases.xlsx";
+        String filePath = currentDir + File.separator + "data" + File.separator + "lumaData" + File.separator + "testcases.xlsx";
+
         ExcelDataProvider provider = new ExcelDataProvider(filePath);
 
         String sheetName = "Sheet1";
 
-        //get data from cell
+       // get data from cell
         provider.testCellData(provider.getExcelData(sheetName,5,3));
 
         //get the entire column data
@@ -159,7 +158,7 @@ public class ExcelDataProvider {
 
          //read the entire file
         Iterator<Object[]> iterator1 = provider.getFileData(sheetName);
-         while (iterator.hasNext()) {
+         while (iterator1.hasNext()) {
             Object[] rowData = iterator1.next();
             for (Object cellData : rowData) {
                 System.out.print(cellData + "\t");
