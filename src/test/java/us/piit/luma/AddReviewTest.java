@@ -13,7 +13,6 @@ public class AddReviewTest extends CommonAPI {
         HomePageBeforeLogin homePageBeforeLogin = new HomePageBeforeLogin(getDriver());
         FitnessEquipmentPage fitnessEquipmentPage = new FitnessEquipmentPage(getDriver());
         QuestLumaflexBandPage questLumaflexBandPage = new QuestLumaflexBandPage(getDriver());
-        ShippingAddressPage shippingAddressPage = new ShippingAddressPage(getDriver());
         GearCategoryPage gearCategoryPage = new GearCategoryPage(getDriver());
 
         // website validation with Title
