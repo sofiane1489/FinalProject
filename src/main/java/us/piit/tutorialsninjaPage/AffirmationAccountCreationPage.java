@@ -14,7 +14,7 @@ public class AffirmationAccountCreationPage extends CommonAPI {
         PageFactory.initElements(driver, this);
 
     }
-    @FindBy(css = "#content > p:nth-child(2)")
+    @FindBy(css = "#content p:nth-child(2)")
     WebElement registrationConfirmationField;
 
     public String getConfirmationMessage(){
