@@ -51,13 +51,13 @@ public class CommonAPI {
     //extent report setup from line 48 to 105
     public static com.relevantcodes.extentreports.ExtentReports extent;
 
-    @BeforeSuite(groups="sanity")
+    @BeforeSuite
     public void extentSetup(ITestContext context) {
         ExtentManager.setOutputDirectory(context);
         extent = ExtentManager.getInstance();
     }
 
-    @BeforeMethod(groups="sanity")
+    @BeforeMethod
     public void startExtent(Method method) {
         String className = method.getDeclaringClass().getSimpleName();
         String methodName = method.getName().toLowerCase();
@@ -71,7 +71,7 @@ public class CommonAPI {
         return sw.toString();
     }
 
-    @AfterMethod(groups="sanity")
+    @AfterMethod
     public void afterEachTestMethod(ITestResult result) {
         ExtentTestManager.getTest().getTest().setStartedTime(getTime(result.getStartMillis()));
         ExtentTestManager.getTest().getTest().setEndedTime(getTime(result.getEndMillis()));
@@ -96,7 +96,7 @@ public class CommonAPI {
         }
         driver.quit();
     }
-    @AfterSuite(groups="sanity")
+    @AfterSuite
     public void generateReport() {
         extent.close();
     }
@@ -121,7 +121,7 @@ public class CommonAPI {
             driver=new RemoteWebDriver(new URL("http://"+username+":"+password+"@ondemand.saucelabs.com:80/wd/hub"),cap);
         }
     }
-    @Parameters("browserName")
+  
     public void getLocalDriver(String browserName){
         if(browserName.equalsIgnoreCase("chrome")) {
             driver = new ChromeDriver();
@@ -135,7 +135,7 @@ public class CommonAPI {
         }
     }
     @Parameters({"useCloudEnv","envName","os","osversion","browserName","browservesion","url"})
-    @BeforeMethod(groups = {"sanity"})
+    @BeforeMethod
     public void setup(@Optional("false") String useCloudEnv, @Optional("browserstack") String envName, @Optional("windows")  String os,
                       @Optional("11") String osversion, @Optional("chrome") String browserName,
                       @Optional("111") String browservesion, @Optional("https://www.google.com/") String url) throws MalformedURLException {
@@ -151,7 +151,7 @@ public class CommonAPI {
         }
         driver.get(url);
     }
-    @AfterMethod(groups = {"sanity"})
+    @AfterMethod
     public void teardown(){
         //close browser
         driver.quit();
