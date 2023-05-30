@@ -25,7 +25,6 @@ public class SetUp {
     public void takeScreenShoots(Scenario scenario){
         final byte [] screenshot=((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
         scenario.attach(screenshot,"image/png","image");
-
     }
 
     @After
