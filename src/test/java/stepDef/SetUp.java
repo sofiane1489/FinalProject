@@ -4,6 +4,7 @@ import io.cucumber.java.*;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
 
 import java.io.File;
@@ -37,6 +38,19 @@ public class SetUp {
 
     public void waitFor(int second) throws InterruptedException {
         Thread.sleep(second* 1000L);
+    }
+
+    public void doubleClickWithJAvaScript(WebDriver driver,WebElement element){
+        JavascriptExecutor js = (JavascriptExecutor)driver;
+        js.executeScript("var evt = document.createEvent('MouseEvents');" +
+                "evt.initEvent('dblclick', true, true);" +
+                "arguments[0].dispatchEvent(evt);",element);
+    }
+
+    public String getElementTextWithJavaScript(WebDriver driver,WebElement element){
+        JavascriptExecutor js = (JavascriptExecutor)driver;
+        String text=(String) js.executeScript("return arguments[0].textContent;",element);
+       return text;
     }
 
     public void clickWithJavascript(WebDriver driver,WebElement element){

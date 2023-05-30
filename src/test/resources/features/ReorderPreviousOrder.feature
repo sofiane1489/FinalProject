@@ -6,7 +6,7 @@ Feature: Reorder Previous Orders
     Given User navigates to luma url "https://magento.softwaretestingboard.com/"
     Then User should see title "Home Page" and Luma logo should be present
     And  user clicks on sign in button
-    Then user enter email address "betta@gmail.com"
+    Then user enter email address "reorderprevious@gmail.com"
     And  user enter password "1234Abcd$"
     Then user clicks on login in button
 
