@@ -44,7 +44,7 @@ public class AddItemsToShoppingCartTest extends CommonAPI {
         Assert.assertEquals(actualConfirmMessage, expectedConfirmMessage);
     }
 
-    @Test(priority = 2)
+   @Test(priority = 2)
     public void addMultipleItemsTest() {
         WelcomePage welcomePage = new WelcomePage(getDriver());
         LoginPage loginPage = new LoginPage(getDriver());

@@ -40,7 +40,7 @@ public class HomePage extends CommonAPI {
     WebElement tabletsBtn;
     @FindBy(css = "#menu div.collapse.navbar-collapse.navbar-ex1-collapse ul li:nth-child(3) a")
     WebElement componentsSection;
-    @FindBy(css = "#menu div.collapse.navbar-collapse.navbar-ex1-collapse ul li.dropdown.open div a")
+    @FindBy(css = "#menu > div.collapse.navbar-collapse.navbar-ex1-collapse > ul > li.dropdown.open > div > a")
     WebElement showAllComponentsBtn;
     @FindBy(css = "#menu div.collapse.navbar-collapse.navbar-ex1-collapse ul li:nth-child(7) a")
     WebElement camerasSection;
@@ -61,6 +61,12 @@ public class HomePage extends CommonAPI {
     WebElement laptopsAndNotebooksSection;
     @FindBy(css = "#cart ul li:nth-child(2) div p a:nth-child(1)")
     WebElement viewCartBtn;
+    @FindBy(css = "#menu div.collapse.navbar-collapse.navbar-ex1-collapse ul li:nth-child(1) a")
+    WebElement desktopsBtn;
+    @FindBy(xpath = "//*[@id=\"menu\"]/div[2]/ul/li[1]/div/a")
+    WebElement showAllDesktopsBtn;
+    @FindBy(css = "body footer div div div:nth-child(3) ul li:nth-child(4) a")
+    WebElement specialsBtn;
 
     public boolean checkPresenceOfUserTableOfContent(){
         boolean tableContentIsDisplayed =  isVisible(userTableOfContentField);
@@ -173,6 +179,19 @@ public class HomePage extends CommonAPI {
     public void clickOnViewCartBtn(){
         clickOn(viewCartBtn);
         log.info("click on view cart button success");
+    }
+    public void hoverOverAndClickOnDesktopsBtn(){
+        clickOn(desktopsBtn);
+        log.info("click on desktops button");
+    }
+    public void clickOnShowAllDesktopsBtn(){
+        clickOn(showAllDesktopsBtn);
+        log.info("click on show all desktops success");
+    }
+    public void scrollToSpecialsBtn(WebDriver driver){
+        scrollToElement(driver,specialsBtn);
+        specialsBtn.click();
+        log.info("click on specials button success");
     }
 }
 
