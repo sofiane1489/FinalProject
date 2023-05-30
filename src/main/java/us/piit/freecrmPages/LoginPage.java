@@ -12,12 +12,16 @@ import java.util.logging.Logger;
 public class LoginPage extends CommonAPI {
     Logger log = LogManager.getLogManager().getLogger(LoginPage.class.getName());
 
+    public LoginPage(WebDriver driver) {
+
+    }
+
     public void LoginPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
 
 
-        @FindBy(xpath = "//*[@id=\"ui\"]/div/div/form/div/div[1]/div/input")
+    @FindBy(xpath = "//*[@id=\"ui\"]/div/div/form/div/div[1]/div/input")
         WebElement emailField;
         @FindBy(xpath = "//*[@id=\"ui\"]/div/div/form/div/div[1]/div/input")
         WebElement passwordField;
@@ -27,10 +31,7 @@ public class LoginPage extends CommonAPI {
         WebElement messageWrongEmail;
         @FindBy(xpath = "//h2[contains(text(),'Login to your account')]")
         WebElement loginPageHeader;
-        public void clickonloginbutton() {
-            clickonloginbutton();
-            log.info("click on login button Success");
-            }
+
     public void enterEmail(String email){
         type(emailField,email);
         log.info("enter email success");
@@ -41,12 +42,12 @@ public class LoginPage extends CommonAPI {
                 log.info("enter password success");
         }
 
-            public void clickonLoginBtn() {
+            public void clickLoginBtn() {
                 clickOn(String.valueOf(loginBtn));
                 log.info("click on login btn Success");
             }
 
-            public String getErrorMessageInvalidEmail() {
+            public String getErrorMessage() {
                 String error = getElementText(messageWrongEmail);
                 log.info("validate invalid email error success");
                 return error;
@@ -106,8 +107,11 @@ public class LoginPage extends CommonAPI {
     public void enterValidPassword(String userPassword) {
     }
 
-    public String getErrorMessage() {
-        return null;
+//    public String getErrorMessage() {
+//        return null;
+//    }
+
+    public void enteremail(String validEmail) {
     }
 }
 
