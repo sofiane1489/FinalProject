@@ -33,6 +33,11 @@ public class WelcomePage extends CommonAPI {
         clickOn(headerLoginBtn);
         log.info("click on header login button success");
     }
+    public String getWebsiteLogo(){
+        String text = getElementText(logoField);
+        log.info("get website logo success");
+        return text;
+    }
     public boolean checkPresenceOfTutorialsninjaWebsiteLogo(){
         boolean websiteLogoIsDisplayed = isVisible(logoField);
         log.info("website logo is visible");
