@@ -15,7 +15,7 @@ public class ShoppingCartPage extends CommonAPI {
         PageFactory.initElements(driver,this);
     }
 
-    @FindBy(xpath = "//div[@class='actions-toolbar']/a[2]")
+    @FindBy(css = ".action.action-delete")
     WebElement trashCanIcon;
 
     @FindBy(xpath = " //p[text()='You have no items in your shopping cart.']")

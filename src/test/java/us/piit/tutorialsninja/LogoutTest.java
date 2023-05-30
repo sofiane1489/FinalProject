@@ -19,7 +19,7 @@ public class LogoutTest extends CommonAPI {
 
 
     @Test
-    public void validCredential() {
+    public void logoutTest() {
         WelcomePage welcomePage = new WelcomePage(getDriver());
         LoginPage loginPage = new LoginPage(getDriver());
         HomePage homePage = new HomePage(getDriver());

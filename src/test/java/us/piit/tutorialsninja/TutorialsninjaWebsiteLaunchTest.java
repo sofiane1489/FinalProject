@@ -8,7 +8,7 @@ import us.piit.tutorialsninjaPage.WelcomePage;
 public class TutorialsninjaWebsiteLaunchTest extends CommonAPI {
 
     @Test
-    public void WebsitelaunchTest(){
+    public void WebsiteLaunchTest(){
         WelcomePage welcomePage = new WelcomePage(getDriver());
 
         //launch to website
@@ -17,6 +17,10 @@ public class TutorialsninjaWebsiteLaunchTest extends CommonAPI {
         Assert.assertEquals(expectedTitle, actualTitle);
 
         //check website is launched successfully
+        String expectedLogoName = "Qafox.com";
+        String actualLogoName = welcomePage.getWebsiteLogo();
+        Assert.assertEquals(expectedLogoName, actualLogoName);
+
         Assert.assertTrue(welcomePage.checkPresenceOfTutorialsninjaWebsiteLogo());
     }
 }

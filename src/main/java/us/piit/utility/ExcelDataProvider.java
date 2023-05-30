@@ -139,11 +139,12 @@ public class ExcelDataProvider {
     public static void main(String[] args) {
 
         String currentDir = System.getProperty("user.dir");
+
         String filePath = currentDir + File.separator + "data" + File.separator + "lumaData" + File.separator + "testcases.xlsx";
 
         ExcelDataProvider provider = new ExcelDataProvider(filePath);
 
-        String sheetName = "luma";
+        String sheetName = "Sheet1";
 
        // get data from cell
         provider.testCellData(provider.getExcelData(sheetName,5,3));

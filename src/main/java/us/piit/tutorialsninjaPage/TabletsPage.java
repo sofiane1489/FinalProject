@@ -13,11 +13,17 @@ public class TabletsPage extends CommonAPI {
     public TabletsPage(WebDriver driver){
         PageFactory.initElements(driver, this);
     }
-    @FindBy(xpath = "//h2[text()='Tablets']'")
+    @FindBy(css = "#content  h2")
     WebElement sectionTabValidation;
+    @FindBy(css = "#content div:nth-child(3) div div div.image a img")
+    WebElement productImg;
     public String getTabSectionValidation(){
         String text = getElementText(sectionTabValidation);
         log.info("get message success");
         return text;
+    }
+    public void clickOnProductImg(){
+        clickOn(productImg);
+        log.info("click on product success");
     }
 }

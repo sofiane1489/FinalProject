@@ -19,7 +19,7 @@ public class GearCategoryPage extends CommonAPI {
     @FindBy(css = "a[id='ui-id-26'] span")
     WebElement fitnessEquipmentSection;
 
-    @FindBy(xpath = "//ol[@class='items']//a[normalize-space()='Watches']")
+    @FindBy(css = "div[class='block filter'] li:nth-child(3) a:nth-child(1)")
     WebElement watchesSection;
 
     @FindBy(css = ".sidebar.sidebar-main")

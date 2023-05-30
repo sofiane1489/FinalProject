@@ -17,8 +17,7 @@ public class LoginPage extends CommonAPI {
     }
 
     //locators
-    @FindBy(xpath = "##content div div:nth-child(1) div a")
-    WebElement newCustomerField;
+
     @FindBy(css = "#input-email")
     WebElement emailField;
     @FindBy(css = "#input-password")
@@ -29,13 +28,9 @@ public class LoginPage extends CommonAPI {
     WebElement errorMessage;
     @FindBy(css = "#content div div:nth-child(2) div form div:nth-child(2) a")
     WebElement forgottenPassword;
-    @FindBy(xpath = "//*[@id=\"account-login\"]/div[1]/text()")
+    @FindBy(css = "#account-login div.alert.alert-success.alert-dismissible")
     WebElement confirmationMessage;
 
-    public void clickOnContinueBtn() {
-        clickOn(newCustomerField);
-        log.info("click on continue button success");
-    }
 
     public void enterValidEmail(String email) {
         type(emailField, email);

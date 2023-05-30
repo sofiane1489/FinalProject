@@ -33,6 +33,15 @@ public class HomePageAfterLogin extends CommonAPI {
     @FindBy(css = ".base")
     WebElement signOutConfirmationMess;
 
+    @FindBy(xpath = "//body/div[@class='page-wrapper']/main[@id='maincontent']/div[@class='columns']/div[@class='sidebar sidebar-additional']/div[@class='block block-compare']/div[@class='block-content']/ol[@id='compare-items']/li[1]/a[1]")
+    WebElement compareProductCassiusSparkingLink;
+
+
+    @FindBy(css = ".action-primary.action-accept")
+    WebElement okBtn;
+
+//    @FindBy(css = ".message-success.success.message")
+//    WebElement okBtn;
 
     public boolean checkDropDownVisibility(){
         boolean isDropDownVisible=isVisible(dropDownArrow);
@@ -79,5 +88,19 @@ public class HomePageAfterLogin extends CommonAPI {
         return text;
     }
 
+    public void clickOnCasiusSparking(WebDriver driver){
+        clickWithJavascript(driver,compareProductCassiusSparkingLink);
+        log.info("click on cassius Sparking success");
+    }
 
+    public void clickOnOKAlert(WebDriver driver){
+        clickWithJavascript(driver,okBtn);
+        log.info("click on ok Btn success");
+    }
+
+    public String getRemoveProductConfirmationText(){
+        String text=getElementText(thanksMessage);
+        log.info("sign out success");
+        return text;
+    }
 }

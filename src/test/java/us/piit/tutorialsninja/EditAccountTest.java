@@ -17,9 +17,6 @@ public class EditAccountTest extends CommonAPI {
     String validEmail = Utility.decode(pro.getProperty("tutorialsninja.email"));
     String userPassword = Utility.decode(pro.getProperty("tutorialsninja.password"));
 
-    String userNewFirstName = Utility.decode(pro.getProperty("tutorialsninja.newfirstname"));
-    String userNewLastName = Utility.decode(pro.getProperty("tutorialsninja.newlastname"));
-    String userNewPhoneNumber = Utility.decode(pro.getProperty("tutorialsninja.newnumber"));
 
 
     @Test
@@ -38,11 +35,13 @@ public class EditAccountTest extends CommonAPI {
         loginPage.enterValidEmail(validEmail);
         loginPage.enterValidPassword(userPassword);
         loginPage.clickOnLoginBtn();
+        waitFor(2);
         homePage.clickOnEditAccountBtn();
-        accountInformationPage.enterNewFirstName(userNewFirstName);
-        accountInformationPage.enterNewLastName(userNewLastName);
+        waitFor(2);
+        useFakeFirstName();
+        useFakeLastName();
         useFakeEmail();
-        accountInformationPage.enterNewPhoneNumber(userNewPhoneNumber);
+        useFakePhoneNumber();
         accountInformationPage.clickOnSubmitBtn();
         //edit account validation
         String expectedMessage = "Success: Your account has been successfully updated.";

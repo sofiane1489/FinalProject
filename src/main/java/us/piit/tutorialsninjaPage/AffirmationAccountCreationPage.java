@@ -14,7 +14,7 @@ public class AffirmationAccountCreationPage extends CommonAPI {
         PageFactory.initElements(driver, this);
 
     }
-    @FindBy(xpath = "//h1[text()='Your Account Has Been Created!']")
+    @FindBy(css = "#content p:nth-child(2)")
     WebElement registrationConfirmationField;
 
     public String getConfirmationMessage(){

@@ -20,7 +20,10 @@ public class EditAccountInformationPage extends CommonAPI {
 
     @FindBy(css = "button[title='Save'] span")
     WebElement saveBtn;
-    
+
+    @FindBy(css = "div[class='sidebar sidebar-main'] li:nth-child(2) a")
+    WebElement myOrdersBtn;
+
 
     public void deleteLastName(){
         delete(lastNameField);
@@ -36,5 +39,9 @@ public class EditAccountInformationPage extends CommonAPI {
         log.info("click on save button success");
     }
 
+    public void clickOnMyOrdersBtn(WebDriver driver){
+        clickWithJavascript(driver,myOrdersBtn);
+        log.info("click on my orders button success");
+    }
 
 }

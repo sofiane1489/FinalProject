@@ -22,7 +22,7 @@ public class SearchBarTest extends CommonAPI {
         LoginPage loginPage = new LoginPage(getDriver());
         HomePage homePage = new HomePage(getDriver());
         SearchResultPage searchResultPage = new SearchResultPage(getDriver());
-        String expectedTitle = "Your Store.com";
+        String expectedTitle = "Your Store";
         String actualTitle = getCurrentTtile();
         Assert.assertEquals(expectedTitle, actualTitle);
 

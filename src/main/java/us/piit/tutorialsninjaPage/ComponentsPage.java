@@ -13,7 +13,7 @@ public class ComponentsPage extends CommonAPI {
     public ComponentsPage(WebDriver driver){
         PageFactory.initElements(driver, this);
     }
-    @FindBy(xpath = "//h2[text()='Components']")
+    @FindBy(css = "#content h2")
     WebElement sectionName;
     public String getValidSectionName(){
         String text = getElementText(sectionName);

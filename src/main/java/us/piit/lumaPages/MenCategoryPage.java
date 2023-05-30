@@ -15,15 +15,26 @@ public class MenCategoryPage extends CommonAPI {
         PageFactory.initElements(driver,this);
     }
 
-    @FindBy(css="#narrow-by-list2 > dd > ol > li:nth-child(1) > a")
+    @FindBy(css="#narrow-by-list2 dd ol li:nth-child(1) a")
     WebElement tops48;
 
     @FindBy(css=".sidebar.sidebar-main")
     WebElement menSideBarMenu;
 
-    @FindBy(css=" img[src='https://magento.softwaretestingboard.com/pub/media/wysiwyg/mens/mens-main.jpg']")
+    @FindBy(css="img[src='https://magento.softwaretestingboard.com/pub/media/wysiwyg/mens/mens-main.jpg']")
     WebElement menBackgroungImg;
 
+
+    @FindBy(css="div[class='block block-wishlist'] strong[role='heading']")
+    WebElement wishList;
+
+
+    @FindBy(css=".btn-remove.action.delete")
+    WebElement crossIcon;
+
+
+    @FindBy(css = ".message-success.success.message")
+    WebElement removeConfirmationText;
 
     public void clickOnTops48InMenCategory(){
         clickOn(tops48);
@@ -42,4 +53,20 @@ public class MenCategoryPage extends CommonAPI {
         return imgVisibility;
     }
 
+    public void scrollToElement(WebDriver driver){
+        scrollToElement(driver,wishList);
+        log.info("scrolled to element success");
+    }
+
+    public void clickOnCrossIconToRemoveProduct(WebDriver driver){
+        waitFor(1);
+        hoverOverAndClickOn(driver,crossIcon);
+        log.info("click on remove success");
+    }
+
+    public String getRemoveFromWishListConfirmationText(){
+        String text=getElementText(removeConfirmationText);
+        log.info("product removed success");
+        return text;
+    }
 }

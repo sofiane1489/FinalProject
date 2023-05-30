@@ -12,9 +12,9 @@ import us.piit.utility.Utility;
 import java.util.Properties;
 
 public class ForgottenPasswordTest extends CommonAPI {
-    Properties pro = Utility.loadProperties();
+    Properties pro= Utility.loadProperties();
 
-    String validEmail = Utility.decode(pro.getProperty("tutorialsninja.email"));
+    String validEmail=Utility.decode(pro.getProperty("tutorialsninja.email")) ;
 
     @Test
     public void resetPasswordTest() {
@@ -30,8 +30,9 @@ public class ForgottenPasswordTest extends CommonAPI {
         welcomePage.clickOnMyAccountBtn();
         welcomePage.hoverOverAndClickOnHeaderLoginBtn();
         loginPage.clickOnForgottenPasswordLink();
-        forgotPasswordPage.enterEmail(validEmail);
+        loginPage.enterValidEmail(validEmail);
         forgotPasswordPage.clickOnContinueBtn();
+
 
         //reset validation
         String expectedTextMessage = "An email with a confirmation link has been sent your email address.";
