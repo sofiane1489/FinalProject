@@ -12,8 +12,8 @@ import us.piit.base.CommonAPI;
 import us.piit.utility.Utility;
 import java.util.Properties;
 
-public class ContactsupportTest extends CommonAPI {
-    Logger log = LogManager.getLogger(ContactsupportTest.class.getName());
+public class ContactUsTest extends CommonAPI {
+    Logger log = LogManager.getLogger(ContactUsTest.class.getName());
     Properties pop = Utility.loadProperties();
     String name = Utility.decode(pop.getProperty("automation.name"));
     String validEmail = Utility.decode(pop.getProperty("automation.validEmail"));
@@ -51,11 +51,6 @@ public class ContactsupportTest extends CommonAPI {
 
         contactSupportPage.clickonsubmitbutton();
 
-
-        //  success message validation
-//        String expectedmessage="Success! Your details have been submitted successfully.";
-//        String actualmessage=contactSupportPage.getMessage();
-//        Assert.assertEquals(expectedmessage,actualmessage);
 
 
 

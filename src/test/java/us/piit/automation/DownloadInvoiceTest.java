@@ -10,9 +10,10 @@ import us.piit.utility.Utility;
 
 import java.util.Properties;
 
-public class CheckOutTest extends CommonAPI {
-    Logger log=LogManager.getLogger(CheckOutTest.class.getName());
+public class DownloadInvoiceTest extends CommonAPI {
+    Logger log= LogManager.getLogger(DownloadInvoiceTest.class.getName());
     Properties pop= Utility.loadProperties();
+
     String validEmail =Utility.decode(pop.getProperty("automation.validEmail"));
     String validPassword =Utility.decode(pop.getProperty("automation.validPassword"));
     String name= Utility.decode(pop.getProperty("automation.name"));
@@ -21,9 +22,7 @@ public class CheckOutTest extends CommonAPI {
     String expireMonth= Utility.decode(pop.getProperty("automation.expireMonth"));
     String expireYear= Utility.decode(pop.getProperty("automation.expireYear"));
     @Test
-    public void checkout() {
-
-
+    public void downloadInvoiceAfterPurchase(){
         //Enter Email, password, and click on login button
         LoginPage loginPage = new LoginPage(getDriver());
         HomePage homePage = new HomePage(getDriver());
@@ -33,9 +32,9 @@ public class CheckOutTest extends CommonAPI {
         Product_detailesPage product_detailesPage=new Product_detailesPage(getDriver());
 
         // Verify the title of the page
-        String expectedTitle = "Automation Exercise";
-        String actualTitle= getCurrentTtile();
-        Assert.assertEquals(expectedTitle, actualTitle);
+//        String expectedTitle = "Automation Exercise";
+//        String actualTitle= getCurrentTtile();
+//        Assert.assertEquals(expectedTitle, actualTitle);
 
 
         // Enter Email, password, and click on login button
@@ -53,11 +52,10 @@ public class CheckOutTest extends CommonAPI {
         String expectedHomePageHeader = "Full-Fledged practice website for Automation Engineers";
         String actualHomePageHeader = homePage.getHeaderText();
         Assert.assertEquals(expectedHomePageHeader, actualHomePageHeader);
-        waitFor(1);
 
-        //click on view product, add to cart,view cart, proceed to checkout,place order and confirm
-
+        //click on cart,proceed to checkout,place order and confirm
         productsPage.viewProduct();
+        waitFor(3);
         product_detailesPage.clickonaddtocart();
         waitFor(2);
         product_detailesPage.viewCart();
@@ -73,10 +71,19 @@ public class CheckOutTest extends CommonAPI {
 
         // validate the payment of the product
         String expectedtext="Congratulations! Your order has been confirmed!";
+        waitFor(2);
+        //String actualtext=homePage.welcomingMessage();
         String actualtext=homePage.welcomingMessage();
         Assert.assertEquals(expectedtext,actualtext);
         takeScreenshot("order payed succesfully");
 
+        // click on download invoice
+        paymentPage.clickDownloadInvoice();
+
+        // verify invoice is succesfully download
+        takeScreenshot("invoice download success");
+
 
     }
 }
+

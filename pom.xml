@@ -102,8 +102,8 @@
         <version>2.12.4</version>
         <configuration>
           <suiteXmlFiles>src/test/resources/runnerS.xml</suiteXmlFiles>
-<!--          <suiteXmlFiles>src/test/resources/runnerO.xml</suiteXmlFiles>-->
-<!--          <suiteXmlFiles>src/test/resources/runnerY.xml</suiteXmlFiles>-->
+          <suiteXmlFiles>src/test/resources/runnerO.xml</suiteXmlFiles>
+          <suiteXmlFiles>src/test/resources/runnerY.xml</suiteXmlFiles>
         </configuration>
       </plugin>
     </plugins>

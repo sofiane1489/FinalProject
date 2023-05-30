@@ -10,9 +10,12 @@ import us.piit.base.CommonAPI;
 
 public class ContactUsPage extends CommonAPI {
     Logger log = LogManager.getLogger(ContactUsPage.class.getName());
-    public ContactUsPage(WebDriver driver){
-        PageFactory.initElements(driver,this);
+
+    public ContactUsPage(WebDriver driver) {
+
+        PageFactory.initElements(driver, this);
     }
+
     @FindBy(xpath = "//header/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[8]/a[1]")
     WebElement contactSupportButton;
     @FindBy(xpath = "//body/div[@id='contact-page']/div[2]/div[1]/div[1]/div[3]/form[1]/div[3]/input[1]")
@@ -24,30 +27,32 @@ public class ContactUsPage extends CommonAPI {
     @FindBy(xpath = "//body/div[@id='contact-page']/div[2]/div[1]/div[1]/div[2]")
     WebElement successMessage;
 
-    public void contactSupport(){
+    public void contactSupport() {
         clickOn(contactSupportButton);
         log.info("click on contact us success");
     }
+
     public void enterSubject(String subject) {
-        type(subjectField,subject);
+        type(subjectField, subject);
         log.info("enter subject text success");
     }
-    public void enterMessage(String message){
-        type(messageField,message);
+
+    public void enterMessage(String message) {
+        type(messageField, message);
         log.info("enter text message success");
     }
-    public void clickonsubmitbutton(){
+
+    public void clickonsubmitbutton() {
         clickOn(submitButton);
         log.info("click on submit button success");
     }
-    public String getMessage(){
-        String text=getElementText(successMessage);
+
+    public String getMessage() {
+        String text = getElementText(successMessage);
         log.info("success message displayed");
-        return  text;
+        return text;
 
     }
 
 
-
 }
-

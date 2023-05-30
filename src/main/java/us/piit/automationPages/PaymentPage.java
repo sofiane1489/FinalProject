@@ -28,6 +28,8 @@ public class PaymentPage extends CommonAPI {
     WebElement expireYearField;
     @FindBy(css = "#submit")
     WebElement clickonpaymentconfirme;
+    @FindBy(xpath = "//a[contains(text(),'Download Invoice')]")
+    WebElement downloadinvoice;
 
     public void clickonPlaceOrder(){
         clickOn(placeOrder);
@@ -57,6 +59,10 @@ public class PaymentPage extends CommonAPI {
     public void clickonpaymentConfirm(){
         clickOn(clickonpaymentconfirme);
         log.info("pay and confirm order success");
+    }
+    public void clickDownloadInvoice(){
+        clickOn(downloadinvoice);
+        log.info("download invoice success");
     }
 
 }
