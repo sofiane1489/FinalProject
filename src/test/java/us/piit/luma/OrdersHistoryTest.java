@@ -51,7 +51,7 @@ public class OrdersHistoryTest extends CommonAPI{
         editAccountInformationPage.clickOnMyOrdersBtn(getDriver());
 
         //orders history validation
-        String expectedTotalOrders="2 Item(s)";
+        String expectedTotalOrders="Items 1 to 10 of 20 total";
         Assert.assertEquals(myOrdersPage.getToolbarAmountText(),expectedTotalOrders);
 
     }

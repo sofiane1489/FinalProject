@@ -69,7 +69,7 @@ public class ReorderPreviousOrderStepDef {
 
     @Then("user should sees thanks message {string}")
     public void user_should_sees_thanks_message_and_order_number(String thanksMessage) throws InterruptedException {
-    setUp.waitFor(2);
+    setUp.waitFor(3);
     Assert.assertEquals(setUp.driver.findElement(By.cssSelector(".page-title")).getText(),thanksMessage);
     }
 

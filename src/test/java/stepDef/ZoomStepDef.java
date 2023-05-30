@@ -41,8 +41,10 @@ public class ZoomStepDef {
 
     @And("User hovers over the product image and clicks")
     public void user_hovers_over_the_product_image() throws InterruptedException {
+        setUp.waitFor(1);
         Actions actions= new Actions(setUp.driver);
-        actions.moveToElement(setUp.driver.findElement(By.cssSelector("img[src='https://magento.softwaretestingboard.com/pub/media/catalog/product/cache/d34482110da20c5e24f97c38fb219fb3/m/t/mt08-green_main_1.jpg']"))).click().build().perform();
+        actions.moveToElement(setUp.driver.findElement(By.cssSelector("img[src='https://magento.softwaretestingboard.com/pub/media/catalog/product/cache/d34482110da20c5e24f97c38fb219fb3/m/t/mt08-green_main_1.jpg']"))).click().click().build().perform();
+        //setUp.clickWithJavascript(setUp.driver,setUp.driver.findElement(By.cssSelector("img[src='https://magento.softwaretestingboard.com/pub/media/catalog/product/cache/d34482110da20c5e24f97c38fb219fb3/m/t/mt08-green_main_1.jpg']")));
         setUp.waitFor(2);
     }
 
