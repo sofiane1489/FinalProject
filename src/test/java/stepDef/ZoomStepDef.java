@@ -40,10 +40,10 @@ public class ZoomStepDef {
     }
 
     @And("User hovers over the product image and clicks")
-    public void user_hovers_over_the_product_image(){
+    public void user_hovers_over_the_product_image() throws InterruptedException {
         Actions actions= new Actions(setUp.driver);
         actions.moveToElement(setUp.driver.findElement(By.cssSelector("img[src='https://magento.softwaretestingboard.com/pub/media/catalog/product/cache/d34482110da20c5e24f97c38fb219fb3/m/t/mt08-green_main_1.jpg']"))).click().build().perform();
-
+        setUp.waitFor(2);
     }
 
     @When("user clicks on zoom-in button and verifies the image is zoomed-in")
@@ -51,7 +51,7 @@ public class ZoomStepDef {
         Actions actions= new Actions(setUp.driver);
         int originalImageWidth =  setUp.driver.findElement(By.cssSelector("img[src='https://magento.softwaretestingboard.com/pub/media/catalog/product/cache/c2e58f207611755436220741b3fe027b/m/t/mt08-green_main_1.jpg']")).getSize().getWidth();
 
-        actions.moveToElement(setUp.driver.findElement(By.cssSelector(".fotorama__zoom-in.zoom-in-loaded"))).doubleClick().doubleClick().click().click().click().build().perform();
+        actions.moveToElement(setUp.driver.findElement(By.cssSelector(".fotorama__zoom-in.zoom-in-loaded"))).doubleClick().doubleClick().doubleClick().doubleClick().doubleClick().build().perform();
 
         WebElement zoomedImage = setUp.driver.findElement(By.cssSelector(".fotorama__img--full.fotorama__img--zoommable"));
         int zoomedImageWidth = zoomedImage.getSize().getWidth();

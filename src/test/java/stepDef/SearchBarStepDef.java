@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
 
-public class SearchBarStepDef {
+public class SearchBarStepDef{
     SetUp setUp;
 
     public SearchBarStepDef(SetUp setUp){
