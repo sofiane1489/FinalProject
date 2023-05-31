@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import us.piit.automationPages.HomePage;
+import us.piit.automationPages.Product_detailesPage;
 import us.piit.automationPages.ProductsPage;
 import us.piit.base.CommonAPI;
 import us.piit.utility.Utility;
@@ -20,17 +21,23 @@ public class AddItemsToCartTest extends CommonAPI {
 
         ProductsPage productsPage = new ProductsPage(getDriver());
         HomePage homePage = new HomePage(getDriver());
+        Product_detailesPage product_detailesPage=new Product_detailesPage(getDriver());
 
 
         //verify the title of the homepage
         String expectedTitle = "Automation Exercise";
         String actualTitle=getCurrentTtile();
-        Assert.assertEquals(expectedTitle, actualTitle);
+        Assert.assertEquals(expectedTitle,actualTitle);
 
         // click on product,click on view item, add to cart then proceed to checkout
         productsPage.viewProduct();
-        productsPage.addToCart();
-        productsPage.viewCart();
+        waitFor(4);
+        product_detailesPage.clickonaddtocart();
+        product_detailesPage.viewCart();
+
+
+
+
 
 
 

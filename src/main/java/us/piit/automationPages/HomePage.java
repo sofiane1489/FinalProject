@@ -45,6 +45,8 @@ public class HomePage extends CommonAPI {
     WebElement APITesting;
     @FindBy(xpath = "//img[@alt='Website for automation practice']")
     WebElement logotest;
+    @FindBy(xpath = "//a[normalize-space()='Test Cases']")
+    WebElement testCase;
 
 
     public String getHeaderText() {
@@ -130,6 +132,10 @@ public class HomePage extends CommonAPI {
       boolean text = isVisible(logotest);
       log.info("logotext visible success");
       return text;
+    }
+    public void clickontestcases(){
+        clickOn(testCase);
+        log.info("click on test case button success");
     }
 
 

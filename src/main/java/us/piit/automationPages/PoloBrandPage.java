@@ -15,12 +15,18 @@ public class PoloBrandPage extends CommonAPI {
     }
     @FindBy(xpath = "//a[@href='/brand_products/Polo']")
     WebElement PoloBrand;
+    @FindBy(xpath = "//div[6]//div[1]//div[2]//ul[1]//li[1]//a[1]")
+    WebElement PoloBrandJeans;
     @FindBy(xpath = "//h2[@class='title text-center']")
     WebElement pageHeaderTitle;
 
     public void clickonPoloBrand(){
         clickOn(PoloBrand);
         log.info("click on polo brand success");
+    }
+    public void clickonviewproduct(){
+        clickOn(PoloBrandJeans);
+        log.info("click on view product success");
     }
     public String getPageHeaderTitle(){
         String Pageheader=getElementText(pageHeaderTitle);

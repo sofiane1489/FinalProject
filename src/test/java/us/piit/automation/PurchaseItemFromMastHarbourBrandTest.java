@@ -10,8 +10,9 @@ import us.piit.utility.Utility;
 
 import java.util.Properties;
 
-public class CheckOutTest extends CommonAPI {
-    Logger log=LogManager.getLogger(CheckOutTest.class.getName());
+public class PurchaseItemFromMastHarbourBrandTest extends CommonAPI {
+
+    Logger log= LogManager.getLogger(PurchaseItemFromMastHarbourBrandTest.class.getName());
     Properties pop= Utility.loadProperties();
     String validEmail =Utility.decode(pop.getProperty("automation.validEmail"));
     String validPassword =Utility.decode(pop.getProperty("automation.validPassword"));
@@ -21,9 +22,7 @@ public class CheckOutTest extends CommonAPI {
     String expireMonth= Utility.decode(pop.getProperty("automation.expireMonth"));
     String expireYear= Utility.decode(pop.getProperty("automation.expireYear"));
     @Test
-    public void checkout() {
-
-
+    public void mastHarbourBrandTest(){
         //Enter Email, password, and click on login button
         LoginPage loginPage = new LoginPage(getDriver());
         HomePage homePage = new HomePage(getDriver());
@@ -31,11 +30,12 @@ public class CheckOutTest extends CommonAPI {
         CheckOutPage checkoutPage=new CheckOutPage(getDriver());
         PaymentPage paymentPage=new PaymentPage(getDriver());
         Product_detailesPage product_detailesPage=new Product_detailesPage(getDriver());
+        MastHarbourBrandPage mastHarbourBrandPage=new MastHarbourBrandPage(getDriver());
 
-        // Verify the title of the page
-        String expectedTitle = "Automation Exercise";
-        String actualTitle= getCurrentTtile();
-        Assert.assertEquals(expectedTitle, actualTitle);
+//        // Verify the title of the page
+//        String expectedTitle = "Automation Exercise";
+//        String actualTitle= getCurrentTtile();
+//        Assert.assertEquals(expectedTitle, actualTitle);
 
 
         // Enter Email, password, and click on login button
@@ -47,17 +47,14 @@ public class CheckOutTest extends CommonAPI {
         loginPage.enterPassword(validPassword);
 
         loginPage.clickonLoginBtn();
+        waitFor(3);
 
+        // click on H&M brand button,click on view product, add to cart,view cart,
+        // proceed to checkout,place order and confirm
 
-        // Check if user is logged in
-        String expectedHomePageHeader = "Full-Fledged practice website for Automation Engineers";
-        String actualHomePageHeader = homePage.getHeaderText();
-        Assert.assertEquals(expectedHomePageHeader, actualHomePageHeader);
-        waitFor(1);
-
-        //click on view product, add to cart,view cart, proceed to checkout,place order and confirm
-
-        productsPage.viewProduct();
+        mastHarbourBrandPage.clickMastHarbourbrand();
+        waitFor(4);
+        mastHarbourBrandPage.clickViewProduct();
         product_detailesPage.clickonaddtocart();
         waitFor(2);
         product_detailesPage.viewCart();
@@ -80,3 +77,9 @@ public class CheckOutTest extends CommonAPI {
 
     }
 }
+
+
+
+
+
+

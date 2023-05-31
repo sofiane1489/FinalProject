@@ -31,7 +31,8 @@ public class VideoTutorialsTest extends CommonAPI {
         // Verify the title of the page
         String expectedTitle = "automationexercise.com";
         String actualTitle = getCurrentTtile();
-        Assert.assertEquals(expectedTitle, actualTitle);
+        Assert.assertEquals(expectedTitle,actualTitle);
+
 
         waitFor(2);
 
@@ -67,7 +68,7 @@ public class VideoTutorialsTest extends CommonAPI {
         // verify user subscribe succesfully
 //        String expectedtext="Subscription added";
 //
-//        String actualtext=videoTutorialsPage.usersubscribetothechannel();
+//        String actualtext=
 //
 //        Assert.assertEquals(expectedtext,actualtext);
 
