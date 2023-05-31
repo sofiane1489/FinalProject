@@ -31,11 +31,11 @@
 <!--                <class name="us.piit.tutorialsninja.SearchBarTest"></class>-->
 <!--            </classes>-->
 <!--        </test>-->
-<!--        <test name="add to cart test">-->
-<!--            <classes>-->
-<!--                <class name="us.piit.tutorialsninja.AddItemsToShoppingCartTest"></class>-->
-<!--            </classes>-->
-<!--        </test>-->
+        <test name="add to cart test">
+            <classes>
+                <class name="us.piit.tutorialsninja.AddItemsToShoppingCartTest"></class>
+            </classes>
+        </test>
 <!--        <test name="logout test">-->
 <!--            <classes>-->
 <!--                <class name="us.piit.tutorialsninja.LogoutTest"></class>-->
@@ -98,11 +98,11 @@
 <!--        </classes>-->
 <!--    </test>-->
 
-    <test name="component test">
-        <classes>
-            <class name="us.piit.tutorialsninja.ComponentsSectionTest"></class>
-        </classes>
-    </test>
+<!--    <test name="component test">-->
+<!--        <classes>-->
+<!--            <class name="us.piit.tutorialsninja.ComponentsSectionTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
 <!--    <test name="customer service test">-->
 <!--        <classes>-->
 <!--            <class name="us.piit.tutorialsninja.CustomerServiceTest"></class>-->
