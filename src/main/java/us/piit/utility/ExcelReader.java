@@ -93,9 +93,9 @@ public class ExcelReader {
     public static void main(String[] args) throws IOException {
         String currentDir = System.getProperty("user.dir");
 
-        String path = currentDir + File.separator + "data" + File.separator + "lumaData" + File.separator + "testcases.xlsx";
+        String path = currentDir + File.separator + "data" + File.separator + "tutorialsninjaData" + File.separator + "tutorialsninjaTestCases.xlsx";
         ExcelReader excelReader = new ExcelReader(path);
-        String name="luma";
+        String name="Sheet1";
         String data=excelReader.getDataFromCell(name,1,1);
         System.out.println(data);
 

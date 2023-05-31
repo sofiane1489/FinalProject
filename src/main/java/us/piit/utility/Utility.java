@@ -29,7 +29,7 @@ public class Utility {
 
     public static void main(String[] args) {
 
-        String originalInput = "bravo@gmail.com";
+        String originalInput = "Adam2023#";
 
         String encodedString = Base64.getEncoder().encodeToString(originalInput.getBytes());
         System.out.println(encodedString);

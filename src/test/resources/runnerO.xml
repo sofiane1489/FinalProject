@@ -9,102 +9,159 @@
     <parameter name="browserName" value="chrome"></parameter>
     <parameter name="url" value="https://automationexercise.com/"></parameter>
 
-<!--                <test name="user registration test">-->
-<!--                        <classes>-->
-<!--                            <class name="us.piit.automation.UserRegistrationTest"></class>-->
-<!--                        </classes>-->
-<!--                    </test>-->
-<!--            <test name="UserLogin test">-->
-<!--                <classes>-->
-<!--                    <class name="us.piit.automation.UserLoginTest"></class>-->
-<!--                </classes>-->
-<!--            </test>-->
-<!--                    <test name="Add items to cart test">-->
-<!--                        <classes>-->
-<!--                            <class name="us.piit.automation.AddItemsToCartTest"></class>-->
-<!--                        </classes>-->
-<!--                    </test>-->
-<!--                <test name="checkout test">-->
-<!--                    <classes>-->
-<!--                        <class name="us.piit.automation.CheckOutTest"></class>-->
-<!--                    </classes>-->
-<!--                </test>-->
-<!--                    <test name="search bar test">-->
-<!--                        <classes>-->
-<!--                            <class name="us.piit.automation.SearchProductsTest"></class>-->
-<!--                        </classes>-->
-<!--                    </test>-->
-<!--        <test name="verification quantity test">-->
-<!--            <classes>-->
-<!--                <class name="us.piit.automation.UpdateQuantityInCart"></class>-->
-<!--            </classes>-->
-<!--        </test>-->
-<!--                <test name="remove item test">-->
-<!--                    <classes>-->
-<!--                        <class name="us.piit.automation.RemoveItemTest"></class>-->
-<!--                    </classes>-->
-<!--                </test>-->
+                <test name="user registration test">
+                        <classes>
+                            <class name="us.piit.automation.UserRegistrationTest"></class>
+                        </classes>
+                    </test>
+            <test name="UserLogin test">
+                <classes>
+                    <class name="us.piit.automation.UserLoginTest"></class>
+                </classes>
+            </test>
+                    <test name="Add items to cart test">
+                        <classes>
+                            <class name="us.piit.automation.AddItemsToCartTest"></class>
+                        </classes>
+                    </test>
+                <test name="checkout test">
+                    <classes>
+                        <class name="us.piit.automation.CheckOutTest"></class>
+                    </classes>
+                </test>
+                    <test name="search bar test">
+                        <classes>
+                            <class name="us.piit.automation.SearchProductsTest"></class>
+                        </classes>
+                    </test>
+        <test name="verification quantity test">
+            <classes>
+                <class name="us.piit.automation.UpdateQuantityInCart"></class>
+            </classes>
+        </test>
+                <test name="remove item test">
+                    <classes>
+                        <class name="us.piit.automation.RemoveItemTest"></class>
+                    </classes>
+                </test>
 
-<!--        <test name="log out test">-->
+        <test name="log out test">
+            <classes>
+                <class name="us.piit.automation.UserLogoutTest"></class>
+            </classes>
+        </test>
+        <test name=" update quantity test">
+            <classes>
+                <class name="us.piit.automation.UpdateQuantityInCart"></class>
+            </classes>
+        </test>
+        <test name=" write review test">
+            <classes>
+                <class name="us.piit.automation.WriteReviewTest"></class>
+            </classes>
+        </test>
+<!--        <test name=" contact us test">-->
 <!--            <classes>-->
-<!--                <class name="us.piit.automation.UserLogoutTest"></class>-->
+<!--                <class name="us.piit.automation.ContactUsTest"></class>-->
 <!--            </classes>-->
 <!--        </test>-->
-<!--        <test name=" update quantity test">-->
-<!--            <classes>-->
-<!--                <class name="us.piit.automation.UpdateQuantityInCart"></class>-->
-<!--            </classes>-->
-<!--        </test>-->
-<!--        <test name=" write review test">-->
-<!--            <classes>-->
-<!--                <class name="us.piit.automation.WriteReviewTest"></class>-->
-<!--            </classes>-->
-<!--        </test>-->
-<!--        <test name=" contact support test">-->
-<!--            <classes>-->
-<!--                <class name="us.piit.automation.ContactsupportTest"></class>-->
-<!--            </classes>-->
-<!--        </test>-->
-<!--        <test name="subscribe in home page test">-->
-<!--            <classes>-->
-<!--                <class name="us.piit.automation.SubscribeInHomePage"></class>-->
-<!--            </classes>-->
-<!--        </test>-->
-<!--    <test name="subscribe in cart page test">-->
-<!--        <classes>-->
-<!--            <class name="us.piit.automation.SubscribeInCartPage"></class>-->
-<!--        </classes>-->
-<!--    </test>-->
+        <test name="subscribe in home page test">
+            <classes>
+                <class name="us.piit.automation.SubscribeInHomePage"></class>
+            </classes>
+        </test>
+    <test name="subscribe in cart page test">
+        <classes>
+            <class name="us.piit.automation.SubscribeInCartPage"></class>
+        </classes>
+    </test>
+
+    <test name="view category product test">
+        <classes>
+            <class name="us.piit.automation.ViewCategoryProduct"></class>
+        </classes>
+    </test>
+    <test name="view brand product test">
+        <classes>
+            <class name="us.piit.automation.BrandProduct"></class>
+        </classes>
+    </test>
+    <test name="video tutorials  test">
+        <classes>
+            <class name="us.piit.automation.VideoTutorialsTest"></class>
+        </classes>
+    </test>
+    <test name="api practice  test">
+        <classes>
+            <class name="us.piit.automation.APIPracticeTest"></class>
+        </classes>
+    </test>
+    <test name="logo test">
+        <classes>
+            <class name="us.piit.automation.AutomationLogoTest"></class>
+        </classes>
+    </test>
+    <test name="test cases test">
+        <classes>
+            <class name="us.piit.automation.TestCasesTest"></class>
+        </classes>
+    </test>
+    <test name="add two product test test">
+        <classes>
+            <class name="us.piit.automation.AddTwoProductsInCartTest"></class>
+        </classes>
+    </test>
+    <test name="delivery address test">
+        <classes>
+            <class name="us.piit.automation.DeliveryAddressVerificationTest"></class>
+        </classes>
+    </test>
+    <test name="download invoice test">
+        <classes>
+            <class name="us.piit.automation.DownloadInvoiceTest"></class>
+        </classes>
+    </test>
+    <test name="buy item form HM brand test">
+        <classes>
+            <class name="us.piit.automation.PurchaseItemFromHMBrand"></class>
+        </classes>
+    </test>
+    <test name="buy item form MADAM brand test">
+        <classes>
+            <class name="us.piit.automation.PurchaseItemFromMadamBrand"></class>
+        </classes>
+    </test>
+    <test name="buy item form Kookie Kids brand test">
+        <classes>
+            <class name="us.piit.automation.PurchaseItemFromKookieKidsBrandTest"></class>
+        </classes>
+    </test>
+    <test name="buy item form Mast Harbour brand test">
+        <classes>
+            <class name="us.piit.automation.PurchaseItemFromMastHarbourBrandTest"></class>
+        </classes>
+    </test>
+    <test name="buy item form Baby Hug brand test">
+        <classes>
+            <class name="us.piit.automation.PurchaseItemFromBabyHugBrand"></class>
+        </classes>
+    </test>
 <!--    <test name="delete account test">-->
 <!--        <classes>-->
 <!--            <class name="us.piit.automation.DeleteAccountTest"></class>-->
 <!--        </classes>-->
 <!--    </test>-->
-<!--    <test name="view category product test">-->
-<!--        <classes>-->
-<!--            <class name="us.piit.automation.ViewCategoryProduct"></class>-->
-<!--        </classes>-->
-<!--    </test>-->
-<!--    <test name="view brand product test">-->
-<!--        <classes>-->
-<!--            <class name="us.piit.automation.BrandProduct"></class>-->
-<!--        </classes>-->
-<!--    </test>-->
-<!--    <test name="video tutorials  test">-->
-<!--        <classes>-->
-<!--            <class name="us.piit.automation.VideoTutorialsTest"></class>-->
-<!--        </classes>-->
-<!--    </test>-->
-<!--    <test name="api practice  test">-->
-<!--        <classes>-->
-<!--            <class name="us.piit.automation.APIPracticeTest"></class>-->
-<!--        </classes>-->
-<!--    </test>-->
-<!--    <test name="logo test">-->
-<!--        <classes>-->
-<!--            <class name="us.piit.automation.AutomationLogoTest"></class>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="buy item form Biba brand test">
+        <classes>
+            <class name="us.piit.automation.PurchaseItemFromBibaBrand"></class>
+        </classes>
+    </test>
+    <test name="buy item form POLO brand test">
+        <classes>
+            <class name="us.piit.automation.PurchaseItemFromPoloBrand"></class>
+        </classes>
+    </test>
+
 
 
 </suite>

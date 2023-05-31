@@ -41,7 +41,7 @@ public class CheckoutTest extends CommonAPI {
         homePage.clickOnPhonesAndPDAsSectionBtn();
         phonesAndPDAsPage.hoverOverAndClickOnProductImg();
         addToShoppingCartPage.clickOnAddToCartBtn();
-        homePage.clickOnShowItemsAddedBtn();
+        homePage.clickOnSItemCartCount();
         homePage.hoverOverAndClickOnCheckoutBtn();
 
         //proceed to checkout

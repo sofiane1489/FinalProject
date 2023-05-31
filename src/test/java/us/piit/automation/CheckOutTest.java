@@ -30,6 +30,7 @@ public class CheckOutTest extends CommonAPI {
         ProductsPage productsPage=new ProductsPage(getDriver());
         CheckOutPage checkoutPage=new CheckOutPage(getDriver());
         PaymentPage paymentPage=new PaymentPage(getDriver());
+        Product_detailesPage product_detailesPage=new Product_detailesPage(getDriver());
 
         // Verify the title of the page
         String expectedTitle = "Automation Exercise";
@@ -52,12 +53,14 @@ public class CheckOutTest extends CommonAPI {
         String expectedHomePageHeader = "Full-Fledged practice website for Automation Engineers";
         String actualHomePageHeader = homePage.getHeaderText();
         Assert.assertEquals(expectedHomePageHeader, actualHomePageHeader);
+        waitFor(1);
 
-        //click on cart,proceed to checkout,place order and confirm
+        //click on view product, add to cart,view cart, proceed to checkout,place order and confirm
+
         productsPage.viewProduct();
-        productsPage.addToCart();
+        product_detailesPage.clickonaddtocart();
         waitFor(2);
-        productsPage.viewCart();
+        product_detailesPage.viewCart();
         checkoutPage.clickCheckOut();
         paymentPage.clickonPlaceOrder();
 

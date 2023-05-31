@@ -15,9 +15,16 @@ public class CheckOutPage extends CommonAPI {
     }
     @FindBy(xpath = "//a[contains(text(),'Proceed To Checkout')]")
     WebElement proceedtocheckout;
+    @FindBy(xpath = "//ul[@id='address_delivery']")
+    WebElement deliveryaddress;
 
     public void clickCheckOut(){
         clickOn(proceedtocheckout);
         log.info("checkout proceed success");
+    }
+    public boolean deliveryaddressvisibility(){
+        boolean address=isVisible(deliveryaddress);
+        log.info("delivery address is visible success");
+        return  address;
     }
 }

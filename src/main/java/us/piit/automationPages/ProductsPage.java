@@ -18,16 +18,17 @@ public class ProductsPage extends CommonAPI {
 
     @FindBy(xpath = "//header/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[2]/a[1]")
     WebElement clickonproductbtn;
-    @FindBy(xpath = "//body/section[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[1]/a[1]")
+    @FindBy(xpath = "//div[8]//div[1]//div[2]//ul[1]//li[1]//a[1]")
     WebElement clickonviewproduct;
 
     @FindBy(xpath = "//input[@id='quantity']")
     WebElement typeenterquantity;
 
-    @FindBy(xpath = "//body/section[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/span[1]/button[1]")
-    WebElement clickonaddtocart;
-    @FindBy(xpath = "//u[contains(text(),'View Cart')]")
-    WebElement clickonviewcart;
+//    @FindBy(xpath = "//body/section[2]/div[1]/div[1]/div[2]/div[1]/div[8]/div[1]/div[1]/div[2]/div[1]/a[1]")
+//    WebElement clickonaddtocart;
+
+    @FindBy(xpath = "//button[contains(text(),'Continue Shopping')]")
+    WebElement continueShooping;
 
     @FindBy(xpath = "//input[@id='search_product']")
     WebElement entervalidproduct;
@@ -58,16 +59,6 @@ public class ProductsPage extends CommonAPI {
     public void viewProduct() {
         clickOn(clickonviewproduct);
         log.info("click on view product success");
-    }
-
-    public void addToCart() {
-        clickOn(clickonaddtocart);
-        log.info("click on add to cart  success");
-    }
-
-    public void viewCart() {
-        clickOn(clickonviewcart);
-        log.info("click on view cart  success");
     }
 
     public void enterproduct(String productName) {
@@ -122,6 +113,10 @@ public class ProductsPage extends CommonAPI {
         log.info("brand text visible success");
         return text;
 
+    }
+    public void clickoncontinueShooping(){
+        clickOn(continueShooping);
+        log.info("click on continue shooping button success");
     }
 
 }

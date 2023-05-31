@@ -7,8 +7,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import us.piit.base.CommonAPI;
 
-public class signUp extends CommonAPI {
-    Logger log= LogManager.getLogger(signUp.class.getName());
+public class signUpTest extends CommonAPI {
+    Logger log= LogManager.getLogger(signUpTest.class.getName());
 
     @Test
     public void validCredentials(){

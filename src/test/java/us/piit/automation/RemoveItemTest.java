@@ -6,10 +6,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import us.piit.automationPages.HomePage;
-import us.piit.automationPages.LoginPage;
-import us.piit.automationPages.ProductsPage;
-import us.piit.automationPages.ViewCartPage;
+import us.piit.automationPages.*;
 import us.piit.base.CommonAPI;
 import us.piit.utility.Utility;
 
@@ -27,6 +24,7 @@ public class RemoveItemTest extends CommonAPI {
         HomePage homePage = new HomePage(getDriver());
         ViewCartPage viewcartPage=new ViewCartPage(getDriver());
         ProductsPage productsPage=new ProductsPage(getDriver());
+        Product_detailesPage product_detailesPage=new Product_detailesPage(getDriver());
 
         // verify the title of the homepage
         String expectedTitle = "Automation Exercise";
@@ -47,21 +45,14 @@ public class RemoveItemTest extends CommonAPI {
         Assert.assertEquals(expectedHomePageHeader, actualHomePageHeader);
 
         productsPage.viewProduct();
-        productsPage.addToCart();
-        productsPage.viewCart();
+        waitFor(3);
+        product_detailesPage.clickonaddtocart();
+        product_detailesPage.viewCart();
         viewcartPage.deleteItem();
-
-
-
-
-
-
 
         // validate that product is deleted
         String expectedText="";
         String actualText=homePage.emtyCart();
         Assert.assertEquals(expectedText,actualText);
-
-
     }
 }
