@@ -1,5 +1,6 @@
 package us.piit.base;
 import com.relevantcodes.extentreports.LogStatus;
+import io.cucumber.java.*;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -151,6 +152,7 @@ public class CommonAPI {
         }
         driver.get(url);
     }
+
     @AfterMethod(groups = {"sanity"})
     public void teardown(){
         //close browser
