@@ -15,7 +15,7 @@ public class ShoppingCartPage extends CommonAPI {
     }
     @FindBy(css = "#content form div table tbody tr td:nth-child(4) div span button.btn.btn-danger")
     WebElement removeBtn;
-    @FindBy(css = "#content p")
+    @FindBy(xpath = "//*[@id=\"content\"]/p")
     WebElement productRemoveConfirmation;
     @FindBy(css = "#content form div table tbody tr td:nth-child(4) div span button.btn.btn-primary")
     WebElement updateBtn;

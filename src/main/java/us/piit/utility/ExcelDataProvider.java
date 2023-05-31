@@ -1,6 +1,7 @@
 package us.piit.utility;
 
 import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -71,60 +72,66 @@ public class ExcelDataProvider {
     }
 //................................. get the entire column data...............................................
 
-        @DataProvider(name = "columnData")
-        public Iterator<Object[]> getColumnData(String filePath, String sheetName,int columnIndex) {
-            List<Object[]> testData = new ArrayList<>();
+    @DataProvider(name = "columnData")
+    public Iterator<Object[]> getColumnData(String filePath, String sheetName, int COLUMN_INDEX) {
+        List<Object[]> testData = new ArrayList<>();
 
-            try (FileInputStream fis = new FileInputStream(filePath);
-                 Workbook workbook = WorkbookFactory.create(fis)) {
+        try (FileInputStream fis = new FileInputStream(filePath);
+             Workbook workbook = new XSSFWorkbook(fis)) {
 
-                Sheet sheet = workbook.getSheet(sheetName);
-                int lastRowIndex = sheet.getLastRowNum();
+            Sheet sheet = workbook.getSheet(sheetName);
+            int lastRowIndex = sheet.getLastRowNum();
 
-                for (int i = 0; i <= lastRowIndex; i++) {
-                    Row row = sheet.getRow(i);
-                    Cell cell = row.getCell(columnIndex);
-                    String cellData = getCellValueAsString(cell);
-                    testData.add(new Object[]{cellData});
+            for (int i = 0; i <= lastRowIndex; i++) {
+                Row row = sheet.getRow(i);
+                if (row != null) {
+                    Cell cell = row.getCell(COLUMN_INDEX);
+                    if (cell != null) {
+                        String cellData = getCellValueAsString(cell);
+                        if (!cellData.isEmpty()) {
+                            testData.add(new Object[]{cellData});
+                        }
+                    }
                 }
-
-            } catch (IOException e) {
-                e.printStackTrace();
             }
 
-            return testData.iterator();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
-        @Test(dataProvider = "columnData")
-        public void testColumnData(String columnData) {
-            System.out.println("Column Data: " + columnData);
-        }
+        return testData.iterator();
+    }
+
+    @Test(dataProvider = "columnData")
+    public void testColumnData(String columnData) {
+        System.out.println("Column Data: " + columnData);
+    }
 
 //...................................read the entire file.............................................................
 
-
         @DataProvider(name = "fileData")
-        public Iterator<Object[]> getFileData(String sheetName) {
+        public Iterator<Object[]> getFileData(String filePath, String sheetName) {
             List<Object[]> testData = new ArrayList<>();
 
             try (FileInputStream fis = new FileInputStream(filePath);
-                 Workbook workbook = WorkbookFactory.create(fis)) {
+                 Workbook workbook = new XSSFWorkbook(fis)) {
 
                 Sheet sheet = workbook.getSheet(sheetName);
                 int lastRowIndex = sheet.getLastRowNum();
 
                 for (int i = 0; i <= lastRowIndex; i++) {
                     Row row = sheet.getRow(i);
-                    int lastCellNum = row.getLastCellNum();
-                    List<Object> rowData = new ArrayList<>();
+                    if (row != null && !isRowEmpty(row)) {
+                        int lastCellIndex = row.getLastCellNum();
+                        Object[] rowData = new Object[lastCellIndex];
 
-                    for (int j = 0; j < lastCellNum; j++) {
-                        Cell cell = row.getCell(j);
-                        String cellData = getCellValueAsString(cell);
-                        rowData.add(cellData);
+                        for (int j = 0; j < lastCellIndex; j++) {
+                            Cell cell = row.getCell(j);
+                            rowData[j] = getCellValueAsString(cell);
+                        }
+
+                        testData.add(rowData);
                     }
-
-                    testData.add(rowData.toArray());
                 }
 
             } catch (IOException e) {
@@ -132,6 +139,23 @@ public class ExcelDataProvider {
             }
 
             return testData.iterator();
+        }
+
+        @Test(dataProvider = "fileData")
+        public void testFileData(Object[] rowData) {
+            if (rowData != null) {
+                System.out.println("Row Data: " + java.util.Arrays.toString(rowData));
+            }
+        }
+
+        private boolean isRowEmpty(Row row) {
+            for (int i = row.getFirstCellNum(); i < row.getLastCellNum(); i++) {
+                Cell cell = row.getCell(i, Row.MissingCellPolicy.RETURN_BLANK_AS_NULL);
+                if (cell != null && cell.getCellType() != CellType.BLANK) {
+                    return false;
+                }
+            }
+            return true;
         }
 
 //..................................................................................................
@@ -144,20 +168,23 @@ public class ExcelDataProvider {
 
         ExcelDataProvider provider = new ExcelDataProvider(filePath);
 
-        String sheetName = "Sheet1";
+        String sheetName = "luma";
 
        // get data from cell
         provider.testCellData(provider.getExcelData(sheetName,5,3));
 
         //get the entire column data
-        Iterator<Object[]> iterator = provider.getColumnData(filePath,sheetName,3);
-         while (iterator.hasNext()) {
+        Iterator<Object[]> iterator = provider.getColumnData(filePath,sheetName,1);
+        while (iterator.hasNext()) {
             Object[] data = iterator.next();
-            System.out.println("Column Sheet1: " + data[0]);
+            if (data != null && data.length > 0) {
+                System.out.println(data[0]);
+            }
         }
 
+
          //read the entire file
-        Iterator<Object[]> iterator1 = provider.getFileData(sheetName);
+        Iterator<Object[]> iterator1 = provider.getFileData(filePath,sheetName);
          while (iterator1.hasNext()) {
             Object[] rowData = iterator1.next();
             for (Object cellData : rowData) {

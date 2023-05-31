@@ -1,8 +1,10 @@
 package us.piit.base;
 import com.relevantcodes.extentreports.LogStatus;
+import io.cucumber.java.*;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.apache.poi.ss.format.CellElapsedFormatter;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -10,7 +12,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
@@ -48,13 +52,13 @@ public class CommonAPI {
     //extent report setup from line 48 to 105
     public static com.relevantcodes.extentreports.ExtentReports extent;
 
-    @BeforeSuite(groups="group1")
+    @BeforeSuite(groups="sanity")
     public void extentSetup(ITestContext context) {
         ExtentManager.setOutputDirectory(context);
         extent = ExtentManager.getInstance();
     }
 
-    @BeforeMethod(groups="group1")
+    @BeforeMethod(groups="sanity")
     public void startExtent(Method method) {
         String className = method.getDeclaringClass().getSimpleName();
         String methodName = method.getName().toLowerCase();
@@ -68,7 +72,7 @@ public class CommonAPI {
         return sw.toString();
     }
 
-    @AfterMethod(groups="group1")
+    @AfterMethod(groups="sanity")
     public void afterEachTestMethod(ITestResult result) {
         ExtentTestManager.getTest().getTest().setStartedTime(getTime(result.getStartMillis()));
         ExtentTestManager.getTest().getTest().setEndedTime(getTime(result.getEndMillis()));
@@ -93,7 +97,7 @@ public class CommonAPI {
         }
         driver.quit();
     }
-    @AfterSuite(groups="group1")
+    @AfterSuite(groups="sanity")
     public void generateReport() {
         extent.close();
     }
@@ -103,6 +107,7 @@ public class CommonAPI {
         calendar.setTimeInMillis(millis);
         return calendar.getTime();
     }
+
 
     public void getCloudDriver(String envName,String os,String osVersion,String browserName,String browserVersion,String username,String password) throws MalformedURLException, MalformedURLException {
         DesiredCapabilities cap=new DesiredCapabilities();
@@ -117,8 +122,6 @@ public class CommonAPI {
             driver=new RemoteWebDriver(new URL("http://"+username+":"+password+"@ondemand.saucelabs.com:80/wd/hub"),cap);
         }
     }
-
-
     @Parameters("browserName")
     public void getLocalDriver(String browserName){
         if(browserName.equalsIgnoreCase("chrome")) {
@@ -133,7 +136,7 @@ public class CommonAPI {
         }
     }
     @Parameters({"useCloudEnv","envName","os","osversion","browserName","browservesion","url"})
-    @BeforeMethod(groups="group1")
+    @BeforeMethod(groups = {"sanity"})
     public void setup(@Optional("false") String useCloudEnv, @Optional("browserstack") String envName, @Optional("windows")  String os,
                       @Optional("11") String osversion, @Optional("chrome") String browserName,
                       @Optional("111") String browservesion, @Optional("https://www.google.com/") String url) throws MalformedURLException {
@@ -149,7 +152,8 @@ public class CommonAPI {
         }
         driver.get(url);
     }
-    @AfterMethod(groups="group1")
+
+    @AfterMethod(groups = {"sanity"})
     public void teardown(){
         //close browser
         driver.quit();
@@ -318,7 +322,6 @@ public class CommonAPI {
         } catch (Exception e) {
             System.out.println("Exception while taking screenshot "+e.getMessage());
         }
-    }
-
+   }
 
 }
