@@ -148,7 +148,10 @@ public class ConnectDB {
 
         //reading data
         List<String> emails = getTableColumnData("select * from Testers;","Email");
-            System.out.println(emails.get(0));
+        System.out.println(emails.get(0));
+//           for(Object i:emails) {
+//               System.out.println(i);
+//           }
 
 
     }

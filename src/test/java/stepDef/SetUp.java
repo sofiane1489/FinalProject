@@ -50,7 +50,7 @@ public class SetUp {
     public String getElementTextWithJavaScript(WebDriver driver,WebElement element){
         JavascriptExecutor js = (JavascriptExecutor)driver;
         String text=(String) js.executeScript("return arguments[0].textContent;",element);
-       return text;
+        return text;
     }
 
     public void clickWithJavascript(WebDriver driver,WebElement element){

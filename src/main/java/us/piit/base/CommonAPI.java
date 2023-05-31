@@ -322,7 +322,6 @@ public class CommonAPI {
         } catch (Exception e) {
             System.out.println("Exception while taking screenshot "+e.getMessage());
         }
-    }
-
+   }
 
 }
