@@ -6,15 +6,19 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import us.piit.base.CommonAPI;
+
+import java.time.Duration;
 
 public class HomePageBeforeLogin extends CommonAPI {
     Logger log= LogManager.getLogger(HomePageBeforeLogin.class.getName());
 
     public HomePageBeforeLogin(WebDriver driver){
         PageFactory.initElements(driver,this);
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
-
     @FindBy(xpath = "//a[@aria-label='store logo']//img")
     WebElement logoVisibility;
 
@@ -148,7 +152,8 @@ public class HomePageBeforeLogin extends CommonAPI {
         log.info("hover over Gear category success");
     }
     public void clickOnShoppingCartIcon(){
-        clickOn(shoppingCartIcon);
+         explicitWait(shoppingCartIcon);
+         clickOn(shoppingCartIcon);
         log.info("click on shopping cart success");
     }
 

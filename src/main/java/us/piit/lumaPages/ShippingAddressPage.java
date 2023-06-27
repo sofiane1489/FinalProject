@@ -6,13 +6,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import us.piit.base.CommonAPI;
+
+import java.time.Duration;
 
 public class ShippingAddressPage extends CommonAPI {
     Logger log= LogManager.getLogger(ShippingAddressPage.class.getName());
 
     public ShippingAddressPage(WebDriver driver){
         PageFactory.initElements(driver,this);
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
     @FindBy(css = "body div:nth-child(4) main:nth-child(2) div:nth-child(3) div:nth-child(1) div:nth-child(3) div:nth-child(5) ol:nth-child(1) li:nth-child(1) div:nth-child(2) form:nth-child(1) fieldset:nth-child(1) div:nth-child(1) div:nth-child(2) input:nth-child(1)")
@@ -108,8 +112,14 @@ public class ShippingAddressPage extends CommonAPI {
         log.info("click on next success");
    }
 
-   public void clickOnPlaceOrderBtn(){
+   public void clickOnPlaceOrderBtn(WebDriver driver){
+        //we do this because the element takes a moment to appears, so we can either use:
+        //we can wait for the element "nextBtn" to disappear then we click on the "placeOrderBtn"
+       explicitWaitinvisibilityOf(nextBtn);
         clickOn(placeOrderBtn);
+
+        //or we can click with javaScript
+       // clickWithJavascript(driver,placeOrderBtn);
         log.info("click on place order success");
    }
 

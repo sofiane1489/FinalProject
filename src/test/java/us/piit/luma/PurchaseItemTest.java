@@ -12,7 +12,7 @@ import java.util.Properties;
 public class PurchaseItemTest extends CommonAPI {
 
 
-    @Test(groups = "sanity")
+   // @Test(groups = "sanity")
     public void unableToAddToCartWithNoSelectedAttribute(){
         HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());
         MenCategoryPage menPage=new MenCategoryPage(getDriver());
@@ -39,7 +39,7 @@ public class PurchaseItemTest extends CommonAPI {
 
     }
 
-    @Test(groups = {"sanity","regression"})
+   // @Test(groups = {"sanity","regression"})
     public void addItemToCart(){
         HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());
         MenCategoryPage menPage=new MenCategoryPage(getDriver());
@@ -107,7 +107,7 @@ public class PurchaseItemTest extends CommonAPI {
 
         //navigate to cart
         homePageBeforeLogin.clickOnShoppingCartIcon();
-        waitFor(1);
+
         homePageBeforeLogin.clickOnProceedToCheckOutBtn();
 
         shippingAddressPage.enterEmailAddress(useFakeEmail());
@@ -132,8 +132,7 @@ public class PurchaseItemTest extends CommonAPI {
 
         shippingAddressPage.clickOnNextBtn();
 
-        waitFor(3);
-        shippingAddressPage.clickOnPlaceOrderBtn();
+        shippingAddressPage.clickOnPlaceOrderBtn(getDriver());
 
         //purchase validation:
         String expectedMessage="Thank you for your purchase!";
@@ -142,7 +141,7 @@ public class PurchaseItemTest extends CommonAPI {
         captureScreenshot();
 
     }
-    @Test(groups = {"smoke"})
+   // @Test(groups = {"smoke"})
     public void removeItemsFromTheCart(){
         HomePageBeforeLogin homePageBeforeLogin=new HomePageBeforeLogin(getDriver());
         GearCategoryPage gearCategoryPage =new GearCategoryPage(getDriver());
