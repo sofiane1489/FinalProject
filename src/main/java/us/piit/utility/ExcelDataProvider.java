@@ -174,24 +174,24 @@ public class ExcelDataProvider {
         provider.testCellData(provider.getExcelData(sheetName,5,3));
 
         //get the entire column data
-        Iterator<Object[]> iterator = provider.getColumnData(filePath,sheetName,1);
-        while (iterator.hasNext()) {
-            Object[] data = iterator.next();
-            if (data != null && data.length > 0) {
-                System.out.println(data[0]);
-            }
-        }
+//        Iterator<Object[]> iterator = provider.getColumnData(filePath,sheetName,1);
+//        while (iterator.hasNext()) {
+//            Object[] data = iterator.next();
+//            if (data != null && data.length > 0) {
+//                System.out.println(data[0]);
+//            }
+//        }
 
 
          //read the entire file
-        Iterator<Object[]> iterator1 = provider.getFileData(filePath,sheetName);
-         while (iterator1.hasNext()) {
-            Object[] rowData = iterator1.next();
-            for (Object cellData : rowData) {
-                System.out.print(cellData + "\t");
-            }
-            System.out.println();
-        }
+//        Iterator<Object[]> iterator1 = provider.getFileData(filePath,sheetName);
+//         while (iterator1.hasNext()) {
+//            Object[] rowData = iterator1.next();
+//            for (Object cellData : rowData) {
+//                System.out.print(cellData + "\t");
+//            }
+//            System.out.println();
+//        }
 
     }
 

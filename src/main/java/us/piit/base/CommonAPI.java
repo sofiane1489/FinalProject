@@ -1,10 +1,8 @@
 package us.piit.base;
 import com.relevantcodes.extentreports.LogStatus;
-import io.cucumber.java.*;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.apache.poi.ss.format.CellElapsedFormatter;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -46,6 +44,7 @@ public class CommonAPI {
     String takeScreenshots=pro.getProperty("take.screenshots","false");
 
     WebDriver driver;
+   public WebDriverWait wait;
     Faker faker = new Faker();
 
 
@@ -147,6 +146,7 @@ public class CommonAPI {
         }
         //open the browser
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Long.parseLong(implicitWait)));
+        wait= new WebDriverWait(driver, Duration.ofSeconds(10));
         if(browserMaximize.equalsIgnoreCase("true")){
             driver.manage().window().maximize();
         }
@@ -163,6 +163,13 @@ public class CommonAPI {
     /*----------------------------------------------------------------------------------------------------------------*/
     /*                                         Selenium methods                                                       */
     /*----------------------------------------------------------------------------------------------------------------*/
+
+    public void explicitWait(WebElement ele){
+       wait.until(ExpectedConditions.visibilityOf(ele));
+    }
+    public void explicitWaitinvisibilityOf(WebElement ele) {
+        wait.until(ExpectedConditions.invisibilityOf(ele));
+    }
 
     public WebDriver getDriver() {
         return driver;
