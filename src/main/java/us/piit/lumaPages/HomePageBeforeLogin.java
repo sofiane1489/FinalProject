@@ -19,6 +19,7 @@ public class HomePageBeforeLogin extends CommonAPI {
         PageFactory.initElements(driver,this);
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
+
     @FindBy(xpath = "//a[@aria-label='store logo']//img")
     WebElement logoVisibility;
 
